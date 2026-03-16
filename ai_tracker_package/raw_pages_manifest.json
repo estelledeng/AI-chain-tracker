@@ -1,0 +1,20 @@
+[
+  {
+    "name": "nvda_home",
+    "url": "https://investor.nvidia.com/home/default.aspx",
+    "status": "success",
+    "file": "raw_pages/nvda_home.html"
+  },
+  {
+    "name": "mu_home",
+    "url": "https://investors.micron.com/",
+    "status": "success",
+    "file": "raw_pages/mu_home.html"
+  },
+  {
+    "name": "sndk_home",
+    "url": "https://investor.sandisk.com/",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='investor.sandisk.com', port=443): Read timed out. (read timeout=30)"
+  }
+]
