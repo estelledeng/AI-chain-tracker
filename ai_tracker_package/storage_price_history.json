@@ -1,0 +1,21 @@
+[
+  {
+    "timestamp": "2026-03-16T11:31:40.630942+00:00",
+    "storage": {
+      "dram": {
+        "source": "TrendForce",
+        "url": "https://www.trendforce.com/price/dram",
+        "weekly_growth_pct": null,
+        "monthly_growth_pct": null,
+        "status": "ok"
+      },
+      "nand": {
+        "source": "TrendForce",
+        "url": "https://www.trendforce.com/price/flash",
+        "weekly_growth_pct": null,
+        "monthly_growth_pct": null,
+        "status": "ok"
+      }
+    }
+  }
+]

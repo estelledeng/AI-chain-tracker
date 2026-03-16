@@ -2,26 +2,14 @@
   {
     "ticker": "NVDA",
     "name": "NVIDIA Newsroom",
-    "source_type": "newsroom",
+    "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "fetched_at": "2026-03-16T11:30:10.197522+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
         "url": "https://www.nvidia.com/en-us"
-      },
-      {
-        "headline": "Autonomous Machines",
-        "url": "https://www.nvidia.com/en-us/autonomous-machines/"
-      },
-      {
-        "headline": "Cloud & Data Center",
-        "url": "https://www.nvidia.com/en-us/data-center/"
-      },
-      {
-        "headline": "Deep Learning & Ai",
-        "url": "https://www.nvidia.com/en-us/deep-learning-ai/"
       },
       {
         "headline": "Design & Pro Visualization",
@@ -30,10 +18,6 @@
       {
         "headline": "High Performance Computing",
         "url": "https://www.nvidia.com/en-us/high-performance-computing/"
-      },
-      {
-        "headline": "Gaming & Entertainment",
-        "url": "https://www.nvidia.com/en-us/geforce/"
       },
       {
         "headline": "GPU TECHNOLOGY CONFERENCE",
@@ -54,106 +38,98 @@
       {
         "headline": "NVIDIA GTC 2026: Live Updates on What\u2019s Next in AI",
         "url": "https://blogs.nvidia.com/blog/gtc-2026-news/"
+      },
+      {
+        "headline": "NVIDIA and Nebius Partner to Scale Full-Stack AI Cloud",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-nebius-partner-to-scale-full-stack-ai-cloud"
+      },
+      {
+        "headline": "As Open Models Spark AI Boom, NVIDIA Jetson Brings It to Life at the Edge",
+        "url": "https://blogs.nvidia.com/blog/jetson-generative-ai-edge-oss/"
+      },
+      {
+        "headline": "NVIDIA Virtualizes Game Development With RTX PRO Server",
+        "url": "https://blogs.nvidia.com/blog/gdc-2026-virtual-game-development/"
+      },
+      {
+        "headline": "NVIDIA and ComfyUI Streamline Local AI Video Generation for Game Developers and Creators at GDC",
+        "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-flux-ltx-video-comfyui-gdc/"
+      },
+      {
+        "headline": "NVIDIA and Thinking Machines Lab Announce Long-Term Gigawatt-Scale Strategic Partnership",
+        "url": "https://blogs.nvidia.com/blog/nvidia-thinking-machines-lab/"
+      },
+      {
+        "headline": "Join the Developer Program",
+        "url": "https://developer.nvidia.com/join"
       }
     ]
   },
   {
     "ticker": "MU",
     "name": "Micron News Releases",
-    "source_type": "press",
+    "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
-    "status": "failed",
-    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "status": "blocked",
+    "fetched_at": "2026-03-16T11:30:10.197522+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases",
     "items": []
   },
   {
     "ticker": "SNDK",
     "name": "Sandisk News Releases",
-    "source_type": "press",
+    "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
-    "status": "failed",
-    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "status": "blocked",
+    "fetched_at": "2026-03-16T11:30:10.197522+00:00",
     "error": "HTTPSConnectionPool(host='investor.sandisk.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
   {
     "ticker": "ANET",
     "name": "Arista Press Releases",
-    "source_type": "press",
+    "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
-    "status": "failed",
-    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "status": "blocked",
+    "fetched_at": "2026-03-16T11:30:10.197522+00:00",
     "error": "403 Client Error: Forbidden for url: https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "items": []
   },
   {
     "ticker": "VRT",
     "name": "Vertiv News",
-    "source_type": "press",
+    "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
-    "status": "failed",
-    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "status": "blocked",
+    "fetched_at": "2026-03-16T11:30:10.197522+00:00",
     "error": "403 Client Error: Forbidden for url: https://investors.vertiv.com/news/news-details/default.aspx",
     "items": []
   },
   {
     "ticker": "TSM",
     "name": "TSMC Press Center",
-    "source_type": "press",
+    "group": "official",
     "source_url": "https://pr.tsmc.com/english",
-    "status": "failed",
-    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "status": "blocked",
+    "fetched_at": "2026-03-16T11:30:10.197522+00:00",
     "error": "403 Client Error: Forbidden for url: https://pr.tsmc.com/english",
     "items": []
   },
   {
     "ticker": "MRVL",
     "name": "Marvell Press Releases",
-    "source_type": "press",
+    "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "fetched_at": "2026-03-16T11:30:10.197522+00:00",
     "items": [
       {
-        "headline": "Skip to main content",
-        "url": "#mainContent"
-      },
-      {
         "headline": "Skip to section navigation",
-        "url": "#sectionNav"
-      },
-      {
-        "headline": "Data Processing Units",
-        "url": "https://www.marvell.com/products/data-processing-units.html"
-      },
-      {
-        "headline": "Coherent-lite DSPs",
-        "url": "https://www.marvell.com/products/coherent-lite-dsp.html"
-      },
-      {
-        "headline": "Data Center Switches",
-        "url": "https://www.marvell.com/products/data-center-switches.html"
-      },
-      {
-        "headline": "DCI Optical Modules",
-        "url": "https://www.marvell.com/products/optical-modules.html"
-      },
-      {
-        "headline": "Enterprise Switches",
-        "url": "https://www.marvell.com/products/enterprise-switches.html"
-      },
-      {
-        "headline": "Ethernet Controllers",
-        "url": "https://www.marvell.com/products/ethernet-adapters-and-controllers.html"
+        "url": "https://investor.marvell.com/news-events/press-releases/#sectionNav"
       },
       {
         "headline": "Transimpedance Amplifiers",
         "url": "https://www.marvell.com/products/transimpedance-amplifiers.html"
-      },
-      {
-        "headline": "Storage Accelerators",
-        "url": "https://www.marvell.com/products/system-solutions.html"
       },
       {
         "headline": "Marvell Government Solutions",
@@ -162,94 +138,340 @@
       {
         "headline": "Watch the latest Marvell Essential Technology Videos WATCH NOW",
         "url": "https://videos.marvell.com/"
+      },
+      {
+        "headline": "Marvell to Showcase Industry-leading, End-to-End Connectivity Solutions for AI Data Center Infrastructure at OFC 2026",
+        "url": "https://investor.marvell.com/news-events/press-releases/detail/1014/marvell-to-showcase-industry-leading-end-to-end-connectivity-solutions-for-ai-data-center-infrastructure-at-ofc-2026"
+      },
+      {
+        "headline": "Marvell Ushers In the 1.6T Era with Expanded Optical DSP Platform Portfolio, Redefining AI Data Center End-to-End Connectivity",
+        "url": "https://investor.marvell.com/news-events/press-releases/detail/1013/marvell-ushers-in-the-1-6t-era-with-expanded-optical-dsp-platform-portfolio-redefining-ai-data-center-end-to-end-connectivity"
+      },
+      {
+        "headline": "Marvell and Mojo Vision Collaborate to Develop Next-generation, High-density Micro-LED Connectivity Solutions",
+        "url": "https://investor.marvell.com/news-events/press-releases/detail/1012/marvell-and-mojo-vision-collaborate-to-develop-next-generation-high-density-micro-led-connectivity-solutions"
+      },
+      {
+        "headline": "Marvell Technology, Inc. Reports Fourth Quarter and Fiscal Year 2026 Financial Results",
+        "url": "https://investor.marvell.com/news-events/press-releases/detail/1011/marvell-technology-inc-reports-fourth-quarter-and-fiscal-year-2026-financial-results"
+      },
+      {
+        "headline": "Marvell Extends ZR/ZR+ Leadership with Industry-first 1.6T ZR/ZR+ Pluggable and 2nm Coherent DSPs for Secure AI Scale-across Interconnects",
+        "url": "https://investor.marvell.com/news-events/press-releases/detail/1010/marvell-extends-zrzr-leadership-with-industry-first-1-6t-zrzr-pluggable-and-2nm-coherent-dsps-for-secure-ai-scale-across-interconnects"
+      },
+      {
+        "headline": "Marvell to Showcase PCIe 8.0 SerDes Demonstration at DesignCon 2026",
+        "url": "https://investor.marvell.com/news-events/press-releases/detail/1009/marvell-to-showcase-pcie-8-0-serdes-demonstration-at-designcon-2026"
+      },
+      {
+        "headline": "Marvell to Showcase Latest AI Data Center Connectivity Solutions at DesignCon 2026",
+        "url": "https://investor.marvell.com/news-events/press-releases/detail/1008/marvell-to-showcase-latest-ai-data-center-connectivity-solutions-at-designcon-2026"
+      },
+      {
+        "headline": "Marvell Completes Acquisition of XConn Technologies",
+        "url": "https://investor.marvell.com/news-events/press-releases/detail/1007/marvell-completes-acquisition-of-xconn-technologies"
+      },
+      {
+        "headline": "Marvell Technology, Inc. Announces Conference Call to Review Fourth Fiscal Quarter and Fiscal Year 2026 Financial Results",
+        "url": "https://investor.marvell.com/news-events/press-releases/detail/1006/marvell-technology-inc-announces-conference-call-to-review-fourth-fiscal-quarter-and-fiscal-year-2026-financial-results"
+      },
+      {
+        "headline": "Marvell Completes Acquisition of Celestial AI",
+        "url": "https://investor.marvell.com/news-events/press-releases/detail/1005/marvell-completes-acquisition-of-celestial-ai"
       }
     ]
   },
   {
     "ticker": "ALAB",
-    "name": "Astera Labs Events",
-    "source_type": "events",
+    "name": "Astera Events & Presentations",
+    "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
-    "status": "failed",
-    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "status": "blocked",
+    "fetched_at": "2026-03-16T11:30:10.197522+00:00",
     "error": "HTTPSConnectionPool(host='ir.asteralabs.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
   {
     "ticker": "CRDO",
     "name": "Credo News",
-    "source_type": "press",
+    "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
-    "status": "failed",
-    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "status": "blocked",
+    "fetched_at": "2026-03-16T11:30:10.197522+00:00",
     "error": "403 Client Error: Forbidden for url: https://investors.credosemi.com/news-events/news",
     "items": []
   },
   {
     "ticker": "LITE",
-    "name": "Lumentum News",
-    "source_type": "press",
+    "name": "Lumentum News Releases",
+    "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
-    "status": "failed",
-    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "status": "blocked",
+    "fetched_at": "2026-03-16T11:30:10.197522+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
   {
     "ticker": "COHR",
     "name": "Coherent News",
-    "source_type": "press",
+    "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "fetched_at": "2026-03-16T11:30:10.197522+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
-        "url": "https://www.coherent.com/news/datacenter-communications.html"
+        "url": "https://www.coherent.com/datacenter-communications.html"
       },
       {
         "headline": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
-        "url": "https://www.coherent.com/news/datacenter-communications.html"
-      },
-      {
-        "headline": "Connecting The World\u200b\u200b",
-        "url": "https://www.coherent.com/news/datacenter-communications-applications.html"
+        "url": "https://www.coherent.com/datacenter-communications.html"
       },
       {
         "headline": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
-        "url": "https://www.coherent.com/news/datacenter-communications-applications.html"
+        "url": "https://www.coherent.com/datacenter-communications-applications.html"
       },
       {
         "headline": "Engineered Materials and High-Precision Laser Solutions\u200b",
-        "url": "https://www.coherent.com/news/industrial.html"
+        "url": "https://www.coherent.com/industrial.html"
       },
       {
         "headline": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
-        "url": "https://www.coherent.com/news/industrial.html"
-      },
-      {
-        "headline": "Solutions Start Here\u200b",
-        "url": "https://www.coherent.com/news/industrial-solutions.html"
+        "url": "https://www.coherent.com/industrial.html"
       },
       {
         "headline": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
-        "url": "https://www.coherent.com/news/industrial-solutions.html"
+        "url": "https://www.coherent.com/industrial-solutions.html"
       },
       {
-        "headline": "Investor Relations",
-        "url": "https://www.coherent.com/news/company/investor-relations"
+        "headline": "Coherent PIC Magazine | PIC platforms: A question of choice November 24, 2023. An Interview With Julie Eng, Chief Technology Officer at Coherent. Learn More",
+        "url": "https://picmagazine.net/article/118133/PIC_platforms_A_question_of_choice"
       },
       {
-        "headline": "Financial Releases",
-        "url": "https://www.coherent.com/news/company/investor-relations/financial-releases"
+        "headline": "Coherent NIKKEI Mobility | Coherent CEO: SiC Invested by DENSO and Melco November 7, 2023. DENSO and Mitsubishi Electric (Melco) have decided to invest in the silicon carbide (SiC) business of an American semiconductor w",
+        "url": "https://www.coherent.com/news/coherent-ceo-sic-invested-by-denso-and-melco"
       },
       {
-        "headline": "Financial Webcasts",
-        "url": "https://www.coherent.com/news/company/investor-relations/financial-webcasts"
+        "headline": "Coherent WSJ | One of the World\u2019s Biggest Diamonds Could Be Key to Some of the World\u2019s Fastest Microchips November 3, 2023. To beat the heat that our devices throw off, engineers are experimenting with synthetic diamonds",
+        "url": "https://wsj-article-webview-generator-prod.sc.onservo.com/webview/WP-WSJ-0001337010?adobe_mc=TS%3D1699107841%7CMCMID%3D87479515957925441504680980178106415977%7CMCORGID%3DCB68E4BA55144CAA0A4C98A5%40AdobeOrg&wsj_native_webview=android&ace_environment=androidphone%2Cwebview&ace_config=%7B%22wsj%22%3A%7B%22djcmp%22%3A%7B%22propertyHref%22%3A%22https%3A%2F%2Fwsj.android.app%22%7D%7D%7D"
       },
       {
-        "headline": "Investor Presentations",
-        "url": "https://www.coherent.com/news/company/investor-relations/investor-presentations"
+        "headline": "Coherent NIKKEI Tech Foresight | Battle to Secure SiC Wafers for EVs October 17, 2023. Japanese companies are scrambling to secure a stable supply of silicon carbide (SiC) wafers, which are essential for manufacturing ne",
+        "url": "https://www.coherent.com/news/battle-to-secure-sic-wafers-power-semiconductors-for-evs-en"
+      },
+      {
+        "headline": "Coherent The Economic Times | US electronics manufacturer Coherent Corp establishes first global centre of excellence in Chennai September 05, 2023. Coherent Corp, a Pennsylvania (US) based manufacturer of electronics, a",
+        "url": "https://economictimes.indiatimes.com/wealth/real-estate/exploring-the-potential-of-commercial-real-estate-investment-insights-from-property-share-ceo/articleshow/103252860.cms"
+      },
+      {
+        "headline": "Coherent McKinsey | Coherent\u2019s Chuck Mattera on growing a $5 billion company August 4, 2023. II-VI was founded 50 years ago as a specialized materials company. Today, as Coherent, it has technology platforms in multiple ",
+        "url": "https://www.mckinsey.com/industries/industrials-and-electronics/our-insights/coherents-chuck-mattera-on-growing-a-5-billion-dollar-company"
+      },
+      {
+        "headline": "Coherent Gazettabyte | How to Shepherd a Company\u2019s Technologies for Growth February 16, 2023. CTO Interviews Part 3: Dr Julie Eng. \u201cOne of the things that I always somehow had a knack for is interacting with customers, s",
+        "url": "https://www.gazettabyte.com/home/2023/2/16/how-to-shepherd-a-companys-technologies-for-growth.html"
+      },
+      {
+        "headline": "Coherent Laser Focus World | Laser Engines Improve Life Sciences Applications August 18, 2022. Multiwavelength laser engines, which combine laser sources with pre-aligned and stabilized free-space focusing optics or inte",
+        "url": "https://www.laserfocusworld.com/lasers-sources/article/14281179/laser-engines-improve-life-sciences-applications"
+      }
+    ]
+  },
+  {
+    "ticker": "SECTOR",
+    "name": "TrendForce News",
+    "group": "industry",
+    "source_url": "https://www.trendforce.com/news/",
+    "status": "success",
+    "fetched_at": "2026-03-16T11:30:10.197522+00:00",
+    "items": [
+      {
+        "headline": "Optoelectronics Research",
+        "url": "https://www.trendforce.com/research/led"
+      },
+      {
+        "headline": "ICT Applications Research",
+        "url": "https://www.trendforce.com/research/tri"
+      },
+      {
+        "headline": "LED Demand / Supply Database",
+        "url": "https://www.trendforce.com/research/category/LED/LED%20Demand%20_%20Supply%20Data%20Base"
+      },
+      {
+        "headline": "Automotive LED - Lighting and Display",
+        "url": "https://www.trendforce.com/research/category/LED/automotive_led"
+      },
+      {
+        "headline": "General / Agricultural Lighting",
+        "url": "https://www.trendforce.com/research/category/LED/LED%20Lighting"
+      },
+      {
+        "headline": "Infrared Sensing - IR LED / VCSEL / EEL",
+        "url": "https://www.trendforce.com/research/category/LED/IR%20LED%20_%20VCSEL%20_%20LiDAR%20Laser"
+      },
+      {
+        "headline": "Lithium Battery and Energy Storage",
+        "url": "https://www.trendforce.com/research/category/Energy/Lithium%20Battery%20and%20Energy%20Storage"
+      },
+      {
+        "headline": "Optoelectronics Research",
+        "url": "https://www.trendforce.com/membership/LEDinside"
+      },
+      {
+        "headline": "ICT Applications Research",
+        "url": "https://www.topology.com.tw/Member/MemberIntro"
+      },
+      {
+        "headline": "Mobile DRAM Contract Price",
+        "url": "https://www.trendforce.com/price/dram/mobileDram_contract"
+      },
+      {
+        "headline": "NAND Flash Contract Price",
+        "url": "https://www.trendforce.com/price/flash/flash_contract"
+      },
+      {
+        "headline": "PC-Client OEM SSD Contract Price",
+        "url": "https://www.trendforce.com/price/flash/pcc_oem_ssd_contract"
+      },
+      {
+        "headline": "NAND Flash Wafer Contract Price",
+        "url": "https://www.trendforce.com/price/flash/wafer_contract"
+      },
+      {
+        "headline": "LCD Smartphone Panel Price",
+        "url": "https://www.trendforce.com/price/lcd/smartphone"
+      }
+    ]
+  },
+  {
+    "ticker": "SECTOR",
+    "name": "TrendForce Prices DRAM",
+    "group": "industry",
+    "source_url": "https://www.trendforce.com/price/dram",
+    "status": "success",
+    "fetched_at": "2026-03-16T11:30:10.197522+00:00",
+    "items": [
+      {
+        "headline": "LED Demand / Supply Database",
+        "url": "https://www.trendforce.com/research/category/LED/LED%20Demand%20_%20Supply%20Data%20Base"
+      },
+      {
+        "headline": "Automotive LED - Lighting and Display",
+        "url": "https://www.trendforce.com/research/category/LED/automotive_led"
+      },
+      {
+        "headline": "General / Agricultural Lighting",
+        "url": "https://www.trendforce.com/research/category/LED/LED%20Lighting"
+      },
+      {
+        "headline": "Infrared Sensing - IR LED / VCSEL / EEL",
+        "url": "https://www.trendforce.com/research/category/LED/IR%20LED%20_%20VCSEL%20_%20LiDAR%20Laser"
+      },
+      {
+        "headline": "Lithium Battery and Energy Storage",
+        "url": "https://www.trendforce.com/research/category/Energy/Lithium%20Battery%20and%20Energy%20Storage"
+      },
+      {
+        "headline": "ICT Applications Research",
+        "url": "https://www.trendforce.com/landingPage/semiconductor"
+      },
+      {
+        "headline": "Mobile DRAM Contract Price",
+        "url": "https://www.trendforce.com/price/dram/mobileDram_contract"
+      },
+      {
+        "headline": "NAND Flash Contract Price",
+        "url": "https://www.trendforce.com/price/flash/flash_contract"
+      },
+      {
+        "headline": "PC-Client OEM SSD Contract Price",
+        "url": "https://www.trendforce.com/price/flash/pcc_oem_ssd_contract"
+      },
+      {
+        "headline": "NAND Flash Wafer Contract Price",
+        "url": "https://www.trendforce.com/price/flash/wafer_contract"
+      },
+      {
+        "headline": "LCD Smartphone Panel Price",
+        "url": "https://www.trendforce.com/price/lcd/smartphone"
+      },
+      {
+        "headline": "Large Size Panel Shipment",
+        "url": "https://www.trendforce.com/price/lcd/shipment"
+      },
+      {
+        "headline": "Precursor and Cathode Material",
+        "url": "https://www.trendforce.com/price/battery-price/precursor_and_cathode_material"
+      },
+      {
+        "headline": "Early notice was announced at 17:50. (20 minutes in advance)",
+        "url": "https://www.dramexchange.com/Service/Spot_Price_Notice"
+      }
+    ]
+  },
+  {
+    "ticker": "SECTOR",
+    "name": "TrendForce Prices NAND",
+    "group": "industry",
+    "source_url": "https://www.trendforce.com/price/flash",
+    "status": "success",
+    "fetched_at": "2026-03-16T11:30:10.197522+00:00",
+    "items": [
+      {
+        "headline": "LED Demand / Supply Database",
+        "url": "https://www.trendforce.com/research/category/LED/LED%20Demand%20_%20Supply%20Data%20Base"
+      },
+      {
+        "headline": "Automotive LED - Lighting and Display",
+        "url": "https://www.trendforce.com/research/category/LED/automotive_led"
+      },
+      {
+        "headline": "General / Agricultural Lighting",
+        "url": "https://www.trendforce.com/research/category/LED/LED%20Lighting"
+      },
+      {
+        "headline": "Infrared Sensing - IR LED / VCSEL / EEL",
+        "url": "https://www.trendforce.com/research/category/LED/IR%20LED%20_%20VCSEL%20_%20LiDAR%20Laser"
+      },
+      {
+        "headline": "Lithium Battery and Energy Storage",
+        "url": "https://www.trendforce.com/research/category/Energy/Lithium%20Battery%20and%20Energy%20Storage"
+      },
+      {
+        "headline": "ICT Applications Research",
+        "url": "https://www.trendforce.com/landingPage/semiconductor"
+      },
+      {
+        "headline": "Mobile DRAM Contract Price",
+        "url": "https://www.trendforce.com/price/dram/mobileDram_contract"
+      },
+      {
+        "headline": "NAND Flash Contract Price",
+        "url": "https://www.trendforce.com/price/flash/flash_contract"
+      },
+      {
+        "headline": "PC-Client OEM SSD Contract Price",
+        "url": "https://www.trendforce.com/price/flash/pcc_oem_ssd_contract"
+      },
+      {
+        "headline": "NAND Flash Wafer Contract Price",
+        "url": "https://www.trendforce.com/price/flash/wafer_contract"
+      },
+      {
+        "headline": "LCD Smartphone Panel Price",
+        "url": "https://www.trendforce.com/price/lcd/smartphone"
+      },
+      {
+        "headline": "Large Size Panel Shipment",
+        "url": "https://www.trendforce.com/price/lcd/shipment"
+      },
+      {
+        "headline": "Precursor and Cathode Material",
+        "url": "https://www.trendforce.com/price/battery-price/precursor_and_cathode_material"
+      },
+      {
+        "headline": "NAND Flash Contract Price in Memory Card/UFD (2H Jan)",
+        "url": "https://www.trendforce.com/pricedetail/flash/flash_contract"
       }
     ]
   }
