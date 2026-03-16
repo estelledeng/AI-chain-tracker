@@ -178,7 +178,9 @@ function renderStoragePrices() {
   els.storagePrices.innerHTML = rows.map(([k, v]) => `
     <div class="storage-card">
       <div><strong>${k.toUpperCase()} · ${v.source || 'Source'}</strong></div>
-      <div class="muted" style="margin-top:6px">Weekly: ${v.weekly_growth_pct ?? 'N/A'}% · Monthly: ${v.monthly_growth_pct ?? 'N/A'}%</div>
+      <div class="muted" style="margin-top:6px">
+        Latest: ${v.latest_price ?? 'N/A'} · Weekly: ${v.weekly_growth_pct ?? 'N/A'}% · Monthly: ${v.monthly_growth_pct ?? 'N/A'}%
+      </div>
       <div class="muted" style="margin-top:4px">${v.status || ''}</div>
     </div>
   `).join('');
