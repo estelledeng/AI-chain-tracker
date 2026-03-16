@@ -1,31 +1,43 @@
-"""Normalize official source content into data/events.json.
-
-Current behavior:
-- Reads raw HTML snapshots from fetch_sources.py if present
-- Produces a local events.json using starter rules and starter data
-
-Next upgrade ideas:
-- Parse headlines from official IR pages
-- Deduplicate by URL/title hash
-- Add transcript ingestion
-- Push output to Supabase or GitHub Pages data endpoint
-"""
-from __future__ import annotations
-
 import json
-import pathlib
-from datetime import datetime
+from pathlib import Path
 
-ROOT = pathlib.Path(__file__).resolve().parent
-DATA_FILE = ROOT / "data" / "events.json"
+BASE_DIR = Path(__file__).resolve().parent
+DOCS_DATA = BASE_DIR.parent / "docs" / "data"
+DOCS_DATA.mkdir(parents=True, exist_ok=True)
 
+manifest_file = BASE_DIR / "raw_pages_manifest.json"
 
-def main() -> None:
-    payload = json.loads(DATA_FILE.read_text(encoding="utf-8"))
-    payload["generated_at"] = datetime.now().astimezone().strftime("%Y-%m-%d %H:%M %Z")
-    DATA_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"updated {DATA_FILE}")
+items = []
+if manifest_file.exists():
+    manifest = json.loads(manifest_file.read_text(encoding="utf-8"))
+    for row in manifest:
+        items.append(
+            {
+                "id": row.get("name"),
+                "company": row.get("name", "").split("_")[0].upper(),
+                "title": row.get("name", ""),
+                "source_type": "official_source_fetch",
+                "published_at": "",
+                "source_url": row.get("url", ""),
+                "status": row.get("status", ""),
+                "summary": row.get("error", "") if row.get("status") == "failed" else f"Fetched from {row.get('url', '')}",
+                "keywords": [],
+                "linked_tickers": [],
+                "signal": "mixed",
+                "factor_impact": {
+                    "market_size": "medium",
+                    "delivery_speed": "medium",
+                    "gross_margin": "medium",
+                    "eps": "medium",
+                },
+            }
+        )
 
+output = {
+    "updated_at": __import__("datetime").datetime.utcnow().isoformat() + "Z",
+    "events": items,
+}
 
-if __name__ == "__main__":
-    main()
+out_file = DOCS_DATA / "events.json"
+out_file.write_text(json.dumps(output, indent=2), encoding="utf-8")
+print(f"saved -> {out_file}")
