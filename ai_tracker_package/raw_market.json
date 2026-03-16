@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T11:31:40.630035+00:00",
+  "updated_at": "2026-03-16T12:05:24.274002+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -952,6 +952,7 @@
     "dram": {
       "source": "TrendForce",
       "url": "https://www.trendforce.com/price/dram",
+      "latest_price": 10.0,
       "weekly_growth_pct": null,
       "monthly_growth_pct": null,
       "status": "ok"
@@ -959,9 +960,11 @@
     "nand": {
       "source": "TrendForce",
       "url": "https://www.trendforce.com/price/flash",
+      "latest_price": 10.0,
       "weekly_growth_pct": null,
       "monthly_growth_pct": null,
       "status": "ok"
     }
-  }
+  },
+  "custom_tickers": []
 }
