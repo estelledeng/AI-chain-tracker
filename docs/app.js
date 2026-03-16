@@ -119,6 +119,7 @@ function getAllEvents() {
 function renderStoragePrices() {
   const storage = state.data?.market?.storage_prices || {};
   const rows = Object.entries(storage);
+
   if (!rows.length) {
     els.storagePrices.innerHTML = '<div class="muted">No storage price data.</div>';
     return;
@@ -128,9 +129,11 @@ function renderStoragePrices() {
     <div class="storage-card">
       <div><strong>${k.toUpperCase()} · ${v.source || 'Source'}</strong></div>
       <div class="muted" style="margin-top:6px">
-        Latest: ${v.latest_price ?? 'N/A'} · Weekly: ${v.weekly_growth_pct ?? 'N/A'}% · Monthly: ${v.monthly_growth_pct ?? 'N/A'}%
+        Latest: ${v.latest_price ?? 'Unavailable'} · Weekly: ${v.weekly_growth_pct ?? 'Unavailable'}${v.weekly_growth_pct == null ? '' : '%'} · Monthly: ${v.monthly_growth_pct ?? 'Unavailable'}${v.monthly_growth_pct == null ? '' : '%'}
       </div>
-      <div class="muted" style="margin-top:4px">${v.status || ''}</div>
+      <div class="muted" style="margin-top:4px">
+        ${v.status === 'ok' ? 'Parsed from source' : v.status === 'ok_but_unparsed' ? 'Source reachable, numeric price not reliably parsed yet' : (v.status || '')}
+      </div>
     </div>
   `).join('');
 }
@@ -158,7 +161,6 @@ function classify(text) {
   const keywordHits = [...new Set(matchedRules.flatMap(x => x.hits))];
 
   const sentiment = chainBuckets.length ? 'bullish' : 'mixed';
-
   const factorImpact = {
     tam: chainBuckets.length ? 'high' : 'medium',
     shipment: 'medium',
@@ -179,70 +181,6 @@ function classify(text) {
     sentiment,
     factor_impact: factorImpact,
     why_it_matters: why
-  };
-}
-
-async function fetchUrlContent(url) {
-  const proxy = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
-  const resp = await fetch(proxy);
-  if (!resp.ok) {
-    throw new Error(`url fetch failed: ${resp.status}`);
-  }
-
-  const html = await resp.text();
-  const doc = new DOMParser().parseFromString(html, 'text/html');
-
-  const title = (doc.querySelector('title')?.textContent || '').trim();
-
-  const paragraphs = Array.from(doc.querySelectorAll('p'))
-    .map(p => (p.textContent || '').trim())
-    .filter(Boolean)
-    .filter(t => t.length > 40)
-    .slice(0, 8);
-
-  const body = paragraphs.join(' ');
-  return {
-    title,
-    text: body || title
-  };
-}
-
-function buildManualArchivedEvent({ text, url, fetchedTitle, analysisResult }) {
-  const now = new Date().toISOString();
-
-  return {
-    id: `manual_${Date.now()}`,
-    company: analysisResult.primary?.[0] || 'MANUAL',
-    source_company: analysisResult.primary?.[0] || 'MANUAL',
-    source_kind: 'manual_archive',
-    event_type: analysisResult.eventType || 'Manual analysis',
-    type: analysisResult.eventType || 'Manual analysis',
-    title: fetchedTitle || text.slice(0, 120) || 'Manual event',
-    headline: fetchedTitle || text.slice(0, 120) || 'Manual event',
-    text: text,
-    raw_text: text,
-    published_at: now,
-    datetime: now,
-    source: url ? 'Manual URL analysis' : 'Manual text analysis',
-    url: url || '#',
-    chain_buckets: analysisResult.chainBuckets || [],
-    primary_beneficiaries: analysisResult.primary || [],
-    secondary_beneficiaries: analysisResult.secondary || [],
-    keyword_hits: analysisResult.keywordHits || [],
-    sentiment: analysisResult.sentiment || 'mixed',
-    factor_impact: analysisResult.factorImpact || {},
-    why_it_matters: analysisResult.why || '',
-    analysis: {
-      sentiment: analysisResult.sentiment || 'mixed',
-      direct_score: analysisResult.primary?.length ? 68 : 52,
-      matched_keywords: analysisResult.keywordHits || [],
-      factor_impact: analysisResult.factorImpact || {},
-      readthrough: (analysisResult.secondary || []).slice(0, 3).map((x, i) => ({
-        ticker: x,
-        score: 62 - i * 6,
-        summary: `Manual analyzed event may have readthrough into ${x}.`
-      }))
-    }
   };
 }
 
@@ -471,45 +409,101 @@ async function quickLookupTicker(term) {
     : `Temporary ticker ${ticker} added`;
 }
 
-async function loadData() {
-  try {
-    const response = await fetch(`data/events.json?ts=${Date.now()}`);
-    const data = await response.json();
+async function fetchUrlContent(url) {
+  const trimmed = url.trim();
+  if (!trimmed) throw new Error('empty url');
 
-    state.data = {
-      generated_at: data.generated_at || '',
-      dashboard_scores: Array.isArray(data.dashboard_scores) ? data.dashboard_scores : [],
-      source_configs: Array.isArray(data.source_configs) ? data.source_configs : [],
-      events: Array.isArray(data.events) ? data.events : [],
-      alerts: Array.isArray(data.alerts) ? data.alerts : [],
-      eps_bridge: data.eps_bridge || {},
-      extended_watchlist: Array.isArray(data.extended_watchlist) ? data.extended_watchlist : [],
-      market: data.market || {},
-      ticker_groups: data.ticker_groups || {}
-    };
+  const tryUrls = [
+    `https://api.allorigins.win/raw?url=${encodeURIComponent(trimmed)}`,
+    `https://r.jina.ai/http://${trimmed.replace(/^https?:\/\//, '')}`,
+    `https://r.jina.ai/http://r.jina.ai/http://${trimmed.replace(/^https?:\/\//, '')}`
+  ];
 
-    els.dataStamp.textContent = state.data.generated_at
-      ? `Updated ${state.data.generated_at}`
-      : 'Live data loaded';
+  let lastErr = null;
 
-    ensureCompanyFilterOptions(getAllEvents());
-    renderStoragePrices();
-    renderTickerGroups();
-    renderStaticPanels();
-    renderLowerPanels();
-    applyFilters();
-  } catch (err) {
-    console.error(err);
-    els.dataStamp.textContent = 'Failed to load data';
-    els.tickerGroups.innerHTML = '<div class="muted">No ticker data.</div>';
-    els.systemStatus.innerHTML = '<div class="muted">No live source status.</div>';
-    els.feed.innerHTML = '<div class="muted">No live events.</div>';
-    els.detail.innerHTML = '<div class="muted">No event selected.</div>';
-    els.bridgePanel.innerHTML = '<div class="muted">No EPS bridge data.</div>';
-    els.alertsPanel.innerHTML = '<div class="muted">No alert rules.</div>';
-    els.sourcesPanel.innerHTML = '<div class="muted">No source details.</div>';
-    els.watchlistPanel.innerHTML = '<div class="muted">No watchlist data.</div>';
+  for (const u of tryUrls) {
+    try {
+      const resp = await fetch(u);
+      if (!resp.ok) throw new Error(`proxy failed: ${resp.status}`);
+      const html = await resp.text();
+
+      const doc = new DOMParser().parseFromString(html, 'text/html');
+      const title = (doc.querySelector('title')?.textContent || '').trim();
+
+      const paragraphs = Array.from(doc.querySelectorAll('p'))
+        .map(p => (p.textContent || '').trim())
+        .filter(Boolean)
+        .filter(t => t.length > 40)
+        .slice(0, 10);
+
+      const body = paragraphs.join(' ');
+      if (title || body) {
+        return {
+          title,
+          text: body || title
+        };
+      }
+    } catch (err) {
+      lastErr = err;
+    }
   }
+
+  throw lastErr || new Error('url fetch failed');
+}
+
+function buildManualArchivedEvent({ text, url, fetchedTitle, analysisResult }) {
+  const now = new Date().toISOString();
+
+  return {
+    id: `manual_${Date.now()}`,
+    company: analysisResult.primary?.[0] || 'MANUAL',
+    source_company: analysisResult.primary?.[0] || 'MANUAL',
+    source_kind: 'manual_archive',
+    event_type: analysisResult.eventType || 'Manual analysis',
+    type: analysisResult.eventType || 'Manual analysis',
+    title: fetchedTitle || text.slice(0, 120) || 'Manual event',
+    headline: fetchedTitle || text.slice(0, 120) || 'Manual event',
+    text: text,
+    raw_text: text,
+    published_at: now,
+    datetime: now,
+    source: url ? 'Manual URL analysis' : 'Manual text analysis',
+    url: url || '#',
+    chain_buckets: analysisResult.chainBuckets || [],
+    primary_beneficiaries: analysisResult.primary || [],
+    secondary_beneficiaries: analysisResult.secondary || [],
+    keyword_hits: analysisResult.keywordHits || [],
+    sentiment: analysisResult.sentiment || 'mixed',
+    factor_impact: analysisResult.factorImpact || {},
+    why_it_matters: analysisResult.why || '',
+    analysis: {
+      sentiment: analysisResult.sentiment || 'mixed',
+      direct_score: analysisResult.primary?.length ? 68 : 52,
+      matched_keywords: analysisResult.keywordHits || [],
+      factor_impact: analysisResult.factorImpact || {},
+      readthrough: (analysisResult.secondary || []).slice(0, 3).map((x, i) => ({
+        ticker: x,
+        score: 62 - i * 6,
+        summary: `Manual analyzed event may have readthrough into ${x}.`
+      }))
+    }
+  };
+}
+
+function renderStaticPanels() {
+  const sources = (state.data && state.data.source_configs) || [];
+
+  els.systemStatus.innerHTML = sources.length
+    ? sources.map(src => `
+        <div class="status-row">
+          <div>
+            <div><strong>${src.name || ''}</strong></div>
+            <div class="muted">${src.type || ''}</div>
+          </div>
+          <div class="badge ${src.status === 'Live connected' ? 'green' : 'amber'}">${src.status || 'Unknown'}</div>
+        </div>
+      `).join('')
+    : '<div class="muted">No live source status.</div>';
 }
 
 function renderTickerGroups() {
@@ -582,22 +576,6 @@ function renderTickerGroups() {
   }
 
   els.tickerGroups.innerHTML = html || '<div class="muted">No grouped tickers yet.</div>';
-}
-
-function renderStaticPanels() {
-  const sources = (state.data && state.data.source_configs) || [];
-
-  els.systemStatus.innerHTML = sources.length
-    ? sources.map(src => `
-        <div class="status-row">
-          <div>
-            <div><strong>${src.name || ''}</strong></div>
-            <div class="muted">${src.type || ''}</div>
-          </div>
-          <div class="badge ${src.status === 'Live connected' ? 'green' : 'amber'}">${src.status || 'Unknown'}</div>
-        </div>
-      `).join('')
-    : '<div class="muted">No live source status.</div>';
 }
 
 function renderLowerPanels() {
@@ -822,7 +800,7 @@ function renderDetail() {
 
     <div class="analyzer-section">
       <div class="analyzer-title">Why it matters</div>
-      <div class="muted">${event.why_it_matters || 'No explanation generated yet.'}</div>
+      <div class="manual-source-box">${event.why_it_matters || 'No explanation generated yet.'}</div>
     </div>
 
     <div class="factor-grid">
@@ -835,38 +813,16 @@ function renderDetail() {
 }
 
 function analyzeManualEvent(text) {
-  const lower = text.toLowerCase();
-  const matchedBuckets = CHAIN_RULES.filter(rule => rule.keywords.some(k => lower.includes(k)));
-
-  const chainBuckets = matchedBuckets.map(r => r.label);
-  const primary = [...new Set(matchedBuckets.flatMap(r => r.primary))];
-  const secondary = [...new Set(matchedBuckets.flatMap(r => r.secondary))];
-  const keywordHits = [...new Set(matchedBuckets.flatMap(r => r.keywords.filter(k => lower.includes(k))))];
-
-  let sentiment = 'mixed';
-  if (keywordHits.length >= 2) sentiment = 'bullish';
-
-  const factorImpact = { tam: 'medium', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'medium' };
-  matchedBuckets.forEach(rule => {
-    Object.entries(rule.factors).forEach(([k, v]) => {
-      if (v === 'high') factorImpact[k] = 'high';
-    });
-  });
-
-  let why = 'This language does not yet strongly map to a single AI chain bucket.';
-  if (chainBuckets.length) {
-    why = `The language most directly maps to ${chainBuckets.join(', ')}. Primary beneficiaries are ${primary.join(', ') || 'unclear'}, with secondary readthrough into ${secondary.join(', ') || 'unclear'}.`;
-  }
-
+  const cls = classify(text);
   return {
     eventType: detectEventType(text),
-    sentiment,
-    chainBuckets,
-    primary,
-    secondary,
-    keywordHits,
-    factorImpact,
-    why
+    sentiment: cls.sentiment,
+    chainBuckets: cls.chain_buckets,
+    primary: cls.primary_beneficiaries,
+    secondary: cls.secondary_beneficiaries,
+    keywordHits: cls.keyword_hits,
+    factorImpact: cls.factor_impact,
+    why: cls.why_it_matters
   };
 }
 
@@ -960,6 +916,45 @@ function renderAnalyzerResult(result, rawText, sourceUrl = '', fetchedTitle = ''
   `;
 }
 
+function buildManualArchivedEvent({ text, url, fetchedTitle, analysisResult }) {
+  const now = new Date().toISOString();
+
+  return {
+    id: `manual_${Date.now()}`,
+    company: analysisResult.primary?.[0] || 'MANUAL',
+    source_company: analysisResult.primary?.[0] || 'MANUAL',
+    source_kind: 'manual_archive',
+    event_type: analysisResult.eventType || 'Manual analysis',
+    type: analysisResult.eventType || 'Manual analysis',
+    title: fetchedTitle || text.slice(0, 120) || 'Manual event',
+    headline: fetchedTitle || text.slice(0, 120) || 'Manual event',
+    text: text,
+    raw_text: text,
+    published_at: now,
+    datetime: now,
+    source: url ? 'Manual URL analysis' : 'Manual text analysis',
+    url: url || '#',
+    chain_buckets: analysisResult.chainBuckets || [],
+    primary_beneficiaries: analysisResult.primary || [],
+    secondary_beneficiaries: analysisResult.secondary || [],
+    keyword_hits: analysisResult.keywordHits || [],
+    sentiment: analysisResult.sentiment || 'mixed',
+    factor_impact: analysisResult.factorImpact || {},
+    why_it_matters: analysisResult.why || '',
+    analysis: {
+      sentiment: analysisResult.sentiment || 'mixed',
+      direct_score: analysisResult.primary?.length ? 68 : 52,
+      matched_keywords: analysisResult.keywordHits || [],
+      factor_impact: analysisResult.factorImpact || {},
+      readthrough: (analysisResult.secondary || []).slice(0, 3).map((x, i) => ({
+        ticker: x,
+        score: 62 - i * 6,
+        summary: `Manual analyzed event may have readthrough into ${x}.`
+      }))
+    }
+  };
+}
+
 function bindAnalyzer() {
   els.analyzeBtn.addEventListener('click', async () => {
     const typedText = els.manualInput.value.trim();
@@ -972,19 +967,19 @@ function bindAnalyzer() {
       try {
         const fetched = await fetchUrlContent(sourceUrl);
         fetchedTitle = fetched.title || '';
-        combinedText = [typedText, fetched.title, fetched.text].filter(Boolean).join(' ');
+        combinedText = [typedText, fetched.title, fetched.text].filter(Boolean).join(' ').trim();
       } catch (err) {
-        console.error(err);
-        renderAnalyzerResult({
-          eventType: 'Manual analysis error',
-          sentiment: 'mixed',
-          chainBuckets: [],
-          primary: [],
-          secondary: [],
-          keywordHits: [],
-          factorImpact: { tam: 'medium', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'medium' },
-          why: `URL fetch failed: ${err.message}`
-        }, typedText, sourceUrl, '');
+        const fallbackText = typedText || sourceUrl;
+        const result = analyzeManualEvent(fallbackText);
+        renderAnalyzerResult(
+          {
+            ...result,
+            why: `${result.why} URL fetch failed, so the analysis used the typed text or URL string only.`
+          },
+          fallbackText,
+          sourceUrl,
+          ''
+        );
         return;
       }
     }
@@ -1012,11 +1007,9 @@ function bindAnalyzer() {
     localStorage.setItem('manualArchivedEvents', JSON.stringify(state.manualArchivedEvents));
 
     ensureCompanyFilterOptions(getAllEvents());
-    applyFilters();
     els.companyFilter.value = 'ALL';
     state.selectedId = archivedEvent.id;
-    renderFeed();
-    renderDetail();
+    applyFilters();
   });
 
   els.clearAnalyzeBtn.addEventListener('click', () => {
