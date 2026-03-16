@@ -2,7 +2,8 @@ const state = {
   data: null,
   filteredEvents: [],
   selectedId: null,
-  customCompanies: JSON.parse(localStorage.getItem('customCompanies') || '[]')
+  customCompanies: [],
+  customEvents: []
 };
 
 const els = {
@@ -64,9 +65,11 @@ function scoreBoxHtml(score) {
 
 function sparklineSVG(series = []) {
   if (!series.length) return '<div class="muted">No intraday curve</div>';
+
   const min = Math.min(...series);
   const max = Math.max(...series);
   const range = Math.max(max - min, 0.0001);
+
   const points = series.map((v, i) => {
     const x = (i / Math.max(series.length - 1, 1)) * 100;
     const y = 36 - ((v - min) / range) * 32 + 4;
@@ -97,33 +100,306 @@ function ensureCompanyFilterOptions(events) {
   });
 }
 
-function maybeAddCustomCompany(term) {
-  const clean = term.trim();
-  if (!clean) return;
+function getAllEvents() {
+  return [
+    ...state.customEvents,
+    ...((state.data && state.data.events) || [])
+  ].sort((a, b) => {
+    const da = new Date(a.datetime || a.published_at || 0).getTime();
+    const db = new Date(b.datetime || b.published_at || 0).getTime();
+    return db - da;
+  });
+}
 
-  const upper = clean.toUpperCase();
-  const existing = new Set([
-    ...(state.data?.dashboard_scores || []).map(x => x.ticker),
-    ...state.customCompanies.map(x => x.ticker)
-  ]);
+function renderStoragePrices() {
+  const storage = state.data?.market?.storage_prices || {};
+  const rows = Object.entries(storage);
+  if (!rows.length) {
+    els.storagePrices.innerHTML = '<div class="muted">No storage price data.</div>';
+    return;
+  }
 
-  if (existing.has(upper)) return;
-  if (clean.length < 2) return;
+  els.storagePrices.innerHTML = rows.map(([k, v]) => `
+    <div class="storage-card">
+      <div><strong>${k.toUpperCase()} · ${v.source || 'Source'}</strong></div>
+      <div class="muted" style="margin-top:6px">
+        Latest: ${v.latest_price ?? 'N/A'} · Weekly: ${v.weekly_growth_pct ?? 'N/A'}% · Monthly: ${v.monthly_growth_pct ?? 'N/A'}%
+      </div>
+      <div class="muted" style="margin-top:4px">${v.status || ''}</div>
+    </div>
+  `).join('');
+}
 
-  const company = {
-    ticker: upper,
-    role: 'Custom / Added from search',
-    group: 'Custom Watchlist',
-    price: null,
-    change_pct: null,
-    series: []
+function detectEventType(text) {
+  const lower = text.toLowerCase();
+  for (const rule of EVENT_TYPE_RULES) {
+    if (rule.keywords.some(k => lower.includes(k))) return rule.type;
+  }
+  return 'General event / commentary';
+}
+
+function classify(text) {
+  const lower = text.toLowerCase();
+  const matchedRules = [];
+
+  for (const rule of CHAIN_RULES) {
+    const hits = rule.keywords.filter(k => lower.includes(k));
+    if (hits.length) matchedRules.push({ rule, hits });
+  }
+
+  const chainBuckets = matchedRules.map(x => x.rule.label);
+  const primary = [...new Set(matchedRules.flatMap(x => x.rule.primary))];
+  const secondary = [...new Set(matchedRules.flatMap(x => x.rule.secondary))].filter(x => !primary.includes(x));
+  const keywordHits = [...new Set(matchedRules.flatMap(x => x.hits))];
+
+  const sentiment = chainBuckets.length ? 'bullish' : 'mixed';
+
+  const factorImpact = {
+    tam: chainBuckets.length ? 'high' : 'medium',
+    shipment: 'medium',
+    gm: 'medium',
+    eps: 'medium',
+    timing: 'medium'
   };
 
-  state.customCompanies.push(company);
-  localStorage.setItem('customCompanies', JSON.stringify(state.customCompanies));
-  ensureCompanyFilterOptions(state.data?.events || []);
+  const why = chainBuckets.length
+    ? `This event maps most directly to ${chainBuckets.join(', ')}. Primary beneficiaries are ${primary.join(', ') || 'unclear'}, with secondary readthrough into ${secondary.join(', ') || 'unclear'}.`
+    : 'This event does not yet strongly map to a single AI chain bucket.';
+
+  return {
+    chain_buckets: chainBuckets,
+    primary_beneficiaries: primary,
+    secondary_beneficiaries: secondary,
+    keyword_hits: keywordHits,
+    sentiment,
+    factor_impact: factorImpact,
+    why_it_matters: why
+  };
+}
+
+function defaultCustomScore(changePct) {
+  if (changePct == null) return 45;
+  if (changePct >= 5) return 60;
+  if (changePct >= 2) return 55;
+  if (changePct <= -5) return 38;
+  if (changePct <= -2) return 42;
+  return 48;
+}
+
+async function fetchYahooChartSnapshot(ticker) {
+  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?range=1d&interval=5m&includePrePost=false`;
+  const resp = await fetch(url);
+  if (!resp.ok) throw new Error(`chart fetch failed: ${resp.status}`);
+  const data = await resp.json();
+
+  const result = data?.chart?.result?.[0];
+  if (!result) throw new Error('no chart result');
+
+  const closesRaw = result?.indicators?.quote?.[0]?.close || [];
+  const closes = closesRaw.filter(v => typeof v === 'number');
+
+  if (!closes.length) throw new Error('no intraday close series');
+
+  const meta = result.meta || {};
+  const regularPrice = typeof meta.regularMarketPrice === 'number' ? meta.regularMarketPrice : closes[closes.length - 1];
+  const previousClose = typeof meta.chartPreviousClose === 'number' ? meta.chartPreviousClose : closes[0];
+
+  let changePct = null;
+  if (previousClose && previousClose !== 0) {
+    changePct = Number((((regularPrice - previousClose) / previousClose) * 100).toFixed(2));
+  }
+
+  return {
+    ticker,
+    price: Number(regularPrice.toFixed(2)),
+    change_pct: changePct,
+    series: closes.slice(-78).map(x => Number(x.toFixed(2))),
+    status: 'front_end_live'
+  };
+}
+
+async function fetchYahooNews(ticker) {
+  const rssUrl = `https://feeds.finance.yahoo.com/rss/2.0/headline?s=${encodeURIComponent(ticker)}&region=US&lang=en-US`;
+  const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(rssUrl)}`;
+
+  const resp = await fetch(proxyUrl);
+  if (!resp.ok) throw new Error(`rss proxy failed: ${resp.status}`);
+
+  const xmlText = await resp.text();
+  const parser = new DOMParser();
+  const xml = parser.parseFromString(xmlText, 'text/xml');
+
+  const items = Array.from(xml.querySelectorAll('item')).slice(0, 6);
+  return items.map((item, idx) => ({
+    id: `custom_${ticker.toLowerCase()}_news_${idx + 1}`,
+    title: item.querySelector('title')?.textContent?.trim() || `${ticker} Yahoo Finance headline`,
+    url: item.querySelector('link')?.textContent?.trim() || '#',
+    published: item.querySelector('pubDate')?.textContent?.trim() || new Date().toISOString(),
+    source: 'Yahoo Finance News'
+  }));
+}
+
+function buildTempEventsFromNews(ticker, newsItems, marketSnapshot) {
+  return newsItems.map((news, idx) => {
+    const cls = classify(news.title);
+    const eventType = detectEventType(news.title);
+
+    return {
+      id: news.id || `custom_${ticker.toLowerCase()}_${idx + 1}`,
+      company: ticker,
+      source_company: ticker,
+      source_kind: 'front_end_temp_news',
+      event_type: eventType,
+      type: eventType,
+      title: news.title,
+      headline: news.title,
+      text: news.title,
+      raw_text: news.title,
+      published_at: news.published,
+      datetime: news.published,
+      source: news.source || 'Yahoo Finance News',
+      url: news.url || '#',
+      chain_buckets: cls.chain_buckets,
+      primary_beneficiaries: cls.primary_beneficiaries,
+      secondary_beneficiaries: cls.secondary_beneficiaries,
+      keyword_hits: cls.keyword_hits,
+      sentiment: cls.sentiment,
+      factor_impact: cls.factor_impact,
+      why_it_matters: cls.why_it_matters,
+      analysis: {
+        sentiment: cls.sentiment,
+        direct_score: defaultCustomScore(marketSnapshot?.change_pct),
+        matched_keywords: cls.keyword_hits,
+        factor_impact: cls.factor_impact,
+        readthrough: cls.secondary_beneficiaries.slice(0, 3).map((x, i) => ({
+          ticker: x,
+          score: 62 - i * 6,
+          summary: `${ticker} temporary news may have readthrough into ${x}.`
+        }))
+      }
+    };
+  });
+}
+
+function buildFallbackSyntheticEvent(ticker, marketSnapshot) {
+  const change = marketSnapshot?.change_pct;
+  const sentiment = change == null ? 'mixed' : (change >= 0 ? 'bullish' : 'mixed');
+  const score = defaultCustomScore(change);
+
+  return [{
+    id: `custom_${ticker.toLowerCase()}_synthetic_1`,
+    company: ticker,
+    source_company: ticker,
+    source_kind: 'front_end_generated',
+    event_type: 'Generated market snapshot',
+    type: 'Generated market snapshot',
+    title: `${ticker} temporary market snapshot`,
+    headline: `${ticker} temporary market snapshot`,
+    text: `${ticker} has been added from front-end search. No Yahoo Finance news was retrieved, so this event is generated from market data only.`,
+    raw_text: `${ticker} temporary market snapshot`,
+    published_at: new Date().toISOString(),
+    datetime: new Date().toISOString(),
+    source: 'Front-end generated event',
+    url: '#',
+    chain_buckets: [],
+    primary_beneficiaries: [ticker],
+    secondary_beneficiaries: [],
+    keyword_hits: [],
+    sentiment,
+    factor_impact: {
+      tam: 'medium',
+      shipment: 'medium',
+      gm: 'medium',
+      eps: 'medium',
+      timing: 'medium'
+    },
+    why_it_matters: `No Yahoo Finance news was retrieved for ${ticker}. This temporary event is generated so the ticker can still be tracked in the current browser session.`,
+    analysis: {
+      sentiment,
+      direct_score: score,
+      matched_keywords: [],
+      factor_impact: {
+        tam: 'medium',
+        shipment: 'medium',
+        gm: 'medium',
+        eps: 'medium',
+        timing: 'medium'
+      },
+      readthrough: []
+    }
+  }];
+}
+
+function upsertCustomCompany(snapshot) {
+  const idx = state.customCompanies.findIndex(x => x.ticker === snapshot.ticker);
+  const company = {
+    ticker: snapshot.ticker,
+    role: 'Custom / Added from front-end search',
+    group: 'Custom Watchlist',
+    price: snapshot.price ?? null,
+    change_pct: snapshot.change_pct ?? null,
+    series: snapshot.series || [],
+    score: defaultCustomScore(snapshot.change_pct)
+  };
+
+  if (idx >= 0) state.customCompanies[idx] = company;
+  else state.customCompanies.push(company);
+}
+
+function upsertCustomEvents(ticker, events) {
+  state.customEvents = state.customEvents.filter(e => e.company !== ticker);
+  state.customEvents.unshift(...events);
+}
+
+async function quickLookupTicker(term) {
+  const ticker = term.trim().toUpperCase();
+  if (!ticker) return;
+
+  els.dataStamp.textContent = `Looking up ${ticker}...`;
+
+  let marketSnapshot = {
+    ticker,
+    price: null,
+    change_pct: null,
+    series: [],
+    status: 'lookup_failed'
+  };
+
+  try {
+    marketSnapshot = await fetchYahooChartSnapshot(ticker);
+  } catch (err) {
+    console.warn('chart lookup failed', ticker, err);
+  }
+
+  upsertCustomCompany(marketSnapshot);
+
+  let customNewsEvents = [];
+  try {
+    const newsItems = await fetchYahooNews(ticker);
+    if (newsItems.length) {
+      customNewsEvents = buildTempEventsFromNews(ticker, newsItems, marketSnapshot);
+    }
+  } catch (err) {
+    console.warn('yahoo news failed', ticker, err);
+  }
+
+  if (!customNewsEvents.length) {
+    customNewsEvents = buildFallbackSyntheticEvent(ticker, marketSnapshot);
+  }
+
+  upsertCustomEvents(ticker, customNewsEvents);
+
+  ensureCompanyFilterOptions(getAllEvents());
   renderTickerGroups();
   renderLowerPanels();
+  applyFilters();
+
+  els.companyFilter.value = ticker;
+  applyFilters();
+
+  els.dataStamp.textContent = state.data?.generated_at
+    ? `Updated ${state.data.generated_at} · Added temporary ticker ${ticker}`
+    : `Temporary ticker ${ticker} added`;
 }
 
 async function loadData() {
@@ -147,7 +423,7 @@ async function loadData() {
       ? `Updated ${state.data.generated_at}`
       : 'Live data loaded';
 
-    ensureCompanyFilterOptions(state.data.events);
+    ensureCompanyFilterOptions(getAllEvents());
     renderStoragePrices();
     renderTickerGroups();
     renderStaticPanels();
@@ -167,28 +443,9 @@ async function loadData() {
   }
 }
 
-function renderStoragePrices() {
-  const storage = state.data?.market?.storage_prices || {};
-  const rows = Object.entries(storage);
-  if (!rows.length) {
-    els.storagePrices.innerHTML = '<div class="muted">No storage price data.</div>';
-    return;
-  }
-
-  els.storagePrices.innerHTML = rows.map(([k, v]) => `
-    <div class="storage-card">
-      <div><strong>${k.toUpperCase()} · ${v.source || 'Source'}</strong></div>
-      <div class="muted" style="margin-top:6px">
-        Latest: ${v.latest_price ?? 'N/A'} · Weekly: ${v.weekly_growth_pct ?? 'N/A'}% · Monthly: ${v.monthly_growth_pct ?? 'N/A'}%
-      </div>
-      <div class="muted" style="margin-top:4px">${v.status || ''}</div>
-    </div>
-  `).join('');
-}
-
 function renderTickerGroups() {
-  const scores = state.data.dashboard_scores || [];
-  const groups = state.data.ticker_groups || {};
+  const scores = (state.data && state.data.dashboard_scores) || [];
+  const groups = (state.data && state.data.ticker_groups) || {};
   const scoreMap = Object.fromEntries(scores.map(x => [x.ticker, x]));
   const custom = state.customCompanies;
 
@@ -204,6 +461,7 @@ function renderTickerGroups() {
             const ch = item.change_pct;
             const chClass = ch == null ? 'change-flat' : (ch >= 0 ? 'change-up' : 'change-down');
             const chText = ch == null ? 'N/A' : `${ch}%`;
+
             return `
               <div class="ticker-card">
                 <div class="ticker-top">
@@ -229,19 +487,26 @@ function renderTickerGroups() {
       <div class="group-block">
         <div class="group-title">Custom Watchlist</div>
         <div class="ticker-row">
-          ${custom.map(item => `
-            <div class="ticker-card">
-              <div class="ticker-top">
-                <div class="ticker-name">${item.ticker}</div>
-                <div class="badge amber">Custom</div>
+          ${custom.map(item => {
+            const ch = item.change_pct;
+            const chClass = ch == null ? 'change-flat' : (ch >= 0 ? 'change-up' : 'change-down');
+            const chText = ch == null ? 'N/A' : `${ch}%`;
+
+            return `
+              <div class="ticker-card">
+                <div class="ticker-top">
+                  <div class="ticker-name">${item.ticker}</div>
+                  <div class="badge amber">${item.score ?? 45}</div>
+                </div>
+                <div class="price-line">
+                  <div class="price">${item.price ?? '--'}</div>
+                  <div class="${chClass}">${chText}</div>
+                </div>
+                <div class="muted" style="margin-bottom:8px">${item.role}</div>
+                ${sparklineSVG(item.series || [])}
               </div>
-              <div class="price-line">
-                <div class="price">--</div>
-                <div class="change-flat">N/A</div>
-              </div>
-              <div class="muted">${item.role}</div>
-            </div>
-          `).join('')}
+            `;
+          }).join('')}
         </div>
       </div>
     `;
@@ -251,7 +516,7 @@ function renderTickerGroups() {
 }
 
 function renderStaticPanels() {
-  const sources = state.data.source_configs || [];
+  const sources = (state.data && state.data.source_configs) || [];
 
   els.systemStatus.innerHTML = sources.length
     ? sources.map(src => `
@@ -267,12 +532,16 @@ function renderStaticPanels() {
 }
 
 function renderLowerPanels() {
-  const bridge = state.data.eps_bridge || {};
-  const alerts = state.data.alerts || [];
-  const sources = state.data.source_configs || [];
+  const bridge = (state.data && state.data.eps_bridge) || {};
+  const alerts = (state.data && state.data.alerts) || [];
+  const sources = (state.data && state.data.source_configs) || [];
   const watchlist = [
-    ...(state.data.extended_watchlist || []),
-    ...state.customCompanies.map(x => ({ ticker: x.ticker, role: x.role, phase: 'Custom Watchlist' }))
+    ...(((state.data && state.data.extended_watchlist) || []).map(x => ({ ...x }))),
+    ...state.customCompanies.map(x => ({
+      ticker: x.ticker,
+      role: x.role,
+      phase: 'Front-end temporary custom'
+    }))
   ];
 
   const bridgeEntries = Object.entries(bridge);
@@ -344,7 +613,7 @@ function applyFilters() {
   const company = els.companyFilter.value;
   const q = els.searchInput.value.trim().toLowerCase();
 
-  state.filteredEvents = (state.data.events || []).filter(event => {
+  state.filteredEvents = getAllEvents().filter(event => {
     const companyMatch = company === 'ALL' || event.company === company;
     const text = `${event.title || ''} ${event.text || ''} ${event.why_it_matters || ''}`.toLowerCase();
     const queryMatch = !q || text.includes(q);
@@ -436,7 +705,7 @@ function renderDetail() {
     <div class="detail-head">
       <div>
         <div class="badges">
-          <span class="badge blue">${event.company || event.source_company || ''}</span>
+          <span class="badge blue">${event.company || ''}</span>
           <span class="badge">${event.type || event.event_type || 'Event'}</span>
           <span class="badge ${badgeClass(analysis.sentiment || event.sentiment || 'mixed')}">${cap(analysis.sentiment || event.sentiment || 'mixed')}</span>
           <span class="badge">${event.source_kind || 'source'}</span>
@@ -494,14 +763,6 @@ function renderDetail() {
     <div class="section-title" style="margin-top:20px">Cross-ticker readthrough</div>
     <div class="readthrough">${readthroughHtml}</div>
   `;
-}
-
-function detectEventType(text) {
-  const lower = text.toLowerCase();
-  for (const rule of EVENT_TYPE_RULES) {
-    if (rule.keywords.some(k => lower.includes(k))) return rule.type;
-  }
-  return 'General event / commentary';
 }
 
 function analyzeManualEvent(text) {
@@ -635,11 +896,14 @@ function initTabs() {
 }
 
 els.companyFilter.addEventListener('change', applyFilters);
-
 els.searchInput.addEventListener('input', applyFilters);
-els.searchInput.addEventListener('keydown', (e) => {
+
+els.searchInput.addEventListener('keydown', async (e) => {
   if (e.key === 'Enter') {
-    maybeAddCustomCompany(els.searchInput.value);
+    const val = els.searchInput.value.trim();
+    if (val) {
+      await quickLookupTicker(val);
+    }
   }
 });
 
