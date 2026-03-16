@@ -94,8 +94,8 @@ def fetch_yf_snapshot(ticker: str):
 
 def extract_trendforce_latest_price(text: str):
     """
-    只在更像“价格字段”的上下文里找数字。
-    找不到就返回 None，宁可空，不乱报。
+    TrendForce 公网页面里很容易抓到年份、导航数字。
+    抓不到就返回 None，宁可空，不乱报。
     """
     if not text:
         return None
@@ -103,9 +103,9 @@ def extract_trendforce_latest_price(text: str):
     lower = text.lower()
 
     patterns = [
-        r"(?:spot price|contract price|average price|latest price|price trend)[^0-9]{0,50}(\d+(?:\.\d+)?)",
+        r"(?:spot price|contract price|average price|latest price)[^0-9]{0,20}(\d+(?:\.\d+)?)",
         r"(?:usd|us\$|\$)\s*(\d+(?:\.\d+)?)",
-        r"(\d+(?:\.\d+)?)\s*(?:usd|us\$)",
+        r"(\d+(?:\.\d+)?)\s*(?:usd|us\$)"
     ]
 
     candidates = []
@@ -117,13 +117,12 @@ def extract_trendforce_latest_price(text: str):
             except Exception:
                 pass
 
-    # 过滤太小的数字，避免再抓到 1 / 2 / 10 这种导航数字
+    candidates = [x for x in candidates if x < 1900]
     candidates = [x for x in candidates if x >= 50]
 
     if not candidates:
         return None
 
-    # 取第一个较合理值
     return candidates[0]
 
 
