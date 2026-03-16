@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Chain Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">AI Chain Tracker · NVDA / MU / SNDK</div>
+      <h1>Realtime keyword and earnings readthrough dashboard</h1>
+      <p class="subhead">Tracks official releases, earnings updates, and event language from NVIDIA, Micron, and Sandisk. Scores direct impact, cross-ticker readthrough, and factor sensitivity.</p>
+    </div>
+    <div class="topbar-actions">
+      <button id="refreshBtn" class="primary">Refresh data</button>
+    </div>
+  </header>
+
+  <section class="controls card">
+    <div class="control-group">
+      <label for="companyFilter">Company</label>
+      <select id="companyFilter">
+        <option value="ALL">All companies</option>
+        <option value="NVDA">NVDA</option>
+        <option value="MU">MU</option>
+        <option value="SNDK">SNDK</option>
+      </select>
+    </div>
+    <div class="control-group search">
+      <label for="searchInput">Search events / keywords</label>
+      <input id="searchInput" type="text" placeholder="AI factory, HBM, context memory, gross margin..." />
+    </div>
+    <div class="control-group">
+      <label>Data source</label>
+      <div id="dataStamp" class="muted">Waiting for data…</div>
+    </div>
+  </section>
+
+  <section class="grid dashboard-grid">
+    <div class="card summary-card">
+      <div class="card-title">Signal score</div>
+      <div id="scoreCards" class="score-cards"></div>
+    </div>
+    <div class="card summary-card">
+      <div class="card-title">System status</div>
+      <div id="systemStatus" class="system-status"></div>
+    </div>
+  </section>
+
+  <main class="grid main-grid">
+    <section class="card feed-column">
+      <div class="feed-header">
+        <div class="card-title">Event feed</div>
+        <div id="feedCount" class="muted"></div>
+      </div>
+      <div id="feed" class="feed"></div>
+    </section>
+
+    <section class="detail-column">
+      <div class="card detail-card">
+        <div id="detail"></div>
+      </div>
+
+      <div class="tab-shell card">
+        <div class="tabs">
+          <button class="tab active" data-tab="bridge">EPS bridge</button>
+          <button class="tab" data-tab="alerts">Alerts</button>
+          <button class="tab" data-tab="sources">Sources</button>
+          <button class="tab" data-tab="watchlist">Watchlist</button>
+        </div>
+        <div class="tab-panels">
+          <div class="tab-panel active" id="bridgePanel"></div>
+          <div class="tab-panel" id="alertsPanel"></div>
+          <div class="tab-panel" id="sourcesPanel"></div>
+          <div class="tab-panel" id="watchlistPanel"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer muted">
+    Built as a local-first tracker. Frontend reads <code>data/events.json</code>. The Python scripts update that file from official IR sources and can be scheduled with GitHub Actions.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

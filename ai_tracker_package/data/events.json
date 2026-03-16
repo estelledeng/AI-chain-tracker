@@ -1,0 +1,225 @@
+{
+  "generated_at": "2026-03-16 12:20 JST",
+  "dashboard_scores": [
+    {"ticker": "NVDA", "score": 86, "role": "Platform / AI Factory Architecture"},
+    {"ticker": "MU", "score": 81, "role": "HBM / DRAM / NAND"},
+    {"ticker": "SNDK", "score": 78, "role": "NAND / SSD / Inference Storage Tier"}
+  ],
+  "source_configs": [
+    {
+      "name": "NVIDIA IR",
+      "type": "Press releases / events / financial reports",
+      "status": "Ready to connect",
+      "endpoint": "/api/sources/nvda",
+      "url": "https://investor.nvidia.com/home/default.aspx"
+    },
+    {
+      "name": "Micron IR",
+      "type": "Investor relations / latest news / quarterly results",
+      "status": "Ready to connect",
+      "endpoint": "/api/sources/mu",
+      "url": "https://investors.micron.com/"
+    },
+    {
+      "name": "Sandisk IR",
+      "type": "Investor relations / news releases / presentations",
+      "status": "Ready to connect",
+      "endpoint": "/api/sources/sndk",
+      "url": "https://investor.sandisk.com/"
+    },
+    {
+      "name": "Transcript parser",
+      "type": "Keynote / earnings call / analyst Q&A parsing",
+      "status": "Needs parser",
+      "endpoint": "/api/transcripts/parse",
+      "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/default.aspx"
+    }
+  ],
+  "alerts": [
+    {
+      "title": "NVDA mentions context memory or KV cache",
+      "scope": "NVDA → SNDK / MU",
+      "condition": "Trigger when transcript contains context memory, KV cache, memory hierarchy, or AI-native storage.",
+      "action": "Send priority alert and recalculate readthrough scores.",
+      "severity": "High"
+    },
+    {
+      "title": "MU raises HBM shipment or gross margin commentary",
+      "scope": "MU direct / NVDA readthrough",
+      "condition": "Trigger when management upgrades HBM volumes, pricing discipline, or gross margin trajectory.",
+      "action": "Update EPS bridge and mark near-term earnings sensitivity higher.",
+      "severity": "High"
+    },
+    {
+      "title": "SNDK mentions design wins or customer sampling",
+      "scope": "SNDK direct / NVDA architecture fit",
+      "condition": "Trigger on design win, sampling, qualification, or production-ramp language.",
+      "action": "Promote roadmap item into commercialization watchlist.",
+      "severity": "Medium"
+    },
+    {
+      "title": "Any company cites slower deployment or delayed conversion",
+      "scope": "All tickers",
+      "condition": "Trigger on slower ramp, customer digestion, delay, qualification pushout, or lower shipment timing.",
+      "action": "Flag as bearish timing risk and reduce delivery-speed score.",
+      "severity": "High"
+    }
+  ],
+  "eps_bridge": {
+    "NVDA": [
+      {"label": "AI factory / inference demand", "effect": "+ Revenue", "note": "Broader system demand expands platform revenue opportunity."},
+      {"label": "Deployment speed", "effect": "+ / - Timing", "note": "Validated deployment accelerates conversion; delays push revenue right."},
+      {"label": "Networking + memory attach", "effect": "+ Mix / GM", "note": "Higher full-stack attach can support richer blended margins."}
+    ],
+    "MU": [
+      {"label": "HBM shipments", "effect": "+ Revenue", "note": "Shipment growth directly lifts AI memory revenue."},
+      {"label": "Pricing discipline", "effect": "+ GM", "note": "Constructive pricing improves gross margin and EPS conversion."},
+      {"label": "AI server memory intensity", "effect": "+ Mix", "note": "Richer data-center mix can shift profitability upward."}
+    ],
+    "SNDK": [
+      {"label": "Context memory relevance", "effect": "+ Narrative / TAM", "note": "Can rerate SNDK from commodity NAND to AI storage layer."},
+      {"label": "Design wins / sampling", "effect": "+ Revenue timing", "note": "Commercial validation is required for roadmap to become earnings."},
+      {"label": "Tiered memory adoption", "effect": "+ Mix", "note": "Higher-value flash use cases can lift product mix and margin quality."}
+    ]
+  },
+  "extended_watchlist": [
+    {"ticker": "ANET", "role": "Networking / scale-out fabric", "phase": "Next add"},
+    {"ticker": "VRT", "role": "Power / cooling / deployment bottleneck", "phase": "Next add"},
+    {"ticker": "MRVL", "role": "Interconnect / custom infrastructure", "phase": "Next add"},
+    {"ticker": "TSM", "role": "Advanced manufacturing / packaging readthrough", "phase": "Next add"},
+    {"ticker": "LITE", "role": "Optics / AI data center connectivity", "phase": "Later add"},
+    {"ticker": "COHR", "role": "Optics / package integration", "phase": "Later add"}
+  ],
+  "events": [
+    {
+      "id": "nvda-gtc-001",
+      "datetime": "2026-03-17 03:10 JST",
+      "company": "NVDA",
+      "type": "Keynote",
+      "title": "NVIDIA expands AI factory framing and highlights inference economics",
+      "text": "Jensen emphasizes AI factory buildout, inference economics, system deployment, memory hierarchy, and tokens per second improvements.",
+      "source": "GTC keynote mock summary",
+      "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/default.aspx",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 88,
+        "matched_keywords": ["AI factory", "inference economics", "memory hierarchy", "tokens per second"],
+        "factor_impact": {
+          "market_size": "High",
+          "delivery_volume": "Medium",
+          "delivery_speed": "High",
+          "gross_margin": "Medium",
+          "eps": "Medium"
+        },
+        "readthrough": [
+          {"ticker": "MU", "score": 79, "summary": "Readthrough via HBM, DRAM/NAND mix, and AI server memory intensity."},
+          {"ticker": "SNDK", "score": 73, "summary": "Readthrough via NAND/SSD demand, context memory, and inference storage tier relevance."}
+        ]
+      }
+    },
+    {
+      "id": "nvda-icms-002",
+      "datetime": "2026-01-06 00:15 JST",
+      "company": "NVDA",
+      "type": "Product Launch",
+      "title": "Inference context memory platform reframes storage as AI infrastructure",
+      "text": "NVIDIA introduces AI-native storage language around context memory, KV cache, and power efficiency for large-scale inference systems.",
+      "source": "NVIDIA release",
+      "url": "https://investor.nvidia.com/news/press-release-details/",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 85,
+        "matched_keywords": ["context memory", "KV cache", "AI-native storage", "power efficiency"],
+        "factor_impact": {
+          "market_size": "High",
+          "delivery_volume": "Low",
+          "delivery_speed": "Medium",
+          "gross_margin": "Low",
+          "eps": "Medium"
+        },
+        "readthrough": [
+          {"ticker": "SNDK", "score": 92, "summary": "Strongest readthrough via NAND/SSD relevance to context memory and inference storage layers."},
+          {"ticker": "MU", "score": 67, "summary": "Positive readthrough via broader memory hierarchy and AI storage stack expansion."}
+        ]
+      }
+    },
+    {
+      "id": "mu-earnings-003",
+      "datetime": "2026-03-19 04:30 JST",
+      "company": "MU",
+      "type": "Earnings",
+      "title": "Micron reports stronger HBM mix and disciplined pricing",
+      "text": "Management highlights HBM shipments, improving gross margin, pricing discipline, and stronger data-center mix.",
+      "source": "Micron earnings mock summary",
+      "url": "https://investors.micron.com/quarterly-results",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 90,
+        "matched_keywords": ["HBM", "shipments", "gross margin", "pricing discipline"],
+        "factor_impact": {
+          "market_size": "Medium",
+          "delivery_volume": "High",
+          "delivery_speed": "Medium",
+          "gross_margin": "High",
+          "eps": "High"
+        },
+        "readthrough": [
+          {"ticker": "NVDA", "score": 72, "summary": "Positive demand confirmation for AI server platform intensity and memory-rich deployments."},
+          {"ticker": "SNDK", "score": 48, "summary": "Mixed readthrough. Positive on memory spend, but dollars may skew to HBM over flash in the near term."}
+        ]
+      }
+    },
+    {
+      "id": "sndk-roadmap-004",
+      "datetime": "2026-03-10 21:00 JST",
+      "company": "SNDK",
+      "type": "Product Update",
+      "title": "Sandisk updates high-bandwidth flash roadmap for inference systems",
+      "text": "Sandisk discusses high-bandwidth flash, memory wall constraints, design win progress, and tiered memory relevance for inference deployments.",
+      "source": "Sandisk roadmap mock summary",
+      "url": "https://investor.sandisk.com/news-events/presentations",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 74,
+        "matched_keywords": ["memory wall", "design win", "tiered memory"],
+        "factor_impact": {
+          "market_size": "Medium",
+          "delivery_volume": "Low",
+          "delivery_speed": "Low",
+          "gross_margin": "Medium",
+          "eps": "Low"
+        },
+        "readthrough": [
+          {"ticker": "NVDA", "score": 58, "summary": "Helpful if NVIDIA pushes inference memory hierarchy further into system architecture."},
+          {"ticker": "MU", "score": 44, "summary": "Mixed. Supports broader memory hierarchy, but may compete with some near-memory budgets."}
+        ]
+      }
+    },
+    {
+      "id": "nvda-qa-005",
+      "datetime": "2026-03-18 00:12 JST",
+      "company": "NVDA",
+      "type": "Analyst Q&A",
+      "title": "Management says deployment speed increasingly depends on memory and networking balance",
+      "text": "Analysts push on deployment speed, revenue timing, and AI factory conversion. Management mentions memory hierarchy and system bottlenecks.",
+      "source": "Financial analyst Q&A mock notes",
+      "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/default.aspx",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 82,
+        "matched_keywords": ["deployment speed", "AI factory", "memory hierarchy"],
+        "factor_impact": {
+          "market_size": "Medium",
+          "delivery_volume": "Medium",
+          "delivery_speed": "High",
+          "gross_margin": "Low",
+          "eps": "Medium"
+        },
+        "readthrough": [
+          {"ticker": "MU", "score": 68, "summary": "Supports the idea that memory intensity and balance matter to deployment conversion."},
+          {"ticker": "SNDK", "score": 61, "summary": "Helpful if storage-tier language becomes more explicit in follow-on commentary."}
+        ]
+      }
+    }
+  ]
+}
