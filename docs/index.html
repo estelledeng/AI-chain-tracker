@@ -57,6 +57,29 @@
     </div>
   </section>
 
+  <section class="card analyzer-card">
+  <div class="section-head">
+    <h2>Manual Event Analyzer</h2>
+    <p>Paste one sentence, a keynote excerpt, earnings language, partnership headline, or news summary. The system will classify the event, map it to the AI chain, and rank likely beneficiaries.</p>
+  </div>
+
+  <div class="analyzer-grid">
+    <div>
+      <label class="field-label" for="manualInput">Event text / transcript / headline</label>
+      <textarea id="manualInput" rows="8" placeholder="Example: Jensen says future AI factories depend on memory hierarchy, context memory, and efficient KV cache reuse."></textarea>
+
+      <div class="analyzer-actions">
+        <button id="analyzeBtn" class="primary-btn">Analyze event</button>
+        <button id="clearAnalyzeBtn" class="secondary-btn">Clear</button>
+      </div>
+    </div>
+
+    <div id="analyzerOutput" class="analyzer-output">
+      <div class="muted">No manual event analyzed yet.</div>
+    </div>
+  </div>
+</section>
+
   <main class="grid main-grid">
     <section class="card feed-column">
       <div class="feed-header">
