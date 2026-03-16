@@ -1,9 +1,21 @@
 {
-  "generated_at": "2026-03-16 12:20 JST",
+  "generated_at": "2026-03-16 08:01 UTC",
   "dashboard_scores": [
-    {"ticker": "NVDA", "score": 86, "role": "Platform / AI Factory Architecture"},
-    {"ticker": "MU", "score": 81, "role": "HBM / DRAM / NAND"},
-    {"ticker": "SNDK", "score": 78, "role": "NAND / SSD / Inference Storage Tier"}
+    {
+      "ticker": "NVDA",
+      "score": 86,
+      "role": "Platform / AI Factory Architecture"
+    },
+    {
+      "ticker": "MU",
+      "score": 81,
+      "role": "HBM / DRAM / NAND"
+    },
+    {
+      "ticker": "SNDK",
+      "score": 78,
+      "role": "NAND / SSD / Inference Storage Tier"
+    }
   ],
   "source_configs": [
     {
@@ -67,28 +79,88 @@
   ],
   "eps_bridge": {
     "NVDA": [
-      {"label": "AI factory / inference demand", "effect": "+ Revenue", "note": "Broader system demand expands platform revenue opportunity."},
-      {"label": "Deployment speed", "effect": "+ / - Timing", "note": "Validated deployment accelerates conversion; delays push revenue right."},
-      {"label": "Networking + memory attach", "effect": "+ Mix / GM", "note": "Higher full-stack attach can support richer blended margins."}
+      {
+        "label": "AI factory / inference demand",
+        "effect": "+ Revenue",
+        "note": "Broader system demand expands platform revenue opportunity."
+      },
+      {
+        "label": "Deployment speed",
+        "effect": "+ / - Timing",
+        "note": "Validated deployment accelerates conversion; delays push revenue right."
+      },
+      {
+        "label": "Networking + memory attach",
+        "effect": "+ Mix / GM",
+        "note": "Higher full-stack attach can support richer blended margins."
+      }
     ],
     "MU": [
-      {"label": "HBM shipments", "effect": "+ Revenue", "note": "Shipment growth directly lifts AI memory revenue."},
-      {"label": "Pricing discipline", "effect": "+ GM", "note": "Constructive pricing improves gross margin and EPS conversion."},
-      {"label": "AI server memory intensity", "effect": "+ Mix", "note": "Richer data-center mix can shift profitability upward."}
+      {
+        "label": "HBM shipments",
+        "effect": "+ Revenue",
+        "note": "Shipment growth directly lifts AI memory revenue."
+      },
+      {
+        "label": "Pricing discipline",
+        "effect": "+ GM",
+        "note": "Constructive pricing improves gross margin and EPS conversion."
+      },
+      {
+        "label": "AI server memory intensity",
+        "effect": "+ Mix",
+        "note": "Richer data-center mix can shift profitability upward."
+      }
     ],
     "SNDK": [
-      {"label": "Context memory relevance", "effect": "+ Narrative / TAM", "note": "Can rerate SNDK from commodity NAND to AI storage layer."},
-      {"label": "Design wins / sampling", "effect": "+ Revenue timing", "note": "Commercial validation is required for roadmap to become earnings."},
-      {"label": "Tiered memory adoption", "effect": "+ Mix", "note": "Higher-value flash use cases can lift product mix and margin quality."}
+      {
+        "label": "Context memory relevance",
+        "effect": "+ Narrative / TAM",
+        "note": "Can rerate SNDK from commodity NAND to AI storage layer."
+      },
+      {
+        "label": "Design wins / sampling",
+        "effect": "+ Revenue timing",
+        "note": "Commercial validation is required for roadmap to become earnings."
+      },
+      {
+        "label": "Tiered memory adoption",
+        "effect": "+ Mix",
+        "note": "Higher-value flash use cases can lift product mix and margin quality."
+      }
     ]
   },
   "extended_watchlist": [
-    {"ticker": "ANET", "role": "Networking / scale-out fabric", "phase": "Next add"},
-    {"ticker": "VRT", "role": "Power / cooling / deployment bottleneck", "phase": "Next add"},
-    {"ticker": "MRVL", "role": "Interconnect / custom infrastructure", "phase": "Next add"},
-    {"ticker": "TSM", "role": "Advanced manufacturing / packaging readthrough", "phase": "Next add"},
-    {"ticker": "LITE", "role": "Optics / AI data center connectivity", "phase": "Later add"},
-    {"ticker": "COHR", "role": "Optics / package integration", "phase": "Later add"}
+    {
+      "ticker": "ANET",
+      "role": "Networking / scale-out fabric",
+      "phase": "Next add"
+    },
+    {
+      "ticker": "VRT",
+      "role": "Power / cooling / deployment bottleneck",
+      "phase": "Next add"
+    },
+    {
+      "ticker": "MRVL",
+      "role": "Interconnect / custom infrastructure",
+      "phase": "Next add"
+    },
+    {
+      "ticker": "TSM",
+      "role": "Advanced manufacturing / packaging readthrough",
+      "phase": "Next add"
+    },
+    {
+      "ticker": "LITE",
+      "role": "Optics / AI data center connectivity",
+      "phase": "Later add"
+    },
+    {
+      "ticker": "COHR",
+      "role": "Optics / package integration",
+      "phase": "Later add"
+    }
   ],
   "events": [
     {
@@ -103,7 +175,12 @@
       "analysis": {
         "sentiment": "bullish",
         "direct_score": 88,
-        "matched_keywords": ["AI factory", "inference economics", "memory hierarchy", "tokens per second"],
+        "matched_keywords": [
+          "AI factory",
+          "inference economics",
+          "memory hierarchy",
+          "tokens per second"
+        ],
         "factor_impact": {
           "market_size": "High",
           "delivery_volume": "Medium",
@@ -112,8 +189,16 @@
           "eps": "Medium"
         },
         "readthrough": [
-          {"ticker": "MU", "score": 79, "summary": "Readthrough via HBM, DRAM/NAND mix, and AI server memory intensity."},
-          {"ticker": "SNDK", "score": 73, "summary": "Readthrough via NAND/SSD demand, context memory, and inference storage tier relevance."}
+          {
+            "ticker": "MU",
+            "score": 79,
+            "summary": "Readthrough via HBM, DRAM/NAND mix, and AI server memory intensity."
+          },
+          {
+            "ticker": "SNDK",
+            "score": 73,
+            "summary": "Readthrough via NAND/SSD demand, context memory, and inference storage tier relevance."
+          }
         ]
       }
     },
@@ -129,7 +214,12 @@
       "analysis": {
         "sentiment": "bullish",
         "direct_score": 85,
-        "matched_keywords": ["context memory", "KV cache", "AI-native storage", "power efficiency"],
+        "matched_keywords": [
+          "context memory",
+          "KV cache",
+          "AI-native storage",
+          "power efficiency"
+        ],
         "factor_impact": {
           "market_size": "High",
           "delivery_volume": "Low",
@@ -138,8 +228,16 @@
           "eps": "Medium"
         },
         "readthrough": [
-          {"ticker": "SNDK", "score": 92, "summary": "Strongest readthrough via NAND/SSD relevance to context memory and inference storage layers."},
-          {"ticker": "MU", "score": 67, "summary": "Positive readthrough via broader memory hierarchy and AI storage stack expansion."}
+          {
+            "ticker": "SNDK",
+            "score": 92,
+            "summary": "Strongest readthrough via NAND/SSD relevance to context memory and inference storage layers."
+          },
+          {
+            "ticker": "MU",
+            "score": 67,
+            "summary": "Positive readthrough via broader memory hierarchy and AI storage stack expansion."
+          }
         ]
       }
     },
@@ -155,7 +253,12 @@
       "analysis": {
         "sentiment": "bullish",
         "direct_score": 90,
-        "matched_keywords": ["HBM", "shipments", "gross margin", "pricing discipline"],
+        "matched_keywords": [
+          "HBM",
+          "shipments",
+          "gross margin",
+          "pricing discipline"
+        ],
         "factor_impact": {
           "market_size": "Medium",
           "delivery_volume": "High",
@@ -164,8 +267,16 @@
           "eps": "High"
         },
         "readthrough": [
-          {"ticker": "NVDA", "score": 72, "summary": "Positive demand confirmation for AI server platform intensity and memory-rich deployments."},
-          {"ticker": "SNDK", "score": 48, "summary": "Mixed readthrough. Positive on memory spend, but dollars may skew to HBM over flash in the near term."}
+          {
+            "ticker": "NVDA",
+            "score": 72,
+            "summary": "Positive demand confirmation for AI server platform intensity and memory-rich deployments."
+          },
+          {
+            "ticker": "SNDK",
+            "score": 48,
+            "summary": "Mixed readthrough. Positive on memory spend, but dollars may skew to HBM over flash in the near term."
+          }
         ]
       }
     },
@@ -181,7 +292,11 @@
       "analysis": {
         "sentiment": "mixed",
         "direct_score": 74,
-        "matched_keywords": ["memory wall", "design win", "tiered memory"],
+        "matched_keywords": [
+          "memory wall",
+          "design win",
+          "tiered memory"
+        ],
         "factor_impact": {
           "market_size": "Medium",
           "delivery_volume": "Low",
@@ -190,8 +305,16 @@
           "eps": "Low"
         },
         "readthrough": [
-          {"ticker": "NVDA", "score": 58, "summary": "Helpful if NVIDIA pushes inference memory hierarchy further into system architecture."},
-          {"ticker": "MU", "score": 44, "summary": "Mixed. Supports broader memory hierarchy, but may compete with some near-memory budgets."}
+          {
+            "ticker": "NVDA",
+            "score": 58,
+            "summary": "Helpful if NVIDIA pushes inference memory hierarchy further into system architecture."
+          },
+          {
+            "ticker": "MU",
+            "score": 44,
+            "summary": "Mixed. Supports broader memory hierarchy, but may compete with some near-memory budgets."
+          }
         ]
       }
     },
@@ -207,7 +330,11 @@
       "analysis": {
         "sentiment": "bullish",
         "direct_score": 82,
-        "matched_keywords": ["deployment speed", "AI factory", "memory hierarchy"],
+        "matched_keywords": [
+          "deployment speed",
+          "AI factory",
+          "memory hierarchy"
+        ],
         "factor_impact": {
           "market_size": "Medium",
           "delivery_volume": "Medium",
@@ -216,8 +343,16 @@
           "eps": "Medium"
         },
         "readthrough": [
-          {"ticker": "MU", "score": 68, "summary": "Supports the idea that memory intensity and balance matter to deployment conversion."},
-          {"ticker": "SNDK", "score": 61, "summary": "Helpful if storage-tier language becomes more explicit in follow-on commentary."}
+          {
+            "ticker": "MU",
+            "score": 68,
+            "summary": "Supports the idea that memory intensity and balance matter to deployment conversion."
+          },
+          {
+            "ticker": "SNDK",
+            "score": 61,
+            "summary": "Helpful if storage-tier language becomes more explicit in follow-on commentary."
+          }
         ]
       }
     }
