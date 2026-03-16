@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T12:18:38.212001+00:00",
+  "updated_at": "2026-03-16T12:33:27.801957+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -348,7 +348,7 @@
     {
       "ticker": "VRT",
       "price": 258.9,
-      "change_pct": -2.38,
+      "change_pct": -3.34,
       "series": [
         267.73,
         268.33,
@@ -434,7 +434,7 @@
     {
       "ticker": "TSM",
       "price": 338.41,
-      "change_pct": -1.6,
+      "change_pct": -1.38,
       "series": [
         343.14,
         341.8,
