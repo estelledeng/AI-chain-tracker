@@ -1,61 +1,169 @@
 {
-  "updated_at": "2026-03-16T08:52:59.929263Z",
+  "generated_at": "2026-03-16T08:01:00Z",
+  "dashboard_scores": [
+    { "ticker": "NVDA", "score": 86, "role": "Platform / AI Factory Architecture" },
+    { "ticker": "MU", "score": 81, "role": "HBM / DRAM / NAND" },
+    { "ticker": "SNDK", "score": 78, "role": "NAND / SSD / Inference Storage Tier" },
+    { "ticker": "ANET", "score": 74, "role": "AI Networking / Scale-out Fabric" },
+    { "ticker": "VRT", "score": 73, "role": "Power / Cooling / Deployment" },
+    { "ticker": "TSM", "score": 76, "role": "Foundry / Advanced Packaging" },
+    { "ticker": "MRVL", "score": 71, "role": "Interconnect / Custom Infrastructure" },
+    { "ticker": "ALAB", "score": 70, "role": "Rack-scale Connectivity / AI IO" },
+    { "ticker": "CRDO", "score": 69, "role": "High-speed Interconnect / AI Fabric" },
+    { "ticker": "LITE", "score": 67, "role": "Optics / AI Data Center Connectivity" },
+    { "ticker": "COHR", "score": 66, "role": "Optics / Package Integration" }
+  ],
+  "source_configs": [
+    {
+      "name": "NVIDIA IR",
+      "type": "Press releases / events / financial reports",
+      "status": "Ready to connect",
+      "endpoint": "/api/sources/nvda",
+      "url": "https://investor.nvidia.com/home/default.aspx"
+    },
+    {
+      "name": "Micron IR",
+      "type": "Investor relations / latest news / quarterly results",
+      "status": "Ready to connect",
+      "endpoint": "/api/sources/mu",
+      "url": "https://investors.micron.com/"
+    },
+    {
+      "name": "Sandisk IR",
+      "type": "Investor relations / news releases / presentations",
+      "status": "Ready to connect",
+      "endpoint": "/api/sources/sndk",
+      "url": "https://investor.sandisk.com/"
+    },
+    {
+      "name": "Transcript parser",
+      "type": "Keynote / earnings call / analyst Q&A parsing",
+      "status": "Needs parser",
+      "endpoint": "/api/transcripts/parse",
+      "url": "#"
+    }
+  ],
+  "alerts": [
+    {
+      "title": "NVDA mentions context memory or KV cache",
+      "scope": "NVDA → SNDK / MU",
+      "condition": "Trigger when transcript contains context memory, KV cache, memory hierarchy, or AI-native storage.",
+      "action": "Send priority alert and recalculate readthrough scores.",
+      "severity": "High"
+    },
+    {
+      "title": "Networking language shifts toward scale-out or fabric bottlenecks",
+      "scope": "ANET / MRVL / ALAB / CRDO / LITE / COHR",
+      "condition": "Trigger on scale-out, network fabric, optical interconnect, or bandwidth bottleneck language.",
+      "action": "Raise connectivity cluster sensitivity and review cross-readthrough from NVDA.",
+      "severity": "High"
+    },
+    {
+      "title": "AI deployment highlights liquid cooling or power constraints",
+      "scope": "VRT direct / NVDA readthrough",
+      "condition": "Trigger on liquid cooling, AI-ready power, rack density, or thermal bottleneck phrasing.",
+      "action": "Increase deployment bottleneck score and power/cooling importance.",
+      "severity": "High"
+    }
+  ],
+  "eps_bridge": {
+    "NVDA": [
+      { "label": "AI factory / inference demand", "effect": "+ Revenue", "note": "Broader system demand expands platform revenue opportunity." },
+      { "label": "Deployment speed", "effect": "+ / - Timing", "note": "Faster validated deployment accelerates revenue conversion; delays push timing right." }
+    ],
+    "MU": [
+      { "label": "HBM shipments", "effect": "+ Revenue", "note": "Shipment growth directly lifts AI memory revenue." },
+      { "label": "Pricing discipline", "effect": "+ GM", "note": "Constructive pricing improves gross margin and EPS conversion." }
+    ],
+    "SNDK": [
+      { "label": "Context memory relevance", "effect": "+ Narrative / TAM", "note": "Can re-rate SNDK from commodity NAND to AI storage layer." },
+      { "label": "Design wins / sampling", "effect": "+ Revenue timing", "note": "Commercial validation is required for roadmap to become earnings." }
+    ]
+  },
+  "extended_watchlist": [
+    { "ticker": "ANET", "role": "Networking / scale-out fabric", "phase": "Added" },
+    { "ticker": "VRT", "role": "Power / cooling / deployment bottleneck", "phase": "Added" },
+    { "ticker": "MRVL", "role": "Interconnect / custom infrastructure", "phase": "Added" },
+    { "ticker": "TSM", "role": "Advanced manufacturing / packaging readthrough", "phase": "Added" },
+    { "ticker": "ALAB", "role": "Rack-scale connectivity / AI IO", "phase": "Added" },
+    { "ticker": "CRDO", "role": "High-speed interconnect / AI fabric", "phase": "Added" },
+    { "ticker": "LITE", "role": "Optics / AI data center connectivity", "phase": "Added" },
+    { "ticker": "COHR", "role": "Optics / package integration", "phase": "Added" }
+  ],
   "events": [
     {
-      "id": "nvda_home",
+      "id": "e1",
       "company": "NVDA",
-      "title": "nvda_home",
-      "source_type": "official_source_fetch",
-      "published_at": "",
-      "source_url": "https://investor.nvidia.com/home/default.aspx",
-      "status": "success",
-      "summary": "Fetched from https://investor.nvidia.com/home/default.aspx",
-      "keywords": [],
-      "linked_tickers": [],
-      "signal": "mixed",
-      "factor_impact": {
-        "market_size": "medium",
-        "delivery_speed": "medium",
-        "gross_margin": "medium",
-        "eps": "medium"
+      "type": "Keynote",
+      "datetime": "2026-03-17 03:10 JST",
+      "title": "NVIDIA expands AI factory framing and highlights inference economics",
+      "text": "Jensen emphasizes AI factory buildout, inference economics, memory hierarchy, and system-level deployment.",
+      "source": "Demo feed",
+      "url": "#",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 88,
+        "matched_keywords": ["AI factory", "inference economics", "memory hierarchy"],
+        "factor_impact": {
+          "market_size": "high",
+          "delivery_speed": "high",
+          "gross_margin": "medium",
+          "eps": "high"
+        },
+        "readthrough": [
+          { "ticker": "MU", "score": 79, "summary": "HBM and memory hierarchy benefit from stronger AI platform intensity." },
+          { "ticker": "SNDK", "score": 74, "summary": "Inference storage and context-memory narratives improve." },
+          { "ticker": "ANET", "score": 77, "summary": "Scale-out networking demand strengthens alongside AI factories." }
+        ]
       }
     },
     {
-      "id": "mu_home",
-      "company": "MU",
-      "title": "mu_home",
-      "source_type": "official_source_fetch",
-      "published_at": "",
-      "source_url": "https://investors.micron.com/",
-      "status": "success",
-      "summary": "Fetched from https://investors.micron.com/",
-      "keywords": [],
-      "linked_tickers": [],
-      "signal": "mixed",
-      "factor_impact": {
-        "market_size": "medium",
-        "delivery_speed": "medium",
-        "gross_margin": "medium",
-        "eps": "medium"
+      "id": "e2",
+      "company": "ANET",
+      "type": "Networking Update",
+      "datetime": "2026-03-19 10:00 JST",
+      "title": "Arista highlights AI scale-out demand and stronger network fabric adoption",
+      "text": "Management points to scale-out cluster demand, AI network fabric upgrades, and stronger deployment visibility.",
+      "source": "Demo feed",
+      "url": "#",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 80,
+        "matched_keywords": ["scale-out", "network fabric"],
+        "factor_impact": {
+          "market_size": "high",
+          "delivery_speed": "medium",
+          "gross_margin": "medium",
+          "eps": "medium"
+        },
+        "readthrough": [
+          { "ticker": "NVDA", "score": 63, "summary": "Platform demand broadens from chips to fabric and cluster economics." },
+          { "ticker": "MRVL", "score": 74, "summary": "Connectivity readthrough improves for adjacent infrastructure names." }
+        ]
       }
     },
     {
-      "id": "sndk_home",
-      "company": "SNDK",
-      "title": "sndk_home",
-      "source_type": "official_source_fetch",
-      "published_at": "",
-      "source_url": "https://investor.sandisk.com/",
-      "status": "failed",
-      "summary": "HTTPSConnectionPool(host='investor.sandisk.com', port=443): Read timed out. (read timeout=30)",
-      "keywords": [],
-      "linked_tickers": [],
-      "signal": "mixed",
-      "factor_impact": {
-        "market_size": "medium",
-        "delivery_speed": "medium",
-        "gross_margin": "medium",
-        "eps": "medium"
+      "id": "e3",
+      "company": "VRT",
+      "type": "Infrastructure Update",
+      "datetime": "2026-03-19 14:20 JST",
+      "title": "Vertiv stresses liquid cooling and dense AI deployment readiness",
+      "text": "Vertiv highlights liquid cooling adoption, AI-ready power infrastructure, and rack-density bottlenecks.",
+      "source": "Demo feed",
+      "url": "#",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 79,
+        "matched_keywords": ["liquid cooling", "AI factory"],
+        "factor_impact": {
+          "market_size": "high",
+          "delivery_speed": "high",
+          "gross_margin": "medium",
+          "eps": "medium"
+        },
+        "readthrough": [
+          { "ticker": "NVDA", "score": 58, "summary": "Dense AI deployment underscores system-level infrastructure needs." }
+        ]
       }
     }
   ]
