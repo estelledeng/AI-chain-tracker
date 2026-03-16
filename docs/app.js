@@ -1,7 +1,8 @@
 const state = {
   data: null,
   filteredEvents: [],
-  selectedId: null
+  selectedId: null,
+  customCompanies: JSON.parse(localStorage.getItem('customCompanies') || '[]')
 };
 
 const els = {
@@ -9,10 +10,11 @@ const els = {
   searchInput: document.getElementById('searchInput'),
   feed: document.getElementById('feed'),
   detail: document.getElementById('detail'),
-  scoreCards: document.getElementById('scoreCards'),
+  tickerGroups: document.getElementById('tickerGroups'),
   systemStatus: document.getElementById('systemStatus'),
   feedCount: document.getElementById('feedCount'),
   dataStamp: document.getElementById('dataStamp'),
+  storagePrices: document.getElementById('storagePrices'),
   refreshBtn: document.getElementById('refreshBtn'),
   manualInput: document.getElementById('manualInput'),
   analyzeBtn: document.getElementById('analyzeBtn'),
@@ -25,74 +27,32 @@ const els = {
 };
 
 const CHAIN_RULES = [
-  {
-    label: 'Compute',
-    keywords: ['gpu', 'accelerator', 'compute', 'blackwell', 'rubin', 'chip', 'training cluster'],
-    primary: ['NVDA'],
-    secondary: ['TSM'],
-    factors: { tam: 'high', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'medium' }
-  },
-  {
-    label: 'Memory',
-    keywords: ['hbm', 'dram', 'memory bandwidth', 'memory capacity', 'memory hierarchy'],
-    primary: ['MU'],
-    secondary: ['NVDA', 'TSM'],
-    factors: { tam: 'high', shipment: 'high', gm: 'high', eps: 'high', timing: 'medium' }
-  },
-  {
-    label: 'Storage',
-    keywords: ['context memory', 'kv cache', 'storage tier', 'nand', 'ssd', 'flash', 'tiered memory'],
-    primary: ['SNDK'],
-    secondary: ['MU', 'NVDA'],
-    factors: { tam: 'high', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'medium' }
-  },
-  {
-    label: 'Networking',
-    keywords: ['scale-out', 'network fabric', 'switching', 'ethernet', 'interconnect', 'rack-scale', 'bandwidth bottleneck'],
-    primary: ['ANET', 'MRVL', 'ALAB', 'CRDO'],
-    secondary: ['NVDA'],
-    factors: { tam: 'high', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'medium' }
-  },
-  {
-    label: 'Optics',
-    keywords: ['optics', 'optical', 'photonics', 'co-packaged optics', 'optical interconnect'],
-    primary: ['LITE', 'COHR'],
-    secondary: ['CRDO', 'ANET'],
-    factors: { tam: 'medium', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'medium' }
-  },
-  {
-    label: 'Power / Cooling',
-    keywords: ['liquid cooling', 'rack density', 'thermal bottleneck', 'power constraint', 'cooling', 'power infrastructure'],
-    primary: ['VRT'],
-    secondary: ['NVDA'],
-    factors: { tam: 'high', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'high' }
-  },
-  {
-    label: 'Foundry / Packaging',
-    keywords: ['advanced packaging', 'cowos', 'foundry', 'yield', 'packaging capacity', 'packaging tightness'],
-    primary: ['TSM'],
-    secondary: ['NVDA', 'MU', 'COHR'],
-    factors: { tam: 'medium', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'high' }
-  }
+  { label: 'Compute', keywords: ['gpu', 'accelerator', 'compute', 'blackwell', 'rubin', 'chip'], primary: ['NVDA'], secondary: ['TSM'], factors: { tam: 'high', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'medium' } },
+  { label: 'Memory', keywords: ['hbm', 'dram', 'memory hierarchy', 'memory bandwidth'], primary: ['MU'], secondary: ['NVDA', 'TSM'], factors: { tam: 'high', shipment: 'high', gm: 'high', eps: 'high', timing: 'medium' } },
+  { label: 'Storage', keywords: ['context memory', 'kv cache', 'ssd', 'nand', 'flash', 'storage tier'], primary: ['SNDK'], secondary: ['MU', 'NVDA'], factors: { tam: 'high', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'medium' } },
+  { label: 'Networking', keywords: ['scale-out', 'network fabric', 'interconnect', 'ethernet', 'rack-scale', 'bandwidth'], primary: ['ANET', 'MRVL', 'ALAB', 'CRDO'], secondary: ['NVDA'], factors: { tam: 'high', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'medium' } },
+  { label: 'Optics', keywords: ['optics', 'optical', 'photonics'], primary: ['LITE', 'COHR'], secondary: ['CRDO', 'ANET'], factors: { tam: 'medium', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'medium' } },
+  { label: 'Power / Cooling', keywords: ['liquid cooling', 'rack density', 'thermal', 'power', 'cooling'], primary: ['VRT'], secondary: ['NVDA'], factors: { tam: 'high', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'high' } },
+  { label: 'Foundry / Packaging', keywords: ['advanced packaging', 'cowos', 'foundry', 'packaging'], primary: ['TSM'], secondary: ['NVDA', 'MU', 'COHR'], factors: { tam: 'medium', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'high' } }
 ];
 
 const EVENT_TYPE_RULES = [
   { type: 'Keynote / Conference', keywords: ['gtc', 'keynote', 'conference', 'presentation', 'on stage'] },
-  { type: 'Earnings / Call', keywords: ['earnings', 'guidance', 'gross margin', 'eps', 'conference call', 'analyst q&a'] },
-  { type: 'Partnership / Collaboration', keywords: ['partnership', 'collaboration', 'strategic agreement', 'working with'] },
+  { type: 'Earnings / Call', keywords: ['earnings', 'guidance', 'gross margin', 'eps', 'conference call', 'analyst q&a', 'results'] },
+  { type: 'Partnership / Collaboration', keywords: ['partnership', 'collaboration', 'agreement', 'working with'] },
   { type: 'Product Launch / Roadmap', keywords: ['launch', 'roadmap', 'introduces', 'announces', 'new platform', 'new product'] },
   { type: 'Supply Chain / Capacity', keywords: ['capacity', 'shipment', 'lead time', 'supply', 'ramp', 'packaging tightness'] },
-  { type: 'News / Media', keywords: ['reuters', 'bloomberg', 'reported', 'according to'] }
+  { type: 'News / Media', keywords: ['reuters', 'bloomberg', 'reported', 'according to', 'news'] }
 ];
+
+function cap(s = '') {
+  return s ? s.charAt(0).toUpperCase() + s.slice(1) : '';
+}
 
 function badgeClass(sentiment) {
   if (sentiment === 'bullish') return 'green';
   if (sentiment === 'bearish') return 'red';
   return 'amber';
-}
-
-function cap(s = '') {
-  return s ? s.charAt(0).toUpperCase() + s.slice(1) : '';
 }
 
 function scoreBoxHtml(score) {
@@ -102,10 +62,32 @@ function scoreBoxHtml(score) {
   `;
 }
 
+function sparklineSVG(series = []) {
+  if (!series.length) return '<div class="muted">No intraday curve</div>';
+  const min = Math.min(...series);
+  const max = Math.max(...series);
+  const range = Math.max(max - min, 0.0001);
+  const points = series.map((v, i) => {
+    const x = (i / Math.max(series.length - 1, 1)) * 100;
+    const y = 36 - ((v - min) / range) * 32 + 4;
+    return `${x},${y}`;
+  }).join(' ');
+
+  const up = series[series.length - 1] >= series[0];
+  const color = up ? '#16a34a' : '#dc2626';
+
+  return `
+    <svg class="sparkline" viewBox="0 0 100 42" preserveAspectRatio="none">
+      <polyline fill="none" stroke="${color}" stroke-width="2" points="${points}" />
+    </svg>
+  `;
+}
+
 function ensureCompanyFilterOptions(events) {
   const existing = Array.from(els.companyFilter.options).map(o => o.value);
   const tickers = [...new Set((events || []).map(e => e.company).filter(Boolean))];
-  tickers.forEach(ticker => {
+
+  tickers.concat(state.customCompanies.map(x => x.ticker)).forEach(ticker => {
     if (!existing.includes(ticker)) {
       const option = document.createElement('option');
       option.value = ticker;
@@ -113,6 +95,35 @@ function ensureCompanyFilterOptions(events) {
       els.companyFilter.appendChild(option);
     }
   });
+}
+
+function maybeAddCustomCompany(term) {
+  const clean = term.trim();
+  if (!clean) return;
+
+  const upper = clean.toUpperCase();
+  const existing = new Set([
+    ...(state.data?.dashboard_scores || []).map(x => x.ticker),
+    ...state.customCompanies.map(x => x.ticker)
+  ]);
+
+  if (existing.has(upper)) return;
+  if (clean.length < 2) return;
+
+  const company = {
+    ticker: upper,
+    role: 'Custom / Added from search',
+    group: 'Custom Watchlist',
+    price: null,
+    change_pct: null,
+    series: []
+  };
+
+  state.customCompanies.push(company);
+  localStorage.setItem('customCompanies', JSON.stringify(state.customCompanies));
+  ensureCompanyFilterOptions(state.data?.events || []);
+  renderTickerGroups();
+  renderLowerPanels();
 }
 
 async function loadData() {
@@ -127,7 +138,9 @@ async function loadData() {
       events: Array.isArray(data.events) ? data.events : [],
       alerts: Array.isArray(data.alerts) ? data.alerts : [],
       eps_bridge: data.eps_bridge || {},
-      extended_watchlist: Array.isArray(data.extended_watchlist) ? data.extended_watchlist : []
+      extended_watchlist: Array.isArray(data.extended_watchlist) ? data.extended_watchlist : [],
+      market: data.market || {},
+      ticker_groups: data.ticker_groups || {}
     };
 
     els.dataStamp.textContent = state.data.generated_at
@@ -135,13 +148,15 @@ async function loadData() {
       : 'Live data loaded';
 
     ensureCompanyFilterOptions(state.data.events);
+    renderStoragePrices();
+    renderTickerGroups();
     renderStaticPanels();
     renderLowerPanels();
     applyFilters();
   } catch (err) {
     console.error(err);
     els.dataStamp.textContent = 'Failed to load data';
-    els.scoreCards.innerHTML = '<div class="muted">No live score data.</div>';
+    els.tickerGroups.innerHTML = '<div class="muted">No ticker data.</div>';
     els.systemStatus.innerHTML = '<div class="muted">No live source status.</div>';
     els.feed.innerHTML = '<div class="muted">No live events.</div>';
     els.detail.innerHTML = '<div class="muted">No event selected.</div>';
@@ -152,19 +167,89 @@ async function loadData() {
   }
 }
 
-function renderStaticPanels() {
-  const scores = state.data.dashboard_scores || [];
-  const sources = state.data.source_configs || [];
+function renderStoragePrices() {
+  const storage = state.data?.market?.storage_prices || {};
+  const rows = Object.entries(storage);
+  if (!rows.length) {
+    els.storagePrices.innerHTML = '<div class="muted">No storage price data.</div>';
+    return;
+  }
 
-  els.scoreCards.innerHTML = scores.length
-    ? scores.map(item => `
-        <div class="score-card">
-          <div class="ticker">${item.ticker}</div>
-          ${scoreBoxHtml(item.score || 0)}
-          <div class="muted">${item.role || ''}</div>
+  els.storagePrices.innerHTML = rows.map(([k, v]) => `
+    <div class="storage-card">
+      <div><strong>${k.toUpperCase()} · ${v.source || 'Source'}</strong></div>
+      <div class="muted" style="margin-top:6px">Weekly: ${v.weekly_growth_pct ?? 'N/A'}% · Monthly: ${v.monthly_growth_pct ?? 'N/A'}%</div>
+      <div class="muted" style="margin-top:4px">${v.status || ''}</div>
+    </div>
+  `).join('');
+}
+
+function renderTickerGroups() {
+  const scores = state.data.dashboard_scores || [];
+  const groups = state.data.ticker_groups || {};
+  const scoreMap = Object.fromEntries(scores.map(x => [x.ticker, x]));
+  const custom = state.customCompanies;
+
+  let html = '';
+
+  Object.entries(groups).forEach(([groupName, tickers]) => {
+    html += `
+      <div class="group-block">
+        <div class="group-title">${groupName}</div>
+        <div class="ticker-row">
+          ${tickers.map(t => {
+            const item = scoreMap[t] || { ticker: t, role: '', score: 0, price: null, change_pct: null, series: [] };
+            const ch = item.change_pct;
+            const chClass = ch == null ? 'change-flat' : (ch >= 0 ? 'change-up' : 'change-down');
+            const chText = ch == null ? 'N/A' : `${ch}%`;
+            return `
+              <div class="ticker-card">
+                <div class="ticker-top">
+                  <div class="ticker-name">${item.ticker}</div>
+                  <div class="badge blue">${item.score || 0}</div>
+                </div>
+                <div class="price-line">
+                  <div class="price">${item.price ?? '--'}</div>
+                  <div class="${chClass}">${chText}</div>
+                </div>
+                <div class="muted" style="margin-bottom:8px">${item.role || ''}</div>
+                ${sparklineSVG(item.series || [])}
+              </div>
+            `;
+          }).join('')}
         </div>
-      `).join('')
-    : '<div class="muted">No live score data.</div>';
+      </div>
+    `;
+  });
+
+  if (custom.length) {
+    html += `
+      <div class="group-block">
+        <div class="group-title">Custom Watchlist</div>
+        <div class="ticker-row">
+          ${custom.map(item => `
+            <div class="ticker-card">
+              <div class="ticker-top">
+                <div class="ticker-name">${item.ticker}</div>
+                <div class="badge amber">Custom</div>
+              </div>
+              <div class="price-line">
+                <div class="price">--</div>
+                <div class="change-flat">N/A</div>
+              </div>
+              <div class="muted">${item.role}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  els.tickerGroups.innerHTML = html || '<div class="muted">No grouped tickers yet.</div>';
+}
+
+function renderStaticPanels() {
+  const sources = state.data.source_configs || [];
 
   els.systemStatus.innerHTML = sources.length
     ? sources.map(src => `
@@ -173,9 +258,7 @@ function renderStaticPanels() {
             <div><strong>${src.name || ''}</strong></div>
             <div class="muted">${src.type || ''}</div>
           </div>
-          <div class="badge ${src.status === 'Live connected' ? 'green' : 'amber'}">
-            ${src.status || 'Unknown'}
-          </div>
+          <div class="badge ${src.status === 'Live connected' ? 'green' : 'amber'}">${src.status || 'Unknown'}</div>
         </div>
       `).join('')
     : '<div class="muted">No live source status.</div>';
@@ -185,7 +268,10 @@ function renderLowerPanels() {
   const bridge = state.data.eps_bridge || {};
   const alerts = state.data.alerts || [];
   const sources = state.data.source_configs || [];
-  const watchlist = state.data.extended_watchlist || [];
+  const watchlist = [
+    ...(state.data.extended_watchlist || []),
+    ...state.customCompanies.map(x => ({ ticker: x.ticker, role: x.role, phase: 'Custom Watchlist' }))
+  ];
 
   const bridgeEntries = Object.entries(bridge);
   els.bridgePanel.innerHTML = bridgeEntries.length
@@ -232,6 +318,7 @@ function renderLowerPanels() {
             <span class="badge ${s.status === 'Live connected' ? 'green' : 'amber'}">${s.status || 'Unknown'}</span>
           </div>
           <div class="muted">${s.type || ''}</div>
+          <div class="muted" style="margin-top:8px">${s.group || ''}</div>
           <div style="margin-top:10px"><code>${s.endpoint || ''}</code></div>
           <div style="margin-top:10px">
             ${s.url && s.url !== '#' ? `<a href="${s.url}" target="_blank" rel="noreferrer">Open source</a>` : '<span class="muted">No direct URL</span>'}
@@ -281,11 +368,11 @@ function renderFeed() {
   els.feed.innerHTML = state.filteredEvents.map(event => `
     <div class="feed-item ${event.id === state.selectedId ? 'active' : ''}" data-id="${event.id}">
       <div class="feed-top">
-        <span class="badge blue">${event.company || event.source_company || ''}</span>
-        <span class="muted">${event.datetime || event.published_at || ''}</span>
+        <span class="badge blue">${event.company || ''}</span>
+        <span class="muted">${event.datetime || ''}</span>
       </div>
-      <div class="feed-title">${event.title || event.headline || ''}</div>
-      <div class="feed-text">${event.text || event.raw_text || ''}</div>
+      <div class="feed-title">${event.title || ''}</div>
+      <div class="feed-text">${event.text || ''}</div>
       <div class="badges" style="margin-top:10px">
         <span class="badge ${badgeClass((event.analysis && event.analysis.sentiment) || event.sentiment || 'mixed')}">${cap((event.analysis && event.analysis.sentiment) || event.sentiment || 'mixed')}</span>
         <span class="badge">${event.type || event.event_type || 'Event'}</span>
@@ -350,6 +437,7 @@ function renderDetail() {
           <span class="badge blue">${event.company || event.source_company || ''}</span>
           <span class="badge">${event.type || event.event_type || 'Event'}</span>
           <span class="badge ${badgeClass(analysis.sentiment || event.sentiment || 'mixed')}">${cap(analysis.sentiment || event.sentiment || 'mixed')}</span>
+          <span class="badge">${event.source_kind || 'source'}</span>
         </div>
         <div class="detail-title">${event.title || event.headline || ''}</div>
         <div class="detail-text">${event.text || event.raw_text || ''}</div>
@@ -358,7 +446,7 @@ function renderDetail() {
           ${event.url ? `<a href="${event.url}" target="_blank" rel="noreferrer">${event.source || event.url}</a>` : (event.source || 'N/A')}
         </div>
       </div>
-      <div class="score-card" style="min-width:180px">
+      <div class="ticker-card" style="min-width:220px">
         <div class="muted">Direct impact</div>
         ${scoreBoxHtml(analysis.direct_score || event.direct_score || 0)}
       </div>
@@ -416,10 +504,7 @@ function detectEventType(text) {
 
 function analyzeManualEvent(text) {
   const lower = text.toLowerCase();
-
-  const matchedBuckets = CHAIN_RULES.filter(rule =>
-    rule.keywords.some(k => lower.includes(k))
-  );
+  const matchedBuckets = CHAIN_RULES.filter(rule => rule.keywords.some(k => lower.includes(k)));
 
   const chainBuckets = matchedBuckets.map(r => r.label);
   const primary = [...new Set(matchedBuckets.flatMap(r => r.primary))];
@@ -429,14 +514,7 @@ function analyzeManualEvent(text) {
   let sentiment = 'mixed';
   if (keywordHits.length >= 2) sentiment = 'bullish';
 
-  const factorImpact = {
-    tam: 'medium',
-    shipment: 'medium',
-    gm: 'medium',
-    eps: 'medium',
-    timing: 'medium'
-  };
-
+  const factorImpact = { tam: 'medium', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'medium' };
   matchedBuckets.forEach(rule => {
     Object.entries(rule.factors).forEach(([k, v]) => {
       if (v === 'high') factorImpact[k] = 'high';
@@ -527,8 +605,6 @@ function renderAnalyzerResult(result, rawText) {
 }
 
 function bindAnalyzer() {
-  if (!els.analyzeBtn) return;
-
   els.analyzeBtn.addEventListener('click', () => {
     const text = els.manualInput.value.trim();
     if (!text) {
@@ -557,9 +633,20 @@ function initTabs() {
 }
 
 els.companyFilter.addEventListener('change', applyFilters);
+
 els.searchInput.addEventListener('input', applyFilters);
-els.refreshBtn.addEventListener('click', loadData);
+els.searchInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    maybeAddCustomCompany(els.searchInput.value);
+  }
+});
+
+els.refreshBtn.addEventListener('click', async () => {
+  els.dataStamp.textContent = 'Refreshing...';
+  await loadData();
+});
 
 bindAnalyzer();
 initTabs();
 loadData();
+setInterval(loadData, 60000);
