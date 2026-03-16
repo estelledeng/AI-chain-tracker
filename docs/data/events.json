@@ -1,87 +1,442 @@
 {
-  "generated_at": "",
-  "dashboard_scores": [],
+  "generated_at": "2026-03-16T09:27:37.954470+00:00",
+  "dashboard_scores": [
+    {
+      "ticker": "NVDA",
+      "score": 52,
+      "role": "Platform / AI Factory Architecture"
+    },
+    {
+      "ticker": "MU",
+      "score": 52,
+      "role": "HBM / DRAM / NAND"
+    },
+    {
+      "ticker": "SNDK",
+      "score": 40,
+      "role": "NAND / SSD / Inference Storage Tier"
+    },
+    {
+      "ticker": "ANET",
+      "score": 40,
+      "role": "AI Networking / Scale-out Fabric"
+    },
+    {
+      "ticker": "VRT",
+      "score": 52,
+      "role": "Power / Cooling / Deployment"
+    },
+    {
+      "ticker": "TSM",
+      "score": 40,
+      "role": "Foundry / Advanced Packaging"
+    },
+    {
+      "ticker": "MRVL",
+      "score": 52,
+      "role": "Interconnect / Custom Infrastructure"
+    },
+    {
+      "ticker": "ALAB",
+      "score": 40,
+      "role": "Rack-scale Connectivity / AI IO"
+    },
+    {
+      "ticker": "CRDO",
+      "score": 59,
+      "role": "High-speed Interconnect / AI Fabric"
+    },
+    {
+      "ticker": "LITE",
+      "score": 59,
+      "role": "Optics / AI Data Center Connectivity"
+    },
+    {
+      "ticker": "COHR",
+      "score": 52,
+      "role": "Optics / Package Integration"
+    }
+  ],
   "source_configs": [
     {
       "name": "NVIDIA IR",
-      "type": "Press releases / events / financial reports",
+      "type": "Platform / AI Factory Architecture",
       "status": "Live connected",
       "endpoint": "/api/sources/nvda",
       "url": "https://investor.nvidia.com/home/default.aspx"
     },
     {
       "name": "Micron IR",
-      "type": "Investor relations / latest news / quarterly results",
+      "type": "HBM / DRAM / NAND",
       "status": "Live connected",
       "endpoint": "/api/sources/mu",
       "url": "https://investors.micron.com/"
     },
     {
       "name": "Sandisk IR",
-      "type": "Investor relations / news releases / presentations",
-      "status": "Live connected",
+      "type": "NAND / SSD / Inference Storage Tier",
+      "status": "Fetch blocked",
       "endpoint": "/api/sources/sndk",
       "url": "https://investor.sandisk.com/"
     },
     {
       "name": "Arista IR",
-      "type": "AI networking / earnings / investor materials",
-      "status": "Not connected yet",
+      "type": "AI Networking / Scale-out Fabric",
+      "status": "Fetch blocked",
       "endpoint": "/api/sources/anet",
-      "url": "https://investors.arista.com/"
+      "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx"
     },
     {
       "name": "Vertiv IR",
-      "type": "Power / cooling / AI deployment materials",
-      "status": "Not connected yet",
+      "type": "Power / Cooling / Deployment",
+      "status": "Live connected",
       "endpoint": "/api/sources/vrt",
       "url": "https://investors.vertiv.com/overview/default.aspx"
     },
     {
       "name": "TSMC IR",
-      "type": "Foundry / advanced packaging / quarterly materials",
-      "status": "Not connected yet",
+      "type": "Foundry / Advanced Packaging",
+      "status": "Fetch blocked",
       "endpoint": "/api/sources/tsm",
       "url": "https://investor.tsmc.com/english"
     },
     {
       "name": "Marvell IR",
-      "type": "Connectivity / custom infrastructure / press releases",
-      "status": "Not connected yet",
+      "type": "Interconnect / Custom Infrastructure",
+      "status": "Live connected",
       "endpoint": "/api/sources/mrvl",
       "url": "https://investor.marvell.com/"
     },
     {
       "name": "Astera Labs IR",
-      "type": "Rack-scale AI connectivity / investor updates",
-      "status": "Not connected yet",
+      "type": "Rack-scale Connectivity / AI IO",
+      "status": "Fetch blocked",
       "endpoint": "/api/sources/alab",
       "url": "https://ir.asteralabs.com/news-events/events-presentations/"
     },
     {
       "name": "Credo IR",
-      "type": "AI fabric / interconnect / earnings materials",
-      "status": "Not connected yet",
+      "type": "High-speed Interconnect / AI Fabric",
+      "status": "Live connected",
       "endpoint": "/api/sources/crdo",
       "url": "https://investors.credosemi.com/overview/default.aspx"
     },
     {
       "name": "Lumentum IR",
-      "type": "Optics / AI data center connectivity",
-      "status": "Not connected yet",
+      "type": "Optics / AI Data Center Connectivity",
+      "status": "Live connected",
       "endpoint": "/api/sources/lite",
       "url": "https://investor.lumentum.com/overview/default.aspx"
     },
     {
       "name": "Coherent IR",
-      "type": "Optics / package integration / AI architecture",
-      "status": "Not connected yet",
+      "type": "Optics / Package Integration",
+      "status": "Live connected",
       "endpoint": "/api/sources/cohr",
       "url": "https://www.coherent.com/company/investor-relations"
+    },
+    {
+      "name": "Transcript parser",
+      "type": "Keynote / earnings call / analyst Q&A parsing",
+      "status": "Needs parser",
+      "endpoint": "/api/transcripts/parse",
+      "url": "#"
     }
   ],
   "alerts": [],
   "eps_bridge": {},
-  "extended_watchlist": [],
-  "events": []
+  "extended_watchlist": [
+    {
+      "ticker": "ANET",
+      "role": "Networking / scale-out fabric",
+      "phase": "Live source added"
+    },
+    {
+      "ticker": "VRT",
+      "role": "Power / cooling / deployment bottleneck",
+      "phase": "Live source added"
+    },
+    {
+      "ticker": "MRVL",
+      "role": "Interconnect / custom infrastructure",
+      "phase": "Live source added"
+    },
+    {
+      "ticker": "TSM",
+      "role": "Advanced manufacturing / packaging readthrough",
+      "phase": "Live source added"
+    },
+    {
+      "ticker": "ALAB",
+      "role": "Rack-scale connectivity / AI IO",
+      "phase": "Live source added"
+    },
+    {
+      "ticker": "CRDO",
+      "role": "High-speed interconnect / AI fabric",
+      "phase": "Live source added"
+    },
+    {
+      "ticker": "LITE",
+      "role": "Optics / AI data center connectivity",
+      "phase": "Live source added"
+    },
+    {
+      "ticker": "COHR",
+      "role": "Optics / package integration",
+      "phase": "Live source added"
+    }
+  ],
+  "events": [
+    {
+      "id": "live_nvda_1",
+      "company": "NVDA",
+      "type": "IR Update",
+      "datetime": "2026-03-16T09:26:14.334220+00:00",
+      "title": "NVIDIA Corporation - Home",
+      "text": "NVIDIA Corporation - Home Corporate Profile Quarterly Results Latest News Events Featured Presentation Quick Links Email Alerts Email Alert Sign Up Confirmation Events & Presentations Events & PresentationsPresentations Events & Presentations Stock Info Stock Quote & ChartHistorical Price LookupInvestment CalculatorFun",
+      "source": "NVIDIA IR",
+      "url": "https://investor.nvidia.com/home/default.aspx",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "market_size": "medium",
+          "delivery_speed": "medium",
+          "gross_margin": "medium",
+          "eps": "medium"
+        },
+        "readthrough": [
+          {
+            "ticker": "MU",
+            "score": 48,
+            "summary": "Live IR language from NVDA may have readthrough into MU."
+          },
+          {
+            "ticker": "SNDK",
+            "score": 42,
+            "summary": "Live IR language from NVDA may have readthrough into SNDK."
+          },
+          {
+            "ticker": "ANET",
+            "score": 42,
+            "summary": "Live IR language from NVDA may have readthrough into ANET."
+          }
+        ]
+      }
+    },
+    {
+      "id": "live_mu_2",
+      "company": "MU",
+      "type": "IR Update",
+      "datetime": "2026-03-16T09:26:14.334220+00:00",
+      "title": "Investor Relations | Micron Technology",
+      "text": "Investor Relations | Micron Technology Investor Relations Quarterly Results Annual Materials Q1 2026 Earnings Presentation IR Home Events & Presentations Latest News Risk Factors Quarterly Financial Results Latest News Events & Presentations \u201cMicron closed out a record-breaking fiscal year with exceptional Q4 performan",
+      "source": "Micron IR",
+      "url": "https://investors.micron.com/",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "market_size": "medium",
+          "delivery_speed": "medium",
+          "gross_margin": "medium",
+          "eps": "medium"
+        },
+        "readthrough": [
+          {
+            "ticker": "NVDA",
+            "score": 48,
+            "summary": "Live IR language from MU may have readthrough into NVDA."
+          },
+          {
+            "ticker": "TSM",
+            "score": 42,
+            "summary": "Live IR language from MU may have readthrough into TSM."
+          }
+        ]
+      }
+    },
+    {
+      "id": "live_vrt_5",
+      "company": "VRT",
+      "type": "IR Update",
+      "datetime": "2026-03-16T09:26:14.334220+00:00",
+      "title": "Vertiv Holdings Co. - Investor relations",
+      "text": "Vertiv Holdings Co. - Investor relations Latest Annual Reports Recent Press Releases and Announcements Subscribe to get the latest trends in technology Gap List Fixes How can we help? Overview NewsEvents & Presentations Events & Presentations2024 Investor Event2023 Investor Conference Stock Info Stock QuoteDividend His",
+      "source": "Vertiv IR",
+      "url": "https://investors.vertiv.com/overview/default.aspx",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "market_size": "medium",
+          "delivery_speed": "medium",
+          "gross_margin": "medium",
+          "eps": "medium"
+        },
+        "readthrough": [
+          {
+            "ticker": "NVDA",
+            "score": 48,
+            "summary": "Live IR language from VRT may have readthrough into NVDA."
+          },
+          {
+            "ticker": "TSM",
+            "score": 42,
+            "summary": "Live IR language from VRT may have readthrough into TSM."
+          }
+        ]
+      }
+    },
+    {
+      "id": "live_mrvl_7",
+      "company": "MRVL",
+      "type": "IR Update",
+      "datetime": "2026-03-16T09:26:14.334220+00:00",
+      "title": "Investor Relations | Marvell Technology, Inc. (MRVL)",
+      "text": "Investor Relations | Marvell Technology, Inc. (MRVL) Investor Relations Compute Networking Storage Custom BY MARKET Our Company Media Contact FY 2026 Year End Results Investors FY 2026 Company Investor Relations Transfer Agent Data Processing Units Transimpedance Amplifiers",
+      "source": "Marvell IR",
+      "url": "https://investor.marvell.com/",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "market_size": "medium",
+          "delivery_speed": "medium",
+          "gross_margin": "medium",
+          "eps": "medium"
+        },
+        "readthrough": [
+          {
+            "ticker": "ANET",
+            "score": 48,
+            "summary": "Live IR language from MRVL may have readthrough into ANET."
+          },
+          {
+            "ticker": "ALAB",
+            "score": 42,
+            "summary": "Live IR language from MRVL may have readthrough into ALAB."
+          },
+          {
+            "ticker": "CRDO",
+            "score": 42,
+            "summary": "Live IR language from MRVL may have readthrough into CRDO."
+          }
+        ]
+      }
+    },
+    {
+      "id": "live_crdo_9",
+      "company": "CRDO",
+      "type": "IR Update",
+      "datetime": "2026-03-16T09:26:14.334220+00:00",
+      "title": "Credo Technology Group Holding Ltd - Investor Relations",
+      "text": "Credo Technology Group Holding Ltd - Investor Relations Credo Reports Third Quarter Fiscal Year 2026 Financial Results Credo at OCP 2025 ZeroFlap Optical Transceivers Credo\u2019s BlueBird 1.6T Optical DSP Credo at CIOE 2025 Sustainability Credo Leadership Events Credo Investor Relations Company Products Connections IR Upda",
+      "source": "Credo IR",
+      "url": "https://investors.credosemi.com/overview/default.aspx",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 59,
+        "matched_keywords": [
+          "optics"
+        ],
+        "factor_impact": {
+          "market_size": "high",
+          "delivery_speed": "medium",
+          "gross_margin": "medium",
+          "eps": "medium"
+        },
+        "readthrough": [
+          {
+            "ticker": "ANET",
+            "score": 58,
+            "summary": "Live IR language from CRDO may have readthrough into ANET."
+          },
+          {
+            "ticker": "LITE",
+            "score": 52,
+            "summary": "Live IR language from CRDO may have readthrough into LITE."
+          },
+          {
+            "ticker": "COHR",
+            "score": 46,
+            "summary": "Live IR language from CRDO may have readthrough into COHR."
+          }
+        ]
+      }
+    },
+    {
+      "id": "live_lite_10",
+      "company": "LITE",
+      "type": "IR Update",
+      "datetime": "2026-03-16T09:26:14.334220+00:00",
+      "title": "Lumentum - Investor Relations",
+      "text": "Lumentum - Investor Relations Investor Relations Corporate Overview Latest News Events Latest Quarter Results Latest Quarter Results Contact Us Quick Links Investor Email Alerts Overview Governance Corporate GovernanceExecutive ManagementBoard of DirectorsCommittee Composition News ReleasesQuarterly ResultsSEC FilingsE",
+      "source": "Lumentum IR",
+      "url": "https://investor.lumentum.com/overview/default.aspx",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 59,
+        "matched_keywords": [
+          "optics"
+        ],
+        "factor_impact": {
+          "market_size": "high",
+          "delivery_speed": "medium",
+          "gross_margin": "medium",
+          "eps": "medium"
+        },
+        "readthrough": [
+          {
+            "ticker": "COHR",
+            "score": 58,
+            "summary": "Live IR language from LITE may have readthrough into COHR."
+          },
+          {
+            "ticker": "CRDO",
+            "score": 52,
+            "summary": "Live IR language from LITE may have readthrough into CRDO."
+          }
+        ]
+      }
+    },
+    {
+      "id": "live_cohr_11",
+      "company": "COHR",
+      "type": "IR Update",
+      "datetime": "2026-03-16T09:26:14.334220+00:00",
+      "title": "Investor Relations | Coherent",
+      "text": "Investor Relations | Coherent Investor Relations Financial Press Releases and Webcasts Investor Presentations Annual Filings SEC Filings Governance ESG Report Coherent Transaction Contact Us English (US) English (US) English (US) Deutsch \u4e2d\u6587 \u65e5\u672c\u8a9e \ud55c\uad6d\uc5b4 Region * United States Canada Afghanistan Aland Islands Albania Algeria",
+      "source": "Coherent IR",
+      "url": "https://www.coherent.com/company/investor-relations",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "market_size": "medium",
+          "delivery_speed": "medium",
+          "gross_margin": "medium",
+          "eps": "medium"
+        },
+        "readthrough": [
+          {
+            "ticker": "LITE",
+            "score": 48,
+            "summary": "Live IR language from COHR may have readthrough into LITE."
+          },
+          {
+            "ticker": "TSM",
+            "score": 42,
+            "summary": "Live IR language from COHR may have readthrough into TSM."
+          }
+        ]
+      }
+    }
+  ]
 }

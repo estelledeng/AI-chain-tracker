@@ -1,20 +1,123 @@
 [
   {
-    "name": "nvda_home",
+    "ticker": "NVDA",
+    "name": "NVIDIA IR",
+    "group": "Core Platform",
+    "role": "Platform / AI Factory Architecture",
     "url": "https://investor.nvidia.com/home/default.aspx",
     "status": "success",
-    "file": "raw_pages/nvda_home.html"
+    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
+    "file": "raw_pages/nvda_nvidia_ir.html",
+    "error": ""
   },
   {
-    "name": "mu_home",
+    "ticker": "MU",
+    "name": "Micron IR",
+    "group": "Memory & Storage",
+    "role": "HBM / DRAM / NAND",
     "url": "https://investors.micron.com/",
     "status": "success",
-    "file": "raw_pages/mu_home.html"
+    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
+    "file": "raw_pages/mu_micron_ir.html",
+    "error": ""
   },
   {
-    "name": "sndk_home",
+    "ticker": "SNDK",
+    "name": "Sandisk IR",
+    "group": "Memory & Storage",
+    "role": "NAND / SSD / Inference Storage Tier",
     "url": "https://investor.sandisk.com/",
     "status": "failed",
-    "error": "HTTPSConnectionPool(host='investor.sandisk.com', port=443): Read timed out. (read timeout=30)"
+    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
+    "file": "",
+    "error": "HTTPSConnectionPool(host='investor.sandisk.com', port=443): Read timed out. (read timeout=40)"
+  },
+  {
+    "ticker": "ANET",
+    "name": "Arista IR",
+    "group": "Connectivity & Networking",
+    "role": "AI Networking / Scale-out Fabric",
+    "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
+    "status": "failed",
+    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
+    "file": "",
+    "error": "403 Client Error: Forbidden for url: https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx"
+  },
+  {
+    "ticker": "VRT",
+    "name": "Vertiv IR",
+    "group": "Deployment & Upstream",
+    "role": "Power / Cooling / Deployment",
+    "url": "https://investors.vertiv.com/overview/default.aspx",
+    "status": "success",
+    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
+    "file": "raw_pages/vrt_vertiv_ir.html",
+    "error": ""
+  },
+  {
+    "ticker": "TSM",
+    "name": "TSMC IR",
+    "group": "Deployment & Upstream",
+    "role": "Foundry / Advanced Packaging",
+    "url": "https://investor.tsmc.com/english",
+    "status": "failed",
+    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
+    "file": "",
+    "error": "403 Client Error: Forbidden for url: https://investor.tsmc.com/english"
+  },
+  {
+    "ticker": "MRVL",
+    "name": "Marvell IR",
+    "group": "Connectivity & Networking",
+    "role": "Interconnect / Custom Infrastructure",
+    "url": "https://investor.marvell.com/",
+    "status": "success",
+    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
+    "file": "raw_pages/mrvl_marvell_ir.html",
+    "error": ""
+  },
+  {
+    "ticker": "ALAB",
+    "name": "Astera Labs IR",
+    "group": "Connectivity & Networking",
+    "role": "Rack-scale Connectivity / AI IO",
+    "url": "https://ir.asteralabs.com/news-events/events-presentations/",
+    "status": "failed",
+    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
+    "file": "",
+    "error": "HTTPSConnectionPool(host='ir.asteralabs.com', port=443): Read timed out. (read timeout=40)"
+  },
+  {
+    "ticker": "CRDO",
+    "name": "Credo IR",
+    "group": "Connectivity & Networking",
+    "role": "High-speed Interconnect / AI Fabric",
+    "url": "https://investors.credosemi.com/overview/default.aspx",
+    "status": "success",
+    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
+    "file": "raw_pages/crdo_credo_ir.html",
+    "error": ""
+  },
+  {
+    "ticker": "LITE",
+    "name": "Lumentum IR",
+    "group": "Connectivity & Networking",
+    "role": "Optics / AI Data Center Connectivity",
+    "url": "https://investor.lumentum.com/overview/default.aspx",
+    "status": "success",
+    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
+    "file": "raw_pages/lite_lumentum_ir.html",
+    "error": ""
+  },
+  {
+    "ticker": "COHR",
+    "name": "Coherent IR",
+    "group": "Connectivity & Networking",
+    "role": "Optics / Package Integration",
+    "url": "https://www.coherent.com/company/investor-relations",
+    "status": "success",
+    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
+    "file": "raw_pages/cohr_coherent_ir.html",
+    "error": ""
   }
 ]
