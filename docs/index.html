@@ -10,11 +10,11 @@
   <div class="page">
     <header class="hero">
       <div>
-        <div class="eyebrow">AI Chain Event Intelligence · NVDA / MU / SNDK / Networking / Optics / Cooling / Packaging</div>
+        <div class="eyebrow">AI Chain Event Intelligence</div>
         <h1>Realtime AI chain event intelligence dashboard</h1>
         <p class="hero-copy">
-          Track live company news, product launches, partnerships, earnings language, conference remarks, and management commentary. 
-          Map each event to the AI chain, identify likely beneficiaries, and bridge it to TAM, shipment, margin, EPS, and timing.
+          Track live company news, product launches, partnerships, earnings language, conference remarks, and management commentary.
+          Map each event to the AI chain, rank likely beneficiaries, and bridge it to TAM, shipment, margin, EPS, and timing.
         </p>
       </div>
       <button id="refreshBtn" class="primary-btn">Refresh data</button>
@@ -29,49 +29,44 @@
           </select>
         </div>
         <div>
-          <label class="field-label" for="searchInput">Search events / keywords</label>
-          <input id="searchInput" type="text" placeholder="GTC, HBM, context memory, liquid cooling, optics, partnership..." />
+          <label class="field-label" for="searchInput">Search events / company / keywords</label>
+          <input id="searchInput" type="text" placeholder="NVDA, HBM, nebius, liquid cooling, optics, partnership..." />
+          <div class="hint">Press Enter with a new company name/ticker to add it into custom watchlist analysis.</div>
         </div>
         <div>
           <div class="field-label">Data source</div>
           <div id="dataStamp" class="stamp">Waiting for data...</div>
+          <div id="storagePrices" class="storage-box"></div>
         </div>
       </div>
+    </section>
+
+    <section class="card">
+      <div class="section-title">Ticker groups</div>
+      <div id="tickerGroups"></div>
     </section>
 
     <section class="summary-grid">
       <div class="card">
-        <div class="section-title">Signal score</div>
-        <div id="scoreCards" class="score-grid"></div>
-      </div>
-      <div class="card">
         <div class="section-title">Source health</div>
         <div id="systemStatus" class="status-list"></div>
       </div>
-    </section>
-
-    <section class="card analyzer-card">
-      <div class="section-head">
-        <div>
-          <div class="section-title">Manual Event Analyzer</div>
-          <div class="section-subtitle">
-            Paste one sentence from GTC, an earnings call, a partnership release, or a news summary. 
-            The system will classify the event, map it to the AI chain, and rank likely beneficiaries.
-          </div>
+      <div class="card">
+        <div class="section-title">Manual Event Analyzer</div>
+        <div class="section-subtitle">
+          Paste one sentence from GTC, earnings, a partnership release, or a news summary.
         </div>
-      </div>
-
-      <div class="analyzer-grid">
-        <div>
-          <label class="field-label" for="manualInput">Event text / transcript / headline</label>
-          <textarea id="manualInput" rows="7" placeholder="Example: Jensen says future AI factories depend on memory hierarchy, context memory, and efficient KV cache reuse."></textarea>
-          <div class="analyzer-actions">
-            <button id="analyzeBtn" class="primary-btn">Analyze event</button>
-            <button id="clearAnalyzeBtn" class="secondary-btn">Clear</button>
+        <div class="analyzer-grid compact">
+          <div>
+            <textarea id="manualInput" rows="6" placeholder="Example: Jensen says future AI factories depend on memory hierarchy, context memory, and efficient KV cache reuse."></textarea>
+            <div class="analyzer-actions">
+              <button id="analyzeBtn" class="primary-btn">Analyze event</button>
+              <button id="clearAnalyzeBtn" class="secondary-btn">Clear</button>
+            </div>
           </div>
-        </div>
-        <div id="analyzerOutput" class="analyzer-output">
-          <div class="muted">No manual event analyzed yet.</div>
+          <div id="analyzerOutput" class="analyzer-output">
+            <div class="muted">No manual event analyzed yet.</div>
+          </div>
         </div>
       </div>
     </section>
