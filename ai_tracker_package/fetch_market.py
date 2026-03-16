@@ -31,16 +31,23 @@ def load_custom_tickers():
         return []
 
 
-def extract_first_price_like_number(text: str):
-    candidates = re.findall(r"\b\d+(?:\.\d+)?\b", text)
-    for c in candidates:
-        try:
-            val = float(c)
-            if val > 0:
-                return val
-        except Exception:
-            pass
-    return None
+def load_storage_history():
+    if not STORAGE_HISTORY.exists():
+        return []
+    try:
+        return json.loads(STORAGE_HISTORY.read_text(encoding="utf-8"))
+    except Exception:
+        return []
+
+
+def save_storage_history(storage_block):
+    history = load_storage_history()
+    history.append({
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "storage": storage_block
+    })
+    history = history[-120:]
+    STORAGE_HISTORY.write_text(json.dumps(history, indent=2), encoding="utf-8")
 
 
 def fetch_yf_snapshot(ticker: str):
@@ -74,6 +81,7 @@ def fetch_yf_snapshot(ticker: str):
             "series": [round(float(x), 2) for x in closes[-78:]],
             "status": "ok"
         }
+
     except Exception as e:
         return {
             "ticker": ticker,
@@ -84,16 +92,70 @@ def fetch_yf_snapshot(ticker: str):
         }
 
 
-def load_storage_history():
-    if not STORAGE_HISTORY.exists():
-        return []
-    try:
-        return json.loads(STORAGE_HISTORY.read_text(encoding="utf-8"))
-    except Exception:
-        return []
+def extract_trendforce_latest_price(text: str):
+    """
+    只在更像“价格字段”的上下文里找数字。
+    找不到就返回 None，宁可空，不乱报。
+    """
+    if not text:
+        return None
+
+    lower = text.lower()
+
+    patterns = [
+        r"(?:spot price|contract price|average price|latest price|price trend)[^0-9]{0,50}(\d+(?:\.\d+)?)",
+        r"(?:usd|us\$|\$)\s*(\d+(?:\.\d+)?)",
+        r"(\d+(?:\.\d+)?)\s*(?:usd|us\$)",
+    ]
+
+    candidates = []
+    for pattern in patterns:
+        for m in re.finditer(pattern, lower, re.IGNORECASE):
+            try:
+                val = float(m.group(1))
+                candidates.append(val)
+            except Exception:
+                pass
+
+    # 过滤太小的数字，避免再抓到 1 / 2 / 10 这种导航数字
+    candidates = [x for x in candidates if x >= 50]
+
+    if not candidates:
+        return None
+
+    # 取第一个较合理值
+    return candidates[0]
 
 
-def compute_growth(history, key: str, latest_price):
+def extract_growth_pct(text: str, label: str):
+    """
+    尝试从页面中抽 weekly / monthly growth。
+    抽不到就返回 None。
+    """
+    if not text:
+        return None
+
+    patterns = [
+        rf"{label}[^%\-0-9]{{0,50}}(-?\d+(?:\.\d+)?)\s*%",
+        rf"{label.replace('ly', '')}[^%\-0-9]{{0,50}}(-?\d+(?:\.\d+)?)\s*%",
+    ]
+
+    lower = text.lower()
+    for pattern in patterns:
+        m = re.search(pattern, lower, re.IGNORECASE)
+        if m:
+            try:
+                return float(m.group(1))
+            except Exception:
+                pass
+
+    return None
+
+
+def compute_growth_from_history(history, key: str, latest_price):
+    """
+    如果页面上没有直接给 weekly/monthly，就尝试基于我们自己的历史库算。
+    """
     if latest_price is None:
         return None, None
 
@@ -128,8 +190,17 @@ def fetch_trendforce_storage():
             resp.raise_for_status()
             text = resp.text
 
-            latest_price = extract_first_price_like_number(text)
-            weekly_growth, monthly_growth = compute_growth(history, key, latest_price)
+            latest_price = extract_trendforce_latest_price(text)
+
+            weekly_growth = extract_growth_pct(text, "weekly")
+            monthly_growth = extract_growth_pct(text, "monthly")
+
+            # 页面没直接给，就用我们自己的历史算
+            hist_weekly, hist_monthly = compute_growth_from_history(history, key, latest_price)
+            if weekly_growth is None:
+                weekly_growth = hist_weekly
+            if monthly_growth is None:
+                monthly_growth = hist_monthly
 
             out[key] = {
                 "source": "TrendForce",
@@ -137,8 +208,9 @@ def fetch_trendforce_storage():
                 "latest_price": latest_price,
                 "weekly_growth_pct": weekly_growth,
                 "monthly_growth_pct": monthly_growth,
-                "status": "ok"
+                "status": "ok" if latest_price is not None or weekly_growth is not None or monthly_growth is not None else "ok_but_unparsed"
             }
+
         except Exception as e:
             out[key] = {
                 "source": "TrendForce",
@@ -150,16 +222,6 @@ def fetch_trendforce_storage():
             }
 
     return out
-
-
-def save_storage_history(storage_block):
-    history = load_storage_history()
-    history.append({
-        "timestamp": datetime.now(timezone.utc).isoformat(),
-        "storage": storage_block
-    })
-    history = history[-120:]
-    STORAGE_HISTORY.write_text(json.dumps(history, indent=2), encoding="utf-8")
 
 
 def main():
