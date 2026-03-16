@@ -1,123 +1,256 @@
 [
   {
     "ticker": "NVDA",
-    "name": "NVIDIA IR",
-    "group": "Core Platform",
-    "role": "Platform / AI Factory Architecture",
-    "url": "https://investor.nvidia.com/home/default.aspx",
+    "name": "NVIDIA Newsroom",
+    "source_type": "newsroom",
+    "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
-    "file": "raw_pages/nvda_nvidia_ir.html",
-    "error": ""
+    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "items": [
+      {
+        "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
+        "url": "https://www.nvidia.com/en-us"
+      },
+      {
+        "headline": "Autonomous Machines",
+        "url": "https://www.nvidia.com/en-us/autonomous-machines/"
+      },
+      {
+        "headline": "Cloud & Data Center",
+        "url": "https://www.nvidia.com/en-us/data-center/"
+      },
+      {
+        "headline": "Deep Learning & Ai",
+        "url": "https://www.nvidia.com/en-us/deep-learning-ai/"
+      },
+      {
+        "headline": "Design & Pro Visualization",
+        "url": "https://www.nvidia.com/en-us/design-visualization/"
+      },
+      {
+        "headline": "High Performance Computing",
+        "url": "https://www.nvidia.com/en-us/high-performance-computing/"
+      },
+      {
+        "headline": "Gaming & Entertainment",
+        "url": "https://www.nvidia.com/en-us/geforce/"
+      },
+      {
+        "headline": "GPU TECHNOLOGY CONFERENCE",
+        "url": "https://www.nvidia.com/en-us/gtc/"
+      },
+      {
+        "headline": "Into the Omniverse: How Industrial AI and Digital Twins Accelerate Design, Engineering and Manufacturing Across Industries",
+        "url": "https://blogs.nvidia.com/blog/industrial-ai-digital-twins-omniverse/"
+      },
+      {
+        "headline": "GeForce NOW Raises the Game at the Game Developers Conference",
+        "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-gdc-2026/"
+      },
+      {
+        "headline": "New NVIDIA Nemotron 3 Super Delivers 5x Higher Throughput for Agentic AI",
+        "url": "https://blogs.nvidia.com/blog/nemotron-3-super-agentic-ai/"
+      },
+      {
+        "headline": "NVIDIA GTC 2026: Live Updates on What\u2019s Next in AI",
+        "url": "https://blogs.nvidia.com/blog/gtc-2026-news/"
+      }
+    ]
   },
   {
     "ticker": "MU",
-    "name": "Micron IR",
-    "group": "Memory & Storage",
-    "role": "HBM / DRAM / NAND",
-    "url": "https://investors.micron.com/",
-    "status": "success",
-    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
-    "file": "raw_pages/mu_micron_ir.html",
-    "error": ""
+    "name": "Micron News Releases",
+    "source_type": "press",
+    "source_url": "https://investors.micron.com/news-releases",
+    "status": "failed",
+    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases",
+    "items": []
   },
   {
     "ticker": "SNDK",
-    "name": "Sandisk IR",
-    "group": "Memory & Storage",
-    "role": "NAND / SSD / Inference Storage Tier",
-    "url": "https://investor.sandisk.com/",
+    "name": "Sandisk News Releases",
+    "source_type": "press",
+    "source_url": "https://investor.sandisk.com/news-releases",
     "status": "failed",
-    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
-    "file": "",
-    "error": "HTTPSConnectionPool(host='investor.sandisk.com', port=443): Read timed out. (read timeout=40)"
+    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "error": "HTTPSConnectionPool(host='investor.sandisk.com', port=443): Read timed out. (read timeout=40)",
+    "items": []
   },
   {
     "ticker": "ANET",
-    "name": "Arista IR",
-    "group": "Connectivity & Networking",
-    "role": "AI Networking / Scale-out Fabric",
-    "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
+    "name": "Arista Press Releases",
+    "source_type": "press",
+    "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "failed",
-    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
-    "file": "",
-    "error": "403 Client Error: Forbidden for url: https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx"
+    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "error": "403 Client Error: Forbidden for url: https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
+    "items": []
   },
   {
     "ticker": "VRT",
-    "name": "Vertiv IR",
-    "group": "Deployment & Upstream",
-    "role": "Power / Cooling / Deployment",
-    "url": "https://investors.vertiv.com/overview/default.aspx",
-    "status": "success",
-    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
-    "file": "raw_pages/vrt_vertiv_ir.html",
-    "error": ""
+    "name": "Vertiv News",
+    "source_type": "press",
+    "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
+    "status": "failed",
+    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "error": "403 Client Error: Forbidden for url: https://investors.vertiv.com/news/news-details/default.aspx",
+    "items": []
   },
   {
     "ticker": "TSM",
-    "name": "TSMC IR",
-    "group": "Deployment & Upstream",
-    "role": "Foundry / Advanced Packaging",
-    "url": "https://investor.tsmc.com/english",
+    "name": "TSMC Press Center",
+    "source_type": "press",
+    "source_url": "https://pr.tsmc.com/english",
     "status": "failed",
-    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
-    "file": "",
-    "error": "403 Client Error: Forbidden for url: https://investor.tsmc.com/english"
+    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "error": "403 Client Error: Forbidden for url: https://pr.tsmc.com/english",
+    "items": []
   },
   {
     "ticker": "MRVL",
-    "name": "Marvell IR",
-    "group": "Connectivity & Networking",
-    "role": "Interconnect / Custom Infrastructure",
-    "url": "https://investor.marvell.com/",
+    "name": "Marvell Press Releases",
+    "source_type": "press",
+    "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
-    "file": "raw_pages/mrvl_marvell_ir.html",
-    "error": ""
+    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "items": [
+      {
+        "headline": "Skip to main content",
+        "url": "#mainContent"
+      },
+      {
+        "headline": "Skip to section navigation",
+        "url": "#sectionNav"
+      },
+      {
+        "headline": "Data Processing Units",
+        "url": "https://www.marvell.com/products/data-processing-units.html"
+      },
+      {
+        "headline": "Coherent-lite DSPs",
+        "url": "https://www.marvell.com/products/coherent-lite-dsp.html"
+      },
+      {
+        "headline": "Data Center Switches",
+        "url": "https://www.marvell.com/products/data-center-switches.html"
+      },
+      {
+        "headline": "DCI Optical Modules",
+        "url": "https://www.marvell.com/products/optical-modules.html"
+      },
+      {
+        "headline": "Enterprise Switches",
+        "url": "https://www.marvell.com/products/enterprise-switches.html"
+      },
+      {
+        "headline": "Ethernet Controllers",
+        "url": "https://www.marvell.com/products/ethernet-adapters-and-controllers.html"
+      },
+      {
+        "headline": "Transimpedance Amplifiers",
+        "url": "https://www.marvell.com/products/transimpedance-amplifiers.html"
+      },
+      {
+        "headline": "Storage Accelerators",
+        "url": "https://www.marvell.com/products/system-solutions.html"
+      },
+      {
+        "headline": "Marvell Government Solutions",
+        "url": "https://www.marvell.com/products/custom-asic/marvell-government-solutions.html"
+      },
+      {
+        "headline": "Watch the latest Marvell Essential Technology Videos WATCH NOW",
+        "url": "https://videos.marvell.com/"
+      }
+    ]
   },
   {
     "ticker": "ALAB",
-    "name": "Astera Labs IR",
-    "group": "Connectivity & Networking",
-    "role": "Rack-scale Connectivity / AI IO",
-    "url": "https://ir.asteralabs.com/news-events/events-presentations/",
+    "name": "Astera Labs Events",
+    "source_type": "events",
+    "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "failed",
-    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
-    "file": "",
-    "error": "HTTPSConnectionPool(host='ir.asteralabs.com', port=443): Read timed out. (read timeout=40)"
+    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "error": "HTTPSConnectionPool(host='ir.asteralabs.com', port=443): Read timed out. (read timeout=40)",
+    "items": []
   },
   {
     "ticker": "CRDO",
-    "name": "Credo IR",
-    "group": "Connectivity & Networking",
-    "role": "High-speed Interconnect / AI Fabric",
-    "url": "https://investors.credosemi.com/overview/default.aspx",
-    "status": "success",
-    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
-    "file": "raw_pages/crdo_credo_ir.html",
-    "error": ""
+    "name": "Credo News",
+    "source_type": "press",
+    "source_url": "https://investors.credosemi.com/news-events/news",
+    "status": "failed",
+    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "error": "403 Client Error: Forbidden for url: https://investors.credosemi.com/news-events/news",
+    "items": []
   },
   {
     "ticker": "LITE",
-    "name": "Lumentum IR",
-    "group": "Connectivity & Networking",
-    "role": "Optics / AI Data Center Connectivity",
-    "url": "https://investor.lumentum.com/overview/default.aspx",
-    "status": "success",
-    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
-    "file": "raw_pages/lite_lumentum_ir.html",
-    "error": ""
+    "name": "Lumentum News",
+    "source_type": "press",
+    "source_url": "https://investor.lumentum.com/news-releases",
+    "status": "failed",
+    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
+    "items": []
   },
   {
     "ticker": "COHR",
-    "name": "Coherent IR",
-    "group": "Connectivity & Networking",
-    "role": "Optics / Package Integration",
-    "url": "https://www.coherent.com/company/investor-relations",
+    "name": "Coherent News",
+    "source_type": "press",
+    "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-03-16T09:26:14.334220+00:00",
-    "file": "raw_pages/cohr_coherent_ir.html",
-    "error": ""
+    "fetched_at": "2026-03-16T10:32:51.443892+00:00",
+    "items": [
+      {
+        "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
+        "url": "https://www.coherent.com/news/datacenter-communications.html"
+      },
+      {
+        "headline": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
+        "url": "https://www.coherent.com/news/datacenter-communications.html"
+      },
+      {
+        "headline": "Connecting The World\u200b\u200b",
+        "url": "https://www.coherent.com/news/datacenter-communications-applications.html"
+      },
+      {
+        "headline": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
+        "url": "https://www.coherent.com/news/datacenter-communications-applications.html"
+      },
+      {
+        "headline": "Engineered Materials and High-Precision Laser Solutions\u200b",
+        "url": "https://www.coherent.com/news/industrial.html"
+      },
+      {
+        "headline": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
+        "url": "https://www.coherent.com/news/industrial.html"
+      },
+      {
+        "headline": "Solutions Start Here\u200b",
+        "url": "https://www.coherent.com/news/industrial-solutions.html"
+      },
+      {
+        "headline": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
+        "url": "https://www.coherent.com/news/industrial-solutions.html"
+      },
+      {
+        "headline": "Investor Relations",
+        "url": "https://www.coherent.com/news/company/investor-relations"
+      },
+      {
+        "headline": "Financial Releases",
+        "url": "https://www.coherent.com/news/company/investor-relations/financial-releases"
+      },
+      {
+        "headline": "Financial Webcasts",
+        "url": "https://www.coherent.com/news/company/investor-relations/financial-webcasts"
+      },
+      {
+        "headline": "Investor Presentations",
+        "url": "https://www.coherent.com/news/company/investor-relations/investor-presentations"
+      }
+    ]
   }
 ]

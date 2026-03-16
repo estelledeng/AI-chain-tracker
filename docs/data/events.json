@@ -1,139 +1,139 @@
 {
-  "generated_at": "2026-03-16T09:27:37.954470+00:00",
+  "generated_at": "2026-03-16T10:34:14.167306+00:00",
   "dashboard_scores": [
     {
       "ticker": "NVDA",
-      "score": 52,
+      "score": 70,
       "role": "Platform / AI Factory Architecture"
     },
     {
       "ticker": "MU",
-      "score": 52,
+      "score": 45,
       "role": "HBM / DRAM / NAND"
     },
     {
       "ticker": "SNDK",
-      "score": 40,
+      "score": 45,
       "role": "NAND / SSD / Inference Storage Tier"
     },
     {
       "ticker": "ANET",
-      "score": 40,
+      "score": 45,
       "role": "AI Networking / Scale-out Fabric"
     },
     {
       "ticker": "VRT",
-      "score": 52,
+      "score": 45,
       "role": "Power / Cooling / Deployment"
     },
     {
       "ticker": "TSM",
-      "score": 40,
+      "score": 45,
       "role": "Foundry / Advanced Packaging"
     },
     {
       "ticker": "MRVL",
-      "score": 52,
+      "score": 70,
       "role": "Interconnect / Custom Infrastructure"
     },
     {
       "ticker": "ALAB",
-      "score": 40,
+      "score": 45,
       "role": "Rack-scale Connectivity / AI IO"
     },
     {
       "ticker": "CRDO",
-      "score": 59,
+      "score": 45,
       "role": "High-speed Interconnect / AI Fabric"
     },
     {
       "ticker": "LITE",
-      "score": 59,
+      "score": 45,
       "role": "Optics / AI Data Center Connectivity"
     },
     {
       "ticker": "COHR",
-      "score": 52,
+      "score": 70,
       "role": "Optics / Package Integration"
     }
   ],
   "source_configs": [
     {
-      "name": "NVIDIA IR",
-      "type": "Platform / AI Factory Architecture",
+      "name": "NVIDIA Newsroom",
+      "type": "newsroom",
       "status": "Live connected",
       "endpoint": "/api/sources/nvda",
-      "url": "https://investor.nvidia.com/home/default.aspx"
+      "url": "https://nvidianews.nvidia.com/news"
     },
     {
-      "name": "Micron IR",
-      "type": "HBM / DRAM / NAND",
-      "status": "Live connected",
+      "name": "Micron News Releases",
+      "type": "press",
+      "status": "Fetch blocked",
       "endpoint": "/api/sources/mu",
-      "url": "https://investors.micron.com/"
+      "url": "https://investors.micron.com/news-releases"
     },
     {
-      "name": "Sandisk IR",
-      "type": "NAND / SSD / Inference Storage Tier",
+      "name": "Sandisk News Releases",
+      "type": "press",
       "status": "Fetch blocked",
       "endpoint": "/api/sources/sndk",
-      "url": "https://investor.sandisk.com/"
+      "url": "https://investor.sandisk.com/news-releases"
     },
     {
-      "name": "Arista IR",
-      "type": "AI Networking / Scale-out Fabric",
+      "name": "Arista Press Releases",
+      "type": "press",
       "status": "Fetch blocked",
       "endpoint": "/api/sources/anet",
       "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx"
     },
     {
-      "name": "Vertiv IR",
-      "type": "Power / Cooling / Deployment",
-      "status": "Live connected",
+      "name": "Vertiv News",
+      "type": "press",
+      "status": "Fetch blocked",
       "endpoint": "/api/sources/vrt",
-      "url": "https://investors.vertiv.com/overview/default.aspx"
+      "url": "https://investors.vertiv.com/news/news-details/default.aspx"
     },
     {
-      "name": "TSMC IR",
-      "type": "Foundry / Advanced Packaging",
+      "name": "TSMC Press Center",
+      "type": "press",
       "status": "Fetch blocked",
       "endpoint": "/api/sources/tsm",
-      "url": "https://investor.tsmc.com/english"
+      "url": "https://pr.tsmc.com/english"
     },
     {
-      "name": "Marvell IR",
-      "type": "Interconnect / Custom Infrastructure",
+      "name": "Marvell Press Releases",
+      "type": "press",
       "status": "Live connected",
       "endpoint": "/api/sources/mrvl",
-      "url": "https://investor.marvell.com/"
+      "url": "https://investor.marvell.com/news-events/press-releases"
     },
     {
-      "name": "Astera Labs IR",
-      "type": "Rack-scale Connectivity / AI IO",
+      "name": "Astera Labs Events",
+      "type": "events",
       "status": "Fetch blocked",
       "endpoint": "/api/sources/alab",
       "url": "https://ir.asteralabs.com/news-events/events-presentations/"
     },
     {
-      "name": "Credo IR",
-      "type": "High-speed Interconnect / AI Fabric",
-      "status": "Live connected",
+      "name": "Credo News",
+      "type": "press",
+      "status": "Fetch blocked",
       "endpoint": "/api/sources/crdo",
-      "url": "https://investors.credosemi.com/overview/default.aspx"
+      "url": "https://investors.credosemi.com/news-events/news"
     },
     {
-      "name": "Lumentum IR",
-      "type": "Optics / AI Data Center Connectivity",
-      "status": "Live connected",
+      "name": "Lumentum News",
+      "type": "press",
+      "status": "Fetch blocked",
       "endpoint": "/api/sources/lite",
-      "url": "https://investor.lumentum.com/overview/default.aspx"
+      "url": "https://investor.lumentum.com/news-releases"
     },
     {
-      "name": "Coherent IR",
-      "type": "Optics / Package Integration",
+      "name": "Coherent News",
+      "type": "press",
       "status": "Live connected",
       "endpoint": "/api/sources/cohr",
-      "url": "https://www.coherent.com/company/investor-relations"
+      "url": "https://www.coherent.com/news"
     },
     {
       "name": "Transcript parser",
@@ -143,8 +143,67 @@
       "url": "#"
     }
   ],
-  "alerts": [],
-  "eps_bridge": {},
+  "alerts": [
+    {
+      "title": "NVDA mentions context memory or KV cache",
+      "scope": "NVDA \u2192 SNDK / MU",
+      "condition": "Trigger on context memory, KV cache, memory hierarchy, or AI-native storage.",
+      "action": "Raise storage / memory readthrough priority.",
+      "severity": "High"
+    },
+    {
+      "title": "Networking language shifts toward scale-out or fabric bottlenecks",
+      "scope": "ANET / MRVL / ALAB / CRDO / LITE / COHR",
+      "condition": "Trigger on scale-out, network fabric, optics, or bandwidth bottleneck language.",
+      "action": "Raise connectivity and optics cluster sensitivity.",
+      "severity": "High"
+    },
+    {
+      "title": "AI deployment highlights liquid cooling or power constraints",
+      "scope": "VRT direct / NVDA readthrough",
+      "condition": "Trigger on liquid cooling, power constraints, rack density, or thermal bottlenecks.",
+      "action": "Raise deployment bottleneck importance.",
+      "severity": "High"
+    }
+  ],
+  "eps_bridge": {
+    "NVDA": [
+      {
+        "label": "AI factory / inference demand",
+        "effect": "+ Revenue",
+        "note": "Broader system demand expands platform revenue opportunity."
+      },
+      {
+        "label": "Deployment speed",
+        "effect": "+ / - Timing",
+        "note": "Faster validated deployment accelerates revenue conversion; delays push timing right."
+      }
+    ],
+    "MU": [
+      {
+        "label": "HBM shipments",
+        "effect": "+ Revenue",
+        "note": "Shipment growth directly lifts AI memory revenue."
+      },
+      {
+        "label": "Pricing discipline",
+        "effect": "+ GM",
+        "note": "Constructive pricing improves gross margin and EPS conversion."
+      }
+    ],
+    "SNDK": [
+      {
+        "label": "Context memory relevance",
+        "effect": "+ Narrative / TAM",
+        "note": "Can re-rate SNDK from commodity NAND to AI storage layer."
+      },
+      {
+        "label": "Design wins / sampling",
+        "effect": "+ Revenue timing",
+        "note": "Commercial validation is required for roadmap to become earnings."
+      }
+    ]
+  },
   "extended_watchlist": [
     {
       "ticker": "ANET",
@@ -189,251 +248,1162 @@
   ],
   "events": [
     {
-      "id": "live_nvda_1",
+      "id": "nvda_1",
       "company": "NVDA",
-      "type": "IR Update",
-      "datetime": "2026-03-16T09:26:14.334220+00:00",
-      "title": "NVIDIA Corporation - Home",
-      "text": "NVIDIA Corporation - Home Corporate Profile Quarterly Results Latest News Events Featured Presentation Quick Links Email Alerts Email Alert Sign Up Confirmation Events & Presentations Events & PresentationsPresentations Events & Presentations Stock Info Stock Quote & ChartHistorical Price LookupInvestment CalculatorFun",
-      "source": "NVIDIA IR",
-      "url": "https://investor.nvidia.com/home/default.aspx",
+      "source_company": "NVDA",
+      "source_type": "newsroom",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Artificial Intelligence Computing Leadership from NVIDIA",
+      "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
+      "text": "Artificial Intelligence Computing Leadership from NVIDIA",
+      "raw_text": "Artificial Intelligence Computing Leadership from NVIDIA",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "NVIDIA Newsroom",
+      "url": "https://www.nvidia.com/en-us",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
       "analysis": {
         "sentiment": "mixed",
         "direct_score": 52,
         "matched_keywords": [],
         "factor_impact": {
-          "market_size": "medium",
-          "delivery_speed": "medium",
-          "gross_margin": "medium",
-          "eps": "medium"
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
         },
-        "readthrough": [
-          {
-            "ticker": "MU",
-            "score": 48,
-            "summary": "Live IR language from NVDA may have readthrough into MU."
-          },
-          {
-            "ticker": "SNDK",
-            "score": 42,
-            "summary": "Live IR language from NVDA may have readthrough into SNDK."
-          },
-          {
-            "ticker": "ANET",
-            "score": 42,
-            "summary": "Live IR language from NVDA may have readthrough into ANET."
-          }
-        ]
+        "readthrough": []
       }
     },
     {
-      "id": "live_mu_2",
-      "company": "MU",
-      "type": "IR Update",
-      "datetime": "2026-03-16T09:26:14.334220+00:00",
-      "title": "Investor Relations | Micron Technology",
-      "text": "Investor Relations | Micron Technology Investor Relations Quarterly Results Annual Materials Q1 2026 Earnings Presentation IR Home Events & Presentations Latest News Risk Factors Quarterly Financial Results Latest News Events & Presentations \u201cMicron closed out a record-breaking fiscal year with exceptional Q4 performan",
-      "source": "Micron IR",
-      "url": "https://investors.micron.com/",
+      "id": "nvda_2",
+      "company": "NVDA",
+      "source_company": "NVDA",
+      "source_type": "newsroom",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Autonomous Machines",
+      "headline": "Autonomous Machines",
+      "text": "Autonomous Machines",
+      "raw_text": "Autonomous Machines",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "NVIDIA Newsroom",
+      "url": "https://www.nvidia.com/en-us/autonomous-machines/",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
       "analysis": {
         "sentiment": "mixed",
         "direct_score": 52,
         "matched_keywords": [],
         "factor_impact": {
-          "market_size": "medium",
-          "delivery_speed": "medium",
-          "gross_margin": "medium",
-          "eps": "medium"
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "nvda_3",
+      "company": "NVDA",
+      "source_company": "NVDA",
+      "source_type": "newsroom",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Cloud & Data Center",
+      "headline": "Cloud & Data Center",
+      "text": "Cloud & Data Center",
+      "raw_text": "Cloud & Data Center",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "NVIDIA Newsroom",
+      "url": "https://www.nvidia.com/en-us/data-center/",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "nvda_4",
+      "company": "NVDA",
+      "source_company": "NVDA",
+      "source_type": "newsroom",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Deep Learning & Ai",
+      "headline": "Deep Learning & Ai",
+      "text": "Deep Learning & Ai",
+      "raw_text": "Deep Learning & Ai",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "NVIDIA Newsroom",
+      "url": "https://www.nvidia.com/en-us/deep-learning-ai/",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "nvda_5",
+      "company": "NVDA",
+      "source_company": "NVDA",
+      "source_type": "newsroom",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Design & Pro Visualization",
+      "headline": "Design & Pro Visualization",
+      "text": "Design & Pro Visualization",
+      "raw_text": "Design & Pro Visualization",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "NVIDIA Newsroom",
+      "url": "https://www.nvidia.com/en-us/design-visualization/",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "nvda_6",
+      "company": "NVDA",
+      "source_company": "NVDA",
+      "source_type": "newsroom",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "High Performance Computing",
+      "headline": "High Performance Computing",
+      "text": "High Performance Computing",
+      "raw_text": "High Performance Computing",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "NVIDIA Newsroom",
+      "url": "https://www.nvidia.com/en-us/high-performance-computing/",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "nvda_7",
+      "company": "NVDA",
+      "source_company": "NVDA",
+      "source_type": "newsroom",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Gaming & Entertainment",
+      "headline": "Gaming & Entertainment",
+      "text": "Gaming & Entertainment",
+      "raw_text": "Gaming & Entertainment",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "NVIDIA Newsroom",
+      "url": "https://www.nvidia.com/en-us/geforce/",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "nvda_8",
+      "company": "NVDA",
+      "source_company": "NVDA",
+      "source_type": "newsroom",
+      "event_type": "Keynote / Conference",
+      "type": "Keynote / Conference",
+      "title": "GPU TECHNOLOGY CONFERENCE",
+      "headline": "GPU TECHNOLOGY CONFERENCE",
+      "text": "GPU TECHNOLOGY CONFERENCE",
+      "raw_text": "GPU TECHNOLOGY CONFERENCE",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "NVIDIA Newsroom",
+      "url": "https://www.nvidia.com/en-us/gtc/",
+      "chain_buckets": [
+        "Compute"
+      ],
+      "primary_beneficiaries": [
+        "NVDA"
+      ],
+      "secondary_beneficiaries": [
+        "TSM"
+      ],
+      "keyword_hits": [
+        "gpu"
+      ],
+      "sentiment": "bullish",
+      "factor_impact": {
+        "tam": "high",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This language maps most directly to Compute. Primary beneficiaries are NVDA, with secondary readthrough into TSM.",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 70,
+        "matched_keywords": [
+          "gpu"
+        ],
+        "factor_impact": {
+          "tam": "high",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
         },
         "readthrough": [
-          {
-            "ticker": "NVDA",
-            "score": 48,
-            "summary": "Live IR language from MU may have readthrough into NVDA."
-          },
           {
             "ticker": "TSM",
-            "score": 42,
-            "summary": "Live IR language from MU may have readthrough into TSM."
+            "score": 64,
+            "summary": "NVDA event may have readthrough into TSM."
           }
         ]
       }
     },
     {
-      "id": "live_vrt_5",
-      "company": "VRT",
-      "type": "IR Update",
-      "datetime": "2026-03-16T09:26:14.334220+00:00",
-      "title": "Vertiv Holdings Co. - Investor relations",
-      "text": "Vertiv Holdings Co. - Investor relations Latest Annual Reports Recent Press Releases and Announcements Subscribe to get the latest trends in technology Gap List Fixes How can we help? Overview NewsEvents & Presentations Events & Presentations2024 Investor Event2023 Investor Conference Stock Info Stock QuoteDividend His",
-      "source": "Vertiv IR",
-      "url": "https://investors.vertiv.com/overview/default.aspx",
-      "analysis": {
-        "sentiment": "mixed",
-        "direct_score": 52,
-        "matched_keywords": [],
-        "factor_impact": {
-          "market_size": "medium",
-          "delivery_speed": "medium",
-          "gross_margin": "medium",
-          "eps": "medium"
-        },
-        "readthrough": [
-          {
-            "ticker": "NVDA",
-            "score": 48,
-            "summary": "Live IR language from VRT may have readthrough into NVDA."
-          },
-          {
-            "ticker": "TSM",
-            "score": 42,
-            "summary": "Live IR language from VRT may have readthrough into TSM."
-          }
-        ]
-      }
-    },
-    {
-      "id": "live_mrvl_7",
+      "id": "mrvl_1",
       "company": "MRVL",
-      "type": "IR Update",
-      "datetime": "2026-03-16T09:26:14.334220+00:00",
-      "title": "Investor Relations | Marvell Technology, Inc. (MRVL)",
-      "text": "Investor Relations | Marvell Technology, Inc. (MRVL) Investor Relations Compute Networking Storage Custom BY MARKET Our Company Media Contact FY 2026 Year End Results Investors FY 2026 Company Investor Relations Transfer Agent Data Processing Units Transimpedance Amplifiers",
-      "source": "Marvell IR",
-      "url": "https://investor.marvell.com/",
+      "source_company": "MRVL",
+      "source_type": "press",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Skip to main content",
+      "headline": "Skip to main content",
+      "text": "Skip to main content",
+      "raw_text": "Skip to main content",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "Marvell Press Releases",
+      "url": "#mainContent",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
       "analysis": {
         "sentiment": "mixed",
         "direct_score": 52,
         "matched_keywords": [],
         "factor_impact": {
-          "market_size": "medium",
-          "delivery_speed": "medium",
-          "gross_margin": "medium",
-          "eps": "medium"
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
         },
-        "readthrough": [
-          {
-            "ticker": "ANET",
-            "score": 48,
-            "summary": "Live IR language from MRVL may have readthrough into ANET."
-          },
-          {
-            "ticker": "ALAB",
-            "score": 42,
-            "summary": "Live IR language from MRVL may have readthrough into ALAB."
-          },
-          {
-            "ticker": "CRDO",
-            "score": 42,
-            "summary": "Live IR language from MRVL may have readthrough into CRDO."
-          }
-        ]
+        "readthrough": []
       }
     },
     {
-      "id": "live_crdo_9",
-      "company": "CRDO",
-      "type": "IR Update",
-      "datetime": "2026-03-16T09:26:14.334220+00:00",
-      "title": "Credo Technology Group Holding Ltd - Investor Relations",
-      "text": "Credo Technology Group Holding Ltd - Investor Relations Credo Reports Third Quarter Fiscal Year 2026 Financial Results Credo at OCP 2025 ZeroFlap Optical Transceivers Credo\u2019s BlueBird 1.6T Optical DSP Credo at CIOE 2025 Sustainability Credo Leadership Events Credo Investor Relations Company Products Connections IR Upda",
-      "source": "Credo IR",
-      "url": "https://investors.credosemi.com/overview/default.aspx",
+      "id": "mrvl_2",
+      "company": "MRVL",
+      "source_company": "MRVL",
+      "source_type": "press",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Skip to section navigation",
+      "headline": "Skip to section navigation",
+      "text": "Skip to section navigation",
+      "raw_text": "Skip to section navigation",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "Marvell Press Releases",
+      "url": "#sectionNav",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "mrvl_3",
+      "company": "MRVL",
+      "source_company": "MRVL",
+      "source_type": "press",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Data Processing Units",
+      "headline": "Data Processing Units",
+      "text": "Data Processing Units",
+      "raw_text": "Data Processing Units",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "Marvell Press Releases",
+      "url": "https://www.marvell.com/products/data-processing-units.html",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "mrvl_4",
+      "company": "MRVL",
+      "source_company": "MRVL",
+      "source_type": "press",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Coherent-lite DSPs",
+      "headline": "Coherent-lite DSPs",
+      "text": "Coherent-lite DSPs",
+      "raw_text": "Coherent-lite DSPs",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "Marvell Press Releases",
+      "url": "https://www.marvell.com/products/coherent-lite-dsp.html",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "mrvl_5",
+      "company": "MRVL",
+      "source_company": "MRVL",
+      "source_type": "press",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Data Center Switches",
+      "headline": "Data Center Switches",
+      "text": "Data Center Switches",
+      "raw_text": "Data Center Switches",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "Marvell Press Releases",
+      "url": "https://www.marvell.com/products/data-center-switches.html",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "mrvl_6",
+      "company": "MRVL",
+      "source_company": "MRVL",
+      "source_type": "press",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "DCI Optical Modules",
+      "headline": "DCI Optical Modules",
+      "text": "DCI Optical Modules",
+      "raw_text": "DCI Optical Modules",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "Marvell Press Releases",
+      "url": "https://www.marvell.com/products/optical-modules.html",
+      "chain_buckets": [
+        "Optics"
+      ],
+      "primary_beneficiaries": [
+        "LITE",
+        "COHR"
+      ],
+      "secondary_beneficiaries": [
+        "CRDO",
+        "ANET"
+      ],
+      "keyword_hits": [
+        "optical"
+      ],
+      "sentiment": "bullish",
+      "factor_impact": {
+        "tam": "high",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This language maps most directly to Optics. Primary beneficiaries are LITE, COHR, with secondary readthrough into CRDO, ANET.",
       "analysis": {
         "sentiment": "bullish",
-        "direct_score": 59,
+        "direct_score": 70,
         "matched_keywords": [
-          "optics"
+          "optical"
         ],
         "factor_impact": {
-          "market_size": "high",
-          "delivery_speed": "medium",
-          "gross_margin": "medium",
-          "eps": "medium"
+          "tam": "high",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
         },
         "readthrough": [
-          {
-            "ticker": "ANET",
-            "score": 58,
-            "summary": "Live IR language from CRDO may have readthrough into ANET."
-          },
-          {
-            "ticker": "LITE",
-            "score": 52,
-            "summary": "Live IR language from CRDO may have readthrough into LITE."
-          },
-          {
-            "ticker": "COHR",
-            "score": 46,
-            "summary": "Live IR language from CRDO may have readthrough into COHR."
-          }
-        ]
-      }
-    },
-    {
-      "id": "live_lite_10",
-      "company": "LITE",
-      "type": "IR Update",
-      "datetime": "2026-03-16T09:26:14.334220+00:00",
-      "title": "Lumentum - Investor Relations",
-      "text": "Lumentum - Investor Relations Investor Relations Corporate Overview Latest News Events Latest Quarter Results Latest Quarter Results Contact Us Quick Links Investor Email Alerts Overview Governance Corporate GovernanceExecutive ManagementBoard of DirectorsCommittee Composition News ReleasesQuarterly ResultsSEC FilingsE",
-      "source": "Lumentum IR",
-      "url": "https://investor.lumentum.com/overview/default.aspx",
-      "analysis": {
-        "sentiment": "bullish",
-        "direct_score": 59,
-        "matched_keywords": [
-          "optics"
-        ],
-        "factor_impact": {
-          "market_size": "high",
-          "delivery_speed": "medium",
-          "gross_margin": "medium",
-          "eps": "medium"
-        },
-        "readthrough": [
-          {
-            "ticker": "COHR",
-            "score": 58,
-            "summary": "Live IR language from LITE may have readthrough into COHR."
-          },
           {
             "ticker": "CRDO",
-            "score": 52,
-            "summary": "Live IR language from LITE may have readthrough into CRDO."
+            "score": 64,
+            "summary": "MRVL event may have readthrough into CRDO."
+          },
+          {
+            "ticker": "ANET",
+            "score": 59,
+            "summary": "MRVL event may have readthrough into ANET."
           }
         ]
       }
     },
     {
-      "id": "live_cohr_11",
+      "id": "mrvl_7",
+      "company": "MRVL",
+      "source_company": "MRVL",
+      "source_type": "press",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Enterprise Switches",
+      "headline": "Enterprise Switches",
+      "text": "Enterprise Switches",
+      "raw_text": "Enterprise Switches",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "Marvell Press Releases",
+      "url": "https://www.marvell.com/products/enterprise-switches.html",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "mrvl_8",
+      "company": "MRVL",
+      "source_company": "MRVL",
+      "source_type": "press",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Ethernet Controllers",
+      "headline": "Ethernet Controllers",
+      "text": "Ethernet Controllers",
+      "raw_text": "Ethernet Controllers",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "Marvell Press Releases",
+      "url": "https://www.marvell.com/products/ethernet-adapters-and-controllers.html",
+      "chain_buckets": [
+        "Networking"
+      ],
+      "primary_beneficiaries": [
+        "ANET",
+        "MRVL",
+        "ALAB",
+        "CRDO"
+      ],
+      "secondary_beneficiaries": [
+        "NVDA"
+      ],
+      "keyword_hits": [
+        "ethernet"
+      ],
+      "sentiment": "bullish",
+      "factor_impact": {
+        "tam": "high",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This language maps most directly to Networking. Primary beneficiaries are ANET, MRVL, ALAB, CRDO, with secondary readthrough into NVDA.",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 70,
+        "matched_keywords": [
+          "ethernet"
+        ],
+        "factor_impact": {
+          "tam": "high",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": [
+          {
+            "ticker": "NVDA",
+            "score": 64,
+            "summary": "MRVL event may have readthrough into NVDA."
+          }
+        ]
+      }
+    },
+    {
+      "id": "cohr_1",
       "company": "COHR",
-      "type": "IR Update",
-      "datetime": "2026-03-16T09:26:14.334220+00:00",
-      "title": "Investor Relations | Coherent",
-      "text": "Investor Relations | Coherent Investor Relations Financial Press Releases and Webcasts Investor Presentations Annual Filings SEC Filings Governance ESG Report Coherent Transaction Contact Us English (US) English (US) English (US) Deutsch \u4e2d\u6587 \u65e5\u672c\u8a9e \ud55c\uad6d\uc5b4 Region * United States Canada Afghanistan Aland Islands Albania Algeria",
-      "source": "Coherent IR",
-      "url": "https://www.coherent.com/company/investor-relations",
+      "source_company": "COHR",
+      "source_type": "press",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
+      "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
+      "text": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
+      "raw_text": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "Coherent News",
+      "url": "https://www.coherent.com/news/datacenter-communications.html",
+      "chain_buckets": [
+        "Optics"
+      ],
+      "primary_beneficiaries": [
+        "LITE",
+        "COHR"
+      ],
+      "secondary_beneficiaries": [
+        "CRDO",
+        "ANET"
+      ],
+      "keyword_hits": [
+        "optical"
+      ],
+      "sentiment": "bullish",
+      "factor_impact": {
+        "tam": "high",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This language maps most directly to Optics. Primary beneficiaries are LITE, COHR, with secondary readthrough into CRDO, ANET.",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 70,
+        "matched_keywords": [
+          "optical"
+        ],
+        "factor_impact": {
+          "tam": "high",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": [
+          {
+            "ticker": "CRDO",
+            "score": 64,
+            "summary": "COHR event may have readthrough into CRDO."
+          },
+          {
+            "ticker": "ANET",
+            "score": 59,
+            "summary": "COHR event may have readthrough into ANET."
+          }
+        ]
+      }
+    },
+    {
+      "id": "cohr_2",
+      "company": "COHR",
+      "source_company": "COHR",
+      "source_type": "press",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
+      "headline": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
+      "text": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
+      "raw_text": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "Coherent News",
+      "url": "https://www.coherent.com/news/datacenter-communications.html",
+      "chain_buckets": [
+        "Optics",
+        "Power / Cooling"
+      ],
+      "primary_beneficiaries": [
+        "LITE",
+        "COHR",
+        "VRT"
+      ],
+      "secondary_beneficiaries": [
+        "CRDO",
+        "ANET",
+        "NVDA"
+      ],
+      "keyword_hits": [
+        "optical",
+        "power"
+      ],
+      "sentiment": "bullish",
+      "factor_impact": {
+        "tam": "high",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This language maps most directly to Optics, Power / Cooling. Primary beneficiaries are LITE, COHR, VRT, with secondary readthrough into CRDO, ANET, NVDA.",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 70,
+        "matched_keywords": [
+          "optical",
+          "power"
+        ],
+        "factor_impact": {
+          "tam": "high",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": [
+          {
+            "ticker": "CRDO",
+            "score": 64,
+            "summary": "COHR event may have readthrough into CRDO."
+          },
+          {
+            "ticker": "ANET",
+            "score": 59,
+            "summary": "COHR event may have readthrough into ANET."
+          },
+          {
+            "ticker": "NVDA",
+            "score": 54,
+            "summary": "COHR event may have readthrough into NVDA."
+          }
+        ]
+      }
+    },
+    {
+      "id": "cohr_3",
+      "company": "COHR",
+      "source_company": "COHR",
+      "source_type": "press",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Connecting The World\u200b\u200b",
+      "headline": "Connecting The World\u200b\u200b",
+      "text": "Connecting The World\u200b\u200b",
+      "raw_text": "Connecting The World\u200b\u200b",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "Coherent News",
+      "url": "https://www.coherent.com/news/datacenter-communications-applications.html",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
       "analysis": {
         "sentiment": "mixed",
         "direct_score": 52,
         "matched_keywords": [],
         "factor_impact": {
-          "market_size": "medium",
-          "delivery_speed": "medium",
-          "gross_margin": "medium",
-          "eps": "medium"
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "cohr_4",
+      "company": "COHR",
+      "source_company": "COHR",
+      "source_type": "press",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
+      "headline": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
+      "text": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
+      "raw_text": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "Coherent News",
+      "url": "https://www.coherent.com/news/datacenter-communications-applications.html",
+      "chain_buckets": [
+        "Optics"
+      ],
+      "primary_beneficiaries": [
+        "LITE",
+        "COHR"
+      ],
+      "secondary_beneficiaries": [
+        "CRDO",
+        "ANET"
+      ],
+      "keyword_hits": [
+        "optical"
+      ],
+      "sentiment": "bullish",
+      "factor_impact": {
+        "tam": "high",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This language maps most directly to Optics. Primary beneficiaries are LITE, COHR, with secondary readthrough into CRDO, ANET.",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 70,
+        "matched_keywords": [
+          "optical"
+        ],
+        "factor_impact": {
+          "tam": "high",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
         },
         "readthrough": [
           {
-            "ticker": "LITE",
-            "score": 48,
-            "summary": "Live IR language from COHR may have readthrough into LITE."
+            "ticker": "CRDO",
+            "score": 64,
+            "summary": "COHR event may have readthrough into CRDO."
           },
           {
-            "ticker": "TSM",
-            "score": 42,
-            "summary": "Live IR language from COHR may have readthrough into TSM."
+            "ticker": "ANET",
+            "score": 59,
+            "summary": "COHR event may have readthrough into ANET."
+          }
+        ]
+      }
+    },
+    {
+      "id": "cohr_5",
+      "company": "COHR",
+      "source_company": "COHR",
+      "source_type": "press",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Engineered Materials and High-Precision Laser Solutions\u200b",
+      "headline": "Engineered Materials and High-Precision Laser Solutions\u200b",
+      "text": "Engineered Materials and High-Precision Laser Solutions\u200b",
+      "raw_text": "Engineered Materials and High-Precision Laser Solutions\u200b",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "Coherent News",
+      "url": "https://www.coherent.com/news/industrial.html",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "cohr_6",
+      "company": "COHR",
+      "source_company": "COHR",
+      "source_type": "press",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
+      "headline": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
+      "text": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
+      "raw_text": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "Coherent News",
+      "url": "https://www.coherent.com/news/industrial.html",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "cohr_7",
+      "company": "COHR",
+      "source_company": "COHR",
+      "source_type": "press",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Solutions Start Here\u200b",
+      "headline": "Solutions Start Here\u200b",
+      "text": "Solutions Start Here\u200b",
+      "raw_text": "Solutions Start Here\u200b",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "Coherent News",
+      "url": "https://www.coherent.com/news/industrial-solutions.html",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 52,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "cohr_8",
+      "company": "COHR",
+      "source_company": "COHR",
+      "source_type": "press",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
+      "headline": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
+      "text": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
+      "raw_text": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
+      "published_at": "2026-03-16T10:32:51.443892+00:00",
+      "datetime": "2026-03-16T10:32:51.443892+00:00",
+      "source": "Coherent News",
+      "url": "https://www.coherent.com/news/industrial-solutions.html",
+      "chain_buckets": [
+        "Power / Cooling"
+      ],
+      "primary_beneficiaries": [
+        "VRT"
+      ],
+      "secondary_beneficiaries": [
+        "NVDA"
+      ],
+      "keyword_hits": [
+        "power"
+      ],
+      "sentiment": "bullish",
+      "factor_impact": {
+        "tam": "high",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This language maps most directly to Power / Cooling. Primary beneficiaries are VRT, with secondary readthrough into NVDA.",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 70,
+        "matched_keywords": [
+          "power"
+        ],
+        "factor_impact": {
+          "tam": "high",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": [
+          {
+            "ticker": "NVDA",
+            "score": 64,
+            "summary": "COHR event may have readthrough into NVDA."
           }
         ]
       }
