@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-03-16T20:01:55.558602+00:00",
+    "fetched_at": "2026-03-16T20:58:12.507653+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -24,44 +24,44 @@
         "url": "https://www.nvidia.com/en-us/gtc/"
       },
       {
-        "headline": "NVIDIA Launches Vera CPU, Purpose-Built for Agentic AI",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-launches-vera-cpu-purpose-built-for-agentic-ai"
+        "headline": "NVIDIA and Global Robotics Leaders Take Physical AI to the Real World",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-global-robotics-leaders-take-physical-ai-to-the-real-world"
       },
       {
-        "headline": "NVIDIA Launches BlueField-4 STX Storage Architecture With Broad Industry Adoption",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-launches-bluefield-4-stx-storage-architecture-with-broad-industry-adoption"
+        "headline": "NVIDIA and Global Industrial Software Giants Bring Design, Engineering and Manufacturing Into the AI Era",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-global-industrial-software-giants-bring-design-engineering-and-manufacturing-into-the-ai-era"
       },
       {
-        "headline": "NVIDIA Vera Rubin Opens Agentic AI Frontier",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform"
+        "headline": "Hyundai Motor, Kia and NVIDIA Expand Strategic Partnership for Next-Generation Autonomous Driving Technology",
+        "url": "https://nvidianews.nvidia.com/news/hyundai-motor-kia-autonomous-driving"
       },
       {
-        "headline": "NVIDIA DLSS 5 Delivers AI-Powered Breakthrough in Visual Fidelity for Games",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-dlss-5-delivers-ai-powered-breakthrough-in-visual-fidelity-for-games"
+        "headline": "NVIDIA Announces Open Physical AI Data Factory Blueprint to Accelerate Robotics, Vision AI Agents and Autonomous Vehicle Development",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-open-physical-ai-data-factory-blueprint-to-accelerate-robotics-vision-ai-agents-and-autonomous-vehicle-development"
       },
       {
-        "headline": "Into the Omniverse: How Industrial AI and Digital Twins Accelerate Design, Engineering and Manufacturing Across Industries",
-        "url": "https://blogs.nvidia.com/blog/industrial-ai-digital-twins-omniverse/"
+        "headline": "NVIDIA Enters Production With Dynamo, the Broadly Adopted Inference Operating System for AI Factories",
+        "url": "https://nvidianews.nvidia.com/news/dynamo-1-0"
       },
       {
-        "headline": "GeForce NOW Raises the Game at the Game Developers Conference",
-        "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-gdc-2026/"
+        "headline": "Roche Scales NVIDIA AI Factories Globally to Accelerate Drug Discovery, Diagnostic Solutions and Manufacturing Breakthroughs",
+        "url": "https://blogs.nvidia.com/blog/roche-ai-factories-omniverse/"
       },
       {
-        "headline": "New NVIDIA Nemotron 3 Super Delivers 5x Higher Throughput for Agentic AI",
-        "url": "https://blogs.nvidia.com/blog/nemotron-3-super-agentic-ai/"
+        "headline": "NVIDIA, T-Mobile and Partners Integrate Physical AI Applications on AI-RAN-Ready Infrastructure",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-t-mobile-and-partners-integrate-physical-ai-applications-on-ai-ran-ready-infrastructure"
       },
       {
-        "headline": "NVIDIA GTC 2026: Live Updates on What\u2019s Next in AI",
-        "url": "https://blogs.nvidia.com/blog/gtc-2026-news/"
+        "headline": "Adobe and NVIDIA Announce Strategic Partnership to Deliver the Next Generation of Firefly Models and Creative, Marketing and Agentic Workflows",
+        "url": "https://nvidianews.nvidia.com/news/adobe-and-nvidia-partnership-creative-marketing-agentic-workflows"
       },
       {
-        "headline": "NVIDIA and Nebius Partner to Scale Full-Stack AI Cloud",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-and-nebius-partner-to-scale-full-stack-ai-cloud"
+        "headline": "BYD, Geely, Isuzu and Nissan Adopt NVIDIA DRIVE Hyperion for Level 4 Vehicles",
+        "url": "https://nvidianews.nvidia.com/news/drive-hyperion-level-4"
       },
       {
-        "headline": "As Open Models Spark AI Boom, NVIDIA Jetson Brings It to Life at the Edge",
-        "url": "https://blogs.nvidia.com/blog/jetson-generative-ai-edge-oss/"
+        "headline": "NVIDIA Ignites the Next Industrial Revolution in Knowledge Work With Open Agent Development Platform",
+        "url": "https://nvidianews.nvidia.com/news/ai-agents"
       }
     ]
   },
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-03-16T20:01:55.558602+00:00",
+    "fetched_at": "2026-03-16T20:58:12.507653+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-03-16T20:01:55.558602+00:00",
+    "fetched_at": "2026-03-16T20:58:12.507653+00:00",
     "error": "HTTPSConnectionPool(host='investor.sandisk.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "blocked",
-    "fetched_at": "2026-03-16T20:01:55.558602+00:00",
+    "fetched_at": "2026-03-16T20:58:12.507653+00:00",
     "error": "403 Client Error: Forbidden for url: https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "items": []
   },
@@ -101,7 +101,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "blocked",
-    "fetched_at": "2026-03-16T20:01:55.558602+00:00",
+    "fetched_at": "2026-03-16T20:58:12.507653+00:00",
     "error": "403 Client Error: Forbidden for url: https://investors.vertiv.com/news/news-details/default.aspx",
     "items": []
   },
@@ -111,7 +111,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "blocked",
-    "fetched_at": "2026-03-16T20:01:55.558602+00:00",
+    "fetched_at": "2026-03-16T20:58:12.507653+00:00",
     "error": "403 Client Error: Forbidden for url: https://pr.tsmc.com/english",
     "items": []
   },
@@ -121,7 +121,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-03-16T20:01:55.558602+00:00",
+    "fetched_at": "2026-03-16T20:58:12.507653+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -187,7 +187,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-03-16T20:01:55.558602+00:00",
+    "fetched_at": "2026-03-16T20:58:12.507653+00:00",
     "error": "HTTPSConnectionPool(host='ir.asteralabs.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -197,7 +197,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "blocked",
-    "fetched_at": "2026-03-16T20:01:55.558602+00:00",
+    "fetched_at": "2026-03-16T20:58:12.507653+00:00",
     "error": "403 Client Error: Forbidden for url: https://investors.credosemi.com/news-events/news",
     "items": []
   },
@@ -207,7 +207,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-03-16T20:01:55.558602+00:00",
+    "fetched_at": "2026-03-16T20:58:12.507653+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -217,7 +217,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-03-16T20:01:55.558602+00:00",
+    "fetched_at": "2026-03-16T20:58:12.507653+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -283,7 +283,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-03-16T20:01:55.558602+00:00",
+    "fetched_at": "2026-03-16T20:58:12.507653+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -349,7 +349,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-03-16T20:01:55.558602+00:00",
+    "fetched_at": "2026-03-16T20:58:12.507653+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
@@ -415,7 +415,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-03-16T20:01:55.558602+00:00",
+    "fetched_at": "2026-03-16T20:58:12.507653+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
