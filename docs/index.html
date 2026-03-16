@@ -3,117 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Chain Tracker</title>
+  <title>AI Chain Event Intelligence Dashboard</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div>
-      <div class="eyebrow">AI Chain Tracker · NVDA / MU / SNDK</div>
-      <h1>Realtime keyword and earnings readthrough dashboard</h1>
-      <p class="subhead">Tracks official releases, earnings updates, and event language across NVIDIA, Micron, Sandisk, networking, optics, cooling, and upstream AI infrastructure names. Scores direct impact, cross-ticker readthrough, and factor sensitivity.</p>
-    </div>
-    <div class="topbar-actions">
-      <button id="refreshBtn" class="primary">Refresh data</button>
-    </div>
-  </header>
-
-  <section class="controls card">
-    <div class="control-group">
-      <label for="companyFilter">Company</label>
-      <select id="companyFilter">
-        <option value="ALL">All companies</option>
-        <option value="NVDA">NVDA</option>
-        <option value="MU">MU</option>
-        <option value="SNDK">SNDK</option>
-        <option value="ANET">ANET</option>
-        <option value="VRT">VRT</option>
-        <option value="TSM">TSM</option>
-        <option value="MRVL">MRVL</option>
-        <option value="ALAB">ALAB</option>
-        <option value="CRDO">CRDO</option>
-        <option value="LITE">LITE</option>
-        <option value="COHR">COHR</option>
-      </select>
-    </div>
-    <div class="control-group search">
-      <label for="searchInput">Search events / keywords</label>
-      <input id="searchInput" type="text" placeholder="AI factory, HBM, context memory, gross margin..." />
-    </div>
-    <div class="control-group">
-      <label>Data source</label>
-      <div id="dataStamp" class="muted">Waiting for data…</div>
-    </div>
-  </section>
-
-  <section class="grid dashboard-grid">
-    <div class="card summary-card">
-      <div class="card-title">Signal score</div>
-      <div id="scoreCards" class="score-cards"></div>
-    </div>
-    <div class="card summary-card">
-      <div class="card-title">System status</div>
-      <div id="systemStatus" class="system-status"></div>
-    </div>
-  </section>
-
-  <section class="card analyzer-card">
-  <div class="section-head">
-    <h2>Manual Event Analyzer</h2>
-    <p>Paste one sentence, a keynote excerpt, earnings language, partnership headline, or news summary. The system will classify the event, map it to the AI chain, and rank likely beneficiaries.</p>
-  </div>
-
-  <div class="analyzer-grid">
-    <div>
-      <label class="field-label" for="manualInput">Event text / transcript / headline</label>
-      <textarea id="manualInput" rows="8" placeholder="Example: Jensen says future AI factories depend on memory hierarchy, context memory, and efficient KV cache reuse."></textarea>
-
-      <div class="analyzer-actions">
-        <button id="analyzeBtn" class="primary-btn">Analyze event</button>
-        <button id="clearAnalyzeBtn" class="secondary-btn">Clear</button>
+  <div class="page">
+    <header class="hero">
+      <div>
+        <div class="eyebrow">AI Chain Event Intelligence · NVDA / MU / SNDK / Networking / Optics / Cooling / Packaging</div>
+        <h1>Realtime AI chain event intelligence dashboard</h1>
+        <p class="hero-copy">
+          Track live company news, product launches, partnerships, earnings language, conference remarks, and management commentary. 
+          Map each event to the AI chain, identify likely beneficiaries, and bridge it to TAM, shipment, margin, EPS, and timing.
+        </p>
       </div>
-    </div>
+      <button id="refreshBtn" class="primary-btn">Refresh data</button>
+    </header>
 
-    <div id="analyzerOutput" class="analyzer-output">
-      <div class="muted">No manual event analyzed yet.</div>
-    </div>
-  </div>
-</section>
-
-  <main class="grid main-grid">
-    <section class="card feed-column">
-      <div class="feed-header">
-        <div class="card-title">Event feed</div>
-        <div id="feedCount" class="muted"></div>
+    <section class="topbar card">
+      <div class="topbar-grid">
+        <div>
+          <label class="field-label" for="companyFilter">Company</label>
+          <select id="companyFilter">
+            <option value="ALL">All companies</option>
+          </select>
+        </div>
+        <div>
+          <label class="field-label" for="searchInput">Search events / keywords</label>
+          <input id="searchInput" type="text" placeholder="GTC, HBM, context memory, liquid cooling, optics, partnership..." />
+        </div>
+        <div>
+          <div class="field-label">Data source</div>
+          <div id="dataStamp" class="stamp">Waiting for data...</div>
+        </div>
       </div>
-      <div id="feed" class="feed"></div>
     </section>
 
-    <section class="detail-column">
+    <section class="summary-grid">
+      <div class="card">
+        <div class="section-title">Signal score</div>
+        <div id="scoreCards" class="score-grid"></div>
+      </div>
+      <div class="card">
+        <div class="section-title">Source health</div>
+        <div id="systemStatus" class="status-list"></div>
+      </div>
+    </section>
+
+    <section class="card analyzer-card">
+      <div class="section-head">
+        <div>
+          <div class="section-title">Manual Event Analyzer</div>
+          <div class="section-subtitle">
+            Paste one sentence from GTC, an earnings call, a partnership release, or a news summary. 
+            The system will classify the event, map it to the AI chain, and rank likely beneficiaries.
+          </div>
+        </div>
+      </div>
+
+      <div class="analyzer-grid">
+        <div>
+          <label class="field-label" for="manualInput">Event text / transcript / headline</label>
+          <textarea id="manualInput" rows="7" placeholder="Example: Jensen says future AI factories depend on memory hierarchy, context memory, and efficient KV cache reuse."></textarea>
+          <div class="analyzer-actions">
+            <button id="analyzeBtn" class="primary-btn">Analyze event</button>
+            <button id="clearAnalyzeBtn" class="secondary-btn">Clear</button>
+          </div>
+        </div>
+        <div id="analyzerOutput" class="analyzer-output">
+          <div class="muted">No manual event analyzed yet.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-grid">
+      <div class="card">
+        <div class="feed-head">
+          <div class="section-title">Live event feed</div>
+          <div id="feedCount" class="muted">0 events</div>
+        </div>
+        <div id="feed" class="feed-list"></div>
+      </div>
+
       <div class="card detail-card">
+        <div class="section-title">Event intelligence</div>
         <div id="detail"></div>
       </div>
-
-      <div class="tab-shell card">
-        <div class="tabs">
-          <button class="tab active" data-tab="bridge">EPS bridge</button>
-          <button class="tab" data-tab="alerts">Alerts</button>
-          <button class="tab" data-tab="sources">Sources</button>
-          <button class="tab" data-tab="watchlist">Watchlist</button>
-        </div>
-        <div class="tab-panels">
-          <div class="tab-panel active" id="bridgePanel"></div>
-          <div class="tab-panel" id="alertsPanel"></div>
-          <div class="tab-panel" id="sourcesPanel"></div>
-          <div class="tab-panel" id="watchlistPanel"></div>
-        </div>
-      </div>
     </section>
-  </main>
 
-  <footer class="footer muted">
-    Built as a local-first tracker. Frontend reads <code>data/events.json</code>. The Python scripts update that file from official IR sources and can be scheduled with GitHub Actions.
-  </footer>
+    <section class="card">
+      <div class="tabs">
+        <button class="tab active" data-tab="bridge">EPS bridge</button>
+        <button class="tab" data-tab="alerts">Alerts</button>
+        <button class="tab" data-tab="sources">Sources</button>
+        <button class="tab" data-tab="watchlist">Watchlist</button>
+      </div>
+
+      <div id="bridgePanel" class="tab-panel active"></div>
+      <div id="alertsPanel" class="tab-panel"></div>
+      <div id="sourcesPanel" class="tab-panel"></div>
+      <div id="watchlistPanel" class="tab-panel"></div>
+    </section>
+  </div>
 
   <script src="app.js"></script>
 </body>
