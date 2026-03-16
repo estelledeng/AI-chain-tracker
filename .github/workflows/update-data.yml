@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r ai_tracker_package/requirements.txt
 
       - name: Fetch live sources
         run: |
