@@ -40,6 +40,7 @@ TICKER_ROLES = {
     "COHR": "Optics / Package Integration"
 }
 
+
 def load_json(path: Path, default):
     if not path.exists():
         return default
@@ -47,6 +48,14 @@ def load_json(path: Path, default):
         return json.loads(path.read_text(encoding="utf-8"))
     except Exception:
         return default
+
+
+def find_group_for_ticker(ticker):
+    for group_name, tickers in TICKER_GROUPS.items():
+        if ticker in tickers:
+            return group_name
+    return "Custom Watchlist"
+
 
 def detect_event_type(text: str):
     lower = text.lower()
@@ -59,6 +68,7 @@ def detect_event_type(text: str):
     if any(k in lower for k in ["conference", "keynote", "presentation", "gtc", "event"]):
         return "Keynote / Conference"
     return "News / Media"
+
 
 def classify(text: str):
     lower = text.lower()
@@ -110,6 +120,7 @@ def classify(text: str):
         "factor_impact": factor_impact,
         "why_it_matters": why
     }
+
 
 def build_events(manifest):
     events = []
@@ -171,28 +182,41 @@ def build_events(manifest):
     events.sort(key=lambda x: x.get("datetime", ""), reverse=True)
     return events[:80]
 
+
 def build_dashboard_scores(events, market):
     latest_by_ticker = {}
     for e in events:
         latest_by_ticker[e["company"]] = e
 
     market_map = {x["ticker"]: x for x in market.get("tickers", [])}
+    all_tickers = list(market_map.keys())
 
     rows = []
-    for group_name, tickers in TICKER_GROUPS.items():
-        for t in tickers:
-            direct_score = latest_by_ticker[t]["analysis"]["direct_score"] if t in latest_by_ticker else 45
-            mk = market_map.get(t, {})
-            rows.append({
-                "ticker": t,
-                "score": direct_score,
-                "role": TICKER_ROLES[t],
-                "group": group_name,
-                "price": mk.get("price"),
-                "change_pct": mk.get("change_pct"),
-                "series": mk.get("series", [])
-            })
+    for t in all_tickers:
+        if t in latest_by_ticker:
+            score = latest_by_ticker[t]["analysis"]["direct_score"]
+        else:
+            change_pct = market_map[t].get("change_pct")
+            if change_pct is None:
+                score = 45
+            elif change_pct >= 3:
+                score = 55
+            elif change_pct <= -3:
+                score = 40
+            else:
+                score = 48
+
+        rows.append({
+            "ticker": t,
+            "score": score,
+            "role": TICKER_ROLES.get(t, "Custom / Added from search"),
+            "group": find_group_for_ticker(t),
+            "price": market_map[t].get("price"),
+            "change_pct": market_map[t].get("change_pct"),
+            "series": market_map[t].get("series", [])
+        })
     return rows
+
 
 def build_source_configs(manifest):
     rows = []
@@ -215,6 +239,7 @@ def build_source_configs(manifest):
         "group": "tool"
     })
     return rows
+
 
 def build_eps_bridge():
     return {
@@ -264,6 +289,7 @@ def build_eps_bridge():
         ]
     }
 
+
 def build_alerts():
     return [
         {
@@ -289,20 +315,25 @@ def build_alerts():
         }
     ]
 
-def build_watchlist():
+
+def build_watchlist(market):
+    existing_market = {x["ticker"] for x in market.get("tickers", [])}
     out = []
-    for group_name, tickers in TICKER_GROUPS.items():
-        for t in tickers:
-            out.append({
-                "ticker": t,
-                "role": TICKER_ROLES[t],
-                "phase": group_name
-            })
+
+    for t in existing_market:
+        out.append({
+            "ticker": t,
+            "role": TICKER_ROLES.get(t, "Custom / Added from search"),
+            "phase": find_group_for_ticker(t)
+        })
+
+    out.sort(key=lambda x: x["ticker"])
     return out
+
 
 def main():
     manifest = load_json(MANIFEST_PATH, [])
-    market = load_json(MARKET_PATH, {"tickers": [], "storage_prices": {}})
+    market = load_json(MARKET_PATH, {"tickers": [], "storage_prices": {}, "custom_tickers": []})
 
     events = build_events(manifest)
 
@@ -312,7 +343,7 @@ def main():
         "source_configs": build_source_configs(manifest),
         "alerts": build_alerts(),
         "eps_bridge": build_eps_bridge(),
-        "extended_watchlist": build_watchlist(),
+        "extended_watchlist": build_watchlist(market),
         "events": events,
         "market": market,
         "ticker_groups": TICKER_GROUPS
@@ -320,11 +351,13 @@ def main():
 
     out_path = DOCS_DATA_DIR / "events.json"
     out_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+
     market_out = DOCS_DATA_DIR / "market.json"
     market_out.write_text(json.dumps(market, indent=2), encoding="utf-8")
 
     print(f"saved -> {out_path}")
     print(f"saved -> {market_out}")
+
 
 if __name__ == "__main__":
     main()
