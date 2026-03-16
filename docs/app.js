@@ -3,7 +3,9 @@ const state = {
   filteredEvents: [],
   selectedId: null,
   customCompanies: [],
-  customEvents: []
+  customEvents: [],
+  manualDraftResult: null,
+  manualArchivedEvents: JSON.parse(localStorage.getItem('manualArchivedEvents') || '[]')
 };
 
 const els = {
@@ -18,7 +20,9 @@ const els = {
   storagePrices: document.getElementById('storagePrices'),
   refreshBtn: document.getElementById('refreshBtn'),
   manualInput: document.getElementById('manualInput'),
+  manualUrlInput: document.getElementById('manualUrlInput'),
   analyzeBtn: document.getElementById('analyzeBtn'),
+  saveAnalyzeBtn: document.getElementById('saveAnalyzeBtn'),
   clearAnalyzeBtn: document.getElementById('clearAnalyzeBtn'),
   analyzerOutput: document.getElementById('analyzerOutput'),
   bridgePanel: document.getElementById('bridgePanel'),
@@ -102,6 +106,7 @@ function ensureCompanyFilterOptions(events) {
 
 function getAllEvents() {
   return [
+    ...state.manualArchivedEvents,
     ...state.customEvents,
     ...((state.data && state.data.events) || [])
   ].sort((a, b) => {
@@ -174,6 +179,70 @@ function classify(text) {
     sentiment,
     factor_impact: factorImpact,
     why_it_matters: why
+  };
+}
+
+async function fetchUrlContent(url) {
+  const proxy = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
+  const resp = await fetch(proxy);
+  if (!resp.ok) {
+    throw new Error(`url fetch failed: ${resp.status}`);
+  }
+
+  const html = await resp.text();
+  const doc = new DOMParser().parseFromString(html, 'text/html');
+
+  const title = (doc.querySelector('title')?.textContent || '').trim();
+
+  const paragraphs = Array.from(doc.querySelectorAll('p'))
+    .map(p => (p.textContent || '').trim())
+    .filter(Boolean)
+    .filter(t => t.length > 40)
+    .slice(0, 8);
+
+  const body = paragraphs.join(' ');
+  return {
+    title,
+    text: body || title
+  };
+}
+
+function buildManualArchivedEvent({ text, url, fetchedTitle, analysisResult }) {
+  const now = new Date().toISOString();
+
+  return {
+    id: `manual_${Date.now()}`,
+    company: analysisResult.primary?.[0] || 'MANUAL',
+    source_company: analysisResult.primary?.[0] || 'MANUAL',
+    source_kind: 'manual_archive',
+    event_type: analysisResult.eventType || 'Manual analysis',
+    type: analysisResult.eventType || 'Manual analysis',
+    title: fetchedTitle || text.slice(0, 120) || 'Manual event',
+    headline: fetchedTitle || text.slice(0, 120) || 'Manual event',
+    text: text,
+    raw_text: text,
+    published_at: now,
+    datetime: now,
+    source: url ? 'Manual URL analysis' : 'Manual text analysis',
+    url: url || '#',
+    chain_buckets: analysisResult.chainBuckets || [],
+    primary_beneficiaries: analysisResult.primary || [],
+    secondary_beneficiaries: analysisResult.secondary || [],
+    keyword_hits: analysisResult.keywordHits || [],
+    sentiment: analysisResult.sentiment || 'mixed',
+    factor_impact: analysisResult.factorImpact || {},
+    why_it_matters: analysisResult.why || '',
+    analysis: {
+      sentiment: analysisResult.sentiment || 'mixed',
+      direct_score: analysisResult.primary?.length ? 68 : 52,
+      matched_keywords: analysisResult.keywordHits || [],
+      factor_impact: analysisResult.factorImpact || {},
+      readthrough: (analysisResult.secondary || []).slice(0, 3).map((x, i) => ({
+        ticker: x,
+        score: 62 - i * 6,
+        summary: `Manual analyzed event may have readthrough into ${x}.`
+      }))
+    }
   };
 }
 
@@ -801,11 +870,19 @@ function analyzeManualEvent(text) {
   };
 }
 
-function renderAnalyzerResult(result, rawText) {
+function renderAnalyzerResult(result, rawText, sourceUrl = '', fetchedTitle = '') {
   if (!result) {
     els.analyzerOutput.innerHTML = '<div class="muted">No manual event analyzed yet.</div>';
+    state.manualDraftResult = null;
     return;
   }
+
+  state.manualDraftResult = {
+    result,
+    rawText,
+    sourceUrl,
+    fetchedTitle
+  };
 
   const factorHtml = Object.entries(result.factorImpact).map(([k, v]) => `
     <div class="factor-box">
@@ -823,41 +900,57 @@ function renderAnalyzerResult(result, rawText) {
     </div>
 
     <div class="analyzer-section">
+      <div class="analyzer-title">Source</div>
+      <div class="manual-source-box">
+        <div><strong>URL:</strong> ${sourceUrl ? `<a href="${sourceUrl}" target="_blank" rel="noreferrer">${sourceUrl}</a>` : 'None'}</div>
+        <div style="margin-top:8px;"><strong>Fetched title:</strong> ${fetchedTitle || 'N/A'}</div>
+      </div>
+    </div>
+
+    <div class="analyzer-section">
       <div class="analyzer-title">Input text</div>
-      <div class="muted">${rawText}</div>
+      <div class="manual-source-box">${rawText || 'N/A'}</div>
     </div>
 
     <div class="analyzer-section">
-      <div class="analyzer-title">Chain buckets</div>
-      <div class="keywords">
-        ${result.chainBuckets.length ? result.chainBuckets.map(x => `<span class="keyword">${x}</span>`).join('') : '<span class="muted">No bucket matched</span>'}
+      <div class="analyzer-two-col">
+        <div class="analyzer-block">
+          <div class="analyzer-title">Chain buckets</div>
+          <div class="keywords">
+            ${result.chainBuckets.length ? result.chainBuckets.map(x => `<span class="keyword">${x}</span>`).join('') : '<span class="muted">No bucket matched</span>'}
+          </div>
+        </div>
+
+        <div class="analyzer-block">
+          <div class="analyzer-title">Keyword hits</div>
+          <div class="keywords">
+            ${result.keywordHits.length ? result.keywordHits.map(x => `<span class="keyword">${x}</span>`).join('') : '<span class="muted">No keyword hits</span>'}
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="analyzer-section">
-      <div class="analyzer-title">Primary beneficiaries</div>
-      <div class="keywords">
-        ${result.primary.length ? result.primary.map(x => `<span class="keyword">${x}</span>`).join('') : '<span class="muted">No primary beneficiary matched</span>'}
-      </div>
-    </div>
+      <div class="analyzer-two-col">
+        <div class="analyzer-block">
+          <div class="analyzer-title">Primary beneficiaries</div>
+          <div class="keywords">
+            ${result.primary.length ? result.primary.map(x => `<span class="keyword">${x}</span>`).join('') : '<span class="muted">No primary beneficiary matched</span>'}
+          </div>
+        </div>
 
-    <div class="analyzer-section">
-      <div class="analyzer-title">Secondary readthrough</div>
-      <div class="keywords">
-        ${result.secondary.length ? result.secondary.map(x => `<span class="keyword">${x}</span>`).join('') : '<span class="muted">No secondary readthrough matched</span>'}
-      </div>
-    </div>
-
-    <div class="analyzer-section">
-      <div class="analyzer-title">Keyword hits</div>
-      <div class="keywords">
-        ${result.keywordHits.length ? result.keywordHits.map(x => `<span class="keyword">${x}</span>`).join('') : '<span class="muted">No keyword hits</span>'}
+        <div class="analyzer-block">
+          <div class="analyzer-title">Secondary readthrough</div>
+          <div class="keywords">
+            ${result.secondary.length ? result.secondary.map(x => `<span class="keyword">${x}</span>`).join('') : '<span class="muted">No secondary readthrough matched</span>'}
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="analyzer-section">
       <div class="analyzer-title">Why it matters</div>
-      <div class="muted">${result.why}</div>
+      <div class="manual-source-box">${result.why}</div>
     </div>
 
     <div class="analyzer-section">
@@ -868,18 +961,68 @@ function renderAnalyzerResult(result, rawText) {
 }
 
 function bindAnalyzer() {
-  els.analyzeBtn.addEventListener('click', () => {
-    const text = els.manualInput.value.trim();
-    if (!text) {
-      renderAnalyzerResult(null, '');
+  els.analyzeBtn.addEventListener('click', async () => {
+    const typedText = els.manualInput.value.trim();
+    const sourceUrl = els.manualUrlInput.value.trim();
+
+    let combinedText = typedText;
+    let fetchedTitle = '';
+
+    if (sourceUrl) {
+      try {
+        const fetched = await fetchUrlContent(sourceUrl);
+        fetchedTitle = fetched.title || '';
+        combinedText = [typedText, fetched.title, fetched.text].filter(Boolean).join(' ');
+      } catch (err) {
+        console.error(err);
+        renderAnalyzerResult({
+          eventType: 'Manual analysis error',
+          sentiment: 'mixed',
+          chainBuckets: [],
+          primary: [],
+          secondary: [],
+          keywordHits: [],
+          factorImpact: { tam: 'medium', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'medium' },
+          why: `URL fetch failed: ${err.message}`
+        }, typedText, sourceUrl, '');
+        return;
+      }
+    }
+
+    if (!combinedText.trim()) {
+      renderAnalyzerResult(null, '', '', '');
       return;
     }
-    renderAnalyzerResult(analyzeManualEvent(text), text);
+
+    const result = analyzeManualEvent(combinedText);
+    renderAnalyzerResult(result, combinedText, sourceUrl, fetchedTitle);
+  });
+
+  els.saveAnalyzeBtn.addEventListener('click', () => {
+    if (!state.manualDraftResult) return;
+
+    const archivedEvent = buildManualArchivedEvent({
+      text: state.manualDraftResult.rawText,
+      url: state.manualDraftResult.sourceUrl,
+      fetchedTitle: state.manualDraftResult.fetchedTitle,
+      analysisResult: state.manualDraftResult.result
+    });
+
+    state.manualArchivedEvents.unshift(archivedEvent);
+    localStorage.setItem('manualArchivedEvents', JSON.stringify(state.manualArchivedEvents));
+
+    ensureCompanyFilterOptions(getAllEvents());
+    applyFilters();
+    els.companyFilter.value = 'ALL';
+    state.selectedId = archivedEvent.id;
+    renderFeed();
+    renderDetail();
   });
 
   els.clearAnalyzeBtn.addEventListener('click', () => {
     els.manualInput.value = '';
-    renderAnalyzerResult(null, '');
+    els.manualUrlInput.value = '';
+    renderAnalyzerResult(null, '', '', '');
   });
 }
 
