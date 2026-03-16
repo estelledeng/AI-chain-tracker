@@ -1,27 +1,28 @@
-"""Fetch official source pages for NVDA / MU / SNDK.
+import json
+from pathlib import Path
 
-This script pulls official IR/news pages and stores raw HTML snapshots locally.
-It is intentionally conservative: official source pages first, no scraping of paywalled media.
-"""
-from __future__ import annotations
-
-import pathlib
 import requests
+
+BASE_DIR = Path(__file__).resolve().parent
+RAW_DIR = BASE_DIR / "raw_pages"
+RAW_DIR.mkdir(exist_ok=True)
 
 SOURCES = {
     "nvda_home": "https://investor.nvidia.com/home/default.aspx",
-    "nvda_events": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/default.aspx",
     "mu_home": "https://investors.micron.com/",
-    "mu_news": "https://investors.micron.com/latest-news",
     "sndk_home": "https://investor.sandisk.com/",
-    "sndk_news": "https://investor.sandisk.com/news-events/news-releases",
 }
 
-OUTPUT_DIR = pathlib.Path("raw_pages")
-OUTPUT_DIR.mkdir(exist_ok=True)
-
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; AIChainTracker/1.0; +https://example.local)",
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/123.0.0.0 Safari/537.36"
+    ),
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
 }
 
 
@@ -31,12 +32,37 @@ def fetch(url: str) -> str:
     return resp.text
 
 
-def main() -> None:
+def main():
+    results = []
+
     for name, url in SOURCES.items():
-        html = fetch(url)
-        out = OUTPUT_DIR / f"{name}.html"
-        out.write_text(html, encoding="utf-8")
-        print(f"saved {name} -> {out}")
+        try:
+            html = fetch(url)
+            out = RAW_DIR / f"{name}.html"
+            out.write_text(html, encoding="utf-8")
+            print(f"saved {name} -> {out.name}")
+            results.append(
+                {
+                    "name": name,
+                    "url": url,
+                    "status": "success",
+                    "file": str(out.relative_to(BASE_DIR)),
+                }
+            )
+        except Exception as e:
+            print(f"failed {name}: {e}")
+            results.append(
+                {
+                    "name": name,
+                    "url": url,
+                    "status": "failed",
+                    "error": str(e),
+                }
+            )
+
+    manifest = BASE_DIR / "raw_pages_manifest.json"
+    manifest.write_text(json.dumps(results, indent=2), encoding="utf-8")
+    print(f"saved manifest -> {manifest.name}")
 
 
 if __name__ == "__main__":
