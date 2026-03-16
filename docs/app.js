@@ -13,8 +13,73 @@ const els = {
   systemStatus: document.getElementById('systemStatus'),
   feedCount: document.getElementById('feedCount'),
   dataStamp: document.getElementById('dataStamp'),
-  refreshBtn: document.getElementById('refreshBtn')
+  refreshBtn: document.getElementById('refreshBtn'),
+  manualInput: document.getElementById('manualInput'),
+  analyzeBtn: document.getElementById('analyzeBtn'),
+  clearAnalyzeBtn: document.getElementById('clearAnalyzeBtn'),
+  analyzerOutput: document.getElementById('analyzerOutput')
 };
+
+const CHAIN_RULES = [
+  {
+    label: 'Compute',
+    keywords: ['gpu', 'accelerator', 'compute', 'blackwell', 'rubin', 'chip', 'training cluster'],
+    primary: ['NVDA'],
+    secondary: ['TSM'],
+    factors: { tam: 'high', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'medium' }
+  },
+  {
+    label: 'Memory',
+    keywords: ['hbm', 'dram', 'memory bandwidth', 'memory capacity', 'memory hierarchy'],
+    primary: ['MU'],
+    secondary: ['NVDA', 'TSM'],
+    factors: { tam: 'high', shipment: 'high', gm: 'high', eps: 'high', timing: 'medium' }
+  },
+  {
+    label: 'Storage',
+    keywords: ['context memory', 'kv cache', 'storage tier', 'nand', 'ssd', 'flash', 'tiered memory'],
+    primary: ['SNDK'],
+    secondary: ['MU', 'NVDA'],
+    factors: { tam: 'high', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'medium' }
+  },
+  {
+    label: 'Networking',
+    keywords: ['scale-out', 'network fabric', 'switching', 'ethernet', 'interconnect', 'rack-scale', 'bandwidth bottleneck'],
+    primary: ['ANET', 'MRVL', 'ALAB', 'CRDO'],
+    secondary: ['NVDA'],
+    factors: { tam: 'high', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'medium' }
+  },
+  {
+    label: 'Optics',
+    keywords: ['optics', 'optical', 'photonics', 'co-packaged optics', 'optical interconnect'],
+    primary: ['LITE', 'COHR'],
+    secondary: ['CRDO', 'ANET'],
+    factors: { tam: 'medium', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'medium' }
+  },
+  {
+    label: 'Power / Cooling',
+    keywords: ['liquid cooling', 'rack density', 'thermal bottleneck', 'power constraint', 'cooling', 'power infrastructure'],
+    primary: ['VRT'],
+    secondary: ['NVDA'],
+    factors: { tam: 'high', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'high' }
+  },
+  {
+    label: 'Foundry / Packaging',
+    keywords: ['advanced packaging', 'cowos', 'foundry', 'yield', 'packaging capacity', 'packaging tightness'],
+    primary: ['TSM'],
+    secondary: ['NVDA', 'MU', 'COHR'],
+    factors: { tam: 'medium', shipment: 'medium', gm: 'medium', eps: 'medium', timing: 'high' }
+  }
+];
+
+const EVENT_TYPE_RULES = [
+  { type: 'Keynote / Conference', keywords: ['gtc', 'keynote', 'conference', 'on stage', 'presentation'] },
+  { type: 'Earnings / Call', keywords: ['earnings', 'guidance', 'gross margin', 'eps', 'analyst q&a', 'conference call'] },
+  { type: 'Partnership / Collaboration', keywords: ['partnership', 'collaboration', 'strategic agreement', 'jointly', 'working with'] },
+  { type: 'Product Launch / Roadmap', keywords: ['launch', 'roadmap', 'introduces', 'announces', 'new platform', 'new product'] },
+  { type: 'Supply Chain / Capacity', keywords: ['capacity', 'shipment', 'lead time', 'supply', 'packaging tightness', 'ramp'] },
+  { type: 'Media / News', keywords: ['reuters', 'bloomberg', 'reported', 'according to', 'news'] }
+];
 
 function badgeClass(sentiment) {
   if (sentiment === 'bullish') return 'green';
@@ -235,8 +300,143 @@ function renderDetail() {
   `;
 }
 
+function detectEventType(text) {
+  const lower = text.toLowerCase();
+  for (const rule of EVENT_TYPE_RULES) {
+    if (rule.keywords.some(k => lower.includes(k))) {
+      return rule.type;
+    }
+  }
+  return 'General event / commentary';
+}
+
+function analyzeManualEvent(text) {
+  const lower = text.toLowerCase();
+
+  const matchedBuckets = CHAIN_RULES.filter(rule =>
+    rule.keywords.some(k => lower.includes(k))
+  );
+
+  const chainBuckets = matchedBuckets.map(r => r.label);
+
+  const primary = [...new Set(matchedBuckets.flatMap(r => r.primary))];
+  const secondary = [...new Set(matchedBuckets.flatMap(r => r.secondary))];
+
+  const keywordHits = [...new Set(matchedBuckets.flatMap(r => r.keywords.filter(k => lower.includes(k))))];
+
+  let sentiment = 'mixed';
+  if (keywordHits.length >= 2) sentiment = 'bullish';
+
+  const factorImpact = {
+    tam: 'medium',
+    shipment: 'medium',
+    gm: 'medium',
+    eps: 'medium',
+    timing: 'medium'
+  };
+
+  matchedBuckets.forEach(rule => {
+    Object.entries(rule.factors).forEach(([k, v]) => {
+      if (v === 'high') factorImpact[k] = 'high';
+    });
+  });
+
+  return {
+    eventType: detectEventType(text),
+    sentiment,
+    chainBuckets,
+    primary,
+    secondary,
+    keywordHits,
+    factorImpact
+  };
+}
+
+function renderAnalyzerResult(result, rawText) {
+  if (!result) {
+    els.analyzerOutput.innerHTML = '<div class="muted">No manual event analyzed yet.</div>';
+    return;
+  }
+
+  const factorHtml = Object.entries(result.factorImpact).map(([k, v]) => `
+    <div class="factor-box">
+      <strong>${k}</strong>
+      <div class="badge blue">${v}</div>
+    </div>
+  `).join('');
+
+  els.analyzerOutput.innerHTML = `
+    <div class="analyzer-section">
+      <div class="badges">
+        <span class="badge">${result.eventType}</span>
+        <span class="badge ${badgeClass(result.sentiment)}">${cap(result.sentiment)}</span>
+      </div>
+    </div>
+
+    <div class="analyzer-section">
+      <div class="analyzer-title">Input text</div>
+      <div class="muted">${rawText}</div>
+    </div>
+
+    <div class="analyzer-section">
+      <div class="analyzer-title">Chain buckets</div>
+      <div class="keywords">
+        ${result.chainBuckets.length ? result.chainBuckets.map(x => `<span class="keyword">${x}</span>`).join('') : '<span class="muted">No bucket matched</span>'}
+      </div>
+    </div>
+
+    <div class="analyzer-section">
+      <div class="analyzer-title">Primary beneficiaries</div>
+      <div class="keywords">
+        ${result.primary.length ? result.primary.map(x => `<span class="keyword">${x}</span>`).join('') : '<span class="muted">No primary beneficiary matched</span>'}
+      </div>
+    </div>
+
+    <div class="analyzer-section">
+      <div class="analyzer-title">Secondary readthrough</div>
+      <div class="keywords">
+        ${result.secondary.length ? result.secondary.map(x => `<span class="keyword">${x}</span>`).join('') : '<span class="muted">No secondary readthrough matched</span>'}
+      </div>
+    </div>
+
+    <div class="analyzer-section">
+      <div class="analyzer-title">Keyword hits</div>
+      <div class="keywords">
+        ${result.keywordHits.length ? result.keywordHits.map(x => `<span class="keyword">${x}</span>`).join('') : '<span class="muted">No keyword hits</span>'}
+      </div>
+    </div>
+
+    <div class="analyzer-section">
+      <div class="analyzer-title">Financial bridge</div>
+      <div class="factor-grid">${factorHtml}</div>
+    </div>
+  `;
+}
+
+function bindAnalyzer() {
+  if (!els.analyzeBtn || !els.manualInput || !els.analyzerOutput) return;
+
+  els.analyzeBtn.addEventListener('click', () => {
+    const text = els.manualInput.value.trim();
+    if (!text) {
+      renderAnalyzerResult(null, '');
+      return;
+    }
+    const result = analyzeManualEvent(text);
+    renderAnalyzerResult(result, text);
+  });
+
+  if (els.clearAnalyzeBtn) {
+    els.clearAnalyzeBtn.addEventListener('click', () => {
+      els.manualInput.value = '';
+      renderAnalyzerResult(null, '');
+    });
+  }
+}
+
 els.companyFilter.addEventListener('change', applyFilters);
 els.searchInput.addEventListener('input', applyFilters);
 els.refreshBtn.addEventListener('click', loadData);
 
+bindAnalyzer();
 loadData();
