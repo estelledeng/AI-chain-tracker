@@ -1,4 +1,5 @@
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -18,72 +19,23 @@ HEADERS = {
 }
 
 SOURCES = [
-    {
-        "ticker": "NVDA",
-        "name": "NVIDIA Newsroom",
-        "type": "newsroom",
-        "url": "https://nvidianews.nvidia.com/news"
-    },
-    {
-        "ticker": "MU",
-        "name": "Micron News Releases",
-        "type": "press",
-        "url": "https://investors.micron.com/news-releases"
-    },
-    {
-        "ticker": "SNDK",
-        "name": "Sandisk News Releases",
-        "type": "press",
-        "url": "https://investor.sandisk.com/news-releases"
-    },
-    {
-        "ticker": "ANET",
-        "name": "Arista Press Releases",
-        "type": "press",
-        "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx"
-    },
-    {
-        "ticker": "VRT",
-        "name": "Vertiv News",
-        "type": "press",
-        "url": "https://investors.vertiv.com/news/news-details/default.aspx"
-    },
-    {
-        "ticker": "TSM",
-        "name": "TSMC Press Center",
-        "type": "press",
-        "url": "https://pr.tsmc.com/english"
-    },
-    {
-        "ticker": "MRVL",
-        "name": "Marvell Press Releases",
-        "type": "press",
-        "url": "https://investor.marvell.com/news-events/press-releases"
-    },
-    {
-        "ticker": "ALAB",
-        "name": "Astera Labs Events",
-        "type": "events",
-        "url": "https://ir.asteralabs.com/news-events/events-presentations/"
-    },
-    {
-        "ticker": "CRDO",
-        "name": "Credo News",
-        "type": "press",
-        "url": "https://investors.credosemi.com/news-events/news"
-    },
-    {
-        "ticker": "LITE",
-        "name": "Lumentum News",
-        "type": "press",
-        "url": "https://investor.lumentum.com/news-releases"
-    },
-    {
-        "ticker": "COHR",
-        "name": "Coherent News",
-        "type": "press",
-        "url": "https://www.coherent.com/news"
-    }
+    # Official company event/news sources
+    {"ticker": "NVDA", "name": "NVIDIA Newsroom", "group": "official", "url": "https://nvidianews.nvidia.com/news"},
+    {"ticker": "MU", "name": "Micron News Releases", "group": "official", "url": "https://investors.micron.com/news-releases"},
+    {"ticker": "SNDK", "name": "Sandisk News Releases", "group": "official", "url": "https://investor.sandisk.com/news-releases"},
+    {"ticker": "ANET", "name": "Arista Press Releases", "group": "official", "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx"},
+    {"ticker": "VRT", "name": "Vertiv News", "group": "official", "url": "https://investors.vertiv.com/news/news-details/default.aspx"},
+    {"ticker": "TSM", "name": "TSMC Press Center", "group": "official", "url": "https://pr.tsmc.com/english"},
+    {"ticker": "MRVL", "name": "Marvell Press Releases", "group": "official", "url": "https://investor.marvell.com/news-events/press-releases"},
+    {"ticker": "ALAB", "name": "Astera Events & Presentations", "group": "official", "url": "https://ir.asteralabs.com/news-events/events-presentations/"},
+    {"ticker": "CRDO", "name": "Credo News", "group": "official", "url": "https://investors.credosemi.com/news-events/news"},
+    {"ticker": "LITE", "name": "Lumentum News Releases", "group": "official", "url": "https://investor.lumentum.com/news-releases"},
+    {"ticker": "COHR", "name": "Coherent News", "group": "official", "url": "https://www.coherent.com/news"},
+
+    # Industry / ecosystem sources
+    {"ticker": "SECTOR", "name": "TrendForce News", "group": "industry", "url": "https://www.trendforce.com/news/"},
+    {"ticker": "SECTOR", "name": "TrendForce Prices DRAM", "group": "industry", "url": "https://www.trendforce.com/price/dram"},
+    {"ticker": "SECTOR", "name": "TrendForce Prices NAND", "group": "industry", "url": "https://www.trendforce.com/price/flash"}
 ]
 
 def fetch(url: str) -> str:
@@ -91,71 +43,81 @@ def fetch(url: str) -> str:
     resp.raise_for_status()
     return resp.text
 
+def absolutize(base_url: str, href: str) -> str:
+    if href.startswith("http://") or href.startswith("https://"):
+        return href
+    if href.startswith("/"):
+        parts = re.match(r"(https?://[^/]+)", base_url)
+        if parts:
+            return parts.group(1) + href
+    return base_url.rstrip("/") + "/" + href.lstrip("/")
+
 def extract_items(html: str, base_url: str):
     soup = BeautifulSoup(html, "html.parser")
     items = []
 
     for a in soup.find_all("a", href=True):
         text = " ".join(a.get_text(" ", strip=True).split())
-        href = a["href"]
+        href = a["href"].strip()
 
-        if len(text) < 18:
+        if len(text) < 24:
             continue
 
-        if href.startswith("/"):
-          href = base_url.rstrip("/") + href
+        url = absolutize(base_url, href)
 
         items.append({
             "headline": text[:220],
-            "url": href
+            "url": url
         })
 
     seen = set()
-    deduped = []
+    cleaned = []
     for item in items:
         key = (item["headline"], item["url"])
         if key in seen:
             continue
         seen.add(key)
-        deduped.append(item)
+        cleaned.append(item)
 
-    return deduped[:12]
+    return cleaned[:14]
 
 def main():
     now = datetime.now(timezone.utc).isoformat()
-    all_results = []
+    out = []
 
     for src in SOURCES:
         try:
             html = fetch(src["url"])
-            page_file = RAW_DIR / f"{src['ticker'].lower()}_source.html"
+            slug = re.sub(r"[^a-z0-9]+", "_", src["name"].lower()).strip("_")
+            page_file = RAW_DIR / f"{slug}.html"
             page_file.write_text(html, encoding="utf-8")
 
-            extracted = extract_items(html, src["url"])
-            all_results.append({
+            items = extract_items(html, src["url"])
+
+            out.append({
                 "ticker": src["ticker"],
                 "name": src["name"],
-                "source_type": src["type"],
+                "group": src["group"],
                 "source_url": src["url"],
                 "status": "success",
                 "fetched_at": now,
-                "items": extracted
+                "items": items
             })
         except Exception as e:
-            all_results.append({
+            out.append({
                 "ticker": src["ticker"],
                 "name": src["name"],
-                "source_type": src["type"],
+                "group": src["group"],
                 "source_url": src["url"],
-                "status": "failed",
+                "status": "blocked",
                 "fetched_at": now,
                 "error": str(e),
                 "items": []
             })
 
-    out = BASE_DIR / "raw_pages_manifest.json"
-    out.write_text(json.dumps(all_results, indent=2), encoding="utf-8")
-    print(f"saved -> {out}")
+    manifest_path = BASE_DIR / "raw_pages_manifest.json"
+    manifest_path.write_text(json.dumps(out, indent=2), encoding="utf-8")
+    print(f"saved -> {manifest_path}")
 
 if __name__ == "__main__":
     main()
