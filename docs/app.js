@@ -530,7 +530,7 @@ async function loadData() {
     alerts: data.alerts || defaultAlerts(),
     eps_bridge: data.eps_bridge || defaultEPSBridge(),
     extended_watchlist: data.extended_watchlist || defaultWatchlist(),
-    events: Array.isArray(data.events) && data.events.length ? data.events : fallbackEvents()
+    events: A Array.isArray(data.events) ? data.events : []
   };
 
   state.data = normalized;
