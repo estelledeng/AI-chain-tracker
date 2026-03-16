@@ -17,7 +17,11 @@ const els = {
   manualInput: document.getElementById('manualInput'),
   analyzeBtn: document.getElementById('analyzeBtn'),
   clearAnalyzeBtn: document.getElementById('clearAnalyzeBtn'),
-  analyzerOutput: document.getElementById('analyzerOutput')
+  analyzerOutput: document.getElementById('analyzerOutput'),
+  bridgePanel: document.getElementById('bridgePanel'),
+  alertsPanel: document.getElementById('alertsPanel'),
+  sourcesPanel: document.getElementById('sourcesPanel'),
+  watchlistPanel: document.getElementById('watchlistPanel')
 };
 
 const CHAIN_RULES = [
@@ -73,12 +77,12 @@ const CHAIN_RULES = [
 ];
 
 const EVENT_TYPE_RULES = [
-  { type: 'Keynote / Conference', keywords: ['gtc', 'keynote', 'conference', 'on stage', 'presentation'] },
-  { type: 'Earnings / Call', keywords: ['earnings', 'guidance', 'gross margin', 'eps', 'analyst q&a', 'conference call'] },
-  { type: 'Partnership / Collaboration', keywords: ['partnership', 'collaboration', 'strategic agreement', 'jointly', 'working with'] },
+  { type: 'Keynote / Conference', keywords: ['gtc', 'keynote', 'conference', 'presentation', 'on stage'] },
+  { type: 'Earnings / Call', keywords: ['earnings', 'guidance', 'gross margin', 'eps', 'conference call', 'analyst q&a'] },
+  { type: 'Partnership / Collaboration', keywords: ['partnership', 'collaboration', 'strategic agreement', 'working with'] },
   { type: 'Product Launch / Roadmap', keywords: ['launch', 'roadmap', 'introduces', 'announces', 'new platform', 'new product'] },
-  { type: 'Supply Chain / Capacity', keywords: ['capacity', 'shipment', 'lead time', 'supply', 'packaging tightness', 'ramp'] },
-  { type: 'Media / News', keywords: ['reuters', 'bloomberg', 'reported', 'according to', 'news'] }
+  { type: 'Supply Chain / Capacity', keywords: ['capacity', 'shipment', 'lead time', 'supply', 'ramp', 'packaging tightness'] },
+  { type: 'News / Media', keywords: ['reuters', 'bloomberg', 'reported', 'according to'] }
 ];
 
 function badgeClass(sentiment) {
@@ -88,8 +92,7 @@ function badgeClass(sentiment) {
 }
 
 function cap(s = '') {
-  if (!s) return '';
-  return s.charAt(0).toUpperCase() + s.slice(1);
+  return s ? s.charAt(0).toUpperCase() + s.slice(1) : '';
 }
 
 function scoreBoxHtml(score) {
@@ -102,7 +105,6 @@ function scoreBoxHtml(score) {
 function ensureCompanyFilterOptions(events) {
   const existing = Array.from(els.companyFilter.options).map(o => o.value);
   const tickers = [...new Set((events || []).map(e => e.company).filter(Boolean))];
-
   tickers.forEach(ticker => {
     if (!existing.includes(ticker)) {
       const option = document.createElement('option');
@@ -122,7 +124,10 @@ async function loadData() {
       generated_at: data.generated_at || '',
       dashboard_scores: Array.isArray(data.dashboard_scores) ? data.dashboard_scores : [],
       source_configs: Array.isArray(data.source_configs) ? data.source_configs : [],
-      events: Array.isArray(data.events) ? data.events : []
+      events: Array.isArray(data.events) ? data.events : [],
+      alerts: Array.isArray(data.alerts) ? data.alerts : [],
+      eps_bridge: data.eps_bridge || {},
+      extended_watchlist: Array.isArray(data.extended_watchlist) ? data.extended_watchlist : []
     };
 
     els.dataStamp.textContent = state.data.generated_at
@@ -131,6 +136,7 @@ async function loadData() {
 
     ensureCompanyFilterOptions(state.data.events);
     renderStaticPanels();
+    renderLowerPanels();
     applyFilters();
   } catch (err) {
     console.error(err);
@@ -139,7 +145,10 @@ async function loadData() {
     els.systemStatus.innerHTML = '<div class="muted">No live source status.</div>';
     els.feed.innerHTML = '<div class="muted">No live events.</div>';
     els.detail.innerHTML = '<div class="muted">No event selected.</div>';
-    if (els.feedCount) els.feedCount.textContent = '0 events';
+    els.bridgePanel.innerHTML = '<div class="muted">No EPS bridge data.</div>';
+    els.alertsPanel.innerHTML = '<div class="muted">No alert rules.</div>';
+    els.sourcesPanel.innerHTML = '<div class="muted">No source details.</div>';
+    els.watchlistPanel.innerHTML = '<div class="muted">No watchlist data.</div>';
   }
 }
 
@@ -172,13 +181,83 @@ function renderStaticPanels() {
     : '<div class="muted">No live source status.</div>';
 }
 
+function renderLowerPanels() {
+  const bridge = state.data.eps_bridge || {};
+  const alerts = state.data.alerts || [];
+  const sources = state.data.source_configs || [];
+  const watchlist = state.data.extended_watchlist || [];
+
+  const bridgeEntries = Object.entries(bridge);
+  els.bridgePanel.innerHTML = bridgeEntries.length
+    ? bridgeEntries.map(([ticker, rows]) => `
+        <div class="bridge-card">
+          <div class="feed-top">
+            <strong>${ticker}</strong>
+            <span class="badge blue">Quarterly bridge</span>
+          </div>
+          <div class="bridge-grid-inner">
+            ${(rows || []).map(row => `
+              <div class="factor-box">
+                <strong>${row.label}</strong>
+                <div class="badge blue">${row.effect}</div>
+                <div class="muted" style="margin-top:8px">${row.note}</div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `).join('')
+    : '<div class="muted">No EPS bridge data yet.</div>';
+
+  els.alertsPanel.innerHTML = alerts.length
+    ? `<div class="alert-grid">${alerts.map(a => `
+        <div class="alert-card">
+          <div class="feed-top">
+            <strong>${a.title}</strong>
+            <span class="badge ${a.severity === 'High' ? 'red' : 'amber'}">${a.severity}</span>
+          </div>
+          <div class="muted" style="margin-bottom:10px">${a.scope || ''}</div>
+          <div><strong>Condition</strong></div>
+          <div class="muted">${a.condition || ''}</div>
+          <div style="margin-top:10px"><strong>Action</strong></div>
+          <div class="muted">${a.action || ''}</div>
+        </div>
+      `).join('')}</div>`
+    : '<div class="muted">No alert rules yet.</div>';
+
+  els.sourcesPanel.innerHTML = sources.length
+    ? `<div class="source-grid">${sources.map(s => `
+        <div class="source-card">
+          <div class="feed-top">
+            <strong>${s.name || ''}</strong>
+            <span class="badge ${s.status === 'Live connected' ? 'green' : 'amber'}">${s.status || 'Unknown'}</span>
+          </div>
+          <div class="muted">${s.type || ''}</div>
+          <div style="margin-top:10px"><code>${s.endpoint || ''}</code></div>
+          <div style="margin-top:10px">
+            ${s.url && s.url !== '#' ? `<a href="${s.url}" target="_blank" rel="noreferrer">Open source</a>` : '<span class="muted">No direct URL</span>'}
+          </div>
+        </div>
+      `).join('')}</div>`
+    : '<div class="muted">No source list yet.</div>';
+
+  els.watchlistPanel.innerHTML = watchlist.length
+    ? `<div class="watch-grid">${watchlist.map(w => `
+        <div class="watch-card">
+          <strong>${w.ticker}</strong>
+          <div class="muted" style="margin-top:6px">${w.role || ''}</div>
+          <div class="badge blue" style="margin-top:10px">${w.phase || ''}</div>
+        </div>
+      `).join('')}</div>`
+    : '<div class="muted">No watchlist yet.</div>';
+}
+
 function applyFilters() {
   const company = els.companyFilter.value;
   const q = els.searchInput.value.trim().toLowerCase();
 
   state.filteredEvents = (state.data.events || []).filter(event => {
     const companyMatch = company === 'ALL' || event.company === company;
-    const text = `${event.title || ''} ${event.text || ''}`.toLowerCase();
+    const text = `${event.title || ''} ${event.text || ''} ${event.why_it_matters || ''}`.toLowerCase();
     const queryMatch = !q || text.includes(q);
     return companyMatch && queryMatch;
   });
@@ -192,35 +271,30 @@ function applyFilters() {
 }
 
 function renderFeed() {
-  if (els.feedCount) {
-    els.feedCount.textContent = `${state.filteredEvents.length} events`;
-  }
+  els.feedCount.textContent = `${state.filteredEvents.length} events`;
 
   if (!state.filteredEvents.length) {
     els.feed.innerHTML = '<div class="muted">No live events yet.</div>';
     return;
   }
 
-  els.feed.innerHTML = state.filteredEvents.map(event => {
-    const analysis = event.analysis || {};
-    return `
-      <div class="feed-item ${event.id === state.selectedId ? 'active' : ''}" data-id="${event.id}">
-        <div class="feed-top">
-          <span class="badge blue">${event.company || ''}</span>
-          <span class="muted">${event.datetime || ''}</span>
-        </div>
-        <div class="feed-title">${event.title || ''}</div>
-        <div class="feed-text">${event.text || ''}</div>
-        <div class="badges" style="margin-top:10px">
-          <span class="badge ${badgeClass(analysis.sentiment || 'mixed')}">${cap(analysis.sentiment || 'mixed')}</span>
-          <span class="badge">${event.type || 'Event'}</span>
-          <span class="badge">Score ${analysis.direct_score || 0}</span>
-        </div>
+  els.feed.innerHTML = state.filteredEvents.map(event => `
+    <div class="feed-item ${event.id === state.selectedId ? 'active' : ''}" data-id="${event.id}">
+      <div class="feed-top">
+        <span class="badge blue">${event.company || event.source_company || ''}</span>
+        <span class="muted">${event.datetime || event.published_at || ''}</span>
       </div>
-    `;
-  }).join('');
+      <div class="feed-title">${event.title || event.headline || ''}</div>
+      <div class="feed-text">${event.text || event.raw_text || ''}</div>
+      <div class="badges" style="margin-top:10px">
+        <span class="badge ${badgeClass((event.analysis && event.analysis.sentiment) || event.sentiment || 'mixed')}">${cap((event.analysis && event.analysis.sentiment) || event.sentiment || 'mixed')}</span>
+        <span class="badge">${event.type || event.event_type || 'Event'}</span>
+        <span class="badge">Score ${(event.analysis && event.analysis.direct_score) || event.direct_score || 0}</span>
+      </div>
+    </div>
+  `).join('');
 
-  Array.from(document.querySelectorAll('.feed-item')).forEach(node => {
+  document.querySelectorAll('.feed-item').forEach(node => {
     node.addEventListener('click', () => {
       state.selectedId = node.dataset.id;
       renderFeed();
@@ -238,9 +312,12 @@ function renderDetail() {
   }
 
   const analysis = event.analysis || {};
-  const keywords = Array.isArray(analysis.matched_keywords) ? analysis.matched_keywords : [];
-  const factorImpact = analysis.factor_impact || {};
-  const readthrough = Array.isArray(analysis.readthrough) ? analysis.readthrough : [];
+  const matchedKeywords = analysis.matched_keywords || event.keyword_hits || [];
+  const factorImpact = analysis.factor_impact || event.factor_impact || {};
+  const readthrough = analysis.readthrough || [];
+  const chainBuckets = event.chain_buckets || [];
+  const primary = event.primary_beneficiaries || [];
+  const secondary = event.secondary_beneficiaries || [];
 
   const factorHtml = Object.entries(factorImpact).map(([k, v]) => `
     <div class="factor-box">
@@ -270,12 +347,12 @@ function renderDetail() {
     <div class="detail-head">
       <div>
         <div class="badges">
-          <span class="badge blue">${event.company || ''}</span>
-          <span class="badge">${event.type || 'Event'}</span>
-          <span class="badge ${badgeClass(analysis.sentiment || 'mixed')}">${cap(analysis.sentiment || 'mixed')}</span>
+          <span class="badge blue">${event.company || event.source_company || ''}</span>
+          <span class="badge">${event.type || event.event_type || 'Event'}</span>
+          <span class="badge ${badgeClass(analysis.sentiment || event.sentiment || 'mixed')}">${cap(analysis.sentiment || event.sentiment || 'mixed')}</span>
         </div>
-        <div class="detail-title">${event.title || ''}</div>
-        <div class="detail-text">${event.text || ''}</div>
+        <div class="detail-title">${event.title || event.headline || ''}</div>
+        <div class="detail-text">${event.text || event.raw_text || ''}</div>
         <div class="muted" style="margin-top:10px">
           Source:
           ${event.url ? `<a href="${event.url}" target="_blank" rel="noreferrer">${event.source || event.url}</a>` : (event.source || 'N/A')}
@@ -283,19 +360,48 @@ function renderDetail() {
       </div>
       <div class="score-card" style="min-width:180px">
         <div class="muted">Direct impact</div>
-        ${scoreBoxHtml(analysis.direct_score || 0)}
+        ${scoreBoxHtml(analysis.direct_score || event.direct_score || 0)}
       </div>
     </div>
 
-    <div class="keywords" style="margin-top:14px">
-      ${keywords.map(k => `<span class="keyword">${k}</span>`).join('')}
+    <div class="analyzer-section">
+      <div class="analyzer-title">Chain buckets</div>
+      <div class="keywords">
+        ${chainBuckets.length ? chainBuckets.map(x => `<span class="keyword">${x}</span>`).join('') : '<span class="muted">No chain buckets mapped</span>'}
+      </div>
+    </div>
+
+    <div class="analyzer-section">
+      <div class="analyzer-title">Primary beneficiaries</div>
+      <div class="keywords">
+        ${primary.length ? primary.map(x => `<span class="keyword">${x}</span>`).join('') : '<span class="muted">No primary beneficiaries</span>'}
+      </div>
+    </div>
+
+    <div class="analyzer-section">
+      <div class="analyzer-title">Secondary readthrough</div>
+      <div class="keywords">
+        ${secondary.length ? secondary.map(x => `<span class="keyword">${x}</span>`).join('') : '<span class="muted">No secondary readthrough</span>'}
+      </div>
+    </div>
+
+    <div class="analyzer-section">
+      <div class="analyzer-title">Keyword hits</div>
+      <div class="keywords">
+        ${matchedKeywords.length ? matchedKeywords.map(x => `<span class="keyword">${x}</span>`).join('') : '<span class="muted">No keyword hits</span>'}
+      </div>
+    </div>
+
+    <div class="analyzer-section">
+      <div class="analyzer-title">Why it matters</div>
+      <div class="muted">${event.why_it_matters || 'No explanation generated yet.'}</div>
     </div>
 
     <div class="factor-grid">
       ${factorHtml || '<div class="muted">No factor data.</div>'}
     </div>
 
-    <div class="card-title" style="margin-top:20px">Cross-ticker readthrough</div>
+    <div class="section-title" style="margin-top:20px">Cross-ticker readthrough</div>
     <div class="readthrough">${readthroughHtml}</div>
   `;
 }
@@ -303,9 +409,7 @@ function renderDetail() {
 function detectEventType(text) {
   const lower = text.toLowerCase();
   for (const rule of EVENT_TYPE_RULES) {
-    if (rule.keywords.some(k => lower.includes(k))) {
-      return rule.type;
-    }
+    if (rule.keywords.some(k => lower.includes(k))) return rule.type;
   }
   return 'General event / commentary';
 }
@@ -318,10 +422,8 @@ function analyzeManualEvent(text) {
   );
 
   const chainBuckets = matchedBuckets.map(r => r.label);
-
   const primary = [...new Set(matchedBuckets.flatMap(r => r.primary))];
   const secondary = [...new Set(matchedBuckets.flatMap(r => r.secondary))];
-
   const keywordHits = [...new Set(matchedBuckets.flatMap(r => r.keywords.filter(k => lower.includes(k))))];
 
   let sentiment = 'mixed';
@@ -341,6 +443,11 @@ function analyzeManualEvent(text) {
     });
   });
 
+  let why = 'This language does not yet strongly map to a single AI chain bucket.';
+  if (chainBuckets.length) {
+    why = `The language most directly maps to ${chainBuckets.join(', ')}. Primary beneficiaries are ${primary.join(', ') || 'unclear'}, with secondary readthrough into ${secondary.join(', ') || 'unclear'}.`;
+  }
+
   return {
     eventType: detectEventType(text),
     sentiment,
@@ -348,7 +455,8 @@ function analyzeManualEvent(text) {
     primary,
     secondary,
     keywordHits,
-    factorImpact
+    factorImpact,
+    why
   };
 }
 
@@ -407,6 +515,11 @@ function renderAnalyzerResult(result, rawText) {
     </div>
 
     <div class="analyzer-section">
+      <div class="analyzer-title">Why it matters</div>
+      <div class="muted">${result.why}</div>
+    </div>
+
+    <div class="analyzer-section">
       <div class="analyzer-title">Financial bridge</div>
       <div class="factor-grid">${factorHtml}</div>
     </div>
@@ -414,7 +527,7 @@ function renderAnalyzerResult(result, rawText) {
 }
 
 function bindAnalyzer() {
-  if (!els.analyzeBtn || !els.manualInput || !els.analyzerOutput) return;
+  if (!els.analyzeBtn) return;
 
   els.analyzeBtn.addEventListener('click', () => {
     const text = els.manualInput.value.trim();
@@ -422,16 +535,25 @@ function bindAnalyzer() {
       renderAnalyzerResult(null, '');
       return;
     }
-    const result = analyzeManualEvent(text);
-    renderAnalyzerResult(result, text);
+    renderAnalyzerResult(analyzeManualEvent(text), text);
   });
 
-  if (els.clearAnalyzeBtn) {
-    els.clearAnalyzeBtn.addEventListener('click', () => {
-      els.manualInput.value = '';
-      renderAnalyzerResult(null, '');
+  els.clearAnalyzeBtn.addEventListener('click', () => {
+    els.manualInput.value = '';
+    renderAnalyzerResult(null, '');
+  });
+}
+
+function initTabs() {
+  document.querySelectorAll('.tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(x => x.classList.remove('active'));
+      btn.classList.add('active');
+      const target = document.getElementById(`${btn.dataset.tab}Panel`);
+      if (target) target.classList.add('active');
     });
-  }
+  });
 }
 
 els.companyFilter.addEventListener('change', applyFilters);
@@ -439,4 +561,5 @@ els.searchInput.addEventListener('input', applyFilters);
 els.refreshBtn.addEventListener('click', loadData);
 
 bindAnalyzer();
+initTabs();
 loadData();
