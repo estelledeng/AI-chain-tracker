@@ -54,22 +54,29 @@
       <div class="card">
         <div class="section-title">Manual Event Analyzer</div>
         <div class="section-subtitle">
-          Paste one sentence from GTC, earnings, a partnership release, or a news summary.
+          Paste a sentence, upload a source URL, or combine both. The analyzed result can be added into the event feed and stored locally in this browser.
         </div>
+      
         <div class="analyzer-grid compact">
           <div>
-            <textarea id="manualInput" rows="6" placeholder="Example: Jensen says future AI factories depend on memory hierarchy, context memory, and efficient KV cache reuse."></textarea>
+            <label class="field-label" for="manualUrlInput">Source URL</label>
+            <input id="manualUrlInput" type="text" placeholder="Paste article / press release / keynote / transcript URL..." />
+      
+            <label class="field-label" for="manualInput" style="margin-top:14px;">Event text / transcript / headline</label>
+            <textarea id="manualInput" rows="7" placeholder="Example: Jensen says future AI factories depend on memory hierarchy, context memory, and efficient KV cache reuse."></textarea>
+      
             <div class="analyzer-actions">
               <button id="analyzeBtn" class="primary-btn">Analyze event</button>
+              <button id="saveAnalyzeBtn" class="secondary-btn">Add to feed</button>
               <button id="clearAnalyzeBtn" class="secondary-btn">Clear</button>
             </div>
           </div>
+      
           <div id="analyzerOutput" class="analyzer-output">
             <div class="muted">No manual event analyzed yet.</div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
     <section class="main-grid">
       <div class="card">
