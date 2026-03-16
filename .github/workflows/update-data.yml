@@ -3,7 +3,10 @@ name: Update tracker data
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *'
+    # 常态版：每 15 分钟
+    - cron: '*/15 * * * *'
+    # 事件日想切到每 5 分钟时，把上面注释掉，改用下面
+    # - cron: '*/5 * * * *'
 
 permissions:
   contents: write
@@ -24,13 +27,17 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4
+          pip install -r requirements.txt
 
-      - name: Fetch official source pages
+      - name: Fetch live sources
         run: |
           python ai_tracker_package/fetch_sources.py
 
-      - name: Rebuild events payload
+      - name: Fetch market and storage data
+        run: |
+          python ai_tracker_package/fetch_market.py
+
+      - name: Build live payload
         run: |
           python ai_tracker_package/build_events.py
 
@@ -38,6 +45,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data/events.json ai_tracker_package/raw_pages ai_tracker_package/raw_pages_manifest.json || true
+          git add docs/data/events.json docs/data/market.json ai_tracker_package/raw_pages_manifest.json ai_tracker_package/raw_market.json ai_tracker_package/storage_price_history.json || true
           git diff --cached --quiet || git commit -m "Auto-update tracker data"
           git push
