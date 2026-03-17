@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-03-17T12:05:44.930044+00:00",
+    "fetched_at": "2026-03-17T13:52:14.356915+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -22,6 +22,14 @@
       {
         "headline": "GPU TECHNOLOGY CONFERENCE",
         "url": "https://www.nvidia.com/en-us/gtc/"
+      },
+      {
+        "headline": "GTC Spotlights NVIDIA RTX PCs and DGX Sparks Running Latest Open Models and AI Agents Locally",
+        "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-gtc-2026-nemoclaw/"
+      },
+      {
+        "headline": "Snap Decisions: How Open Libraries for Accelerated Data Processing Boost A/B Testing for Snapchat",
+        "url": "https://blogs.nvidia.com/blog/snap-accelerated-data-processing/"
       },
       {
         "headline": "NVIDIA and Global Robotics Leaders Take Physical AI to the Real World",
@@ -54,14 +62,6 @@
       {
         "headline": "Adobe and NVIDIA Announce Strategic Partnership to Deliver the Next Generation of Firefly Models and Creative, Marketing and Agentic Workflows",
         "url": "https://nvidianews.nvidia.com/news/adobe-and-nvidia-partnership-creative-marketing-agentic-workflows"
-      },
-      {
-        "headline": "BYD, Geely, Isuzu and Nissan Adopt NVIDIA DRIVE Hyperion for Level 4 Vehicles",
-        "url": "https://nvidianews.nvidia.com/news/drive-hyperion-level-4"
-      },
-      {
-        "headline": "NVIDIA Ignites the Next Industrial Revolution in Knowledge Work With Open Agent Development Platform",
-        "url": "https://nvidianews.nvidia.com/news/ai-agents"
       }
     ]
   },
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-03-17T12:05:44.930044+00:00",
+    "fetched_at": "2026-03-17T13:52:14.356915+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-03-17T12:05:44.930044+00:00",
+    "fetched_at": "2026-03-17T13:52:14.356915+00:00",
     "error": "HTTPSConnectionPool(host='investor.sandisk.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "blocked",
-    "fetched_at": "2026-03-17T12:05:44.930044+00:00",
+    "fetched_at": "2026-03-17T13:52:14.356915+00:00",
     "error": "403 Client Error: Forbidden for url: https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "items": []
   },
@@ -101,7 +101,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "blocked",
-    "fetched_at": "2026-03-17T12:05:44.930044+00:00",
+    "fetched_at": "2026-03-17T13:52:14.356915+00:00",
     "error": "403 Client Error: Forbidden for url: https://investors.vertiv.com/news/news-details/default.aspx",
     "items": []
   },
@@ -111,7 +111,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "blocked",
-    "fetched_at": "2026-03-17T12:05:44.930044+00:00",
+    "fetched_at": "2026-03-17T13:52:14.356915+00:00",
     "error": "403 Client Error: Forbidden for url: https://pr.tsmc.com/english",
     "items": []
   },
@@ -121,7 +121,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-03-17T12:05:44.930044+00:00",
+    "fetched_at": "2026-03-17T13:52:14.356915+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -138,6 +138,14 @@
       {
         "headline": "Watch the latest Marvell Essential Technology Videos WATCH NOW",
         "url": "https://videos.marvell.com/"
+      },
+      {
+        "headline": "Marvell Launches Next-generation CXL Switch, Enabling Memory Pooling to Break Through the AI \u201cMemory Wall\u201d",
+        "url": "https://investor.marvell.com/news-events/press-releases/detail/1017/marvell-launches-next-generation-cxl-switch-enabling-memory-pooling-to-break-through-the-ai-memory-wall"
+      },
+      {
+        "headline": "Marvell Launches Industry\u2019s First 260-lane PCIe 6.0 Switch for AI Data Center Scale-up Infrastructure",
+        "url": "https://investor.marvell.com/news-events/press-releases/detail/1016/marvell-launches-industrys-first-260-lane-pcie-6-0-switch-for-ai-data-center-scale-up-infrastructure"
       },
       {
         "headline": "Marvell and Lumentum to Demonstrate Optical Circuit Switching for Next-generation AI Scale-up Infrastructure",
@@ -170,14 +178,6 @@
       {
         "headline": "Marvell to Showcase Latest AI Data Center Connectivity Solutions at DesignCon 2026",
         "url": "https://investor.marvell.com/news-events/press-releases/detail/1008/marvell-to-showcase-latest-ai-data-center-connectivity-solutions-at-designcon-2026"
-      },
-      {
-        "headline": "Marvell Completes Acquisition of XConn Technologies",
-        "url": "https://investor.marvell.com/news-events/press-releases/detail/1007/marvell-completes-acquisition-of-xconn-technologies"
-      },
-      {
-        "headline": "Marvell Technology, Inc. Announces Conference Call to Review Fourth Fiscal Quarter and Fiscal Year 2026 Financial Results",
-        "url": "https://investor.marvell.com/news-events/press-releases/detail/1006/marvell-technology-inc-announces-conference-call-to-review-fourth-fiscal-quarter-and-fiscal-year-2026-financial-results"
       }
     ]
   },
@@ -187,7 +187,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-03-17T12:05:44.930044+00:00",
+    "fetched_at": "2026-03-17T13:52:14.356915+00:00",
     "error": "HTTPSConnectionPool(host='ir.asteralabs.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -197,7 +197,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "blocked",
-    "fetched_at": "2026-03-17T12:05:44.930044+00:00",
+    "fetched_at": "2026-03-17T13:52:14.356915+00:00",
     "error": "403 Client Error: Forbidden for url: https://investors.credosemi.com/news-events/news",
     "items": []
   },
@@ -207,7 +207,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-03-17T12:05:44.930044+00:00",
+    "fetched_at": "2026-03-17T13:52:14.356915+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -217,7 +217,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-03-17T12:05:44.930044+00:00",
+    "fetched_at": "2026-03-17T13:52:14.356915+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -283,7 +283,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-03-17T12:05:44.930044+00:00",
+    "fetched_at": "2026-03-17T13:52:14.356915+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -349,7 +349,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-03-17T12:05:44.930044+00:00",
+    "fetched_at": "2026-03-17T13:52:14.356915+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
@@ -415,7 +415,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-03-17T12:05:44.930044+00:00",
+    "fetched_at": "2026-03-17T13:52:14.356915+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
