@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-03-18T19:53:31.359513+00:00",
+  "generated_at": "2026-03-18T20:36:36.273617+00:00",
   "dashboard_scores": [
     {
       "ticker": "NVDA",
       "score": 50,
       "role": "Platform / AI Factory Architecture",
       "group": "Core Platform",
-      "price": 180.73,
-      "change_pct": -0.96,
+      "price": 180.35,
+      "change_pct": -1.17,
       "series": [
         180.93,
         181.59,
@@ -85,7 +85,8 @@
         180.93,
         180.8,
         180.77,
-        180.73
+        180.73,
+        180.35
       ]
     },
     {
@@ -93,8 +94,8 @@
       "score": 48,
       "role": "HBM / DRAM / NAND",
       "group": "Memory & Storage",
-      "price": 467.63,
-      "change_pct": 0.62,
+      "price": 461.84,
+      "change_pct": -0.63,
       "series": [
         462.64,
         463.78,
@@ -172,7 +173,8 @@
         467.25,
         466.51,
         466.95,
-        467.63
+        468.35,
+        461.84
       ]
     },
     {
@@ -180,8 +182,8 @@
       "score": 55,
       "role": "NAND / SSD / Inference Storage Tier",
       "group": "Memory & Storage",
-      "price": 757.0,
-      "change_pct": 3.7,
+      "price": 753.0,
+      "change_pct": 3.15,
       "series": [
         732.45,
         728.79,
@@ -259,7 +261,8 @@
         753.84,
         754.99,
         752.51,
-        757.0
+        754.97,
+        753.0
       ]
     },
     {
@@ -267,8 +270,8 @@
       "score": 48,
       "role": "AI Networking / Scale-out Fabric",
       "group": "Connectivity & Networking",
-      "price": 136.3,
-      "change_pct": 2.1,
+      "price": 136.15,
+      "change_pct": 1.99,
       "series": [
         135.22,
         134.44,
@@ -346,7 +349,8 @@
         135.98,
         135.95,
         136.54,
-        136.3
+        136.23,
+        136.15
       ]
     },
     {
@@ -354,8 +358,8 @@
       "score": 48,
       "role": "Power / Cooling / Deployment",
       "group": "Deployment & Upstream",
-      "price": 267.31,
-      "change_pct": -1.59,
+      "price": 264.58,
+      "change_pct": -2.6,
       "series": [
         272.05,
         270.93,
@@ -430,10 +434,11 @@
         266.36,
         266.38,
         266.47,
-        266.4,
+        266.31,
         267.32,
         268.16,
-        267.31
+        267.11,
+        264.58
       ]
     },
     {
@@ -441,8 +446,8 @@
       "score": 48,
       "role": "Foundry / Advanced Packaging",
       "group": "Deployment & Upstream",
-      "price": 340.3,
-      "change_pct": -1.58,
+      "price": 339.63,
+      "change_pct": -1.78,
       "series": [
         345.89,
         346.7,
@@ -520,7 +525,8 @@
         339.83,
         339.65,
         339.82,
-        340.3
+        340.29,
+        339.63
       ]
     },
     {
@@ -528,8 +534,8 @@
       "score": 50,
       "role": "Interconnect / Custom Infrastructure",
       "group": "Connectivity & Networking",
-      "price": 87.91,
-      "change_pct": -3.33,
+      "price": 87.59,
+      "change_pct": -3.68,
       "series": [
         91.08,
         91.36,
@@ -607,7 +613,8 @@
         87.57,
         87.46,
         87.79,
-        87.91
+        87.74,
+        87.59
       ]
     },
     {
@@ -615,8 +622,8 @@
       "score": 48,
       "role": "Rack-scale Connectivity / AI IO",
       "group": "Connectivity & Networking",
-      "price": 127.15,
-      "change_pct": 0.07,
+      "price": 126.22,
+      "change_pct": -0.66,
       "series": [
         125.78,
         124.85,
@@ -694,7 +701,8 @@
         126.65,
         127.11,
         127.31,
-        127.15
+        126.72,
+        126.22
       ]
     },
     {
@@ -702,8 +710,8 @@
       "score": 48,
       "role": "High-speed Interconnect / AI Fabric",
       "group": "Connectivity & Networking",
-      "price": 102.17,
-      "change_pct": 0.26,
+      "price": 101.68,
+      "change_pct": -0.22,
       "series": [
         104.5,
         105.48,
@@ -781,7 +789,8 @@
         102.3,
         102.29,
         102.19,
-        102.17
+        102.15,
+        101.68
       ]
     },
     {
@@ -789,8 +798,8 @@
       "score": 48,
       "role": "Optics / AI Data Center Connectivity",
       "group": "Connectivity & Networking",
-      "price": 705.6,
-      "change_pct": -0.5,
+      "price": 701.22,
+      "change_pct": -1.12,
       "series": [
         723.75,
         719.49,
@@ -868,7 +877,8 @@
         698.45,
         699.34,
         703.82,
-        705.6
+        702.0,
+        701.22
       ]
     },
     {
@@ -876,8 +886,8 @@
       "score": 50,
       "role": "Optics / Package Integration",
       "group": "Connectivity & Networking",
-      "price": 258.54,
-      "change_pct": 2.62,
+      "price": 257.53,
+      "change_pct": 2.22,
       "series": [
         255.02,
         254.95,
@@ -952,10 +962,11 @@
         255.43,
         255.99,
         256.8,
-        257.3,
-        256.66,
+        257.2,
+        256.77,
         257.91,
-        258.54
+        257.76,
+        257.53
       ]
     }
   ],
@@ -1349,8 +1360,8 @@
       "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
       "text": "Artificial Intelligence Computing Leadership from NVIDIA",
       "raw_text": "Artificial Intelligence Computing Leadership from NVIDIA",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://www.nvidia.com/en-us",
       "chain_buckets": [],
@@ -1391,8 +1402,8 @@
       "headline": "Design & Pro Visualization",
       "text": "Design & Pro Visualization",
       "raw_text": "Design & Pro Visualization",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://www.nvidia.com/en-us/design-visualization/",
       "chain_buckets": [],
@@ -1433,8 +1444,8 @@
       "headline": "High Performance Computing",
       "text": "High Performance Computing",
       "raw_text": "High Performance Computing",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://www.nvidia.com/en-us/high-performance-computing/",
       "chain_buckets": [],
@@ -1475,8 +1486,8 @@
       "headline": "GPU TECHNOLOGY CONFERENCE",
       "text": "GPU TECHNOLOGY CONFERENCE",
       "raw_text": "GPU TECHNOLOGY CONFERENCE",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://www.nvidia.com/en-us/gtc/",
       "chain_buckets": [
@@ -1533,8 +1544,8 @@
       "headline": "From Simulation to Production: How to Build Robots With AI",
       "text": "From Simulation to Production: How to Build Robots With AI",
       "raw_text": "From Simulation to Production: How to Build Robots With AI",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://blogs.nvidia.com/blog/build-robots-with-ai/",
       "chain_buckets": [],
@@ -1575,8 +1586,8 @@
       "headline": "More Than Meets the Eye: NVIDIA RTX-Accelerated Computers Now Connect Directly to Apple Vision Pro",
       "text": "More Than Meets the Eye: NVIDIA RTX-Accelerated Computers Now Connect Directly to Apple Vision Pro",
       "raw_text": "More Than Meets the Eye: NVIDIA RTX-Accelerated Computers Now Connect Directly to Apple Vision Pro",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://blogs.nvidia.com/blog/nvidia-cloudxr-apple-vision-pro/",
       "chain_buckets": [
@@ -1633,8 +1644,8 @@
       "headline": "NVIDIA, Telecom Leaders Build AI Grids to Optimize Inference on Distributed Networks",
       "text": "NVIDIA, Telecom Leaders Build AI Grids to Optimize Inference on Distributed Networks",
       "raw_text": "NVIDIA, Telecom Leaders Build AI Grids to Optimize Inference on Distributed Networks",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://blogs.nvidia.com/blog/telecom-ai-grids-inference/",
       "chain_buckets": [],
@@ -1675,8 +1686,8 @@
       "headline": "GTC Spotlights NVIDIA RTX PCs and DGX Sparks Running Latest Open Models and AI Agents Locally",
       "text": "GTC Spotlights NVIDIA RTX PCs and DGX Sparks Running Latest Open Models and AI Agents Locally",
       "raw_text": "GTC Spotlights NVIDIA RTX PCs and DGX Sparks Running Latest Open Models and AI Agents Locally",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-gtc-2026-nemoclaw/",
       "chain_buckets": [],
@@ -1717,8 +1728,8 @@
       "headline": "Skip to section navigation",
       "text": "Skip to section navigation",
       "raw_text": "Skip to section navigation",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "Marvell Press Releases",
       "url": "https://investor.marvell.com/news-events/press-releases/#sectionNav",
       "chain_buckets": [],
@@ -1759,8 +1770,8 @@
       "headline": "Transimpedance Amplifiers",
       "text": "Transimpedance Amplifiers",
       "raw_text": "Transimpedance Amplifiers",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "Marvell Press Releases",
       "url": "https://www.marvell.com/products/transimpedance-amplifiers.html",
       "chain_buckets": [],
@@ -1801,8 +1812,8 @@
       "headline": "Marvell Government Solutions",
       "text": "Marvell Government Solutions",
       "raw_text": "Marvell Government Solutions",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "Marvell Press Releases",
       "url": "https://www.marvell.com/products/custom-asic/marvell-government-solutions.html",
       "chain_buckets": [],
@@ -1843,8 +1854,8 @@
       "headline": "Watch the latest Marvell Essential Technology Videos WATCH NOW",
       "text": "Watch the latest Marvell Essential Technology Videos WATCH NOW",
       "raw_text": "Watch the latest Marvell Essential Technology Videos WATCH NOW",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "Marvell Press Releases",
       "url": "https://videos.marvell.com/",
       "chain_buckets": [],
@@ -1885,8 +1896,8 @@
       "headline": "Marvell Launches Next-generation CXL Switch, Enabling Memory Pooling to Break Through the AI \u201cMemory Wall\u201d",
       "text": "Marvell Launches Next-generation CXL Switch, Enabling Memory Pooling to Break Through the AI \u201cMemory Wall\u201d",
       "raw_text": "Marvell Launches Next-generation CXL Switch, Enabling Memory Pooling to Break Through the AI \u201cMemory Wall\u201d",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "Marvell Press Releases",
       "url": "https://investor.marvell.com/news-events/press-releases/detail/1017/marvell-launches-next-generation-cxl-switch-enabling-memory-pooling-to-break-through-the-ai-memory-wall",
       "chain_buckets": [],
@@ -1927,8 +1938,8 @@
       "headline": "Marvell Launches Industry\u2019s First 260-lane PCIe 6.0 Switch for AI Data Center Scale-up Infrastructure",
       "text": "Marvell Launches Industry\u2019s First 260-lane PCIe 6.0 Switch for AI Data Center Scale-up Infrastructure",
       "raw_text": "Marvell Launches Industry\u2019s First 260-lane PCIe 6.0 Switch for AI Data Center Scale-up Infrastructure",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "Marvell Press Releases",
       "url": "https://investor.marvell.com/news-events/press-releases/detail/1016/marvell-launches-industrys-first-260-lane-pcie-6-0-switch-for-ai-data-center-scale-up-infrastructure",
       "chain_buckets": [],
@@ -1969,8 +1980,8 @@
       "headline": "Marvell and Lumentum to Demonstrate Optical Circuit Switching for Next-generation AI Scale-up Infrastructure",
       "text": "Marvell and Lumentum to Demonstrate Optical Circuit Switching for Next-generation AI Scale-up Infrastructure",
       "raw_text": "Marvell and Lumentum to Demonstrate Optical Circuit Switching for Next-generation AI Scale-up Infrastructure",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "Marvell Press Releases",
       "url": "https://investor.marvell.com/news-events/press-releases/detail/1015/marvell-and-lumentum-to-demonstrate-optical-circuit-switching-for-next-generation-ai-scale-up-infrastructure",
       "chain_buckets": [
@@ -2034,8 +2045,8 @@
       "headline": "Marvell to Showcase Industry-leading, End-to-End Connectivity Solutions for AI Data Center Infrastructure at OFC 2026",
       "text": "Marvell to Showcase Industry-leading, End-to-End Connectivity Solutions for AI Data Center Infrastructure at OFC 2026",
       "raw_text": "Marvell to Showcase Industry-leading, End-to-End Connectivity Solutions for AI Data Center Infrastructure at OFC 2026",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "Marvell Press Releases",
       "url": "https://investor.marvell.com/news-events/press-releases/detail/1014/marvell-to-showcase-industry-leading-end-to-end-connectivity-solutions-for-ai-data-center-infrastructure-at-ofc-2026",
       "chain_buckets": [],
@@ -2076,8 +2087,8 @@
       "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
       "text": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
       "raw_text": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/datacenter-communications.html",
       "chain_buckets": [
@@ -2141,8 +2152,8 @@
       "headline": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
       "text": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
       "raw_text": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/datacenter-communications.html",
       "chain_buckets": [
@@ -2216,8 +2227,8 @@
       "headline": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
       "text": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
       "raw_text": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/datacenter-communications-applications.html",
       "chain_buckets": [
@@ -2281,8 +2292,8 @@
       "headline": "Engineered Materials and High-Precision Laser Solutions\u200b",
       "text": "Engineered Materials and High-Precision Laser Solutions\u200b",
       "raw_text": "Engineered Materials and High-Precision Laser Solutions\u200b",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/industrial.html",
       "chain_buckets": [],
@@ -2323,8 +2334,8 @@
       "headline": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
       "text": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
       "raw_text": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/industrial.html",
       "chain_buckets": [],
@@ -2365,8 +2376,8 @@
       "headline": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
       "text": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
       "raw_text": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/industrial-solutions.html",
       "chain_buckets": [
@@ -2423,8 +2434,8 @@
       "headline": "Coherent PIC Magazine | PIC platforms: A question of choice November 24, 2023. An Interview With Julie Eng, Chief Technology Officer at Coherent. Learn More",
       "text": "Coherent PIC Magazine | PIC platforms: A question of choice November 24, 2023. An Interview With Julie Eng, Chief Technology Officer at Coherent. Learn More",
       "raw_text": "Coherent PIC Magazine | PIC platforms: A question of choice November 24, 2023. An Interview With Julie Eng, Chief Technology Officer at Coherent. Learn More",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "Coherent News",
       "url": "https://picmagazine.net/article/118133/PIC_platforms_A_question_of_choice",
       "chain_buckets": [],
@@ -2465,8 +2476,8 @@
       "headline": "Coherent NIKKEI Mobility | Coherent CEO: SiC Invested by DENSO and Melco November 7, 2023. DENSO and Mitsubishi Electric (Melco) have decided to invest in the silicon carbide (SiC) business of an American semiconductor w",
       "text": "Coherent NIKKEI Mobility | Coherent CEO: SiC Invested by DENSO and Melco November 7, 2023. DENSO and Mitsubishi Electric (Melco) have decided to invest in the silicon carbide (SiC) business of an American semiconductor w",
       "raw_text": "Coherent NIKKEI Mobility | Coherent CEO: SiC Invested by DENSO and Melco November 7, 2023. DENSO and Mitsubishi Electric (Melco) have decided to invest in the silicon carbide (SiC) business of an American semiconductor w",
-      "published_at": "2026-03-18T19:51:19.625376+00:00",
-      "datetime": "2026-03-18T19:51:19.625376+00:00",
+      "published_at": "2026-03-18T20:34:26.816680+00:00",
+      "datetime": "2026-03-18T20:34:26.816680+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/news/coherent-ceo-sic-invested-by-denso-and-melco",
       "chain_buckets": [],
@@ -2498,12 +2509,12 @@
     }
   ],
   "market": {
-    "updated_at": "2026-03-18T19:53:31.208564+00:00",
+    "updated_at": "2026-03-18T20:36:36.125755+00:00",
     "tickers": [
       {
         "ticker": "NVDA",
-        "price": 180.73,
-        "change_pct": -0.96,
+        "price": 180.35,
+        "change_pct": -1.17,
         "series": [
           180.93,
           181.59,
@@ -2581,14 +2592,15 @@
           180.93,
           180.8,
           180.77,
-          180.73
+          180.73,
+          180.35
         ],
         "status": "ok"
       },
       {
         "ticker": "MU",
-        "price": 467.63,
-        "change_pct": 0.62,
+        "price": 461.84,
+        "change_pct": -0.63,
         "series": [
           462.64,
           463.78,
@@ -2666,14 +2678,15 @@
           467.25,
           466.51,
           466.95,
-          467.63
+          468.35,
+          461.84
         ],
         "status": "ok"
       },
       {
         "ticker": "SNDK",
-        "price": 757.0,
-        "change_pct": 3.7,
+        "price": 753.0,
+        "change_pct": 3.15,
         "series": [
           732.45,
           728.79,
@@ -2751,14 +2764,15 @@
           753.84,
           754.99,
           752.51,
-          757.0
+          754.97,
+          753.0
         ],
         "status": "ok"
       },
       {
         "ticker": "ANET",
-        "price": 136.3,
-        "change_pct": 2.1,
+        "price": 136.15,
+        "change_pct": 1.99,
         "series": [
           135.22,
           134.44,
@@ -2836,14 +2850,15 @@
           135.98,
           135.95,
           136.54,
-          136.3
+          136.23,
+          136.15
         ],
         "status": "ok"
       },
       {
         "ticker": "VRT",
-        "price": 267.31,
-        "change_pct": -1.59,
+        "price": 264.58,
+        "change_pct": -2.6,
         "series": [
           272.05,
           270.93,
@@ -2918,17 +2933,18 @@
           266.36,
           266.38,
           266.47,
-          266.4,
+          266.31,
           267.32,
           268.16,
-          267.31
+          267.11,
+          264.58
         ],
         "status": "ok"
       },
       {
         "ticker": "TSM",
-        "price": 340.3,
-        "change_pct": -1.58,
+        "price": 339.63,
+        "change_pct": -1.78,
         "series": [
           345.89,
           346.7,
@@ -3006,14 +3022,15 @@
           339.83,
           339.65,
           339.82,
-          340.3
+          340.29,
+          339.63
         ],
         "status": "ok"
       },
       {
         "ticker": "MRVL",
-        "price": 87.91,
-        "change_pct": -3.33,
+        "price": 87.59,
+        "change_pct": -3.68,
         "series": [
           91.08,
           91.36,
@@ -3091,14 +3108,15 @@
           87.57,
           87.46,
           87.79,
-          87.91
+          87.74,
+          87.59
         ],
         "status": "ok"
       },
       {
         "ticker": "ALAB",
-        "price": 127.15,
-        "change_pct": 0.07,
+        "price": 126.22,
+        "change_pct": -0.66,
         "series": [
           125.78,
           124.85,
@@ -3176,14 +3194,15 @@
           126.65,
           127.11,
           127.31,
-          127.15
+          126.72,
+          126.22
         ],
         "status": "ok"
       },
       {
         "ticker": "CRDO",
-        "price": 102.17,
-        "change_pct": 0.26,
+        "price": 101.68,
+        "change_pct": -0.22,
         "series": [
           104.5,
           105.48,
@@ -3261,14 +3280,15 @@
           102.3,
           102.29,
           102.19,
-          102.17
+          102.15,
+          101.68
         ],
         "status": "ok"
       },
       {
         "ticker": "LITE",
-        "price": 705.6,
-        "change_pct": -0.5,
+        "price": 701.22,
+        "change_pct": -1.12,
         "series": [
           723.75,
           719.49,
@@ -3346,14 +3366,15 @@
           698.45,
           699.34,
           703.82,
-          705.6
+          702.0,
+          701.22
         ],
         "status": "ok"
       },
       {
         "ticker": "COHR",
-        "price": 258.54,
-        "change_pct": 2.62,
+        "price": 257.53,
+        "change_pct": 2.22,
         "series": [
           255.02,
           254.95,
@@ -3428,10 +3449,11 @@
           255.43,
           255.99,
           256.8,
-          257.3,
-          256.66,
+          257.2,
+          256.77,
           257.91,
-          258.54
+          257.76,
+          257.53
         ],
         "status": "ok"
       }
