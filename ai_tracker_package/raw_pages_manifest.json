@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-03-23T14:01:50.453498+00:00",
+    "fetched_at": "2026-03-23T15:15:17.300792+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -22,6 +22,10 @@
       {
         "headline": "GPU TECHNOLOGY CONFERENCE",
         "url": "https://www.nvidia.com/en-us/gtc/"
+      },
+      {
+        "headline": "How Autonomous AI Agents Become Secure by Design With NVIDIA OpenShell",
+        "url": "https://blogs.nvidia.com/blog/secure-autonomous-ai-agents-openshell/"
       },
       {
         "headline": "NVIDIA and Emerald AI Join Leading Energy Companies to Pioneer Flexible AI Factories as Grid Assets",
@@ -58,10 +62,6 @@
       {
         "headline": "NVIDIA and Global Robotics Leaders Take Physical AI to the Real World",
         "url": "https://nvidianews.nvidia.com/news/nvidia-and-global-robotics-leaders-take-physical-ai-to-the-real-world"
-      },
-      {
-        "headline": "NVIDIA and Global Industrial Software Giants Bring Design, Engineering and Manufacturing Into the AI Era",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-and-global-industrial-software-giants-bring-design-engineering-and-manufacturing-into-the-ai-era"
       }
     ]
   },
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-03-23T14:01:50.453498+00:00",
+    "fetched_at": "2026-03-23T15:15:17.300792+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-03-23T14:01:50.453498+00:00",
+    "fetched_at": "2026-03-23T15:15:17.300792+00:00",
     "error": "HTTPSConnectionPool(host='investor.sandisk.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "blocked",
-    "fetched_at": "2026-03-23T14:01:50.453498+00:00",
+    "fetched_at": "2026-03-23T15:15:17.300792+00:00",
     "error": "403 Client Error: Forbidden for url: https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "items": []
   },
@@ -101,7 +101,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "blocked",
-    "fetched_at": "2026-03-23T14:01:50.453498+00:00",
+    "fetched_at": "2026-03-23T15:15:17.300792+00:00",
     "error": "403 Client Error: Forbidden for url: https://investors.vertiv.com/news/news-details/default.aspx",
     "items": []
   },
@@ -111,7 +111,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "blocked",
-    "fetched_at": "2026-03-23T14:01:50.453498+00:00",
+    "fetched_at": "2026-03-23T15:15:17.300792+00:00",
     "error": "403 Client Error: Forbidden for url: https://pr.tsmc.com/english",
     "items": []
   },
@@ -121,7 +121,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-03-23T14:01:50.453498+00:00",
+    "fetched_at": "2026-03-23T15:15:17.300792+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -187,7 +187,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-03-23T14:01:50.453498+00:00",
+    "fetched_at": "2026-03-23T15:15:17.300792+00:00",
     "error": "HTTPSConnectionPool(host='ir.asteralabs.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -197,7 +197,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "blocked",
-    "fetched_at": "2026-03-23T14:01:50.453498+00:00",
+    "fetched_at": "2026-03-23T15:15:17.300792+00:00",
     "error": "403 Client Error: Forbidden for url: https://investors.credosemi.com/news-events/news",
     "items": []
   },
@@ -207,7 +207,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-03-23T14:01:50.453498+00:00",
+    "fetched_at": "2026-03-23T15:15:17.300792+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -217,7 +217,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-03-23T14:01:50.453498+00:00",
+    "fetched_at": "2026-03-23T15:15:17.300792+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -283,7 +283,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-03-23T14:01:50.453498+00:00",
+    "fetched_at": "2026-03-23T15:15:17.300792+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -349,7 +349,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-03-23T14:01:50.453498+00:00",
+    "fetched_at": "2026-03-23T15:15:17.300792+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
@@ -415,7 +415,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-03-23T14:01:50.453498+00:00",
+    "fetched_at": "2026-03-23T15:15:17.300792+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
