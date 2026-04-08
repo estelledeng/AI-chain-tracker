@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-08T20:25:59.158936+00:00",
+  "updated_at": "2026-04-08T21:11:32.837404+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -864,7 +864,7 @@
     {
       "ticker": "COHR",
       "price": 281.8,
-      "change_pct": -0.42,
+      "change_pct": 1.62,
       "series": [
         279.35,
         277.5,
