@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-09T21:45:34.585190+00:00",
+  "updated_at": "2026-04-09T22:27:50.609803+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -520,7 +520,7 @@
     {
       "ticker": "MRVL",
       "price": 119.92,
-      "change_pct": 1.33,
+      "change_pct": 1.25,
       "series": [
         118.42,
         118.52,
