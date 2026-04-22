@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T20:05:28.469889+00:00",
+  "generated_at": "2026-04-22T21:10:35.151781+00:00",
   "dashboard_scores": [
     {
       "ticker": "NVDA",
@@ -270,8 +270,8 @@
       "score": 48,
       "role": "AI Networking / Scale-out Fabric",
       "group": "Connectivity & Networking",
-      "price": 177.67,
-      "change_pct": 1.88,
+      "price": 177.66,
+      "change_pct": 1.87,
       "series": [
         172.9,
         172.34,
@@ -350,7 +350,7 @@
         177.51,
         178.01,
         177.73,
-        177.67
+        177.66
       ]
     },
     {
@@ -358,8 +358,8 @@
       "score": 48,
       "role": "Power / Cooling / Deployment",
       "group": "Deployment & Upstream",
-      "price": 305.11,
-      "change_pct": -0.07,
+      "price": 305.02,
+      "change_pct": -0.1,
       "series": [
         307.54,
         304.19,
@@ -438,7 +438,7 @@
         305.3,
         305.89,
         305.1,
-        305.11
+        305.02
       ]
     },
     {
@@ -446,8 +446,8 @@
       "score": 55,
       "role": "Foundry / Advanced Packaging",
       "group": "Deployment & Upstream",
-      "price": 387.55,
-      "change_pct": 4.24,
+      "price": 387.51,
+      "change_pct": 4.23,
       "series": [
         371.2,
         372.13,
@@ -526,7 +526,7 @@
         386.7,
         386.61,
         387.36,
-        387.55
+        387.51
       ]
     },
     {
@@ -886,8 +886,8 @@
       "score": 50,
       "role": "Optics / Package Integration",
       "group": "Connectivity & Networking",
-      "price": 350.57,
-      "change_pct": -0.66,
+      "price": 350.45,
+      "change_pct": -0.69,
       "series": [
         362.44,
         357.36,
@@ -965,8 +965,8 @@
         348.79,
         348.95,
         348.67,
-        349.34,
-        350.57
+        349.17,
+        350.45
       ]
     }
   ],
@@ -1360,8 +1360,8 @@
       "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
       "text": "Artificial Intelligence Computing Leadership from NVIDIA",
       "raw_text": "Artificial Intelligence Computing Leadership from NVIDIA",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://www.nvidia.com/en-us",
       "chain_buckets": [],
@@ -1402,8 +1402,8 @@
       "headline": "Design & Pro Visualization",
       "text": "Design & Pro Visualization",
       "raw_text": "Design & Pro Visualization",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://www.nvidia.com/en-us/design-visualization/",
       "chain_buckets": [],
@@ -1444,8 +1444,8 @@
       "headline": "High Performance Computing",
       "text": "High Performance Computing",
       "raw_text": "High Performance Computing",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://www.nvidia.com/en-us/high-performance-computing/",
       "chain_buckets": [],
@@ -1486,8 +1486,8 @@
       "headline": "GPU TECHNOLOGY CONFERENCE",
       "text": "GPU TECHNOLOGY CONFERENCE",
       "raw_text": "GPU TECHNOLOGY CONFERENCE",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://www.nvidia.com/en-us/gtc/",
       "chain_buckets": [
@@ -1544,8 +1544,8 @@
       "headline": "From Rainforests to Recycling Plants: 5 Ways NVIDIA AI Is Protecting the Planet",
       "text": "From Rainforests to Recycling Plants: 5 Ways NVIDIA AI Is Protecting the Planet",
       "raw_text": "From Rainforests to Recycling Plants: 5 Ways NVIDIA AI Is Protecting the Planet",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://blogs.nvidia.com/blog/earth-day-2026-ai-accelerated-computing/",
       "chain_buckets": [],
@@ -1586,8 +1586,8 @@
       "headline": "NVIDIA and Google Cloud Collaborate to Advance Agentic and Physical AI",
       "text": "NVIDIA and Google Cloud Collaborate to Advance Agentic and Physical AI",
       "raw_text": "NVIDIA and Google Cloud Collaborate to Advance Agentic and Physical AI",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://blogs.nvidia.com/blog/google-cloud-agentic-physical-ai-factories/",
       "chain_buckets": [],
@@ -1628,8 +1628,8 @@
       "headline": "Autonomous AI at Scale: Adobe Agents Unlock Breakthrough Creative Intelligence With NVIDIA and WPP",
       "text": "Autonomous AI at Scale: Adobe Agents Unlock Breakthrough Creative Intelligence With NVIDIA and WPP",
       "raw_text": "Autonomous AI at Scale: Adobe Agents Unlock Breakthrough Creative Intelligence With NVIDIA and WPP",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://blogs.nvidia.com/blog/adobe-ai-agents-nvidia-wpp/",
       "chain_buckets": [],
@@ -1670,8 +1670,8 @@
       "headline": "NVIDIA and Partners Showcase the Future of AI-Driven Manufacturing at Hannover Messe 2026",
       "text": "NVIDIA and Partners Showcase the Future of AI-Driven Manufacturing at Hannover Messe 2026",
       "raw_text": "NVIDIA and Partners Showcase the Future of AI-Driven Manufacturing at Hannover Messe 2026",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://blogs.nvidia.com/blog/ai-manufacturing-hannover-messe/",
       "chain_buckets": [],
@@ -1712,8 +1712,8 @@
       "headline": "Skip to section navigation",
       "text": "Skip to section navigation",
       "raw_text": "Skip to section navigation",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "Marvell Press Releases",
       "url": "https://investor.marvell.com/news-events/press-releases/#sectionNav",
       "chain_buckets": [],
@@ -1754,8 +1754,8 @@
       "headline": "Transimpedance Amplifiers",
       "text": "Transimpedance Amplifiers",
       "raw_text": "Transimpedance Amplifiers",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "Marvell Press Releases",
       "url": "https://www.marvell.com/products/transimpedance-amplifiers.html",
       "chain_buckets": [],
@@ -1796,8 +1796,8 @@
       "headline": "Marvell Government Solutions",
       "text": "Marvell Government Solutions",
       "raw_text": "Marvell Government Solutions",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "Marvell Press Releases",
       "url": "https://www.marvell.com/products/custom-asic/marvell-government-solutions.html",
       "chain_buckets": [],
@@ -1838,8 +1838,8 @@
       "headline": "Watch the latest Marvell Essential Technology Videos WATCH NOW",
       "text": "Watch the latest Marvell Essential Technology Videos WATCH NOW",
       "raw_text": "Watch the latest Marvell Essential Technology Videos WATCH NOW",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "Marvell Press Releases",
       "url": "https://videos.marvell.com/",
       "chain_buckets": [],
@@ -1874,41 +1874,64 @@
       "company": "MRVL",
       "source_company": "MRVL",
       "source_kind": "official",
-      "event_type": "News / Media",
-      "type": "News / Media",
-      "title": "NVIDIA AI Ecosystem Expands as Marvell Joins Forces Through NVLink Fusion",
-      "headline": "NVIDIA AI Ecosystem Expands as Marvell Joins Forces Through NVLink Fusion",
-      "text": "NVIDIA AI Ecosystem Expands as Marvell Joins Forces Through NVLink Fusion",
-      "raw_text": "NVIDIA AI Ecosystem Expands as Marvell Joins Forces Through NVLink Fusion",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "event_type": "Product Launch / Roadmap",
+      "type": "Product Launch / Roadmap",
+      "title": "Marvell Announces Acquisition of Polariton Technologies, Advancing Optical Performance Scaling to 3.2T and Beyond",
+      "headline": "Marvell Announces Acquisition of Polariton Technologies, Advancing Optical Performance Scaling to 3.2T and Beyond",
+      "text": "Marvell Announces Acquisition of Polariton Technologies, Advancing Optical Performance Scaling to 3.2T and Beyond",
+      "raw_text": "Marvell Announces Acquisition of Polariton Technologies, Advancing Optical Performance Scaling to 3.2T and Beyond",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "Marvell Press Releases",
-      "url": "https://investor.marvell.com/news-events/press-releases/detail/1019/nvidia-ai-ecosystem-expands-as-marvell-joins-forces-through-nvlink-fusion",
-      "chain_buckets": [],
-      "primary_beneficiaries": [],
-      "secondary_beneficiaries": [],
-      "keyword_hits": [],
-      "sentiment": "mixed",
+      "url": "https://investor.marvell.com/news-events/press-releases/detail/1020/marvell-announces-acquisition-of-polariton-technologies-advancing-optical-performance-scaling-to-3-2t-and-beyond",
+      "chain_buckets": [
+        "Optics"
+      ],
+      "primary_beneficiaries": [
+        "LITE",
+        "COHR"
+      ],
+      "secondary_beneficiaries": [
+        "CRDO",
+        "ANET"
+      ],
+      "keyword_hits": [
+        "optical"
+      ],
+      "sentiment": "bullish",
       "factor_impact": {
-        "tam": "medium",
+        "tam": "high",
         "shipment": "medium",
         "gm": "medium",
         "eps": "medium",
         "timing": "medium"
       },
-      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "why_it_matters": "This event maps most directly to Optics. Primary beneficiaries are LITE, COHR, with secondary readthrough into CRDO, ANET.",
       "analysis": {
-        "sentiment": "mixed",
-        "direct_score": 50,
-        "matched_keywords": [],
+        "sentiment": "bullish",
+        "direct_score": 70,
+        "matched_keywords": [
+          "optical"
+        ],
         "factor_impact": {
-          "tam": "medium",
+          "tam": "high",
           "shipment": "medium",
           "gm": "medium",
           "eps": "medium",
           "timing": "medium"
         },
-        "readthrough": []
+        "readthrough": [
+          {
+            "ticker": "CRDO",
+            "score": 64,
+            "summary": "MRVL event may have readthrough into CRDO."
+          },
+          {
+            "ticker": "ANET",
+            "score": 58,
+            "summary": "MRVL event may have readthrough into ANET."
+          }
+        ]
       }
     },
     {
@@ -1918,14 +1941,14 @@
       "source_kind": "official",
       "event_type": "News / Media",
       "type": "News / Media",
-      "title": "Marvell Technology, Inc. Declares Quarterly Dividend Payment",
-      "headline": "Marvell Technology, Inc. Declares Quarterly Dividend Payment",
-      "text": "Marvell Technology, Inc. Declares Quarterly Dividend Payment",
-      "raw_text": "Marvell Technology, Inc. Declares Quarterly Dividend Payment",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "title": "NVIDIA AI Ecosystem Expands as Marvell Joins Forces Through NVLink Fusion",
+      "headline": "NVIDIA AI Ecosystem Expands as Marvell Joins Forces Through NVLink Fusion",
+      "text": "NVIDIA AI Ecosystem Expands as Marvell Joins Forces Through NVLink Fusion",
+      "raw_text": "NVIDIA AI Ecosystem Expands as Marvell Joins Forces Through NVLink Fusion",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "Marvell Press Releases",
-      "url": "https://investor.marvell.com/news-events/press-releases/detail/1018/marvell-technology-inc-declares-quarterly-dividend-payment",
+      "url": "https://investor.marvell.com/news-events/press-releases/detail/1019/nvidia-ai-ecosystem-expands-as-marvell-joins-forces-through-nvlink-fusion",
       "chain_buckets": [],
       "primary_beneficiaries": [],
       "secondary_beneficiaries": [],
@@ -1958,16 +1981,16 @@
       "company": "MRVL",
       "source_company": "MRVL",
       "source_kind": "official",
-      "event_type": "Product Launch / Roadmap",
-      "type": "Product Launch / Roadmap",
-      "title": "Marvell Launches Next-generation CXL Switch, Enabling Memory Pooling to Break Through the AI \u201cMemory Wall\u201d",
-      "headline": "Marvell Launches Next-generation CXL Switch, Enabling Memory Pooling to Break Through the AI \u201cMemory Wall\u201d",
-      "text": "Marvell Launches Next-generation CXL Switch, Enabling Memory Pooling to Break Through the AI \u201cMemory Wall\u201d",
-      "raw_text": "Marvell Launches Next-generation CXL Switch, Enabling Memory Pooling to Break Through the AI \u201cMemory Wall\u201d",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Marvell Technology, Inc. Declares Quarterly Dividend Payment",
+      "headline": "Marvell Technology, Inc. Declares Quarterly Dividend Payment",
+      "text": "Marvell Technology, Inc. Declares Quarterly Dividend Payment",
+      "raw_text": "Marvell Technology, Inc. Declares Quarterly Dividend Payment",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "Marvell Press Releases",
-      "url": "https://investor.marvell.com/news-events/press-releases/detail/1017/marvell-launches-next-generation-cxl-switch-enabling-memory-pooling-to-break-through-the-ai-memory-wall",
+      "url": "https://investor.marvell.com/news-events/press-releases/detail/1018/marvell-technology-inc-declares-quarterly-dividend-payment",
       "chain_buckets": [],
       "primary_beneficiaries": [],
       "secondary_beneficiaries": [],
@@ -2002,14 +2025,14 @@
       "source_kind": "official",
       "event_type": "Product Launch / Roadmap",
       "type": "Product Launch / Roadmap",
-      "title": "Marvell Launches Industry\u2019s First 260-lane PCIe 6.0 Switch for AI Data Center Scale-up Infrastructure",
-      "headline": "Marvell Launches Industry\u2019s First 260-lane PCIe 6.0 Switch for AI Data Center Scale-up Infrastructure",
-      "text": "Marvell Launches Industry\u2019s First 260-lane PCIe 6.0 Switch for AI Data Center Scale-up Infrastructure",
-      "raw_text": "Marvell Launches Industry\u2019s First 260-lane PCIe 6.0 Switch for AI Data Center Scale-up Infrastructure",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "title": "Marvell Launches Next-generation CXL Switch, Enabling Memory Pooling to Break Through the AI \u201cMemory Wall\u201d",
+      "headline": "Marvell Launches Next-generation CXL Switch, Enabling Memory Pooling to Break Through the AI \u201cMemory Wall\u201d",
+      "text": "Marvell Launches Next-generation CXL Switch, Enabling Memory Pooling to Break Through the AI \u201cMemory Wall\u201d",
+      "raw_text": "Marvell Launches Next-generation CXL Switch, Enabling Memory Pooling to Break Through the AI \u201cMemory Wall\u201d",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "Marvell Press Releases",
-      "url": "https://investor.marvell.com/news-events/press-releases/detail/1016/marvell-launches-industrys-first-260-lane-pcie-6-0-switch-for-ai-data-center-scale-up-infrastructure",
+      "url": "https://investor.marvell.com/news-events/press-releases/detail/1017/marvell-launches-next-generation-cxl-switch-enabling-memory-pooling-to-break-through-the-ai-memory-wall",
       "chain_buckets": [],
       "primary_beneficiaries": [],
       "secondary_beneficiaries": [],
@@ -2048,8 +2071,8 @@
       "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
       "text": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
       "raw_text": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/datacenter-communications.html",
       "chain_buckets": [
@@ -2113,8 +2136,8 @@
       "headline": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
       "text": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
       "raw_text": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/datacenter-communications.html",
       "chain_buckets": [
@@ -2188,8 +2211,8 @@
       "headline": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
       "text": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
       "raw_text": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/datacenter-communications-applications.html",
       "chain_buckets": [
@@ -2253,8 +2276,8 @@
       "headline": "Engineered Materials and High-Precision Laser Solutions\u200b",
       "text": "Engineered Materials and High-Precision Laser Solutions\u200b",
       "raw_text": "Engineered Materials and High-Precision Laser Solutions\u200b",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/industrial.html",
       "chain_buckets": [],
@@ -2295,8 +2318,8 @@
       "headline": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
       "text": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
       "raw_text": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/industrial.html",
       "chain_buckets": [],
@@ -2337,8 +2360,8 @@
       "headline": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
       "text": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
       "raw_text": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/industrial-solutions.html",
       "chain_buckets": [
@@ -2395,8 +2418,8 @@
       "headline": "Coherent Service keeps your laser systems performing at their peak \u2014 safeguarding productivity, maximizing uptime, and protecting your investment.",
       "text": "Coherent Service keeps your laser systems performing at their peak \u2014 safeguarding productivity, maximizing uptime, and protecting your investment.",
       "raw_text": "Coherent Service keeps your laser systems performing at their peak \u2014 safeguarding productivity, maximizing uptime, and protecting your investment.",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/support.html",
       "chain_buckets": [],
@@ -2437,8 +2460,8 @@
       "headline": "Coherent PIC Magazine | PIC platforms: A question of choice November 24, 2023. An Interview With Julie Eng, Chief Technology Officer at Coherent. Learn More",
       "text": "Coherent PIC Magazine | PIC platforms: A question of choice November 24, 2023. An Interview With Julie Eng, Chief Technology Officer at Coherent. Learn More",
       "raw_text": "Coherent PIC Magazine | PIC platforms: A question of choice November 24, 2023. An Interview With Julie Eng, Chief Technology Officer at Coherent. Learn More",
-      "published_at": "2026-04-22T20:03:56.162377+00:00",
-      "datetime": "2026-04-22T20:03:56.162377+00:00",
+      "published_at": "2026-04-22T21:09:07.446650+00:00",
+      "datetime": "2026-04-22T21:09:07.446650+00:00",
       "source": "Coherent News",
       "url": "https://picmagazine.net/article/118133/PIC_platforms_A_question_of_choice",
       "chain_buckets": [],
@@ -2470,7 +2493,7 @@
     }
   ],
   "market": {
-    "updated_at": "2026-04-22T20:05:28.356849+00:00",
+    "updated_at": "2026-04-22T21:10:35.038372+00:00",
     "tickers": [
       {
         "ticker": "NVDA",
@@ -2732,8 +2755,8 @@
       },
       {
         "ticker": "ANET",
-        "price": 177.67,
-        "change_pct": 1.88,
+        "price": 177.66,
+        "change_pct": 1.87,
         "series": [
           172.9,
           172.34,
@@ -2812,14 +2835,14 @@
           177.51,
           178.01,
           177.73,
-          177.67
+          177.66
         ],
         "status": "ok"
       },
       {
         "ticker": "VRT",
-        "price": 305.11,
-        "change_pct": -0.07,
+        "price": 305.02,
+        "change_pct": -0.1,
         "series": [
           307.54,
           304.19,
@@ -2898,14 +2921,14 @@
           305.3,
           305.89,
           305.1,
-          305.11
+          305.02
         ],
         "status": "ok"
       },
       {
         "ticker": "TSM",
-        "price": 387.55,
-        "change_pct": 4.24,
+        "price": 387.51,
+        "change_pct": 4.23,
         "series": [
           371.2,
           372.13,
@@ -2984,7 +3007,7 @@
           386.7,
           386.61,
           387.36,
-          387.55
+          387.51
         ],
         "status": "ok"
       },
@@ -3334,8 +3357,8 @@
       },
       {
         "ticker": "COHR",
-        "price": 350.57,
-        "change_pct": -0.66,
+        "price": 350.45,
+        "change_pct": -0.69,
         "series": [
           362.44,
           357.36,
@@ -3413,8 +3436,8 @@
           348.79,
           348.95,
           348.67,
-          349.34,
-          350.57
+          349.17,
+          350.45
         ],
         "status": "ok"
       }
