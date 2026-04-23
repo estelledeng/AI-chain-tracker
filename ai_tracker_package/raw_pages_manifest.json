@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-04-23T12:09:05.006165+00:00",
+    "fetched_at": "2026-04-23T14:10:51.050035+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -22,6 +22,14 @@
       {
         "headline": "GPU TECHNOLOGY CONFERENCE",
         "url": "https://www.nvidia.com/en-us/gtc/"
+      },
+      {
+        "headline": "Tag, You\u2019re It: GeForce NOW Levels Up Game Discovery With Xbox Game Pass and Ubisoft+ Labels",
+        "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-in-app-labels/"
+      },
+      {
+        "headline": "Making Sense of the Early Universe",
+        "url": "https://blogs.nvidia.com/blog/ai-gpu-early-universe-astronomy/"
       },
       {
         "headline": "From Rainforests to Recycling Plants: 5 Ways NVIDIA AI Is Protecting the Planet",
@@ -54,14 +62,6 @@
       {
         "headline": "NVIDIA Launches Ising, the World\u2019s First Open AI Models to Accelerate the Path to Useful Quantum Computers",
         "url": "https://nvidianews.nvidia.com/news/nvidia-launches-ising-the-worlds-first-open-ai-models-to-accelerate-the-path-to-useful-quantum-computers"
-      },
-      {
-        "headline": "Strength and Destiny Collide: \u2018Samson: A Tyndalston Story\u2019 Arrives in the Cloud",
-        "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-samson-a-tyndalston-story/"
-      },
-      {
-        "headline": "National Robotics Week \u2014 Latest Physical AI Research, Breakthroughs and Resources",
-        "url": "https://blogs.nvidia.com/blog/national-robotics-week-2026/"
       }
     ]
   },
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-04-23T12:09:05.006165+00:00",
+    "fetched_at": "2026-04-23T14:10:51.050035+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-04-23T12:09:05.006165+00:00",
+    "fetched_at": "2026-04-23T14:10:51.050035+00:00",
     "error": "HTTPSConnectionPool(host='investor.sandisk.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "blocked",
-    "fetched_at": "2026-04-23T12:09:05.006165+00:00",
+    "fetched_at": "2026-04-23T14:10:51.050035+00:00",
     "error": "403 Client Error: Forbidden for url: https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "items": []
   },
@@ -101,7 +101,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "blocked",
-    "fetched_at": "2026-04-23T12:09:05.006165+00:00",
+    "fetched_at": "2026-04-23T14:10:51.050035+00:00",
     "error": "403 Client Error: Forbidden for url: https://investors.vertiv.com/news/news-details/default.aspx",
     "items": []
   },
@@ -111,7 +111,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "blocked",
-    "fetched_at": "2026-04-23T12:09:05.006165+00:00",
+    "fetched_at": "2026-04-23T14:10:51.050035+00:00",
     "error": "403 Client Error: Forbidden for url: https://pr.tsmc.com/english",
     "items": []
   },
@@ -121,7 +121,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-04-23T12:09:05.006165+00:00",
+    "fetched_at": "2026-04-23T14:10:51.050035+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -187,7 +187,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-04-23T12:09:05.006165+00:00",
+    "fetched_at": "2026-04-23T14:10:51.050035+00:00",
     "error": "HTTPSConnectionPool(host='ir.asteralabs.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -197,7 +197,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "blocked",
-    "fetched_at": "2026-04-23T12:09:05.006165+00:00",
+    "fetched_at": "2026-04-23T14:10:51.050035+00:00",
     "error": "403 Client Error: Forbidden for url: https://investors.credosemi.com/news-events/news",
     "items": []
   },
@@ -207,7 +207,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-04-23T12:09:05.006165+00:00",
+    "fetched_at": "2026-04-23T14:10:51.050035+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -217,7 +217,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-04-23T12:09:05.006165+00:00",
+    "fetched_at": "2026-04-23T14:10:51.050035+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -283,7 +283,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-04-23T12:09:05.006165+00:00",
+    "fetched_at": "2026-04-23T14:10:51.050035+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -349,7 +349,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-04-23T12:09:05.006165+00:00",
+    "fetched_at": "2026-04-23T14:10:51.050035+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
@@ -415,7 +415,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-04-23T12:09:05.006165+00:00",
+    "fetched_at": "2026-04-23T14:10:51.050035+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
