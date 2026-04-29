@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-04-29T07:22:12.453442+00:00",
+    "fetched_at": "2026-04-29T09:33:00.171935+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-04-29T07:22:12.453442+00:00",
+    "fetched_at": "2026-04-29T09:33:00.171935+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-04-29T07:22:12.453442+00:00",
+    "fetched_at": "2026-04-29T09:33:00.171935+00:00",
     "error": "HTTPSConnectionPool(host='investor.sandisk.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -90,30 +90,158 @@
     "name": "Arista Press Releases",
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
-    "status": "blocked",
-    "fetched_at": "2026-04-29T07:22:12.453442+00:00",
-    "error": "403 Client Error: Forbidden for url: https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
-    "items": []
+    "status": "success",
+    "fetched_at": "2026-04-29T09:33:00.171935+00:00",
+    "items": [
+      {
+        "headline": "Annual Reports & Proxies",
+        "url": "https://investors.arista.com/Financial-Information/default.aspx?section=annual-report"
+      },
+      {
+        "headline": "Functional Vice Presidents",
+        "url": "https://www.arista.com/en/company/management-team/functional-vice-presidents"
+      },
+      {
+        "headline": "Contact Technical Support",
+        "url": "https://www.arista.com/support/customer-support"
+      },
+      {
+        "headline": "Powered By Q4 Inc. 5.178.0.4 (opens in new window)",
+        "url": "http://q4inc.com/Powered-by-Q4/"
+      }
+    ]
   },
   {
     "ticker": "VRT",
     "name": "Vertiv News",
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
-    "status": "blocked",
-    "fetched_at": "2026-04-29T07:22:12.453442+00:00",
-    "error": "403 Client Error: Forbidden for url: https://investors.vertiv.com/news/news-details/default.aspx",
-    "items": []
+    "status": "success",
+    "fetched_at": "2026-04-29T09:33:00.171935+00:00",
+    "items": [
+      {
+        "headline": "Uninterruptible Power Supplies (UPS)",
+        "url": "https://www.vertiv.com/en-us/products-catalog/critical-power/uninterruptible-power-supplies-ups/"
+      },
+      {
+        "headline": "Static Transfer Switches",
+        "url": "https://www.vertiv.com/en-us/products-catalog/critical-power/power-transfer-switches/"
+      },
+      {
+        "headline": "Switchgear and Switchboard",
+        "url": "https://www.vertiv.com/en-us/products-catalog/critical-power/switchgear/"
+      },
+      {
+        "headline": "Battery Energy Storage System (BESS)",
+        "url": "https://www.vertiv.com/en-us/products-catalog/critical-power/battery-energy-storage-system-bess/"
+      },
+      {
+        "headline": "Liquid Cooling Solutions",
+        "url": "https://www.vertiv.com/en-us/products-catalog/thermal-management/high-density-solutions/"
+      },
+      {
+        "headline": "Outdoor Packaged Systems",
+        "url": "https://www.vertiv.com/en-us/products-catalog/thermal-management/outdoor-packaged-systems/"
+      },
+      {
+        "headline": "Evaporative Free Cooling",
+        "url": "https://www.vertiv.com/en-us/products-catalog/thermal-management/evaporative-free-cooling/"
+      },
+      {
+        "headline": "Thermal Control and Monitoring",
+        "url": "https://www.vertiv.com/en-us/products-catalog/thermal-management/thermal-control-and-monitoring/"
+      },
+      {
+        "headline": "Digital Infrastructure Solutions",
+        "url": "https://www.vertiv.com/en-us/products-catalog/monitoring-control-and-management/digital-infrastructure-solutions/"
+      },
+      {
+        "headline": "Embedded Device Management",
+        "url": "https://www.vertiv.com/en-us/products/monitoring-control--management/avocent-embedded-management-systems/"
+      },
+      {
+        "headline": "Electrical Reliability Services",
+        "url": "https://www.vertiv.com/en-us/products/services/electrical-services/"
+      },
+      {
+        "headline": "Electrical Safety & Compliance",
+        "url": "https://www.vertiv.com/en-us/products/services/electrical-safety-and-compliance/"
+      },
+      {
+        "headline": "Calculate Cooling Retrofit Savings",
+        "url": "https://thermalupgrades.vertivco.com/"
+      },
+      {
+        "headline": "Calculate Cooling Economization",
+        "url": "https://www.vertiv.com/en-us/support/tools-applications/free-cooling-economizer-calculator/"
+      }
+    ]
   },
   {
     "ticker": "TSM",
     "name": "TSMC Press Center",
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
-    "status": "blocked",
-    "fetched_at": "2026-04-29T07:22:12.453442+00:00",
-    "error": "403 Client Error: Forbidden for url: https://pr.tsmc.com/english",
-    "items": []
+    "status": "success",
+    "fetched_at": "2026-04-29T09:33:00.171935+00:00",
+    "items": [
+      {
+        "headline": "Engineering Performance Optimization",
+        "url": "https://www.tsmc.com/english/dedicatedFoundry/manufacturing/engineering"
+      },
+      {
+        "headline": "Agile and Intelligent Operations",
+        "url": "https://www.tsmc.com/english/dedicatedFoundry/manufacturing/intelligent_operations"
+      },
+      {
+        "headline": "University FinFET Program",
+        "url": "https://www.tsmc.com/english/dedicatedFoundry/services/university_program"
+      },
+      {
+        "headline": "Corporate Governance Officer",
+        "url": "https://investor.tsmc.com/english/corporate-governance-officer"
+      },
+      {
+        "headline": "TWSE Market Observation Post System",
+        "url": "https://emops.twse.com.tw/server-java/t58query"
+      },
+      {
+        "headline": "TSMC Material Information",
+        "url": "https://emops.twse.com.tw/server-java/t05st01_e?TYPEK=sii&co_id=2330&year=2025&month=all&step=0&query=co&colorchg=1"
+      },
+      {
+        "headline": "Relocation to Headquarters",
+        "url": "https://www.tsmc.com/english/careers/relocation_HQ.htm"
+      },
+      {
+        "headline": "Values and Business Philosophy",
+        "url": "https://www.tsmc.com/english/aboutTSMC/values"
+      },
+      {
+        "headline": "TSMC Museum of Innovation",
+        "url": "https://www.tsmcmoi.com/en/"
+      },
+      {
+        "headline": "TSMC Education and Culture Foundation",
+        "url": "https://www.tsmc.com/english/aboutTSMC/tsmc_foundation"
+      },
+      {
+        "headline": "Investor Relations, Public Relations, ESG Contacts",
+        "url": "https://www.tsmc.com/english/contact-us#investor-relations"
+      },
+      {
+        "headline": "TSMC Debuts A13 Technology at 2026 North America Technology Symposium (2026/04/23)",
+        "url": "https://pr.tsmc.com/english/news/3302"
+      },
+      {
+        "headline": "TSMC Files Annual Report on Form 20-F for 2025 (2026/04/16)",
+        "url": "https://pr.tsmc.com/english/news/3300"
+      },
+      {
+        "headline": "TSMC 1Q\u201926 Earnings Conference and Conference Call (2026/04/16)",
+        "url": "https://investor.tsmc.com/english/quarterly-results/2026/q1"
+      }
+    ]
   },
   {
     "ticker": "MRVL",
@@ -121,7 +249,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-04-29T07:22:12.453442+00:00",
+    "fetched_at": "2026-04-29T09:33:00.171935+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -187,7 +315,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-04-29T07:22:12.453442+00:00",
+    "fetched_at": "2026-04-29T09:33:00.171935+00:00",
     "error": "HTTPSConnectionPool(host='ir.asteralabs.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -196,10 +324,34 @@
     "name": "Credo News",
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
-    "status": "blocked",
-    "fetched_at": "2026-04-29T07:22:12.453442+00:00",
-    "error": "403 Client Error: Forbidden for url: https://investors.credosemi.com/news-events/news",
-    "items": []
+    "status": "success",
+    "fetched_at": "2026-04-29T09:33:00.171935+00:00",
+    "items": [
+      {
+        "headline": "Information Request Form",
+        "url": "https://investors.credosemi.com/resources/information-request-form/default.aspx"
+      },
+      {
+        "headline": "Powered By Q4 Inc. 5.137.2.3 (opens in new window)",
+        "url": "https://www.q4inc.com/Powered-by-Q4/"
+      },
+      {
+        "headline": "Terms of Service (opens in new window)",
+        "url": "https://credosemi.com/legal/"
+      },
+      {
+        "headline": "Privacy Policy (opens in new window)",
+        "url": "https://credosemi.com/legal/"
+      },
+      {
+        "headline": "Cookies (opens in new window)",
+        "url": "https://credosemi.com/legal/"
+      },
+      {
+        "headline": "Legal (opens in new window)",
+        "url": "https://credosemi.com/legal/"
+      }
+    ]
   },
   {
     "ticker": "LITE",
@@ -207,7 +359,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-04-29T07:22:12.453442+00:00",
+    "fetched_at": "2026-04-29T09:33:00.171935+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -217,7 +369,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-04-29T07:22:12.453442+00:00",
+    "fetched_at": "2026-04-29T09:33:00.171935+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -283,7 +435,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-04-29T07:22:12.453442+00:00",
+    "fetched_at": "2026-04-29T09:33:00.171935+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -349,7 +501,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-04-29T07:22:12.453442+00:00",
+    "fetched_at": "2026-04-29T09:33:00.171935+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
@@ -415,7 +567,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-04-29T07:22:12.453442+00:00",
+    "fetched_at": "2026-04-29T09:33:00.171935+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",

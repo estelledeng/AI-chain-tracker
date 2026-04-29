@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T07:23:41.725279+00:00",
+  "generated_at": "2026-04-29T09:34:29.982565+00:00",
   "dashboard_scores": [
     {
       "ticker": "NVDA",
@@ -267,7 +267,7 @@
     },
     {
       "ticker": "ANET",
-      "score": 48,
+      "score": 70,
       "role": "AI Networking / Scale-out Fabric",
       "group": "Connectivity & Networking",
       "price": 165.27,
@@ -355,7 +355,7 @@
     },
     {
       "ticker": "VRT",
-      "score": 48,
+      "score": 70,
       "role": "Power / Cooling / Deployment",
       "group": "Deployment & Upstream",
       "price": 305.03,
@@ -443,7 +443,7 @@
     },
     {
       "ticker": "TSM",
-      "score": 48,
+      "score": 50,
       "role": "Foundry / Advanced Packaging",
       "group": "Deployment & Upstream",
       "price": 392.12,
@@ -707,7 +707,7 @@
     },
     {
       "ticker": "CRDO",
-      "score": 48,
+      "score": 50,
       "role": "High-speed Interconnect / AI Fabric",
       "group": "Connectivity & Networking",
       "price": 165.93,
@@ -998,7 +998,7 @@
     {
       "name": "Arista Press Releases",
       "type": "Company source",
-      "status": "Fetch blocked",
+      "status": "Live connected",
       "endpoint": "/api/sources/anet",
       "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
       "group": "official"
@@ -1006,7 +1006,7 @@
     {
       "name": "Vertiv News",
       "type": "Company source",
-      "status": "Fetch blocked",
+      "status": "Live connected",
       "endpoint": "/api/sources/vrt",
       "url": "https://investors.vertiv.com/news/news-details/default.aspx",
       "group": "official"
@@ -1014,7 +1014,7 @@
     {
       "name": "TSMC Press Center",
       "type": "Company source",
-      "status": "Fetch blocked",
+      "status": "Live connected",
       "endpoint": "/api/sources/tsm",
       "url": "https://pr.tsmc.com/english",
       "group": "official"
@@ -1038,7 +1038,7 @@
     {
       "name": "Credo News",
       "type": "Company source",
-      "status": "Fetch blocked",
+      "status": "Live connected",
       "endpoint": "/api/sources/crdo",
       "url": "https://investors.credosemi.com/news-events/news",
       "group": "official"
@@ -1360,8 +1360,8 @@
       "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
       "text": "Artificial Intelligence Computing Leadership from NVIDIA",
       "raw_text": "Artificial Intelligence Computing Leadership from NVIDIA",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://www.nvidia.com/en-us",
       "chain_buckets": [],
@@ -1402,8 +1402,8 @@
       "headline": "Design & Pro Visualization",
       "text": "Design & Pro Visualization",
       "raw_text": "Design & Pro Visualization",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://www.nvidia.com/en-us/design-visualization/",
       "chain_buckets": [],
@@ -1444,8 +1444,8 @@
       "headline": "High Performance Computing",
       "text": "High Performance Computing",
       "raw_text": "High Performance Computing",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://www.nvidia.com/en-us/high-performance-computing/",
       "chain_buckets": [],
@@ -1486,8 +1486,8 @@
       "headline": "GPU TECHNOLOGY CONFERENCE",
       "text": "GPU TECHNOLOGY CONFERENCE",
       "raw_text": "GPU TECHNOLOGY CONFERENCE",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://www.nvidia.com/en-us/gtc/",
       "chain_buckets": [
@@ -1544,8 +1544,8 @@
       "headline": "NVIDIA Launches Nemotron 3 Nano Omni Model, Unifying Vision, Audio and Language for up to 9x More Efficient AI Agents",
       "text": "NVIDIA Launches Nemotron 3 Nano Omni Model, Unifying Vision, Audio and Language for up to 9x More Efficient AI Agents",
       "raw_text": "NVIDIA Launches Nemotron 3 Nano Omni Model, Unifying Vision, Audio and Language for up to 9x More Efficient AI Agents",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/",
       "chain_buckets": [],
@@ -1586,8 +1586,8 @@
       "headline": "Into the Omniverse: Manufacturing\u2019s Simulation-First Era Has Arrived",
       "text": "Into the Omniverse: Manufacturing\u2019s Simulation-First Era Has Arrived",
       "raw_text": "Into the Omniverse: Manufacturing\u2019s Simulation-First Era Has Arrived",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://blogs.nvidia.com/blog/manufacturing-simulation-first/",
       "chain_buckets": [],
@@ -1628,8 +1628,8 @@
       "headline": "OpenAI\u2019s New GPT-5.5 Powers Codex on NVIDIA Infrastructure \u2014 and NVIDIA Is Already Putting It to Work",
       "text": "OpenAI\u2019s New GPT-5.5 Powers Codex on NVIDIA Infrastructure \u2014 and NVIDIA Is Already Putting It to Work",
       "raw_text": "OpenAI\u2019s New GPT-5.5 Powers Codex on NVIDIA Infrastructure \u2014 and NVIDIA Is Already Putting It to Work",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://blogs.nvidia.com/blog/openai-codex-gpt-5-5-ai-agents/",
       "chain_buckets": [
@@ -1686,10 +1686,932 @@
       "headline": "Tag, You\u2019re It: GeForce NOW Levels Up Game Discovery With Xbox Game Pass and Ubisoft+ Labels",
       "text": "Tag, You\u2019re It: GeForce NOW Levels Up Game Discovery With Xbox Game Pass and Ubisoft+ Labels",
       "raw_text": "Tag, You\u2019re It: GeForce NOW Levels Up Game Discovery With Xbox Game Pass and Ubisoft+ Labels",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-in-app-labels/",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "anet_1",
+      "company": "ANET",
+      "source_company": "ANET",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Annual Reports & Proxies",
+      "headline": "Annual Reports & Proxies",
+      "text": "Annual Reports & Proxies",
+      "raw_text": "Annual Reports & Proxies",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Arista Press Releases",
+      "url": "https://investors.arista.com/Financial-Information/default.aspx?section=annual-report",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "anet_2",
+      "company": "ANET",
+      "source_company": "ANET",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Functional Vice Presidents",
+      "headline": "Functional Vice Presidents",
+      "text": "Functional Vice Presidents",
+      "raw_text": "Functional Vice Presidents",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Arista Press Releases",
+      "url": "https://www.arista.com/en/company/management-team/functional-vice-presidents",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "anet_3",
+      "company": "ANET",
+      "source_company": "ANET",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Contact Technical Support",
+      "headline": "Contact Technical Support",
+      "text": "Contact Technical Support",
+      "raw_text": "Contact Technical Support",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Arista Press Releases",
+      "url": "https://www.arista.com/support/customer-support",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "anet_4",
+      "company": "ANET",
+      "source_company": "ANET",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Powered By Q4 Inc. 5.178.0.4 (opens in new window)",
+      "headline": "Powered By Q4 Inc. 5.178.0.4 (opens in new window)",
+      "text": "Powered By Q4 Inc. 5.178.0.4 (opens in new window)",
+      "raw_text": "Powered By Q4 Inc. 5.178.0.4 (opens in new window)",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Arista Press Releases",
+      "url": "http://q4inc.com/Powered-by-Q4/",
+      "chain_buckets": [
+        "Power / Cooling"
+      ],
+      "primary_beneficiaries": [
+        "VRT"
+      ],
+      "secondary_beneficiaries": [
+        "NVDA"
+      ],
+      "keyword_hits": [
+        "power"
+      ],
+      "sentiment": "bullish",
+      "factor_impact": {
+        "tam": "high",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event maps most directly to Power / Cooling. Primary beneficiaries are VRT, with secondary readthrough into NVDA.",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 70,
+        "matched_keywords": [
+          "power"
+        ],
+        "factor_impact": {
+          "tam": "high",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": [
+          {
+            "ticker": "NVDA",
+            "score": 64,
+            "summary": "ANET event may have readthrough into NVDA."
+          }
+        ]
+      }
+    },
+    {
+      "id": "vrt_1",
+      "company": "VRT",
+      "source_company": "VRT",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Uninterruptible Power Supplies (UPS)",
+      "headline": "Uninterruptible Power Supplies (UPS)",
+      "text": "Uninterruptible Power Supplies (UPS)",
+      "raw_text": "Uninterruptible Power Supplies (UPS)",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Vertiv News",
+      "url": "https://www.vertiv.com/en-us/products-catalog/critical-power/uninterruptible-power-supplies-ups/",
+      "chain_buckets": [
+        "Power / Cooling"
+      ],
+      "primary_beneficiaries": [
+        "VRT"
+      ],
+      "secondary_beneficiaries": [
+        "NVDA"
+      ],
+      "keyword_hits": [
+        "power"
+      ],
+      "sentiment": "bullish",
+      "factor_impact": {
+        "tam": "high",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event maps most directly to Power / Cooling. Primary beneficiaries are VRT, with secondary readthrough into NVDA.",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 70,
+        "matched_keywords": [
+          "power"
+        ],
+        "factor_impact": {
+          "tam": "high",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": [
+          {
+            "ticker": "NVDA",
+            "score": 64,
+            "summary": "VRT event may have readthrough into NVDA."
+          }
+        ]
+      }
+    },
+    {
+      "id": "vrt_2",
+      "company": "VRT",
+      "source_company": "VRT",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Static Transfer Switches",
+      "headline": "Static Transfer Switches",
+      "text": "Static Transfer Switches",
+      "raw_text": "Static Transfer Switches",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Vertiv News",
+      "url": "https://www.vertiv.com/en-us/products-catalog/critical-power/power-transfer-switches/",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "vrt_3",
+      "company": "VRT",
+      "source_company": "VRT",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Switchgear and Switchboard",
+      "headline": "Switchgear and Switchboard",
+      "text": "Switchgear and Switchboard",
+      "raw_text": "Switchgear and Switchboard",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Vertiv News",
+      "url": "https://www.vertiv.com/en-us/products-catalog/critical-power/switchgear/",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "vrt_4",
+      "company": "VRT",
+      "source_company": "VRT",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Battery Energy Storage System (BESS)",
+      "headline": "Battery Energy Storage System (BESS)",
+      "text": "Battery Energy Storage System (BESS)",
+      "raw_text": "Battery Energy Storage System (BESS)",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Vertiv News",
+      "url": "https://www.vertiv.com/en-us/products-catalog/critical-power/battery-energy-storage-system-bess/",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "vrt_5",
+      "company": "VRT",
+      "source_company": "VRT",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Liquid Cooling Solutions",
+      "headline": "Liquid Cooling Solutions",
+      "text": "Liquid Cooling Solutions",
+      "raw_text": "Liquid Cooling Solutions",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Vertiv News",
+      "url": "https://www.vertiv.com/en-us/products-catalog/thermal-management/high-density-solutions/",
+      "chain_buckets": [
+        "Power / Cooling"
+      ],
+      "primary_beneficiaries": [
+        "VRT"
+      ],
+      "secondary_beneficiaries": [
+        "NVDA"
+      ],
+      "keyword_hits": [
+        "liquid cooling",
+        "cooling"
+      ],
+      "sentiment": "bullish",
+      "factor_impact": {
+        "tam": "high",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event maps most directly to Power / Cooling. Primary beneficiaries are VRT, with secondary readthrough into NVDA.",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 70,
+        "matched_keywords": [
+          "liquid cooling",
+          "cooling"
+        ],
+        "factor_impact": {
+          "tam": "high",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": [
+          {
+            "ticker": "NVDA",
+            "score": 64,
+            "summary": "VRT event may have readthrough into NVDA."
+          }
+        ]
+      }
+    },
+    {
+      "id": "vrt_6",
+      "company": "VRT",
+      "source_company": "VRT",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Outdoor Packaged Systems",
+      "headline": "Outdoor Packaged Systems",
+      "text": "Outdoor Packaged Systems",
+      "raw_text": "Outdoor Packaged Systems",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Vertiv News",
+      "url": "https://www.vertiv.com/en-us/products-catalog/thermal-management/outdoor-packaged-systems/",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "vrt_7",
+      "company": "VRT",
+      "source_company": "VRT",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Evaporative Free Cooling",
+      "headline": "Evaporative Free Cooling",
+      "text": "Evaporative Free Cooling",
+      "raw_text": "Evaporative Free Cooling",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Vertiv News",
+      "url": "https://www.vertiv.com/en-us/products-catalog/thermal-management/evaporative-free-cooling/",
+      "chain_buckets": [
+        "Power / Cooling"
+      ],
+      "primary_beneficiaries": [
+        "VRT"
+      ],
+      "secondary_beneficiaries": [
+        "NVDA"
+      ],
+      "keyword_hits": [
+        "cooling"
+      ],
+      "sentiment": "bullish",
+      "factor_impact": {
+        "tam": "high",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event maps most directly to Power / Cooling. Primary beneficiaries are VRT, with secondary readthrough into NVDA.",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 70,
+        "matched_keywords": [
+          "cooling"
+        ],
+        "factor_impact": {
+          "tam": "high",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": [
+          {
+            "ticker": "NVDA",
+            "score": 64,
+            "summary": "VRT event may have readthrough into NVDA."
+          }
+        ]
+      }
+    },
+    {
+      "id": "vrt_8",
+      "company": "VRT",
+      "source_company": "VRT",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Thermal Control and Monitoring",
+      "headline": "Thermal Control and Monitoring",
+      "text": "Thermal Control and Monitoring",
+      "raw_text": "Thermal Control and Monitoring",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Vertiv News",
+      "url": "https://www.vertiv.com/en-us/products-catalog/thermal-management/thermal-control-and-monitoring/",
+      "chain_buckets": [
+        "Power / Cooling"
+      ],
+      "primary_beneficiaries": [
+        "VRT"
+      ],
+      "secondary_beneficiaries": [
+        "NVDA"
+      ],
+      "keyword_hits": [
+        "thermal"
+      ],
+      "sentiment": "bullish",
+      "factor_impact": {
+        "tam": "high",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event maps most directly to Power / Cooling. Primary beneficiaries are VRT, with secondary readthrough into NVDA.",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 70,
+        "matched_keywords": [
+          "thermal"
+        ],
+        "factor_impact": {
+          "tam": "high",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": [
+          {
+            "ticker": "NVDA",
+            "score": 64,
+            "summary": "VRT event may have readthrough into NVDA."
+          }
+        ]
+      }
+    },
+    {
+      "id": "tsm_1",
+      "company": "TSM",
+      "source_company": "TSM",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Engineering Performance Optimization",
+      "headline": "Engineering Performance Optimization",
+      "text": "Engineering Performance Optimization",
+      "raw_text": "Engineering Performance Optimization",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "TSMC Press Center",
+      "url": "https://www.tsmc.com/english/dedicatedFoundry/manufacturing/engineering",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "tsm_2",
+      "company": "TSM",
+      "source_company": "TSM",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Agile and Intelligent Operations",
+      "headline": "Agile and Intelligent Operations",
+      "text": "Agile and Intelligent Operations",
+      "raw_text": "Agile and Intelligent Operations",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "TSMC Press Center",
+      "url": "https://www.tsmc.com/english/dedicatedFoundry/manufacturing/intelligent_operations",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "tsm_3",
+      "company": "TSM",
+      "source_company": "TSM",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "University FinFET Program",
+      "headline": "University FinFET Program",
+      "text": "University FinFET Program",
+      "raw_text": "University FinFET Program",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "TSMC Press Center",
+      "url": "https://www.tsmc.com/english/dedicatedFoundry/services/university_program",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "tsm_4",
+      "company": "TSM",
+      "source_company": "TSM",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Corporate Governance Officer",
+      "headline": "Corporate Governance Officer",
+      "text": "Corporate Governance Officer",
+      "raw_text": "Corporate Governance Officer",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "TSMC Press Center",
+      "url": "https://investor.tsmc.com/english/corporate-governance-officer",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "tsm_5",
+      "company": "TSM",
+      "source_company": "TSM",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "TWSE Market Observation Post System",
+      "headline": "TWSE Market Observation Post System",
+      "text": "TWSE Market Observation Post System",
+      "raw_text": "TWSE Market Observation Post System",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "TSMC Press Center",
+      "url": "https://emops.twse.com.tw/server-java/t58query",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "tsm_6",
+      "company": "TSM",
+      "source_company": "TSM",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "TSMC Material Information",
+      "headline": "TSMC Material Information",
+      "text": "TSMC Material Information",
+      "raw_text": "TSMC Material Information",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "TSMC Press Center",
+      "url": "https://emops.twse.com.tw/server-java/t05st01_e?TYPEK=sii&co_id=2330&year=2025&month=all&step=0&query=co&colorchg=1",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "tsm_7",
+      "company": "TSM",
+      "source_company": "TSM",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Relocation to Headquarters",
+      "headline": "Relocation to Headquarters",
+      "text": "Relocation to Headquarters",
+      "raw_text": "Relocation to Headquarters",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "TSMC Press Center",
+      "url": "https://www.tsmc.com/english/careers/relocation_HQ.htm",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "tsm_8",
+      "company": "TSM",
+      "source_company": "TSM",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Values and Business Philosophy",
+      "headline": "Values and Business Philosophy",
+      "text": "Values and Business Philosophy",
+      "raw_text": "Values and Business Philosophy",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "TSMC Press Center",
+      "url": "https://www.tsmc.com/english/aboutTSMC/values",
       "chain_buckets": [],
       "primary_beneficiaries": [],
       "secondary_beneficiaries": [],
@@ -1728,8 +2650,8 @@
       "headline": "Skip to section navigation",
       "text": "Skip to section navigation",
       "raw_text": "Skip to section navigation",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "Marvell Press Releases",
       "url": "https://investor.marvell.com/news-events/press-releases/#sectionNav",
       "chain_buckets": [],
@@ -1770,8 +2692,8 @@
       "headline": "Transimpedance Amplifiers",
       "text": "Transimpedance Amplifiers",
       "raw_text": "Transimpedance Amplifiers",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "Marvell Press Releases",
       "url": "https://www.marvell.com/products/transimpedance-amplifiers.html",
       "chain_buckets": [],
@@ -1812,8 +2734,8 @@
       "headline": "Marvell Government Solutions",
       "text": "Marvell Government Solutions",
       "raw_text": "Marvell Government Solutions",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "Marvell Press Releases",
       "url": "https://www.marvell.com/products/custom-asic/marvell-government-solutions.html",
       "chain_buckets": [],
@@ -1854,8 +2776,8 @@
       "headline": "Watch the latest Marvell Essential Technology Videos WATCH NOW",
       "text": "Watch the latest Marvell Essential Technology Videos WATCH NOW",
       "raw_text": "Watch the latest Marvell Essential Technology Videos WATCH NOW",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "Marvell Press Releases",
       "url": "https://videos.marvell.com/",
       "chain_buckets": [],
@@ -1896,8 +2818,8 @@
       "headline": "Marvell Announces Acquisition of Polariton Technologies, Advancing Optical Performance Scaling to 3.2T and Beyond",
       "text": "Marvell Announces Acquisition of Polariton Technologies, Advancing Optical Performance Scaling to 3.2T and Beyond",
       "raw_text": "Marvell Announces Acquisition of Polariton Technologies, Advancing Optical Performance Scaling to 3.2T and Beyond",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "Marvell Press Releases",
       "url": "https://investor.marvell.com/news-events/press-releases/detail/1020/marvell-announces-acquisition-of-polariton-technologies-advancing-optical-performance-scaling-to-3-2t-and-beyond",
       "chain_buckets": [
@@ -1961,8 +2883,8 @@
       "headline": "NVIDIA AI Ecosystem Expands as Marvell Joins Forces Through NVLink Fusion",
       "text": "NVIDIA AI Ecosystem Expands as Marvell Joins Forces Through NVLink Fusion",
       "raw_text": "NVIDIA AI Ecosystem Expands as Marvell Joins Forces Through NVLink Fusion",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "Marvell Press Releases",
       "url": "https://investor.marvell.com/news-events/press-releases/detail/1019/nvidia-ai-ecosystem-expands-as-marvell-joins-forces-through-nvlink-fusion",
       "chain_buckets": [],
@@ -2003,8 +2925,8 @@
       "headline": "Marvell Technology, Inc. Declares Quarterly Dividend Payment",
       "text": "Marvell Technology, Inc. Declares Quarterly Dividend Payment",
       "raw_text": "Marvell Technology, Inc. Declares Quarterly Dividend Payment",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "Marvell Press Releases",
       "url": "https://investor.marvell.com/news-events/press-releases/detail/1018/marvell-technology-inc-declares-quarterly-dividend-payment",
       "chain_buckets": [],
@@ -2045,10 +2967,278 @@
       "headline": "Marvell Launches Next-generation CXL Switch, Enabling Memory Pooling to Break Through the AI \u201cMemory Wall\u201d",
       "text": "Marvell Launches Next-generation CXL Switch, Enabling Memory Pooling to Break Through the AI \u201cMemory Wall\u201d",
       "raw_text": "Marvell Launches Next-generation CXL Switch, Enabling Memory Pooling to Break Through the AI \u201cMemory Wall\u201d",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "Marvell Press Releases",
       "url": "https://investor.marvell.com/news-events/press-releases/detail/1017/marvell-launches-next-generation-cxl-switch-enabling-memory-pooling-to-break-through-the-ai-memory-wall",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "crdo_1",
+      "company": "CRDO",
+      "source_company": "CRDO",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Information Request Form",
+      "headline": "Information Request Form",
+      "text": "Information Request Form",
+      "raw_text": "Information Request Form",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Credo News",
+      "url": "https://investors.credosemi.com/resources/information-request-form/default.aspx",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "crdo_2",
+      "company": "CRDO",
+      "source_company": "CRDO",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Powered By Q4 Inc. 5.137.2.3 (opens in new window)",
+      "headline": "Powered By Q4 Inc. 5.137.2.3 (opens in new window)",
+      "text": "Powered By Q4 Inc. 5.137.2.3 (opens in new window)",
+      "raw_text": "Powered By Q4 Inc. 5.137.2.3 (opens in new window)",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Credo News",
+      "url": "https://www.q4inc.com/Powered-by-Q4/",
+      "chain_buckets": [
+        "Power / Cooling"
+      ],
+      "primary_beneficiaries": [
+        "VRT"
+      ],
+      "secondary_beneficiaries": [
+        "NVDA"
+      ],
+      "keyword_hits": [
+        "power"
+      ],
+      "sentiment": "bullish",
+      "factor_impact": {
+        "tam": "high",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event maps most directly to Power / Cooling. Primary beneficiaries are VRT, with secondary readthrough into NVDA.",
+      "analysis": {
+        "sentiment": "bullish",
+        "direct_score": 70,
+        "matched_keywords": [
+          "power"
+        ],
+        "factor_impact": {
+          "tam": "high",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": [
+          {
+            "ticker": "NVDA",
+            "score": 64,
+            "summary": "CRDO event may have readthrough into NVDA."
+          }
+        ]
+      }
+    },
+    {
+      "id": "crdo_3",
+      "company": "CRDO",
+      "source_company": "CRDO",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Terms of Service (opens in new window)",
+      "headline": "Terms of Service (opens in new window)",
+      "text": "Terms of Service (opens in new window)",
+      "raw_text": "Terms of Service (opens in new window)",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Credo News",
+      "url": "https://credosemi.com/legal/",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "crdo_4",
+      "company": "CRDO",
+      "source_company": "CRDO",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Privacy Policy (opens in new window)",
+      "headline": "Privacy Policy (opens in new window)",
+      "text": "Privacy Policy (opens in new window)",
+      "raw_text": "Privacy Policy (opens in new window)",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Credo News",
+      "url": "https://credosemi.com/legal/",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "crdo_5",
+      "company": "CRDO",
+      "source_company": "CRDO",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Cookies (opens in new window)",
+      "headline": "Cookies (opens in new window)",
+      "text": "Cookies (opens in new window)",
+      "raw_text": "Cookies (opens in new window)",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Credo News",
+      "url": "https://credosemi.com/legal/",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "crdo_6",
+      "company": "CRDO",
+      "source_company": "CRDO",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
+      "title": "Legal (opens in new window)",
+      "headline": "Legal (opens in new window)",
+      "text": "Legal (opens in new window)",
+      "raw_text": "Legal (opens in new window)",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
+      "source": "Credo News",
+      "url": "https://credosemi.com/legal/",
       "chain_buckets": [],
       "primary_beneficiaries": [],
       "secondary_beneficiaries": [],
@@ -2087,8 +3277,8 @@
       "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
       "text": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
       "raw_text": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/datacenter-communications.html",
       "chain_buckets": [
@@ -2152,8 +3342,8 @@
       "headline": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
       "text": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
       "raw_text": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/datacenter-communications.html",
       "chain_buckets": [
@@ -2227,8 +3417,8 @@
       "headline": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
       "text": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
       "raw_text": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/datacenter-communications-applications.html",
       "chain_buckets": [
@@ -2292,8 +3482,8 @@
       "headline": "Engineered Materials and High-Precision Laser Solutions\u200b",
       "text": "Engineered Materials and High-Precision Laser Solutions\u200b",
       "raw_text": "Engineered Materials and High-Precision Laser Solutions\u200b",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/industrial.html",
       "chain_buckets": [],
@@ -2334,8 +3524,8 @@
       "headline": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
       "text": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
       "raw_text": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/industrial.html",
       "chain_buckets": [],
@@ -2376,8 +3566,8 @@
       "headline": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
       "text": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
       "raw_text": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/industrial-solutions.html",
       "chain_buckets": [
@@ -2434,8 +3624,8 @@
       "headline": "Coherent Service keeps your laser systems performing at their peak \u2014 safeguarding productivity, maximizing uptime, and protecting your investment.",
       "text": "Coherent Service keeps your laser systems performing at their peak \u2014 safeguarding productivity, maximizing uptime, and protecting your investment.",
       "raw_text": "Coherent Service keeps your laser systems performing at their peak \u2014 safeguarding productivity, maximizing uptime, and protecting your investment.",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/support.html",
       "chain_buckets": [],
@@ -2476,8 +3666,8 @@
       "headline": "Coherent PIC Magazine | PIC platforms: A question of choice November 24, 2023. An Interview With Julie Eng, Chief Technology Officer at Coherent. Learn More",
       "text": "Coherent PIC Magazine | PIC platforms: A question of choice November 24, 2023. An Interview With Julie Eng, Chief Technology Officer at Coherent. Learn More",
       "raw_text": "Coherent PIC Magazine | PIC platforms: A question of choice November 24, 2023. An Interview With Julie Eng, Chief Technology Officer at Coherent. Learn More",
-      "published_at": "2026-04-29T07:22:12.453442+00:00",
-      "datetime": "2026-04-29T07:22:12.453442+00:00",
+      "published_at": "2026-04-29T09:33:00.171935+00:00",
+      "datetime": "2026-04-29T09:33:00.171935+00:00",
       "source": "Coherent News",
       "url": "https://picmagazine.net/article/118133/PIC_platforms_A_question_of_choice",
       "chain_buckets": [],
@@ -2509,7 +3699,7 @@
     }
   ],
   "market": {
-    "updated_at": "2026-04-29T07:23:41.585464+00:00",
+    "updated_at": "2026-04-29T09:34:29.864043+00:00",
     "tickers": [
       {
         "ticker": "NVDA",
