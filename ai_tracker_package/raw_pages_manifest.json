@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-05-25T00:07:56.436435+00:00",
+    "fetched_at": "2026-05-25T01:20:53.024355+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-05-25T00:07:56.436435+00:00",
+    "fetched_at": "2026-05-25T01:20:53.024355+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-05-25T00:07:56.436435+00:00",
+    "fetched_at": "2026-05-25T01:20:53.024355+00:00",
     "error": "HTTPSConnectionPool(host='investor.sandisk.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-05-25T00:07:56.436435+00:00",
+    "fetched_at": "2026-05-25T01:20:53.024355+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-05-25T00:07:56.436435+00:00",
+    "fetched_at": "2026-05-25T01:20:53.024355+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -183,7 +183,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "success",
-    "fetched_at": "2026-05-25T00:07:56.436435+00:00",
+    "fetched_at": "2026-05-25T01:20:53.024355+00:00",
     "items": [
       {
         "headline": "Engineering Performance Optimization",
@@ -249,7 +249,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-05-25T00:07:56.436435+00:00",
+    "fetched_at": "2026-05-25T01:20:53.024355+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -315,7 +315,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-05-25T00:07:56.436435+00:00",
+    "fetched_at": "2026-05-25T01:20:53.024355+00:00",
     "error": "HTTPSConnectionPool(host='ir.asteralabs.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -325,7 +325,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-05-25T00:07:56.436435+00:00",
+    "fetched_at": "2026-05-25T01:20:53.024355+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -359,7 +359,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-05-25T00:07:56.436435+00:00",
+    "fetched_at": "2026-05-25T01:20:53.024355+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -369,7 +369,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-05-25T00:07:56.436435+00:00",
+    "fetched_at": "2026-05-25T01:20:53.024355+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -435,7 +435,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-05-25T00:07:56.436435+00:00",
+    "fetched_at": "2026-05-25T01:20:53.024355+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -486,12 +486,12 @@
         "url": "https://insights.trendforce.com/p/sic-and-gan-ai-power-wall?utm_source=tf&utm_medium=affiliate&utm_campaign=sic-and-gan-ai-power-wall"
       },
       {
-        "headline": "[News] NVIDIA Reportedly Plans GPU-Direct Storage for Vera Rubin, Raising Expectations for HBF Beyond HBM",
-        "url": "https://www.trendforce.com/news/2026/05/20/news-nvidia-reportedly-plans-gpu-direct-storage-for-vera-rubin-raising-expectations-for-hbf-beyond-hbm/"
+        "headline": "[News] Micron Reportedly Expands Korea HBM Hiring Amid Samsung Labor Tensions; Annual Pay Reaches KRW 300M",
+        "url": "https://www.trendforce.com/news/2026/05/21/news-micron-reportedly-expands-korea-hbm-hiring-amid-samsung-labor-tensions-annual-pay-reaches-krw-300m/"
       },
       {
-        "headline": "[News] Intel Says EMIB Customers Back Substrate Prepayments; 4 Taiwan, 2 Japan Suppliers Seek Commitments",
-        "url": "https://www.trendforce.com/news/2026/05/20/news-intel-says-emib-customers-back-substrate-prepayments-4-taiwan-and-2-japan-suppliers-reportedly-seek-commitments/"
+        "headline": "[News] AMD's Lisa Su Reportedly to Visit TSMC for 2nm Capacity; Unveils US$10B Taiwan AI Packaging Investment",
+        "url": "https://www.trendforce.com/news/2026/05/21/news-amds-lisa-su-reportedly-to-visit-tsmc-for-2nm-capacity-announces-us10b-taiwan-ai-packaging-investment/"
       }
     ]
   },
@@ -501,7 +501,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-05-25T00:07:56.436435+00:00",
+    "fetched_at": "2026-05-25T01:20:53.024355+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
@@ -567,7 +567,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-05-25T00:07:56.436435+00:00",
+    "fetched_at": "2026-05-25T01:20:53.024355+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
