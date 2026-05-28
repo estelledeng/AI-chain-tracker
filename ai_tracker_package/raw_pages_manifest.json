@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-05-28T12:31:33.639706+00:00",
+    "fetched_at": "2026-05-28T14:04:57.647127+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -22,6 +22,14 @@
       {
         "headline": "GPU TECHNOLOGY CONFERENCE",
         "url": "https://www.nvidia.com/en-us/gtc/"
+      },
+      {
+        "headline": "NVIDIA Research Advances Robotics From Simulation to the Real World",
+        "url": "https://blogs.nvidia.com/blog/icra-research-robotics-simulation-to-real-world/"
+      },
+      {
+        "headline": "The Name\u2019s Gaming \u2026 Cloud Gaming: \u2018007 First Light\u2019 Launches on GeForce NOW",
+        "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-007-first-light-launch/"
       },
       {
         "headline": "AI Factories: The New Infrastructure of Intelligence",
@@ -54,14 +62,6 @@
       {
         "headline": "NVIDIA CEO Jensen Huang at Dell Technologies World: \u2018Demand Is Going Parabolic, Utterly Parabolic\u2019",
         "url": "https://blogs.nvidia.com/blog/dell-technologies-agent-enterprise-ai/"
-      },
-      {
-        "headline": "Vera Arrives: NVIDIA\u2019s First CPU Built for Agents Lands at Top AI Labs",
-        "url": "https://blogs.nvidia.com/blog/vera-cpu-delivery/"
-      },
-      {
-        "headline": "Sea You in the Cloud: \u2018Subnautica 2\u2019 Early Access Dives Onto GeForce NOW",
-        "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-subnautica-2/"
       }
     ]
   },
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-05-28T12:31:33.639706+00:00",
+    "fetched_at": "2026-05-28T14:04:57.647127+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-05-28T12:31:33.639706+00:00",
+    "fetched_at": "2026-05-28T14:04:57.647127+00:00",
     "error": "HTTPSConnectionPool(host='investor.sandisk.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-05-28T12:31:33.639706+00:00",
+    "fetched_at": "2026-05-28T14:04:57.647127+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-05-28T12:31:33.639706+00:00",
+    "fetched_at": "2026-05-28T14:04:57.647127+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -183,7 +183,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "success",
-    "fetched_at": "2026-05-28T12:31:33.639706+00:00",
+    "fetched_at": "2026-05-28T14:04:57.647127+00:00",
     "items": [
       {
         "headline": "Engineering Performance Optimization",
@@ -249,7 +249,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-05-28T12:31:33.639706+00:00",
+    "fetched_at": "2026-05-28T14:04:57.647127+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -315,7 +315,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-05-28T12:31:33.639706+00:00",
+    "fetched_at": "2026-05-28T14:04:57.647127+00:00",
     "error": "HTTPSConnectionPool(host='ir.asteralabs.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -325,7 +325,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-05-28T12:31:33.639706+00:00",
+    "fetched_at": "2026-05-28T14:04:57.647127+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -359,7 +359,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-05-28T12:31:33.639706+00:00",
+    "fetched_at": "2026-05-28T14:04:57.647127+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -369,7 +369,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-05-28T12:31:33.639706+00:00",
+    "fetched_at": "2026-05-28T14:04:57.647127+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -435,7 +435,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-05-28T12:31:33.639706+00:00",
+    "fetched_at": "2026-05-28T14:04:57.647127+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -501,7 +501,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-05-28T12:31:33.639706+00:00",
+    "fetched_at": "2026-05-28T14:04:57.647127+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
@@ -567,7 +567,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-05-28T12:31:33.639706+00:00",
+    "fetched_at": "2026-05-28T14:04:57.647127+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
