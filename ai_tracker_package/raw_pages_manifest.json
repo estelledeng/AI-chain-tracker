@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-06-01T03:50:47.044333+00:00",
+    "fetched_at": "2026-06-01T05:40:41.790083+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -24,44 +24,44 @@
         "url": "https://www.nvidia.com/en-us/gtc/"
       },
       {
-        "headline": "NVIDIA Vera BlueField-4 STX Brings Agentic AI Storage Processing With In-Silicon Security",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-vera-bluefield-4-stx-brings-agentic-ai-storage-processing-with-in-silicon-security"
+        "headline": "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand",
+        "url": "https://blogs.nvidia.com/blog/ai-cloud-ecosystem/"
       },
       {
-        "headline": "NVIDIA Vera Rubin Ramps Into Full Production to Power Agentic AI Factories Worldwide",
-        "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory"
+        "headline": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain",
+        "url": "https://blogs.nvidia.com/blog/factory-operations-fox-blueprint-ai-brain/"
       },
       {
-        "headline": "NVIDIA DSX Gives Infrastructure Builders the Playbook for AI Factories",
-        "url": "https://nvidianews.nvidia.com/news/dsx-infrastructure-ai-factory"
+        "headline": "Taiwan\u2019s Industry Titans Turbocharge World\u2019s AI Infrastructure Buildout With NVIDIA",
+        "url": "https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure/"
       },
       {
-        "headline": "NVIDIA Research Advances Robotics From Simulation to the Real World",
-        "url": "https://blogs.nvidia.com/blog/icra-research-robotics-simulation-to-real-world/"
+        "headline": "NVIDIA and TSMC Bring AI Into Fabs to Advance Semiconductor Design and Manufacturing",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-tsmc-bring-ai-into-fabs-to-advance-semiconductor-design-and-manufacturing"
       },
       {
-        "headline": "The Name\u2019s Gaming \u2026 Cloud Gaming: \u2018007 First Light\u2019 Launches on GeForce NOW",
-        "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-007-first-light-launch/"
+        "headline": "NVIDIA, Foxconn and Taiwan Medical Centers Bring Agentic and Physical AI to \u2018Healthy Taiwan\u2019",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-foxconn-and-taiwan-medical-centers-bring-agentic-and-physical-ai-to-healthy-taiwan"
       },
       {
-        "headline": "AI Factories: The New Infrastructure of Intelligence",
-        "url": "https://blogs.nvidia.com/blog/ai-factories-the-new-infrastructure-of-intelligence/"
+        "headline": "NVIDIA Releases Major Collection of Open Source Agent Tools and Skills for Physical AI",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-releases-major-collection-of-open-source-agent-tools-and-skills-for-physical-ai"
       },
       {
-        "headline": "NVIDIA Vera CPU Is \u2018Packing a Heavy-Hitting Punch\u2019 Against Competition",
-        "url": "https://blogs.nvidia.com/blog/vera-cpu-phoronix/"
+        "headline": "NVIDIA Announces NVIDIA Isaac GR00T Reference Humanoid Robot for Academic Research",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-open-humanoid-robot-reference-design"
       },
       {
-        "headline": "NVIDIA Announces Upcoming Events for Financial Community",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-upcoming-events-for-financial-community-6921679"
+        "headline": "NVIDIA DRIVE Hyperion Becomes the Global Platform for a Robotaxi-Ready World",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-drive-hyperion-becomes-the-global-platform-for-a-robotaxi-ready-world"
       },
       {
-        "headline": "NVIDIA GTC Taipei at COMPUTEX: Live Updates on What\u2019s Next in AI",
-        "url": "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/"
+        "headline": "NVIDIA Launches Alpamayo 2 Super Open Reasoning Model for Robotaxis",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-alpamayo-2-super-robotaxis"
       },
       {
-        "headline": "License to Stream: \u2018007 First Light\u2019 Coming to GeForce NOW With an Ultimate Bundle",
-        "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-007-first-light-ultimate-bundle/"
+        "headline": "How Cosmos 3 Helps Physical AI Think Before It Acts",
+        "url": "https://blogs.nvidia.com/blog/cosmos-3-physical-ai-open-world-foundation-model/"
       }
     ]
   },
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-06-01T03:50:47.044333+00:00",
+    "fetched_at": "2026-06-01T05:40:41.790083+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-06-01T03:50:47.044333+00:00",
+    "fetched_at": "2026-06-01T05:40:41.790083+00:00",
     "error": "HTTPSConnectionPool(host='investor.sandisk.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-06-01T03:50:47.044333+00:00",
+    "fetched_at": "2026-06-01T05:40:41.790083+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-06-01T03:50:47.044333+00:00",
+    "fetched_at": "2026-06-01T05:40:41.790083+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -183,7 +183,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "success",
-    "fetched_at": "2026-06-01T03:50:47.044333+00:00",
+    "fetched_at": "2026-06-01T05:40:41.790083+00:00",
     "items": [
       {
         "headline": "Engineering Performance Optimization",
@@ -249,7 +249,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-06-01T03:50:47.044333+00:00",
+    "fetched_at": "2026-06-01T05:40:41.790083+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -315,7 +315,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-06-01T03:50:47.044333+00:00",
+    "fetched_at": "2026-06-01T05:40:41.790083+00:00",
     "error": "HTTPSConnectionPool(host='ir.asteralabs.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -325,7 +325,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-06-01T03:50:47.044333+00:00",
+    "fetched_at": "2026-06-01T05:40:41.790083+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -359,7 +359,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-06-01T03:50:47.044333+00:00",
+    "fetched_at": "2026-06-01T05:40:41.790083+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -369,7 +369,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-06-01T03:50:47.044333+00:00",
+    "fetched_at": "2026-06-01T05:40:41.790083+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -435,7 +435,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-06-01T03:50:47.044333+00:00",
+    "fetched_at": "2026-06-01T05:40:41.790083+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -501,7 +501,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-06-01T03:50:47.044333+00:00",
+    "fetched_at": "2026-06-01T05:40:41.790083+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
@@ -567,7 +567,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-06-01T03:50:47.044333+00:00",
+    "fetched_at": "2026-06-01T05:40:41.790083+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
