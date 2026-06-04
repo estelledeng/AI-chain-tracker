@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-04T00:08:15.380581+00:00",
+  "updated_at": "2026-06-04T01:32:52.339027+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -262,7 +262,7 @@
     {
       "ticker": "ANET",
       "price": 174.46,
-      "change_pct": -0.59,
+      "change_pct": -0.96,
       "series": [
         172.95,
         171.7,
@@ -348,7 +348,7 @@
     {
       "ticker": "VRT",
       "price": 331.57,
-      "change_pct": -2.73,
+      "change_pct": -2.05,
       "series": [
         343.22,
         336.26,
@@ -434,7 +434,7 @@
     {
       "ticker": "TSM",
       "price": 437.1,
-      "change_pct": -2.86,
+      "change_pct": -2.0,
       "series": [
         443.9,
         443.31,
