@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11T21:32:16.355304+00:00",
+  "updated_at": "2026-06-11T22:24:29.880980+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -434,7 +434,7 @@
     {
       "ticker": "TSM",
       "price": 421.07,
-      "change_pct": 1.98,
+      "change_pct": 1.89,
       "series": [
         413.8,
         415.42,
@@ -606,7 +606,7 @@
     {
       "ticker": "ALAB",
       "price": 367.46,
-      "change_pct": 7.45,
+      "change_pct": 7.51,
       "series": [
         351.01,
         345.64,
@@ -864,7 +864,7 @@
     {
       "ticker": "COHR",
       "price": 363.49,
-      "change_pct": 1.25,
+      "change_pct": 2.44,
       "series": [
         355.12,
         352.78,
