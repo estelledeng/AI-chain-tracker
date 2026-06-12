@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11T23:51:56.200629+00:00",
+  "updated_at": "2026-06-12T00:57:35.399079+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -434,7 +434,7 @@
     {
       "ticker": "TSM",
       "price": 421.07,
-      "change_pct": 1.89,
+      "change_pct": 1.98,
       "series": [
         413.8,
         415.42,
@@ -606,7 +606,7 @@
     {
       "ticker": "ALAB",
       "price": 367.46,
-      "change_pct": 7.51,
+      "change_pct": 7.45,
       "series": [
         351.01,
         345.64,
