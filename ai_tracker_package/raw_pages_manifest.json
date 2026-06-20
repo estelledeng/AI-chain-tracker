@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-06-20T22:53:49.970783+00:00",
+    "fetched_at": "2026-06-20T23:29:14.131447+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-06-20T22:53:49.970783+00:00",
+    "fetched_at": "2026-06-20T23:29:14.131447+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-06-20T22:53:49.970783+00:00",
+    "fetched_at": "2026-06-20T23:29:14.131447+00:00",
     "error": "HTTPSConnectionPool(host='investor.sandisk.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-06-20T22:53:49.970783+00:00",
+    "fetched_at": "2026-06-20T23:29:14.131447+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-06-20T22:53:49.970783+00:00",
+    "fetched_at": "2026-06-20T23:29:14.131447+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -183,7 +183,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "success",
-    "fetched_at": "2026-06-20T22:53:49.970783+00:00",
+    "fetched_at": "2026-06-20T23:29:14.131447+00:00",
     "items": [
       {
         "headline": "Engineering Performance Optimization",
@@ -249,7 +249,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-06-20T22:53:49.970783+00:00",
+    "fetched_at": "2026-06-20T23:29:14.131447+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -315,7 +315,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-06-20T22:53:49.970783+00:00",
+    "fetched_at": "2026-06-20T23:29:14.131447+00:00",
     "error": "HTTPSConnectionPool(host='ir.asteralabs.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -325,7 +325,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-06-20T22:53:49.970783+00:00",
+    "fetched_at": "2026-06-20T23:29:14.131447+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -359,7 +359,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-06-20T22:53:49.970783+00:00",
+    "fetched_at": "2026-06-20T23:29:14.131447+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -368,66 +368,10 @@
     "name": "Coherent News",
     "group": "official",
     "source_url": "https://www.coherent.com/news",
-    "status": "success",
-    "fetched_at": "2026-06-20T22:53:49.970783+00:00",
-    "items": [
-      {
-        "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
-        "url": "https://www.coherent.com/datacenter-communications.html"
-      },
-      {
-        "headline": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
-        "url": "https://www.coherent.com/datacenter-communications.html"
-      },
-      {
-        "headline": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
-        "url": "https://www.coherent.com/datacenter-communications-applications.html"
-      },
-      {
-        "headline": "Engineered Materials and High-Precision Laser Solutions\u200b",
-        "url": "https://www.coherent.com/industrial.html"
-      },
-      {
-        "headline": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
-        "url": "https://www.coherent.com/industrial.html"
-      },
-      {
-        "headline": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
-        "url": "https://www.coherent.com/industrial-solutions.html"
-      },
-      {
-        "headline": "Coherent Service keeps your laser systems performing at their peak \u2014 safeguarding productivity, maximizing uptime, and protecting your investment.",
-        "url": "https://www.coherent.com/support.html"
-      },
-      {
-        "headline": "corporate.communications@coherent.com",
-        "url": "https://www.coherent.com/news/mailto:corporate.communications@coherent.com"
-      },
-      {
-        "headline": "Coherent PIC Magazine | PIC platforms: A question of choice November 24, 2023. An Interview With Julie Eng, Chief Technology Officer at Coherent. Learn More",
-        "url": "https://picmagazine.net/article/118133/PIC_platforms_A_question_of_choice"
-      },
-      {
-        "headline": "Coherent NIKKEI Mobility | Coherent CEO: SiC Invested by DENSO and Melco November 7, 2023. DENSO and Mitsubishi Electric (Melco) have decided to invest in the silicon carbide (SiC) business of an American semiconductor w",
-        "url": "https://www.coherent.com/news/coherent-ceo-sic-invested-by-denso-and-melco"
-      },
-      {
-        "headline": "Coherent WSJ | One of the World\u2019s Biggest Diamonds Could Be Key to Some of the World\u2019s Fastest Microchips November 3, 2023. To beat the heat that our devices throw off, engineers are experimenting with synthetic diamonds",
-        "url": "https://wsj-article-webview-generator-prod.sc.onservo.com/webview/WP-WSJ-0001337010?adobe_mc=TS%3D1699107841%7CMCMID%3D87479515957925441504680980178106415977%7CMCORGID%3DCB68E4BA55144CAA0A4C98A5%40AdobeOrg&wsj_native_webview=android&ace_environment=androidphone%2Cwebview&ace_config=%7B%22wsj%22%3A%7B%22djcmp%22%3A%7B%22propertyHref%22%3A%22https%3A%2F%2Fwsj.android.app%22%7D%7D%7D"
-      },
-      {
-        "headline": "Coherent NIKKEI Tech Foresight | Battle to Secure SiC Wafers for EVs October 17, 2023. Japanese companies are scrambling to secure a stable supply of silicon carbide (SiC) wafers, which are essential for manufacturing ne",
-        "url": "https://www.coherent.com/news/battle-to-secure-sic-wafers-power-semiconductors-for-evs-en"
-      },
-      {
-        "headline": "Coherent The Economic Times | US electronics manufacturer Coherent Corp establishes first global centre of excellence in Chennai September 05, 2023. Coherent Corp, a Pennsylvania (US) based manufacturer of electronics, a",
-        "url": "https://economictimes.indiatimes.com/wealth/real-estate/exploring-the-potential-of-commercial-real-estate-investment-insights-from-property-share-ceo/articleshow/103252860.cms"
-      },
-      {
-        "headline": "Coherent McKinsey | Coherent\u2019s Chuck Mattera on growing a $5 billion company August 4, 2023. II-VI was founded 50 years ago as a specialized materials company. Today, as Coherent, it has technology platforms in multiple ",
-        "url": "https://www.mckinsey.com/industries/industrials-and-electronics/our-insights/coherents-chuck-mattera-on-growing-a-5-billion-dollar-company"
-      }
-    ]
+    "status": "blocked",
+    "fetched_at": "2026-06-20T23:29:14.131447+00:00",
+    "error": "504 Server Error: Gateway Time-out for url: https://www.coherent.com/news",
+    "items": []
   },
   {
     "ticker": "SECTOR",
@@ -435,7 +379,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-06-20T22:53:49.970783+00:00",
+    "fetched_at": "2026-06-20T23:29:14.131447+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -501,7 +445,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-06-20T22:53:49.970783+00:00",
+    "fetched_at": "2026-06-20T23:29:14.131447+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
@@ -567,7 +511,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-06-20T22:53:49.970783+00:00",
+    "fetched_at": "2026-06-20T23:29:14.131447+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
