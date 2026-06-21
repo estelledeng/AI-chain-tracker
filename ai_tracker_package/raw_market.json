@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20T23:57:09.786017+00:00",
+  "updated_at": "2026-06-21T00:57:54.354685+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -692,7 +692,7 @@
     {
       "ticker": "CRDO",
       "price": 271.32,
-      "change_pct": 4.91,
+      "change_pct": 5.24,
       "series": [
         255.07,
         260.43,
