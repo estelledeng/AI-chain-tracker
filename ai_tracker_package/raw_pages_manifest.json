@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-06-22T11:10:56.136660+00:00",
+    "fetched_at": "2026-06-22T13:10:43.439307+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -24,44 +24,44 @@
         "url": "https://www.nvidia.com/en-us/gtc/"
       },
       {
+        "headline": "At ISC, JUPITER Shows What Exascale Science Looks Like",
+        "url": "https://blogs.nvidia.com/blog/jupiter-exascale-supercomputing-science/"
+      },
+      {
+        "headline": "NAIRR Science Program Reshapes Scientific Research, Powered by NVIDIA AI Infrastructure",
+        "url": "https://blogs.nvidia.com/blog/nairr-scientific-research-ai-infrastructure/"
+      },
+      {
+        "headline": "From Materials Simulation to Experimental Astronomy, New NVIDIA AI Software Unlocks Scientific Discoveries",
+        "url": "https://blogs.nvidia.com/blog/ai-for-science-software-cuda/"
+      },
+      {
+        "headline": "NVIDIA Vera CPU Opens the Way for Agentic Scientific AI at Los Alamos National Laboratory",
+        "url": "https://blogs.nvidia.com/blog/nvidia-vera-cpu-los-alamos-national-laboratory/"
+      },
+      {
+        "headline": "Eco Wave Power Turns Waves Into Watts With NVIDIA AI Infrastructure and Digital Twins",
+        "url": "https://blogs.nvidia.com/blog/eco-wave-power-ai-digital-twins/"
+      },
+      {
+        "headline": "NVIDIA Vera Rubin Delivers World-Class Supercomputers for Science",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-vera-rubin-delivers-world-class-supercomputers-for-science"
+      },
+      {
+        "headline": "Europe Unveils a Record 35 New NVIDIA AI Supercomputers",
+        "url": "https://nvidianews.nvidia.com/news/europe-unveils-a-record-35-new-nvidia-ai-supercomputers"
+      },
+      {
+        "headline": "NVIDIA Announces Halos for Robotics, the Industry\u2019s First Full-Stack Safety System for Physical AI",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-halos-for-robotics-the-industrys-first-full-stack-safety-system-for-physical-ai"
+      },
+      {
         "headline": "Hotter Than a Hot Tub: The 45\u00b0C Breakthrough to Cool AI\u2019s Biggest Machines",
         "url": "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/"
       },
       {
         "headline": "How FERC\u2019s Large-Load Interconnection Actions Help Address Grid Stress, Improve Affordability",
         "url": "https://blogs.nvidia.com/blog/ferc-large-load-interconnection/"
-      },
-      {
-        "headline": "At Cannes Lions, NVIDIA Partners Reshape Advertising and Marketing With AI",
-        "url": "https://blogs.nvidia.com/blog/nvidia-ai-marketing-advertising-cannes-lions/"
-      },
-      {
-        "headline": "Sync and Stream: GeForce NOW Connects to Members\u2019 Game Libraries Across Devices",
-        "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-game-stores/"
-      },
-      {
-        "headline": "France Advances Europe\u2019s AI Future With NVIDIA Technologies",
-        "url": "https://blogs.nvidia.com/blog/france-advances-europes-ai-future/"
-      },
-      {
-        "headline": "Hands Free, AIs Forward: NVIDIA XR AI Brings Agents to AR Glasses",
-        "url": "https://blogs.nvidia.com/blog/nvidia-xr-ai/"
-      },
-      {
-        "headline": "Coherent Breaks Ground on Expanded Texas Facility, Scaling AI\u2019s Optical Backbone",
-        "url": "https://blogs.nvidia.com/blog/coherent-texas-ai-optical/"
-      },
-      {
-        "headline": "HPE AI Factory With NVIDIA Expands for the Era of Agents",
-        "url": "https://blogs.nvidia.com/blog/hpe-ai-factory-agentic-enterprise/"
-      },
-      {
-        "headline": "Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0",
-        "url": "https://blogs.nvidia.com/blog/blackwell-mlperf-training-6-0/"
-      },
-      {
-        "headline": "NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark",
-        "url": "https://blogs.nvidia.com/blog/nvidia-blackwell-agentperf-artificial-analysis/"
       }
     ]
   },
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-06-22T11:10:56.136660+00:00",
+    "fetched_at": "2026-06-22T13:10:43.439307+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-06-22T11:10:56.136660+00:00",
+    "fetched_at": "2026-06-22T13:10:43.439307+00:00",
     "error": "HTTPSConnectionPool(host='investor.sandisk.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-06-22T11:10:56.136660+00:00",
+    "fetched_at": "2026-06-22T13:10:43.439307+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-06-22T11:10:56.136660+00:00",
+    "fetched_at": "2026-06-22T13:10:43.439307+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -183,7 +183,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "success",
-    "fetched_at": "2026-06-22T11:10:56.136660+00:00",
+    "fetched_at": "2026-06-22T13:10:43.439307+00:00",
     "items": [
       {
         "headline": "Engineering Performance Optimization",
@@ -249,7 +249,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-06-22T11:10:56.136660+00:00",
+    "fetched_at": "2026-06-22T13:10:43.439307+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -315,7 +315,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-06-22T11:10:56.136660+00:00",
+    "fetched_at": "2026-06-22T13:10:43.439307+00:00",
     "error": "HTTPSConnectionPool(host='ir.asteralabs.com', port=443): Read timed out. (read timeout=40)",
     "items": []
   },
@@ -325,7 +325,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-06-22T11:10:56.136660+00:00",
+    "fetched_at": "2026-06-22T13:10:43.439307+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -359,7 +359,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-06-22T11:10:56.136660+00:00",
+    "fetched_at": "2026-06-22T13:10:43.439307+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -369,7 +369,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-06-22T11:10:56.136660+00:00",
+    "fetched_at": "2026-06-22T13:10:43.439307+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -435,7 +435,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-06-22T11:10:56.136660+00:00",
+    "fetched_at": "2026-06-22T13:10:43.439307+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -501,7 +501,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-06-22T11:10:56.136660+00:00",
+    "fetched_at": "2026-06-22T13:10:43.439307+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
@@ -567,7 +567,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-06-22T11:10:56.136660+00:00",
+    "fetched_at": "2026-06-22T13:10:43.439307+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
