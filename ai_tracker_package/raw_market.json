@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-22T20:43:27.428796+00:00",
+  "updated_at": "2026-06-22T21:36:41.746610+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -606,7 +606,7 @@
     {
       "ticker": "ALAB",
       "price": 439.78,
-      "change_pct": 3.33,
+      "change_pct": 3.32,
       "series": [
         432.05,
         434.11,
