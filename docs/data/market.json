@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-30T12:17:17.018678+00:00",
+  "updated_at": "2026-06-30T13:14:33.008304+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
       "price": 194.9,
-      "change_pct": 1.44,
+      "change_pct": 0.58,
       "series": [
         194.52,
         194.24,
@@ -90,7 +90,7 @@
     {
       "ticker": "MU",
       "price": 1145.31,
-      "change_pct": 2.99,
+      "change_pct": 1.47,
       "series": [
         1116.98,
         1090.82,
@@ -520,7 +520,7 @@
     {
       "ticker": "MRVL",
       "price": 277.53,
-      "change_pct": 2.88,
+      "change_pct": 1.87,
       "series": [
         271.61,
         266.91,
@@ -606,7 +606,7 @@
     {
       "ticker": "ALAB",
       "price": 456.32,
-      "change_pct": 13.39,
+      "change_pct": 13.45,
       "series": [
         407.49,
         407.93,
