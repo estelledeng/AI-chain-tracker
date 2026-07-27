@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27T02:44:15.715984+00:00",
+  "updated_at": "2026-07-27T04:15:19.454635+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -955,7 +955,7 @@
       "latest_price": null,
       "weekly_growth_pct": null,
       "monthly_growth_pct": null,
-      "status": "ok_but_unparsed"
+      "status": "blocked: HTTPSConnectionPool(host='www.trendforce.com', port=443): Max retries exceeded with url: /price/dram (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.trendforce.com', port=443) at 0x7f42c056acd0>, 'Connection to www.trendforce.com timed out. (connect timeout=40)'))"
     },
     "nand": {
       "source": "TrendForce",
@@ -963,7 +963,7 @@
       "latest_price": null,
       "weekly_growth_pct": null,
       "monthly_growth_pct": null,
-      "status": "ok_but_unparsed"
+      "status": "blocked: HTTPSConnectionPool(host='www.trendforce.com', port=443): Max retries exceeded with url: /price/flash (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.trendforce.com', port=443) at 0x7f42c0578990>, 'Connection to www.trendforce.com timed out. (connect timeout=40)'))"
     }
   },
   "custom_tickers": []
