@@ -1,26 +1,5 @@
 [
   {
-    "timestamp": "2026-07-23T18:11:12.642269+00:00",
-    "storage": {
-      "dram": {
-        "source": "TrendForce",
-        "url": "https://www.trendforce.com/price/dram",
-        "latest_price": null,
-        "weekly_growth_pct": null,
-        "monthly_growth_pct": null,
-        "status": "ok_but_unparsed"
-      },
-      "nand": {
-        "source": "TrendForce",
-        "url": "https://www.trendforce.com/price/flash",
-        "latest_price": null,
-        "weekly_growth_pct": null,
-        "monthly_growth_pct": null,
-        "status": "ok_but_unparsed"
-      }
-    }
-  },
-  {
     "timestamp": "2026-07-23T18:42:43.632352+00:00",
     "storage": {
       "dram": {
@@ -2516,6 +2495,27 @@
         "weekly_growth_pct": null,
         "monthly_growth_pct": null,
         "status": "blocked: HTTPSConnectionPool(host='www.trendforce.com', port=443): Max retries exceeded with url: /price/flash (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.trendforce.com', port=443) at 0x7f42c0578990>, 'Connection to www.trendforce.com timed out. (connect timeout=40)'))"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-07-27T05:33:41.221876+00:00",
+    "storage": {
+      "dram": {
+        "source": "TrendForce",
+        "url": "https://www.trendforce.com/price/dram",
+        "latest_price": null,
+        "weekly_growth_pct": null,
+        "monthly_growth_pct": null,
+        "status": "ok_but_unparsed"
+      },
+      "nand": {
+        "source": "TrendForce",
+        "url": "https://www.trendforce.com/price/flash",
+        "latest_price": null,
+        "weekly_growth_pct": null,
+        "monthly_growth_pct": null,
+        "status": "ok_but_unparsed"
       }
     }
   }
