@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31T02:03:23.991630+00:00",
+  "updated_at": "2026-07-31T03:23:38.197213+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -90,7 +90,7 @@
     {
       "ticker": "MU",
       "price": 873.46,
-      "change_pct": 10.38,
+      "change_pct": 10.13,
       "series": [
         796.14,
         805.7,
@@ -692,7 +692,7 @@
     {
       "ticker": "CRDO",
       "price": 201.17,
-      "change_pct": 5.88,
+      "change_pct": 7.5,
       "series": [
         189.66,
         189.6,
