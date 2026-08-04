@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-04T00:09:13.549837+00:00",
+  "updated_at": "2026-08-04T00:53:47.568355+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
       "price": 206.69,
-      "change_pct": 4.53,
+      "change_pct": 4.13,
       "series": [
         199.48,
         199.15,
@@ -90,7 +90,7 @@
     {
       "ticker": "MU",
       "price": 829.04,
-      "change_pct": 5.43,
+      "change_pct": 6.97,
       "series": [
         775.87,
         787.6,
@@ -176,7 +176,7 @@
     {
       "ticker": "SNDK",
       "price": 1289.93,
-      "change_pct": 11.18,
+      "change_pct": 13.48,
       "series": [
         1160.46,
         1193.41,
@@ -778,7 +778,7 @@
     {
       "ticker": "LITE",
       "price": 779.95,
-      "change_pct": 13.76,
+      "change_pct": 15.33,
       "series": [
         671.72,
         687.09,
