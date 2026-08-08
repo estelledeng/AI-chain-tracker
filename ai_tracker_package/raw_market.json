@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-08T19:54:26.966328+00:00",
+  "updated_at": "2026-08-08T20:26:56.501994+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
       "price": 223.98,
-      "change_pct": 0.89,
+      "change_pct": 1.08,
       "series": [
         222.96,
         221.68,
@@ -90,7 +90,7 @@
     {
       "ticker": "MU",
       "price": 877.56,
-      "change_pct": -2.06,
+      "change_pct": -2.99,
       "series": [
         889.34,
         880.91,
@@ -176,7 +176,7 @@
     {
       "ticker": "SNDK",
       "price": 1213.41,
-      "change_pct": -5.79,
+      "change_pct": -7.24,
       "series": [
         1284.37,
         1248.99,
@@ -520,7 +520,7 @@
     {
       "ticker": "MRVL",
       "price": 218.69,
-      "change_pct": 0.78,
+      "change_pct": -0.23,
       "series": [
         219.04,
         218.42,
@@ -606,7 +606,7 @@
     {
       "ticker": "ALAB",
       "price": 334.2,
-      "change_pct": -1.99,
+      "change_pct": -2.9,
       "series": [
         344.28,
         345.19,
@@ -692,7 +692,7 @@
     {
       "ticker": "CRDO",
       "price": 250.0,
-      "change_pct": 4.17,
+      "change_pct": 4.44,
       "series": [
         245.27,
         240.96,
@@ -778,7 +778,7 @@
     {
       "ticker": "LITE",
       "price": 890.76,
-      "change_pct": 2.15,
+      "change_pct": 2.39,
       "series": [
         897.28,
         898.87,
