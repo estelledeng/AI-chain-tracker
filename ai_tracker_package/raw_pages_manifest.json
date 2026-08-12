@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-08-12T13:17:40.068280+00:00",
+    "fetched_at": "2026-08-12T14:35:14.289110+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -22,6 +22,10 @@
       {
         "headline": "GPU TECHNOLOGY CONFERENCE",
         "url": "https://www.nvidia.com/en-us/gtc/"
+      },
+      {
+        "headline": "NVIDIA CEO Tops Glassdoor\u2019s 2026 List of Best CEOs",
+        "url": "https://blogs.nvidia.com/blog/nvidia-life-glassdoor-best-ceo-2026/"
       },
       {
         "headline": "NVIDIA AI Factory Compute Is Becoming an Investable Asset Class",
@@ -58,10 +62,6 @@
       {
         "headline": "NVIDIA Joins NSF State and Regional AI Hubs Program to Expand AI Research and Education Across the US",
         "url": "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program"
-      },
-      {
-        "headline": "NVIDIA Alpamayo 2 Super, the Frontier Open Model for Robotaxis and Autonomous Vehicles, Now Available for Commercial Use",
-        "url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available/"
       }
     ]
   },
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-08-12T13:17:40.068280+00:00",
+    "fetched_at": "2026-08-12T14:35:14.289110+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-08-12T13:17:40.068280+00:00",
+    "fetched_at": "2026-08-12T14:35:14.289110+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.sandisk.com/news-releases",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-08-12T13:17:40.068280+00:00",
+    "fetched_at": "2026-08-12T14:35:14.289110+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-08-12T13:17:40.068280+00:00",
+    "fetched_at": "2026-08-12T14:35:14.289110+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -183,7 +183,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "success",
-    "fetched_at": "2026-08-12T13:17:40.068280+00:00",
+    "fetched_at": "2026-08-12T14:35:14.289110+00:00",
     "items": [
       {
         "headline": "Engineering Performance Optimization",
@@ -249,7 +249,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-08-12T13:17:40.068280+00:00",
+    "fetched_at": "2026-08-12T14:35:14.289110+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -315,7 +315,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "success",
-    "fetched_at": "2026-08-12T13:17:40.068280+00:00",
+    "fetched_at": "2026-08-12T14:35:14.289110+00:00",
     "items": [
       {
         "headline": "Astera Labs Second Quarter 2026 Earnings Call",
@@ -369,7 +369,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-08-12T13:17:40.068280+00:00",
+    "fetched_at": "2026-08-12T14:35:14.289110+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -403,7 +403,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-08-12T13:17:40.068280+00:00",
+    "fetched_at": "2026-08-12T14:35:14.289110+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -413,7 +413,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-08-12T13:17:40.068280+00:00",
+    "fetched_at": "2026-08-12T14:35:14.289110+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -479,7 +479,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-08-12T13:17:40.068280+00:00",
+    "fetched_at": "2026-08-12T14:35:14.289110+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -545,7 +545,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-08-12T13:17:40.068280+00:00",
+    "fetched_at": "2026-08-12T14:35:14.289110+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
@@ -611,7 +611,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-08-12T13:17:40.068280+00:00",
+    "fetched_at": "2026-08-12T14:35:14.289110+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
