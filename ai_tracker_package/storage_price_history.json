@@ -1,26 +1,5 @@
 [
   {
-    "timestamp": "2026-08-08T23:26:09.066353+00:00",
-    "storage": {
-      "dram": {
-        "source": "TrendForce",
-        "url": "https://www.trendforce.com/price/dram",
-        "latest_price": null,
-        "weekly_growth_pct": null,
-        "monthly_growth_pct": null,
-        "status": "ok_but_unparsed"
-      },
-      "nand": {
-        "source": "TrendForce",
-        "url": "https://www.trendforce.com/price/flash",
-        "latest_price": null,
-        "weekly_growth_pct": null,
-        "monthly_growth_pct": null,
-        "status": "ok_but_unparsed"
-      }
-    }
-  },
-  {
     "timestamp": "2026-08-08T23:54:58.166837+00:00",
     "storage": {
       "dram": {
@@ -2500,6 +2479,27 @@
   },
   {
     "timestamp": "2026-08-14T10:41:08.653955+00:00",
+    "storage": {
+      "dram": {
+        "source": "TrendForce",
+        "url": "https://www.trendforce.com/price/dram",
+        "latest_price": null,
+        "weekly_growth_pct": null,
+        "monthly_growth_pct": null,
+        "status": "ok_but_unparsed"
+      },
+      "nand": {
+        "source": "TrendForce",
+        "url": "https://www.trendforce.com/price/flash",
+        "latest_price": null,
+        "weekly_growth_pct": null,
+        "monthly_growth_pct": null,
+        "status": "ok_but_unparsed"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-14T11:28:13.536286+00:00",
     "storage": {
       "dram": {
         "source": "TrendForce",
