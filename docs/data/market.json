@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T20:48:58.040616+00:00",
+  "updated_at": "2026-08-18T21:21:09.481832+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -778,7 +778,7 @@
     {
       "ticker": "LITE",
       "price": 872.43,
-      "change_pct": -5.88,
+      "change_pct": -4.05,
       "series": [
         923.66,
         930.55,
