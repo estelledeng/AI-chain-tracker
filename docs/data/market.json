@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T22:24:25.808511+00:00",
+  "updated_at": "2026-08-20T22:54:51.858866+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -262,7 +262,7 @@
     {
       "ticker": "ANET",
       "price": 183.79,
-      "change_pct": -0.91,
+      "change_pct": -0.82,
       "series": [
         185.44,
         185.84,
