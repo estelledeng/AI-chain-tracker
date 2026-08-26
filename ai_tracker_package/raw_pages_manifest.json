@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-08-26T03:01:53.780467+00:00",
+    "fetched_at": "2026-08-26T04:02:01.562131+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-08-26T03:01:53.780467+00:00",
+    "fetched_at": "2026-08-26T04:02:01.562131+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases/",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-08-26T03:01:53.780467+00:00",
+    "fetched_at": "2026-08-26T04:02:01.562131+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.sandisk.com/news-releases",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-08-26T03:01:53.780467+00:00",
+    "fetched_at": "2026-08-26T04:02:01.562131+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-08-26T03:01:53.780467+00:00",
+    "fetched_at": "2026-08-26T04:02:01.562131+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -183,7 +183,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "success",
-    "fetched_at": "2026-08-26T03:01:53.780467+00:00",
+    "fetched_at": "2026-08-26T04:02:01.562131+00:00",
     "items": [
       {
         "headline": "Engineering Performance Optimization",
@@ -249,7 +249,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-08-26T03:01:53.780467+00:00",
+    "fetched_at": "2026-08-26T04:02:01.562131+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -315,7 +315,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "success",
-    "fetched_at": "2026-08-26T03:01:53.780467+00:00",
+    "fetched_at": "2026-08-26T04:02:01.562131+00:00",
     "items": [
       {
         "headline": "Astera Labs Second Quarter 2026 Earnings Call",
@@ -369,7 +369,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-08-26T03:01:53.780467+00:00",
+    "fetched_at": "2026-08-26T04:02:01.562131+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -403,7 +403,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-08-26T03:01:53.780467+00:00",
+    "fetched_at": "2026-08-26T04:02:01.562131+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -413,7 +413,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-08-26T03:01:53.780467+00:00",
+    "fetched_at": "2026-08-26T04:02:01.562131+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -479,7 +479,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-08-26T03:01:53.780467+00:00",
+    "fetched_at": "2026-08-26T04:02:01.562131+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -544,10 +544,66 @@
     "name": "TrendForce Prices DRAM",
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
-    "status": "blocked",
-    "fetched_at": "2026-08-26T03:01:53.780467+00:00",
-    "error": "502 Server Error: Bad Gateway for url: https://www.trendforce.com/price/dram/dram_spot",
-    "items": []
+    "status": "success",
+    "fetched_at": "2026-08-26T04:02:01.562131+00:00",
+    "items": [
+      {
+        "headline": "LED Demand / Supply Database",
+        "url": "https://www.trendforce.com/research/category/LED/LED%20Demand%20_%20Supply%20Data%20Base"
+      },
+      {
+        "headline": "Automotive LED - Lighting and Display",
+        "url": "https://www.trendforce.com/research/category/LED/automotive_led"
+      },
+      {
+        "headline": "General / Agricultural Lighting",
+        "url": "https://www.trendforce.com/research/category/LED/LED%20Lighting"
+      },
+      {
+        "headline": "Infrared Sensing - IR LED / VCSEL / EEL",
+        "url": "https://www.trendforce.com/research/category/LED/IR%20LED%20_%20VCSEL%20_%20LiDAR%20Laser"
+      },
+      {
+        "headline": "Lithium Battery and Energy Storage",
+        "url": "https://www.trendforce.com/research/category/Energy/Lithium%20Battery%20and%20Energy%20Storage"
+      },
+      {
+        "headline": "ICT Applications Research",
+        "url": "https://www.trendforce.com/landingPage/semiconductor"
+      },
+      {
+        "headline": "Mobile DRAM Contract Price",
+        "url": "https://www.trendforce.com/price/dram/mobileDram_contract"
+      },
+      {
+        "headline": "NAND Flash Contract Price",
+        "url": "https://www.trendforce.com/price/flash/flash_contract"
+      },
+      {
+        "headline": "PC-Client OEM SSD Contract Price",
+        "url": "https://www.trendforce.com/price/flash/pcc_oem_ssd_contract"
+      },
+      {
+        "headline": "NAND Flash Wafer Contract Price",
+        "url": "https://www.trendforce.com/price/flash/wafer_contract"
+      },
+      {
+        "headline": "LCD Smartphone Panel Price",
+        "url": "https://www.trendforce.com/price/lcd/smartphone"
+      },
+      {
+        "headline": "Large Size Panel Shipment",
+        "url": "https://www.trendforce.com/price/lcd/shipment"
+      },
+      {
+        "headline": "Precursor & Cathode Material",
+        "url": "https://www.trendforce.com/price/battery-price/precursor_and_cathode_material"
+      },
+      {
+        "headline": "Early notice was announced at 10:50 (10 minutes in advance) ,next session will start at 14:20.",
+        "url": "https://www.dramexchange.com/Service/Spot_Price_Notice"
+      }
+    ]
   },
   {
     "ticker": "SECTOR",
@@ -555,7 +611,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-08-26T03:01:53.780467+00:00",
+    "fetched_at": "2026-08-26T04:02:01.562131+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
