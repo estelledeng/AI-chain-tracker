@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-08-26T07:58:12.920258+00:00",
+    "fetched_at": "2026-08-26T08:51:14.021189+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-08-26T07:58:12.920258+00:00",
+    "fetched_at": "2026-08-26T08:51:14.021189+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases/",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-08-26T07:58:12.920258+00:00",
+    "fetched_at": "2026-08-26T08:51:14.021189+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.sandisk.com/news-releases",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-08-26T07:58:12.920258+00:00",
+    "fetched_at": "2026-08-26T08:51:14.021189+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-08-26T07:58:12.920258+00:00",
+    "fetched_at": "2026-08-26T08:51:14.021189+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -183,7 +183,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "success",
-    "fetched_at": "2026-08-26T07:58:12.920258+00:00",
+    "fetched_at": "2026-08-26T08:51:14.021189+00:00",
     "items": [
       {
         "headline": "Engineering Performance Optimization",
@@ -249,7 +249,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-08-26T07:58:12.920258+00:00",
+    "fetched_at": "2026-08-26T08:51:14.021189+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -314,54 +314,10 @@
     "name": "Astera Events & Presentations",
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
-    "status": "success",
-    "fetched_at": "2026-08-26T07:58:12.920258+00:00",
-    "items": [
-      {
-        "headline": "Astera Labs Second Quarter 2026 Earnings Call",
-        "url": "https://ir.asteralabs.com/events/event-details/astera-labs-second-quarter-2026-earnings-call"
-      },
-      {
-        "headline": "2026 Evercore Global TMT Conference",
-        "url": "https://ir.asteralabs.com/events/event-details/2026-evercore-global-tmt-conference"
-      },
-      {
-        "headline": "TD Cowen's 54th Annual Technology, Media & Telecom Conference",
-        "url": "https://ir.asteralabs.com/events/event-details/td-cowens-54th-annual-technology-media-telecom-conference"
-      },
-      {
-        "headline": "J.P. Morgan 2026 Global Technology, Media and Communications Conference",
-        "url": "https://ir.asteralabs.com/events/event-details/jp-morgan-2026-global-technology-media-and-communications-conference"
-      },
-      {
-        "headline": "Astera Labs First Quarter 2026 Earnings Call",
-        "url": "https://ir.asteralabs.com/events/event-details/astera-labs-first-quarter-2026-earnings-call"
-      },
-      {
-        "headline": "38th Annual Roth Conference",
-        "url": "https://ir.asteralabs.com/events/event-details/38th-annual-roth-conference"
-      },
-      {
-        "headline": "Morgan Stanley Technology, Media & Telecom Conference",
-        "url": "https://ir.asteralabs.com/events/event-details/morgan-stanley-technology-media-telecom-conference-0"
-      },
-      {
-        "headline": "Astera Labs Fourth Quarter 2025 Earnings Call",
-        "url": "https://ir.asteralabs.com/events/event-details/astera-labs-fourth-quarter-2025-earnings-call"
-      },
-      {
-        "headline": "Dial-in: (800) 715-9871 / Conference ID: 5908687",
-        "url": "https://ir.asteralabs.com/news-events/events-presentations/tel:Dial-in%3A%28800%29715-9871%2FConferenceID%3A5908687"
-      },
-      {
-        "headline": "28th Annual Needham Growth Conference",
-        "url": "https://ir.asteralabs.com/events/event-details/28th-annual-needham-growth-conference"
-      },
-      {
-        "headline": "Barclays 23rd Annual Global Technology Conference",
-        "url": "https://ir.asteralabs.com/events/event-details/barclays-23rd-annual-global-technology-conference"
-      }
-    ]
+    "status": "blocked",
+    "fetched_at": "2026-08-26T08:51:14.021189+00:00",
+    "error": "Exceeded 30 redirects.",
+    "items": []
   },
   {
     "ticker": "CRDO",
@@ -369,7 +325,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-08-26T07:58:12.920258+00:00",
+    "fetched_at": "2026-08-26T08:51:14.021189+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -403,7 +359,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-08-26T07:58:12.920258+00:00",
+    "fetched_at": "2026-08-26T08:51:14.021189+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -413,7 +369,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-08-26T07:58:12.920258+00:00",
+    "fetched_at": "2026-08-26T08:51:14.021189+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -479,7 +435,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-08-26T07:58:12.920258+00:00",
+    "fetched_at": "2026-08-26T08:51:14.021189+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -545,7 +501,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-08-26T07:58:12.920258+00:00",
+    "fetched_at": "2026-08-26T08:51:14.021189+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
@@ -611,7 +567,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-08-26T07:58:12.920258+00:00",
+    "fetched_at": "2026-08-26T08:51:14.021189+00:00",
     "items": [
       {
         "headline": "LED Demand / Supply Database",
