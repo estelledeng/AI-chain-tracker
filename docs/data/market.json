@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T20:30:27.597501+00:00",
+  "updated_at": "2026-09-03T22:46:47.321805+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -348,7 +348,7 @@
     {
       "ticker": "VRT",
       "price": 268.88,
-      "change_pct": 4.83,
+      "change_pct": 3.7,
       "series": [
         255.8,
         258.79,
