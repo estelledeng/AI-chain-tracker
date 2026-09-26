@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-26T06:37:08.729064+00:00",
+  "updated_at": "2026-09-26T11:48:08.944499+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
       "price": 225.08,
-      "change_pct": -0.08,
+      "change_pct": -0.03,
       "series": [
         226.57,
         225.3,
@@ -176,7 +176,7 @@
     {
       "ticker": "SNDK",
       "price": 1777.59,
-      "change_pct": -0.52,
+      "change_pct": -0.79,
       "series": [
         1799.51,
         1812.4,
@@ -262,7 +262,7 @@
     {
       "ticker": "ANET",
       "price": 206.51,
-      "change_pct": -0.81,
+      "change_pct": -1.12,
       "series": [
         211.09,
         210.57,
