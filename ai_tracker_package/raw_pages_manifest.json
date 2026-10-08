@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-10-08T07:59:06.645484+00:00",
+    "fetched_at": "2026-10-08T15:29:36.334902+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -22,6 +22,14 @@
       {
         "headline": "GPU TECHNOLOGY CONFERENCE",
         "url": "https://www.nvidia.com/en-us/gtc/"
+      },
+      {
+        "headline": "NVIDIA Commits $1 Billion to Advance US Science Over the Next Five Years",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-commits-1-billion-to-advance-us-science-over-the-next-five-years"
+      },
+      {
+        "headline": "Rally Up: \u2018Gears of War: E-Day\u2019 Launches on GeForce NOW",
+        "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-gears-of-war-e-day/"
       },
       {
         "headline": "NVIDIA, Microsoft Kick Off a New Beginning for Windows PCs with RTX Spark and AI Agents",
@@ -54,14 +62,6 @@
       {
         "headline": "NVIDIA Opens Applications for 2027\u20132028 Graduate Fellowships With Awards Up to $60,000",
         "url": "https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2026/"
-      },
-      {
-        "headline": "From Training to Production, NVIDIA and CoreWeave Close the Loop on Agentic AI",
-        "url": "https://blogs.nvidia.com/blog/coreweave-agentic-ai-vera-rubin/"
-      },
-      {
-        "headline": "NVIDIA Announces a $150 Billion Share Repurchase Authorization Increase",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-a-150-billion-share-repurchase-authorization-increase"
       }
     ]
   },
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-08T07:59:06.645484+00:00",
+    "fetched_at": "2026-10-08T15:29:36.334902+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases/",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-08T07:59:06.645484+00:00",
+    "fetched_at": "2026-10-08T15:29:36.334902+00:00",
     "error": "403 Client Error: Forbidden for url: https://investor.sandisk.com/news-releases",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-10-08T07:59:06.645484+00:00",
+    "fetched_at": "2026-10-08T15:29:36.334902+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-10-08T07:59:06.645484+00:00",
+    "fetched_at": "2026-10-08T15:29:36.334902+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -183,7 +183,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "success",
-    "fetched_at": "2026-10-08T07:59:06.645484+00:00",
+    "fetched_at": "2026-10-08T15:29:36.334902+00:00",
     "items": [
       {
         "headline": "Engineering Performance Optimization",
@@ -249,7 +249,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-10-08T07:59:06.645484+00:00",
+    "fetched_at": "2026-10-08T15:29:36.334902+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -270,6 +270,10 @@
       {
         "headline": "Watch the latest Marvell Essential Technology Videos WATCH NOW",
         "url": "https://videos.marvell.com/"
+      },
+      {
+        "headline": "Marvell to Showcase Open AI Infrastructure Solutions at OCP Global Summit 2026",
+        "url": "https://investor.marvell.com/news-events/press-releases/detail/1036/marvell-to-showcase-open-ai-infrastructure-solutions-at-ocp-global-summit-2026"
       },
       {
         "headline": "Marvell Technology, Inc. Declares Quarterly Dividend Payment",
@@ -302,10 +306,6 @@
       {
         "headline": "Marvell to Showcase Advanced AI Memory and Storage Infrastructure Portfolio for Agentic AI Inference at FMS 2026",
         "url": "https://investor.marvell.com/news-events/press-releases/detail/1028/marvell-to-showcase-advanced-ai-memory-and-storage-infrastructure-portfolio-for-agentic-ai-inference-at-fms-2026"
-      },
-      {
-        "headline": "Marvell to Invest $250 Million in India, Expanding Bangalore Facility to Drive Next-generation AI Technology Development",
-        "url": "https://investor.marvell.com/news-events/press-releases/detail/1027/marvell-to-invest-250-million-in-india-expanding-bangalore-facility-to-drive-next-generation-ai-technology-development"
       }
     ]
   },
@@ -315,7 +315,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-10-08T07:59:06.645484+00:00",
+    "fetched_at": "2026-10-08T15:29:36.334902+00:00",
     "error": "403 Client Error: Forbidden for url: https://ir.asteralabs.com/news-events/events-presentations/",
     "items": []
   },
@@ -325,7 +325,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-10-08T07:59:06.645484+00:00",
+    "fetched_at": "2026-10-08T15:29:36.334902+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -359,7 +359,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-08T07:59:06.645484+00:00",
+    "fetched_at": "2026-10-08T15:29:36.334902+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -369,7 +369,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-10-08T07:59:06.645484+00:00",
+    "fetched_at": "2026-10-08T15:29:36.334902+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -435,7 +435,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-10-08T07:59:06.645484+00:00",
+    "fetched_at": "2026-10-08T15:29:36.334902+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -501,7 +501,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-10-08T07:59:06.645484+00:00",
+    "fetched_at": "2026-10-08T15:29:36.334902+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
@@ -540,7 +540,7 @@
         "url": "https://www.trendforce.com/price/battery-price/precursor_and_cathode_material"
       },
       {
-        "headline": "Early notice was announced at 14:20 (20 minutes in advance) ,next session will start at 17:50.",
+        "headline": "Early notice was announced at 17:50. (20 minutes in advance)",
         "url": "https://www.dramexchange.com/Service/Spot_Price_Notice"
       },
       {
@@ -567,7 +567,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-10-08T07:59:06.645484+00:00",
+    "fetched_at": "2026-10-08T15:29:36.334902+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
