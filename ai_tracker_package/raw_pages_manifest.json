@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-10-14T05:10:48.749871+00:00",
+    "fetched_at": "2026-10-14T10:12:24.352702+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -22,6 +22,18 @@
       {
         "headline": "GPU TECHNOLOGY CONFERENCE",
         "url": "https://www.nvidia.com/en-us/gtc/"
+      },
+      {
+        "headline": "From Enterprise to Earthshot: UK\u2019s Ecosystem Moves From Ambition to Application With NVIDIA",
+        "url": "https://blogs.nvidia.com/blog/uk-ecosystem-deployment/"
+      },
+      {
+        "headline": "NVIDIA Commits $250 Million to Advance UK Agentic Safety and Security Research Over the Next Five Years",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-commits-250-million-to-advance-uk-agentic-safety-and-security-research-over-the-next-five-years"
+      },
+      {
+        "headline": "European Cities Deploy NVIDIA-Powered AI Agents to Run Smarter Urban Operations",
+        "url": "https://blogs.nvidia.com/blog/european-cities-agents-urban-operations/"
       },
       {
         "headline": "All Systems Go: Global PC App Ecosystem Ready for NVIDIA RTX Spark",
@@ -50,18 +62,6 @@
       {
         "headline": "NVIDIA Commits $1 Billion to Advance US Science Over the Next Five Years",
         "url": "https://nvidianews.nvidia.com/news/nvidia-commits-1-billion-to-advance-us-science-over-the-next-five-years"
-      },
-      {
-        "headline": "Rally Up: \u2018Gears of War: E-Day\u2019 Launches on GeForce NOW",
-        "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-gears-of-war-e-day/"
-      },
-      {
-        "headline": "NVIDIA, Microsoft Kick Off a New Beginning for Windows PCs with RTX Spark and AI Agents",
-        "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/"
-      },
-      {
-        "headline": "Why Telecom Operators Are Building Their AI Strategy on Open Models",
-        "url": "https://blogs.nvidia.com/blog/telecom-operators-open-models/"
       }
     ]
   },
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-14T05:10:48.749871+00:00",
+    "fetched_at": "2026-10-14T10:12:24.352702+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases/",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-14T05:10:48.749871+00:00",
+    "fetched_at": "2026-10-14T10:12:24.352702+00:00",
     "error": "403 Client Error: Forbidden for url: https://investor.sandisk.com/news-releases",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-10-14T05:10:48.749871+00:00",
+    "fetched_at": "2026-10-14T10:12:24.352702+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-10-14T05:10:48.749871+00:00",
+    "fetched_at": "2026-10-14T10:12:24.352702+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -183,7 +183,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "success",
-    "fetched_at": "2026-10-14T05:10:48.749871+00:00",
+    "fetched_at": "2026-10-14T10:12:24.352702+00:00",
     "items": [
       {
         "headline": "Engineering Performance Optimization",
@@ -249,7 +249,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-10-14T05:10:48.749871+00:00",
+    "fetched_at": "2026-10-14T10:12:24.352702+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -315,7 +315,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-10-14T05:10:48.749871+00:00",
+    "fetched_at": "2026-10-14T10:12:24.352702+00:00",
     "error": "403 Client Error: Forbidden for url: https://ir.asteralabs.com/news-events/events-presentations/",
     "items": []
   },
@@ -325,7 +325,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-10-14T05:10:48.749871+00:00",
+    "fetched_at": "2026-10-14T10:12:24.352702+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -359,7 +359,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-14T05:10:48.749871+00:00",
+    "fetched_at": "2026-10-14T10:12:24.352702+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -369,7 +369,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-10-14T05:10:48.749871+00:00",
+    "fetched_at": "2026-10-14T10:12:24.352702+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -435,7 +435,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-10-14T05:10:48.749871+00:00",
+    "fetched_at": "2026-10-14T10:12:24.352702+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -501,7 +501,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-10-14T05:10:48.749871+00:00",
+    "fetched_at": "2026-10-14T10:12:24.352702+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
@@ -540,7 +540,7 @@
         "url": "https://www.trendforce.com/price/battery-price/precursor_and_cathode_material"
       },
       {
-        "headline": "Early notice was announced at 10:50 (10 minutes in advance) ,next session will start at 14:20.",
+        "headline": "Early notice was announced at 17:50. (20 minutes in advance)",
         "url": "https://www.dramexchange.com/Service/Spot_Price_Notice"
       },
       {
@@ -567,7 +567,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-10-14T05:10:48.749871+00:00",
+    "fetched_at": "2026-10-14T10:12:24.352702+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
