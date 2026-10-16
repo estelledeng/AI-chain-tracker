@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-10-16T05:00:42.452392+00:00",
+    "fetched_at": "2026-10-16T09:47:43.942299+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -22,6 +22,10 @@
       {
         "headline": "GPU TECHNOLOGY CONFERENCE",
         "url": "https://www.nvidia.com/en-us/gtc/"
+      },
+      {
+        "headline": "Mercedes-Benz and NVIDIA Expand Strategic Partnership to Advance Safe Highly Automated Driving in the Next Decade",
+        "url": "https://nvidianews.nvidia.com/news/mercedes-benz-and-nvidia-expand-strategic-partnership-to-advance-safe-highly-automated-driving-in-the-next-decade"
       },
       {
         "headline": "Volvo Cars and NVIDIA Expand Partnership to Advance Safe Automated Driving",
@@ -58,10 +62,6 @@
       {
         "headline": "From Enterprise to Earthshot: UK\u2019s Ecosystem Moves From Ambition to Application With NVIDIA",
         "url": "https://blogs.nvidia.com/blog/uk-ecosystem-deployment/"
-      },
-      {
-        "headline": "NVIDIA Commits $250 Million to Advance UK Agentic Safety and Security Research Over the Next Five Years",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-commits-250-million-to-advance-uk-agentic-safety-and-security-research-over-the-next-five-years"
       }
     ]
   },
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-16T05:00:42.452392+00:00",
+    "fetched_at": "2026-10-16T09:47:43.942299+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases/",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-16T05:00:42.452392+00:00",
+    "fetched_at": "2026-10-16T09:47:43.942299+00:00",
     "error": "403 Client Error: Forbidden for url: https://investor.sandisk.com/news-releases",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-10-16T05:00:42.452392+00:00",
+    "fetched_at": "2026-10-16T09:47:43.942299+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-10-16T05:00:42.452392+00:00",
+    "fetched_at": "2026-10-16T09:47:43.942299+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -183,7 +183,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "success",
-    "fetched_at": "2026-10-16T05:00:42.452392+00:00",
+    "fetched_at": "2026-10-16T09:47:43.942299+00:00",
     "items": [
       {
         "headline": "Engineering Performance Optimization",
@@ -249,7 +249,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-10-16T05:00:42.452392+00:00",
+    "fetched_at": "2026-10-16T09:47:43.942299+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -315,7 +315,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-10-16T05:00:42.452392+00:00",
+    "fetched_at": "2026-10-16T09:47:43.942299+00:00",
     "error": "403 Client Error: Forbidden for url: https://ir.asteralabs.com/news-events/events-presentations/",
     "items": []
   },
@@ -325,7 +325,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-10-16T05:00:42.452392+00:00",
+    "fetched_at": "2026-10-16T09:47:43.942299+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -359,7 +359,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-16T05:00:42.452392+00:00",
+    "fetched_at": "2026-10-16T09:47:43.942299+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -369,7 +369,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-10-16T05:00:42.452392+00:00",
+    "fetched_at": "2026-10-16T09:47:43.942299+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -435,7 +435,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-10-16T05:00:42.452392+00:00",
+    "fetched_at": "2026-10-16T09:47:43.942299+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -490,8 +490,8 @@
         "url": "https://insights.trendforce.com/p/the-inference-era-is-also-a-cpu-story?utm_source=tf&utm_medium=affiliate&utm_campaign=ocp2026-cpu"
       },
       {
-        "headline": "[News] AI Chip Memory Strategies Diverge: Microsoft\u2019s Maia 300 Fuels HBM4 Demand as Intel Bets on LPDDR5X",
-        "url": "https://www.trendforce.com/news/2026/10/13/news-ai-chip-memory-strategies-diverge-microsofts-maia-300-fuels-hbm4-demand-as-intel-bets-on-lower-cost-lpddr5x/"
+        "headline": "[News] SK hynix Reportedly Seeks U.S. Chip Tool Approval for China Expansion to Fund Potential U.S. NAND Fab",
+        "url": "https://www.trendforce.com/news/2026/10/15/news-sk-hynix-reportedly-seeks-u-s-chip-tool-approval-for-china-expansion-to-fund-potential-u-s-nand-fab/"
       }
     ]
   },
@@ -501,7 +501,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-10-16T05:00:42.452392+00:00",
+    "fetched_at": "2026-10-16T09:47:43.942299+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
@@ -540,7 +540,7 @@
         "url": "https://www.trendforce.com/price/battery-price/precursor_and_cathode_material"
       },
       {
-        "headline": "Early notice was announced at 10:50 (10 minutes in advance) ,next session will start at 14:20.",
+        "headline": "Early notice was announced at 14:20 (20 minutes in advance) ,next session will start at 17:50.",
         "url": "https://www.dramexchange.com/Service/Spot_Price_Notice"
       },
       {
@@ -567,7 +567,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-10-16T05:00:42.452392+00:00",
+    "fetched_at": "2026-10-16T09:47:43.942299+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
