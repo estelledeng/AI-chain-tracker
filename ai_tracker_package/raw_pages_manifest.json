@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-10-21T08:52:56.628269+00:00",
+    "fetched_at": "2026-10-21T14:20:17.769538+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -24,44 +24,44 @@
         "url": "https://www.nvidia.com/en-us/gtc/"
       },
       {
-        "headline": "Spain-Based Startups Advance Regional Innovation With Barcelona Supercomputing Center",
-        "url": "https://blogs.nvidia.com/blog/spain-startups-barcelona-supercomputing-center/"
+        "headline": "Bringing the Spark to Europe: Local Intelligence Powers Next Wave of Agents",
+        "url": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/"
       },
       {
-        "headline": "Germany Wants to Lead the World in Industrial AI: How NVIDIA Will Help",
-        "url": "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/"
+        "headline": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
+        "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/"
       },
       {
-        "headline": "NVIDIA Runs Record Simulation of Fault-Tolerant Quantum Computing at J\u00fclich Supercomputing Centre",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-runs-record-simulation-of-fault-tolerant-quantum-computing-at-julich-supercomputing-centre"
+        "headline": "NVIDIA and Supply Chain Partners Expand Capacity to Accelerate AI Infrastructure Buildout",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout"
       },
       {
-        "headline": "NVIDIA Advances Agentic Security for Media, From European Public Service Broadcasting to Global Content Production",
-        "url": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/"
+        "headline": "NVIDIA Cloud Partners Scale Across Europe \u2014 Sovereign, Open and Built for Safe AI Agents",
+        "url": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/"
       },
       {
-        "headline": "RTX Spark Ignites Global Celebration as New Windows PCs Arrive",
-        "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration/"
+        "headline": "Europe\u2019s Industrial Leaders Reinvent Engineering and Manufacturing With NVIDIA",
+        "url": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/"
       },
       {
-        "headline": "NVIDIA RTX Spark PCs Available Today \u2014 A New Beginning for Windows PCs",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs"
+        "headline": "NVIDIA cuDSS Now Generally Available to Accelerate Engineering and Scientific Simulations",
+        "url": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/"
       },
       {
-        "headline": "Mercedes-Benz and NVIDIA Expand Strategic Partnership to Advance Safe Highly Automated Driving in the Next Decade",
-        "url": "https://nvidianews.nvidia.com/news/mercedes-benz-and-nvidia-expand-strategic-partnership-to-advance-safe-highly-automated-driving-in-the-next-decade"
+        "headline": "NVIDIA Confidential Computing Expands, Enabling Frontier Model Builders to Securely Scale Across Global Infrastructure",
+        "url": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/"
       },
       {
-        "headline": "Volvo Cars and NVIDIA Expand Partnership to Advance Safe Automated Driving",
-        "url": "https://nvidianews.nvidia.com/news/volvo-cars-and-nvidia-expand-partnership-to-advance-safe-automated-driving"
+        "headline": "NVIDIA Advances Isaac Platform for General-Purpose Robotics With New Reference Humanoid, Frameworks, Simulation Pipelines and Data",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-advances-isaac-platform-for-general-purpose-robotics-with-new-reference-humanoid-frameworks-simulation-pipelines-and-data"
       },
       {
-        "headline": "Be There for the Beginning: Celebrate the Launch of NVIDIA RTX Spark",
-        "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/"
+        "headline": "European Mobility Leaders Build Safe Vehicles and Robotaxi Fleets on NVIDIA Hyperion",
+        "url": "https://nvidianews.nvidia.com/news/european-mobility-leaders-build-safe-vehicles-and-robotaxi-fleets-on-nvidia-hyperion"
       },
       {
-        "headline": "Adobe and NVIDIA Expand Collaboration to Speed Agentic Creation",
-        "url": "https://nvidianews.nvidia.com/news/adobe-and-nvidia-expand-collaboration-to-speed-agentic-creation"
+        "headline": "Healthcare and Life Sciences Leaders Build on NVIDIA to Advance Drug Discovery and Expand Patient Care",
+        "url": "https://nvidianews.nvidia.com/news/healthcare-and-life-sciences-leaders-build-on-nvidia-to-advance-drug-discovery-and-expand-patient-care"
       }
     ]
   },
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-21T08:52:56.628269+00:00",
+    "fetched_at": "2026-10-21T14:20:17.769538+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases/",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-21T08:52:56.628269+00:00",
+    "fetched_at": "2026-10-21T14:20:17.769538+00:00",
     "error": "403 Client Error: Forbidden for url: https://investor.sandisk.com/news-releases",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-10-21T08:52:56.628269+00:00",
+    "fetched_at": "2026-10-21T14:20:17.769538+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-10-21T08:52:56.628269+00:00",
+    "fetched_at": "2026-10-21T14:20:17.769538+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -182,10 +182,66 @@
     "name": "TSMC Press Center",
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
-    "status": "blocked",
-    "fetched_at": "2026-10-21T08:52:56.628269+00:00",
-    "error": "403 Client Error: Forbidden for url: https://pr.tsmc.com/english",
-    "items": []
+    "status": "success",
+    "fetched_at": "2026-10-21T14:20:17.769538+00:00",
+    "items": [
+      {
+        "headline": "Engineering Performance Optimization",
+        "url": "https://www.tsmc.com/english/dedicatedFoundry/manufacturing/engineering"
+      },
+      {
+        "headline": "Agile and Intelligent Operations",
+        "url": "https://www.tsmc.com/english/dedicatedFoundry/manufacturing/intelligent_operations"
+      },
+      {
+        "headline": "University FinFET Program",
+        "url": "https://www.tsmc.com/english/dedicatedFoundry/services/university_program"
+      },
+      {
+        "headline": "Corporate Governance Officer",
+        "url": "https://investor.tsmc.com/english/corporate-governance-officer"
+      },
+      {
+        "headline": "TWSE Market Observation Post System",
+        "url": "https://emops.twse.com.tw/server-java/t58query"
+      },
+      {
+        "headline": "TSMC Material Information",
+        "url": "https://emops.twse.com.tw/server-java/t05st01_e?TYPEK=sii&co_id=2330&year=2025&month=all&step=0&query=co&colorchg=1"
+      },
+      {
+        "headline": "Relocation to Headquarters",
+        "url": "https://www.tsmc.com/english/careers/relocation_HQ.htm"
+      },
+      {
+        "headline": "Values and Business Philosophy",
+        "url": "https://www.tsmc.com/english/aboutTSMC/values"
+      },
+      {
+        "headline": "TSMC Museum of Innovation",
+        "url": "https://www.tsmcmoi.com/en/"
+      },
+      {
+        "headline": "TSMC Education and Culture Foundation",
+        "url": "https://www.tsmc.com/english/aboutTSMC/tsmc_foundation"
+      },
+      {
+        "headline": "Investor Relations, Public Relations, ESG Contacts",
+        "url": "https://www.tsmc.com/english/contact-us#investor-relations"
+      },
+      {
+        "headline": "Whistleblowing Mechanism",
+        "url": "https://www.tsmc.com/english/whistleblowing-mechanism"
+      },
+      {
+        "headline": "TSMC Reports Third Quarter EPS of NT$29.43 (2026/10/15)",
+        "url": "https://pr.tsmc.com/english/news/3346"
+      },
+      {
+        "headline": "TSMC September 2026 Revenue Report (2026/10/08)",
+        "url": "https://pr.tsmc.com/english/news/3343"
+      }
+    ]
   },
   {
     "ticker": "MRVL",
@@ -193,7 +249,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-10-21T08:52:56.628269+00:00",
+    "fetched_at": "2026-10-21T14:20:17.769538+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -259,7 +315,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-10-21T08:52:56.628269+00:00",
+    "fetched_at": "2026-10-21T14:20:17.769538+00:00",
     "error": "403 Client Error: Forbidden for url: https://ir.asteralabs.com/news-events/events-presentations/",
     "items": []
   },
@@ -269,7 +325,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-10-21T08:52:56.628269+00:00",
+    "fetched_at": "2026-10-21T14:20:17.769538+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -303,7 +359,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-21T08:52:56.628269+00:00",
+    "fetched_at": "2026-10-21T14:20:17.769538+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -313,7 +369,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-10-21T08:52:56.628269+00:00",
+    "fetched_at": "2026-10-21T14:20:17.769538+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -379,7 +435,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-10-21T08:52:56.628269+00:00",
+    "fetched_at": "2026-10-21T14:20:17.769538+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -445,7 +501,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-10-21T08:52:56.628269+00:00",
+    "fetched_at": "2026-10-21T14:20:17.769538+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
@@ -484,7 +540,7 @@
         "url": "https://www.trendforce.com/price/battery-price/precursor_and_cathode_material"
       },
       {
-        "headline": "Early notice was announced at 14:20 (20 minutes in advance) ,next session will start at 17:50.",
+        "headline": "Early notice was announced at 17:50. (20 minutes in advance)",
         "url": "https://www.dramexchange.com/Service/Spot_Price_Notice"
       },
       {
@@ -511,7 +567,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-10-21T08:52:56.628269+00:00",
+    "fetched_at": "2026-10-21T14:20:17.769538+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
