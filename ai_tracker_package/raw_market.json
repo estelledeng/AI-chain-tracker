@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T23:56:37.995460+00:00",
+  "updated_at": "2026-10-21T03:38:36.296888+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -434,7 +434,7 @@
     {
       "ticker": "TSM",
       "price": 425.3,
-      "change_pct": 2.15,
+      "change_pct": 2.16,
       "series": [
         417.84,
         418.4,
