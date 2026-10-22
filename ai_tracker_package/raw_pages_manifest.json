@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-10-22T00:41:04.085902+00:00",
+    "fetched_at": "2026-10-22T05:23:30.242000+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -24,6 +24,30 @@
         "url": "https://www.nvidia.com/en-us/gtc/"
       },
       {
+        "headline": "Leading European Financial Services Organizations Embrace Open Models to Build Proprietary Intelligence",
+        "url": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/"
+      },
+      {
+        "headline": "NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models",
+        "url": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/"
+      },
+      {
+        "headline": "How Companies Are Using NVIDIA DSX to Break the Power Bottleneck",
+        "url": "https://blogs.nvidia.com/blog/dsx-power/"
+      },
+      {
+        "headline": "NVIDIA Transforms European Retail, From Digital Discovery to Physical Operations",
+        "url": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/"
+      },
+      {
+        "headline": "Pioneers Across Europe Deploy NVIDIA Earth-2 Open Models to Power Real-World Weather and Climate Prediction",
+        "url": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/"
+      },
+      {
+        "headline": "NVIDIA Open Models Power a New Wave of European Public Sector Projects",
+        "url": "https://blogs.nvidia.com/blog/european-public-sector-open-models/"
+      },
+      {
         "headline": "Bringing the Spark to Europe: Local Intelligence Powers Next Wave of Agents",
         "url": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/"
       },
@@ -38,30 +62,6 @@
       {
         "headline": "NVIDIA Cloud Partners Scale Across Europe \u2014 Sovereign, Open and Built for Safe AI Agents",
         "url": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/"
-      },
-      {
-        "headline": "Europe\u2019s Industrial Leaders Reinvent Engineering and Manufacturing With NVIDIA",
-        "url": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/"
-      },
-      {
-        "headline": "NVIDIA cuDSS Now Generally Available to Accelerate Engineering and Scientific Simulations",
-        "url": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/"
-      },
-      {
-        "headline": "NVIDIA Confidential Computing Expands, Enabling Frontier Model Builders to Securely Scale Across Global Infrastructure",
-        "url": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/"
-      },
-      {
-        "headline": "NVIDIA Advances Isaac Platform for General-Purpose Robotics With New Reference Humanoid, Frameworks, Simulation Pipelines and Data",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-advances-isaac-platform-for-general-purpose-robotics-with-new-reference-humanoid-frameworks-simulation-pipelines-and-data"
-      },
-      {
-        "headline": "European Mobility Leaders Build Safe Vehicles and Robotaxi Fleets on NVIDIA Hyperion",
-        "url": "https://nvidianews.nvidia.com/news/european-mobility-leaders-build-safe-vehicles-and-robotaxi-fleets-on-nvidia-hyperion"
-      },
-      {
-        "headline": "Healthcare and Life Sciences Leaders Build on NVIDIA to Advance Drug Discovery and Expand Patient Care",
-        "url": "https://nvidianews.nvidia.com/news/healthcare-and-life-sciences-leaders-build-on-nvidia-to-advance-drug-discovery-and-expand-patient-care"
       }
     ]
   },
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-22T00:41:04.085902+00:00",
+    "fetched_at": "2026-10-22T05:23:30.242000+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases/",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-22T00:41:04.085902+00:00",
+    "fetched_at": "2026-10-22T05:23:30.242000+00:00",
     "error": "403 Client Error: Forbidden for url: https://investor.sandisk.com/news-releases",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-10-22T00:41:04.085902+00:00",
+    "fetched_at": "2026-10-22T05:23:30.242000+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-10-22T00:41:04.085902+00:00",
+    "fetched_at": "2026-10-22T05:23:30.242000+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -183,7 +183,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "blocked",
-    "fetched_at": "2026-10-22T00:41:04.085902+00:00",
+    "fetched_at": "2026-10-22T05:23:30.242000+00:00",
     "error": "403 Client Error: Forbidden for url: https://pr.tsmc.com/english",
     "items": []
   },
@@ -193,7 +193,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-10-22T00:41:04.085902+00:00",
+    "fetched_at": "2026-10-22T05:23:30.242000+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -259,7 +259,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-10-22T00:41:04.085902+00:00",
+    "fetched_at": "2026-10-22T05:23:30.242000+00:00",
     "error": "403 Client Error: Forbidden for url: https://ir.asteralabs.com/news-events/events-presentations/",
     "items": []
   },
@@ -269,7 +269,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-10-22T00:41:04.085902+00:00",
+    "fetched_at": "2026-10-22T05:23:30.242000+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -303,7 +303,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-22T00:41:04.085902+00:00",
+    "fetched_at": "2026-10-22T05:23:30.242000+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -313,7 +313,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-10-22T00:41:04.085902+00:00",
+    "fetched_at": "2026-10-22T05:23:30.242000+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -379,7 +379,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-10-22T00:41:04.085902+00:00",
+    "fetched_at": "2026-10-22T05:23:30.242000+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -430,8 +430,8 @@
         "url": "https://www.trendforce.com/price/battery-price/precursor_and_cathode_material"
       },
       {
-        "headline": "Weekly Radar 006: HDD Shortage Risk Extends Into 2028",
-        "url": "https://insights.trendforce.com/p/weekly-radar-006?utm_source=tf&utm_medium=affiliate&utm_campaign=weekly-radar-006"
+        "headline": "Dexterous Hands: A US$6 Billion Market",
+        "url": "https://insights.trendforce.com/p/dexterous-hand-a-6-billion-dollar-market?utm_source=tf&utm_medium=affiliate&utm_campaign=dexterous-hand"
       },
       {
         "headline": "[News] Intel Claims Industry\u2019s Only High-Volume 300mm InP Silicon Photonics Capability as CPO Gains Momentum",
@@ -445,7 +445,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-10-22T00:41:04.085902+00:00",
+    "fetched_at": "2026-10-22T05:23:30.242000+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
@@ -484,7 +484,7 @@
         "url": "https://www.trendforce.com/price/battery-price/precursor_and_cathode_material"
       },
       {
-        "headline": "Early notice was announced at 17:50. (20 minutes in advance)",
+        "headline": "Early notice was announced at 10:50 (10 minutes in advance) ,next session will start at 14:20.",
         "url": "https://www.dramexchange.com/Service/Spot_Price_Notice"
       },
       {
@@ -511,7 +511,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-10-22T00:41:04.085902+00:00",
+    "fetched_at": "2026-10-22T05:23:30.242000+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
