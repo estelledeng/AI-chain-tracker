@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-10-22T10:25:11.002374+00:00",
+    "fetched_at": "2026-10-22T15:28:00.704980+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -22,6 +22,14 @@
       {
         "headline": "GPU TECHNOLOGY CONFERENCE",
         "url": "https://www.nvidia.com/en-us/gtc/"
+      },
+      {
+        "headline": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
+        "url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/"
+      },
+      {
+        "headline": "Cloud Deployment Incoming: \u2018Call of Duty: Modern Warfare 4\u2019 Arrives on GeForce NOW",
+        "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-call-of-duty-modern-warfare-4/"
       },
       {
         "headline": "Leading European Financial Services Organizations Embrace Open Models to Build Proprietary Intelligence",
@@ -54,14 +62,6 @@
       {
         "headline": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
         "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/"
-      },
-      {
-        "headline": "NVIDIA and Supply Chain Partners Expand Capacity to Accelerate AI Infrastructure Buildout",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout"
-      },
-      {
-        "headline": "NVIDIA Cloud Partners Scale Across Europe \u2014 Sovereign, Open and Built for Safe AI Agents",
-        "url": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/"
       }
     ]
   },
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-22T10:25:11.002374+00:00",
+    "fetched_at": "2026-10-22T15:28:00.704980+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases/",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-22T10:25:11.002374+00:00",
+    "fetched_at": "2026-10-22T15:28:00.704980+00:00",
     "error": "403 Client Error: Forbidden for url: https://investor.sandisk.com/news-releases",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-10-22T10:25:11.002374+00:00",
+    "fetched_at": "2026-10-22T15:28:00.704980+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-10-22T10:25:11.002374+00:00",
+    "fetched_at": "2026-10-22T15:28:00.704980+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -183,7 +183,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "blocked",
-    "fetched_at": "2026-10-22T10:25:11.002374+00:00",
+    "fetched_at": "2026-10-22T15:28:00.704980+00:00",
     "error": "403 Client Error: Forbidden for url: https://pr.tsmc.com/english",
     "items": []
   },
@@ -193,7 +193,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-10-22T10:25:11.002374+00:00",
+    "fetched_at": "2026-10-22T15:28:00.704980+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -259,7 +259,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-10-22T10:25:11.002374+00:00",
+    "fetched_at": "2026-10-22T15:28:00.704980+00:00",
     "error": "403 Client Error: Forbidden for url: https://ir.asteralabs.com/news-events/events-presentations/",
     "items": []
   },
@@ -269,7 +269,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-10-22T10:25:11.002374+00:00",
+    "fetched_at": "2026-10-22T15:28:00.704980+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -303,7 +303,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-22T10:25:11.002374+00:00",
+    "fetched_at": "2026-10-22T15:28:00.704980+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -313,7 +313,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-10-22T10:25:11.002374+00:00",
+    "fetched_at": "2026-10-22T15:28:00.704980+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -379,7 +379,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-10-22T10:25:11.002374+00:00",
+    "fetched_at": "2026-10-22T15:28:00.704980+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -445,7 +445,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-10-22T10:25:11.002374+00:00",
+    "fetched_at": "2026-10-22T15:28:00.704980+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
@@ -511,7 +511,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-10-22T10:25:11.002374+00:00",
+    "fetched_at": "2026-10-22T15:28:00.704980+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
