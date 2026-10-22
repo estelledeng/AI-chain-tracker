@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T05:23:39.913361+00:00",
+  "updated_at": "2026-10-22T10:25:21.911434+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -176,7 +176,7 @@
     {
       "ticker": "SNDK",
       "price": 1378.3,
-      "change_pct": -2.73,
+      "change_pct": -2.52,
       "series": [
         1383.9,
         1349.61,
@@ -520,7 +520,7 @@
     {
       "ticker": "MRVL",
       "price": 244.67,
-      "change_pct": -1.72,
+      "change_pct": -0.94,
       "series": [
         246.88,
         243.83,
@@ -864,7 +864,7 @@
     {
       "ticker": "COHR",
       "price": 237.56,
-      "change_pct": -1.2,
+      "change_pct": -1.09,
       "series": [
         239.72,
         236.17,
