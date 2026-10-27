@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-10-27T01:07:28.656295+00:00",
+    "fetched_at": "2026-10-27T06:15:31.901953+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -22,6 +22,10 @@
       {
         "headline": "GPU TECHNOLOGY CONFERENCE",
         "url": "https://www.nvidia.com/en-us/gtc/"
+      },
+      {
+        "headline": "NVIDIA and Meta to Expand Collaboration on Muse and Muse Family of Models Amid Robust Growth",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth"
       },
       {
         "headline": "Kazakhstan Expands Compute for Its AI Future",
@@ -58,10 +62,6 @@
       {
         "headline": "NVIDIA Open Models Power a New Wave of European Public Sector Projects",
         "url": "https://blogs.nvidia.com/blog/european-public-sector-open-models/"
-      },
-      {
-        "headline": "Bringing the Spark to Europe: Local Intelligence Powers Next Wave of Agents",
-        "url": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/"
       }
     ]
   },
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-27T01:07:28.656295+00:00",
+    "fetched_at": "2026-10-27T06:15:31.901953+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases/",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-27T01:07:28.656295+00:00",
+    "fetched_at": "2026-10-27T06:15:31.901953+00:00",
     "error": "403 Client Error: Forbidden for url: https://investor.sandisk.com/news-releases",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-10-27T01:07:28.656295+00:00",
+    "fetched_at": "2026-10-27T06:15:31.901953+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-10-27T01:07:28.656295+00:00",
+    "fetched_at": "2026-10-27T06:15:31.901953+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -182,66 +182,10 @@
     "name": "TSMC Press Center",
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
-    "status": "success",
-    "fetched_at": "2026-10-27T01:07:28.656295+00:00",
-    "items": [
-      {
-        "headline": "Engineering Performance Optimization",
-        "url": "https://www.tsmc.com/english/dedicatedFoundry/manufacturing/engineering"
-      },
-      {
-        "headline": "Agile and Intelligent Operations",
-        "url": "https://www.tsmc.com/english/dedicatedFoundry/manufacturing/intelligent_operations"
-      },
-      {
-        "headline": "University FinFET Program",
-        "url": "https://www.tsmc.com/english/dedicatedFoundry/services/university_program"
-      },
-      {
-        "headline": "Corporate Governance Officer",
-        "url": "https://investor.tsmc.com/english/corporate-governance-officer"
-      },
-      {
-        "headline": "TWSE Market Observation Post System",
-        "url": "https://emops.twse.com.tw/server-java/t58query"
-      },
-      {
-        "headline": "TSMC Material Information",
-        "url": "https://emops.twse.com.tw/server-java/t05st01_e?TYPEK=sii&co_id=2330&year=2025&month=all&step=0&query=co&colorchg=1"
-      },
-      {
-        "headline": "Relocation to Headquarters",
-        "url": "https://www.tsmc.com/english/careers/relocation_HQ.htm"
-      },
-      {
-        "headline": "Values and Business Philosophy",
-        "url": "https://www.tsmc.com/english/aboutTSMC/values"
-      },
-      {
-        "headline": "TSMC Museum of Innovation",
-        "url": "https://www.tsmcmoi.com/en/"
-      },
-      {
-        "headline": "TSMC Education and Culture Foundation",
-        "url": "https://www.tsmc.com/english/aboutTSMC/tsmc_foundation"
-      },
-      {
-        "headline": "Investor Relations, Public Relations, ESG Contacts",
-        "url": "https://www.tsmc.com/english/contact-us#investor-relations"
-      },
-      {
-        "headline": "Whistleblowing Mechanism",
-        "url": "https://www.tsmc.com/english/whistleblowing-mechanism"
-      },
-      {
-        "headline": "TSMC Reports Third Quarter EPS of NT$29.43 (2026/10/15)",
-        "url": "https://pr.tsmc.com/english/news/3346"
-      },
-      {
-        "headline": "TSMC September 2026 Revenue Report (2026/10/08)",
-        "url": "https://pr.tsmc.com/english/news/3343"
-      }
-    ]
+    "status": "blocked",
+    "fetched_at": "2026-10-27T06:15:31.901953+00:00",
+    "error": "403 Client Error: Forbidden for url: https://pr.tsmc.com/english",
+    "items": []
   },
   {
     "ticker": "MRVL",
@@ -249,7 +193,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-10-27T01:07:28.656295+00:00",
+    "fetched_at": "2026-10-27T06:15:31.901953+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -315,7 +259,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-10-27T01:07:28.656295+00:00",
+    "fetched_at": "2026-10-27T06:15:31.901953+00:00",
     "error": "403 Client Error: Forbidden for url: https://ir.asteralabs.com/news-events/events-presentations/",
     "items": []
   },
@@ -325,7 +269,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-10-27T01:07:28.656295+00:00",
+    "fetched_at": "2026-10-27T06:15:31.901953+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -359,7 +303,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-10-27T01:07:28.656295+00:00",
+    "fetched_at": "2026-10-27T06:15:31.901953+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -369,7 +313,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-10-27T01:07:28.656295+00:00",
+    "fetched_at": "2026-10-27T06:15:31.901953+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -435,7 +379,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-10-27T01:07:28.656295+00:00",
+    "fetched_at": "2026-10-27T06:15:31.901953+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -486,12 +430,12 @@
         "url": "https://www.trendforce.com/price/battery-price/precursor_and_cathode_material"
       },
       {
-        "headline": "Dexterous Hands: A US$6 Billion Market",
-        "url": "https://insights.trendforce.com/p/dexterous-hand-a-6-billion-dollar-market?utm_source=tf&utm_medium=affiliate&utm_campaign=dexterous-hand"
+        "headline": "Weekly Radar 007: NVIDIA Moves to Secure Substrate Capacity",
+        "url": "https://insights.trendforce.com/p/weekly-radar-007?utm_source=tf&utm_medium=affiliate&utm_campaign=weekly-radar-007"
       },
       {
-        "headline": "[News] Intel Claims Industry\u2019s Only High-Volume 300mm InP Silicon Photonics Capability as CPO Gains Momentum",
-        "url": "https://www.trendforce.com/news/2026/10/20/news-intel-claims-industrys-only-high-volume-300mm-inp-silicon-photonics-capability-as-cpo-gains-momentum/"
+        "headline": "[Breaking] Google Reportedly Sticks With Intel EMIB-T Despite 35% Substrate Yields as HumuFish Schedule Tightens",
+        "url": "https://www.trendforce.com/news/2026/10/22/breaking-google-reportedly-sticks-with-intel-emib-t-despite-35-substrate-yields-as-humufish-schedule-tightens/"
       }
     ]
   },
@@ -501,7 +445,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-10-27T01:07:28.656295+00:00",
+    "fetched_at": "2026-10-27T06:15:31.901953+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
@@ -540,7 +484,7 @@
         "url": "https://www.trendforce.com/price/battery-price/precursor_and_cathode_material"
       },
       {
-        "headline": "Early notice was announced at 17:50. (20 minutes in advance)",
+        "headline": "Early notice was announced at 10:50 (10 minutes in advance) ,next session will start at 14:20.",
         "url": "https://www.dramexchange.com/Service/Spot_Price_Notice"
       },
       {
@@ -567,7 +511,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-10-27T01:07:28.656295+00:00",
+    "fetched_at": "2026-10-27T06:15:31.901953+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
