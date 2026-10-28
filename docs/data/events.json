@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-28T19:44:20.766973+00:00",
+  "generated_at": "2026-10-28T23:36:39.271361+00:00",
   "dashboard_scores": [
     {
       "ticker": "NVDA",
       "score": 50,
       "role": "Platform / AI Factory Architecture",
       "group": "Core Platform",
-      "price": 214.74,
-      "change_pct": -2.34,
+      "price": 215.39,
+      "change_pct": -2.04,
       "series": [
         219.43,
         219.55,
@@ -83,7 +83,10 @@
         215.11,
         214.7,
         214.57,
-        214.74
+        214.71,
+        215.19,
+        214.88,
+        215.39
       ]
     },
     {
@@ -91,8 +94,8 @@
       "score": 48,
       "role": "HBM / DRAM / NAND",
       "group": "Memory & Storage",
-      "price": 984.19,
-      "change_pct": 2.29,
+      "price": 982.08,
+      "change_pct": 2.07,
       "series": [
         976.35,
         978.97,
@@ -168,7 +171,10 @@
         979.86,
         978.87,
         980.63,
-        984.19
+        984.36,
+        986.25,
+        987.0,
+        982.08
       ]
     },
     {
@@ -176,8 +182,8 @@
       "score": 55,
       "role": "NAND / SSD / Inference Storage Tier",
       "group": "Memory & Storage",
-      "price": 1398.5,
-      "change_pct": 3.09,
+      "price": 1404.3,
+      "change_pct": 3.52,
       "series": [
         1379.19,
         1381.01,
@@ -253,7 +259,10 @@
         1392.8,
         1395.19,
         1394.65,
-        1398.5
+        1398.02,
+        1398.91,
+        1397.2,
+        1404.3
       ]
     },
     {
@@ -261,8 +270,8 @@
       "score": 70,
       "role": "AI Networking / Scale-out Fabric",
       "group": "Connectivity & Networking",
-      "price": 187.57,
-      "change_pct": -1.36,
+      "price": 186.85,
+      "change_pct": -1.75,
       "series": [
         190.0,
         188.32,
@@ -337,8 +346,11 @@
         187.31,
         187.49,
         187.57,
-        187.39,
-        187.57
+        187.41,
+        187.7,
+        187.43,
+        187.27,
+        186.85
       ]
     },
     {
@@ -346,8 +358,8 @@
       "score": 70,
       "role": "Power / Cooling / Deployment",
       "group": "Deployment & Upstream",
-      "price": 244.06,
-      "change_pct": 0.44,
+      "price": 243.17,
+      "change_pct": 0.07,
       "series": [
         232.51,
         236.35,
@@ -421,9 +433,12 @@
         245.23,
         243.12,
         243.64,
-        242.25,
-        242.24,
-        244.06
+        242.27,
+        242.13,
+        244.01,
+        243.12,
+        243.2,
+        243.17
       ]
     },
     {
@@ -431,8 +446,8 @@
       "score": 48,
       "role": "Foundry / Advanced Packaging",
       "group": "Deployment & Upstream",
-      "price": 439.09,
-      "change_pct": 0.19,
+      "price": 439.68,
+      "change_pct": 0.33,
       "series": [
         438.97,
         439.06,
@@ -505,10 +520,13 @@
         438.06,
         438.43,
         437.81,
-        438.29,
+        438.28,
         438.05,
-        438.23,
-        439.09
+        438.24,
+        439.14,
+        439.85,
+        438.98,
+        439.68
       ]
     },
     {
@@ -516,8 +534,8 @@
       "score": 50,
       "role": "Interconnect / Custom Infrastructure",
       "group": "Connectivity & Networking",
-      "price": 250.63,
-      "change_pct": 1.29,
+      "price": 251.61,
+      "change_pct": 1.68,
       "series": [
         251.3,
         250.51,
@@ -593,7 +611,10 @@
         249.9,
         249.72,
         250.15,
-        250.63
+        250.65,
+        250.59,
+        250.72,
+        251.61
       ]
     },
     {
@@ -601,7 +622,7 @@
       "score": 48,
       "role": "Rack-scale Connectivity / AI IO",
       "group": "Connectivity & Networking",
-      "price": 297.5,
+      "price": 297.52,
       "change_pct": 2.34,
       "series": [
         290.43,
@@ -678,7 +699,10 @@
         295.93,
         295.98,
         296.64,
-        297.5
+        297.44,
+        297.22,
+        297.12,
+        297.52
       ]
     },
     {
@@ -686,8 +710,8 @@
       "score": 50,
       "role": "High-speed Interconnect / AI Fabric",
       "group": "Connectivity & Networking",
-      "price": 173.04,
-      "change_pct": 0.95,
+      "price": 173.72,
+      "change_pct": 1.35,
       "series": [
         172.7,
         171.65,
@@ -763,7 +787,10 @@
         172.31,
         172.21,
         172.54,
-        173.04
+        173.01,
+        172.97,
+        173.33,
+        173.72
       ]
     },
     {
@@ -771,8 +798,8 @@
       "score": 55,
       "role": "Optics / AI Data Center Connectivity",
       "group": "Connectivity & Networking",
-      "price": 915.9,
-      "change_pct": 4.3,
+      "price": 913.95,
+      "change_pct": 4.08,
       "series": [
         883.0,
         884.06,
@@ -848,7 +875,10 @@
         916.15,
         915.84,
         914.21,
-        915.9
+        915.99,
+        913.32,
+        907.74,
+        913.95
       ]
     },
     {
@@ -856,8 +886,8 @@
       "score": 50,
       "role": "Optics / Package Integration",
       "group": "Connectivity & Networking",
-      "price": 237.56,
-      "change_pct": -1.17,
+      "price": 239.59,
+      "change_pct": -0.32,
       "series": [
         239.22,
         237.83,
@@ -932,8 +962,11 @@
         236.74,
         237.01,
         236.36,
-        236.43,
-        237.56
+        236.42,
+        237.77,
+        237.61,
+        237.41,
+        239.59
       ]
     }
   ],
@@ -1327,8 +1360,8 @@
       "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
       "text": "Artificial Intelligence Computing Leadership from NVIDIA",
       "raw_text": "Artificial Intelligence Computing Leadership from NVIDIA",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://www.nvidia.com/en-us",
       "chain_buckets": [],
@@ -1369,8 +1402,8 @@
       "headline": "Design & Pro Visualization",
       "text": "Design & Pro Visualization",
       "raw_text": "Design & Pro Visualization",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://www.nvidia.com/en-us/design-visualization/",
       "chain_buckets": [],
@@ -1411,8 +1444,8 @@
       "headline": "High Performance Computing",
       "text": "High Performance Computing",
       "raw_text": "High Performance Computing",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://www.nvidia.com/en-us/high-performance-computing/",
       "chain_buckets": [],
@@ -1453,8 +1486,8 @@
       "headline": "GPU TECHNOLOGY CONFERENCE",
       "text": "GPU TECHNOLOGY CONFERENCE",
       "raw_text": "GPU TECHNOLOGY CONFERENCE",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://www.nvidia.com/en-us/gtc/",
       "chain_buckets": [
@@ -1505,16 +1538,16 @@
       "company": "NVDA",
       "source_company": "NVDA",
       "source_kind": "official",
-      "event_type": "News / Media",
-      "type": "News / Media",
-      "title": "NVIDIA RTX Spark Windows Laptops Gain New Models, Agent Tools and Games",
-      "headline": "NVIDIA RTX Spark Windows Laptops Gain New Models, Agent Tools and Games",
-      "text": "NVIDIA RTX Spark Windows Laptops Gain New Models, Agent Tools and Games",
-      "raw_text": "NVIDIA RTX Spark Windows Laptops Gain New Models, Agent Tools and Games",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "event_type": "Earnings / Call",
+      "type": "Earnings / Call",
+      "title": "NVIDIA Sets Conference Call for Third-Quarter Financial Results",
+      "headline": "NVIDIA Sets Conference Call for Third-Quarter Financial Results",
+      "text": "NVIDIA Sets Conference Call for Third-Quarter Financial Results",
+      "raw_text": "NVIDIA Sets Conference Call for Third-Quarter Financial Results",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "NVIDIA Newsroom",
-      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-third-quarter-financial-results-6928873",
       "chain_buckets": [],
       "primary_beneficiaries": [],
       "secondary_beneficiaries": [],
@@ -1549,12 +1582,54 @@
       "source_kind": "official",
       "event_type": "News / Media",
       "type": "News / Media",
+      "title": "NVIDIA RTX Spark Windows Laptops Gain New Models, Agent Tools and Games",
+      "headline": "NVIDIA RTX Spark Windows Laptops Gain New Models, Agent Tools and Games",
+      "text": "NVIDIA RTX Spark Windows Laptops Gain New Models, Agent Tools and Games",
+      "raw_text": "NVIDIA RTX Spark Windows Laptops Gain New Models, Agent Tools and Games",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
+      "source": "NVIDIA Newsroom",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/",
+      "chain_buckets": [],
+      "primary_beneficiaries": [],
+      "secondary_beneficiaries": [],
+      "keyword_hits": [],
+      "sentiment": "mixed",
+      "factor_impact": {
+        "tam": "medium",
+        "shipment": "medium",
+        "gm": "medium",
+        "eps": "medium",
+        "timing": "medium"
+      },
+      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
+      "analysis": {
+        "sentiment": "mixed",
+        "direct_score": 50,
+        "matched_keywords": [],
+        "factor_impact": {
+          "tam": "medium",
+          "shipment": "medium",
+          "gm": "medium",
+          "eps": "medium",
+          "timing": "medium"
+        },
+        "readthrough": []
+      }
+    },
+    {
+      "id": "nvda_7",
+      "company": "NVDA",
+      "source_company": "NVDA",
+      "source_kind": "official",
+      "event_type": "News / Media",
+      "type": "News / Media",
       "title": "NVIDIA and Oracle Expand NVIDIA Vera Rubin to Multi-Gigawatt Scale and Bring NVIDIA Vera CPU to Oracle Cloud Infrastructure",
       "headline": "NVIDIA and Oracle Expand NVIDIA Vera Rubin to Multi-Gigawatt Scale and Bring NVIDIA Vera CPU to Oracle Cloud Infrastructure",
       "text": "NVIDIA and Oracle Expand NVIDIA Vera Rubin to Multi-Gigawatt Scale and Bring NVIDIA Vera CPU to Oracle Cloud Infrastructure",
       "raw_text": "NVIDIA and Oracle Expand NVIDIA Vera Rubin to Multi-Gigawatt Scale and Bring NVIDIA Vera CPU to Oracle Cloud Infrastructure",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://nvidianews.nvidia.com/news/nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-and-bring-nvidia-vera-cpu-to-oracle-cloud-infrastructure",
       "chain_buckets": [
@@ -1601,7 +1676,7 @@
       }
     },
     {
-      "id": "nvda_7",
+      "id": "nvda_8",
       "company": "NVDA",
       "source_company": "NVDA",
       "source_kind": "official",
@@ -1611,52 +1686,10 @@
       "headline": "How AI Is Changing the Pace of Discovery for Millions Living With Dementia",
       "text": "How AI Is Changing the Pace of Discovery for Millions Living With Dementia",
       "raw_text": "How AI Is Changing the Pace of Discovery for Millions Living With Dementia",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "NVIDIA Newsroom",
       "url": "https://blogs.nvidia.com/blog/open-source-ai-tools-cbrain-dementia/",
-      "chain_buckets": [],
-      "primary_beneficiaries": [],
-      "secondary_beneficiaries": [],
-      "keyword_hits": [],
-      "sentiment": "mixed",
-      "factor_impact": {
-        "tam": "medium",
-        "shipment": "medium",
-        "gm": "medium",
-        "eps": "medium",
-        "timing": "medium"
-      },
-      "why_it_matters": "This event does not yet strongly map to a single AI chain bucket.",
-      "analysis": {
-        "sentiment": "mixed",
-        "direct_score": 50,
-        "matched_keywords": [],
-        "factor_impact": {
-          "tam": "medium",
-          "shipment": "medium",
-          "gm": "medium",
-          "eps": "medium",
-          "timing": "medium"
-        },
-        "readthrough": []
-      }
-    },
-    {
-      "id": "nvda_8",
-      "company": "NVDA",
-      "source_company": "NVDA",
-      "source_kind": "official",
-      "event_type": "Partnership / Collaboration",
-      "type": "Partnership / Collaboration",
-      "title": "NVIDIA and Meta to Expand Collaboration on Muse and Muse Family of Models Amid Robust Growth",
-      "headline": "NVIDIA and Meta to Expand Collaboration on Muse and Muse Family of Models Amid Robust Growth",
-      "text": "NVIDIA and Meta to Expand Collaboration on Muse and Muse Family of Models Amid Robust Growth",
-      "raw_text": "NVIDIA and Meta to Expand Collaboration on Muse and Muse Family of Models Amid Robust Growth",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
-      "source": "NVIDIA Newsroom",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth",
       "chain_buckets": [],
       "primary_beneficiaries": [],
       "secondary_beneficiaries": [],
@@ -1695,8 +1728,8 @@
       "headline": "Annual Reports & Proxies",
       "text": "Annual Reports & Proxies",
       "raw_text": "Annual Reports & Proxies",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Arista Press Releases",
       "url": "https://investors.arista.com/Financial-Information/default.aspx?section=annual-report",
       "chain_buckets": [],
@@ -1737,8 +1770,8 @@
       "headline": "Functional Vice Presidents",
       "text": "Functional Vice Presidents",
       "raw_text": "Functional Vice Presidents",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Arista Press Releases",
       "url": "https://www.arista.com/en/company/management-team/functional-vice-presidents",
       "chain_buckets": [],
@@ -1779,8 +1812,8 @@
       "headline": "Contact Technical Support",
       "text": "Contact Technical Support",
       "raw_text": "Contact Technical Support",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Arista Press Releases",
       "url": "https://www.arista.com/support/customer-support",
       "chain_buckets": [],
@@ -1821,8 +1854,8 @@
       "headline": "Powered By Q4 Inc. 5.191.0.1 (opens in new window)",
       "text": "Powered By Q4 Inc. 5.191.0.1 (opens in new window)",
       "raw_text": "Powered By Q4 Inc. 5.191.0.1 (opens in new window)",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Arista Press Releases",
       "url": "http://q4inc.com/Powered-by-Q4/",
       "chain_buckets": [
@@ -1879,8 +1912,8 @@
       "headline": "Uninterruptible Power Supplies (UPS)",
       "text": "Uninterruptible Power Supplies (UPS)",
       "raw_text": "Uninterruptible Power Supplies (UPS)",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Vertiv News",
       "url": "https://www.vertiv.com/en-us/products-catalog/critical-power/uninterruptible-power-supplies-ups/",
       "chain_buckets": [
@@ -1937,8 +1970,8 @@
       "headline": "Static Transfer Switches",
       "text": "Static Transfer Switches",
       "raw_text": "Static Transfer Switches",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Vertiv News",
       "url": "https://www.vertiv.com/en-us/products-catalog/critical-power/power-transfer-switches/",
       "chain_buckets": [],
@@ -1979,8 +2012,8 @@
       "headline": "Switchgear and Switchboard",
       "text": "Switchgear and Switchboard",
       "raw_text": "Switchgear and Switchboard",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Vertiv News",
       "url": "https://www.vertiv.com/en-us/products-catalog/critical-power/switchgear/",
       "chain_buckets": [],
@@ -2021,8 +2054,8 @@
       "headline": "Battery Energy Storage System (BESS)",
       "text": "Battery Energy Storage System (BESS)",
       "raw_text": "Battery Energy Storage System (BESS)",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Vertiv News",
       "url": "https://www.vertiv.com/en-us/products-catalog/critical-power/battery-energy-storage-system-bess/",
       "chain_buckets": [],
@@ -2063,8 +2096,8 @@
       "headline": "Liquid Cooling Solutions",
       "text": "Liquid Cooling Solutions",
       "raw_text": "Liquid Cooling Solutions",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Vertiv News",
       "url": "https://www.vertiv.com/en-us/products-catalog/thermal-management/high-density-solutions/",
       "chain_buckets": [
@@ -2123,8 +2156,8 @@
       "headline": "Outdoor Packaged Systems",
       "text": "Outdoor Packaged Systems",
       "raw_text": "Outdoor Packaged Systems",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Vertiv News",
       "url": "https://www.vertiv.com/en-us/products-catalog/thermal-management/outdoor-packaged-systems/",
       "chain_buckets": [],
@@ -2165,8 +2198,8 @@
       "headline": "Evaporative Free Cooling",
       "text": "Evaporative Free Cooling",
       "raw_text": "Evaporative Free Cooling",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Vertiv News",
       "url": "https://www.vertiv.com/en-us/products-catalog/thermal-management/evaporative-free-cooling/",
       "chain_buckets": [
@@ -2223,8 +2256,8 @@
       "headline": "Thermal Control and Monitoring",
       "text": "Thermal Control and Monitoring",
       "raw_text": "Thermal Control and Monitoring",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Vertiv News",
       "url": "https://www.vertiv.com/en-us/products-catalog/thermal-management/thermal-control-and-monitoring/",
       "chain_buckets": [
@@ -2281,8 +2314,8 @@
       "headline": "Skip to section navigation",
       "text": "Skip to section navigation",
       "raw_text": "Skip to section navigation",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Marvell Press Releases",
       "url": "https://investor.marvell.com/news-events/press-releases/#sectionNav",
       "chain_buckets": [],
@@ -2323,8 +2356,8 @@
       "headline": "PCIe and Ethernet Retimers",
       "text": "PCIe and Ethernet Retimers",
       "raw_text": "PCIe and Ethernet Retimers",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Marvell Press Releases",
       "url": "https://www.marvell.com/products/pcie-ethernet-retimers.html",
       "chain_buckets": [
@@ -2384,8 +2417,8 @@
       "headline": "Transimpedance Amplifiers",
       "text": "Transimpedance Amplifiers",
       "raw_text": "Transimpedance Amplifiers",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Marvell Press Releases",
       "url": "https://www.marvell.com/products/transimpedance-amplifiers.html",
       "chain_buckets": [],
@@ -2426,8 +2459,8 @@
       "headline": "Hardware Security Modules",
       "text": "Hardware Security Modules",
       "raw_text": "Hardware Security Modules",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Marvell Press Releases",
       "url": "https://www.marvell.com/products/hardware-security-modules.html",
       "chain_buckets": [],
@@ -2468,8 +2501,8 @@
       "headline": "Watch the latest Marvell Essential Technology Videos WATCH NOW",
       "text": "Watch the latest Marvell Essential Technology Videos WATCH NOW",
       "raw_text": "Watch the latest Marvell Essential Technology Videos WATCH NOW",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Marvell Press Releases",
       "url": "https://videos.marvell.com/",
       "chain_buckets": [],
@@ -2510,8 +2543,8 @@
       "headline": "Marvell Bolsters Connectivity Portfolio with New 3.2T Protocol-aware Retimer and Second-generation 1.6T AEC DSP",
       "text": "Marvell Bolsters Connectivity Portfolio with New 3.2T Protocol-aware Retimer and Second-generation 1.6T AEC DSP",
       "raw_text": "Marvell Bolsters Connectivity Portfolio with New 3.2T Protocol-aware Retimer and Second-generation 1.6T AEC DSP",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Marvell Press Releases",
       "url": "https://investor.marvell.com/news-events/press-releases/detail/1039/marvell-bolsters-connectivity-portfolio-with-new-3-2t-protocol-aware-retimer-and-second-generation-1-6t-aec-dsp",
       "chain_buckets": [],
@@ -2552,8 +2585,8 @@
       "headline": "Marvell, Microsoft and Oracle Establish OCP Working Group to Standardize Data Center Hardware Security",
       "text": "Marvell, Microsoft and Oracle Establish OCP Working Group to Standardize Data Center Hardware Security",
       "raw_text": "Marvell, Microsoft and Oracle Establish OCP Working Group to Standardize Data Center Hardware Security",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Marvell Press Releases",
       "url": "https://investor.marvell.com/news-events/press-releases/detail/1038/marvell-microsoft-and-oracle-establish-ocp-working-group-to-standardize-data-center-hardware-security",
       "chain_buckets": [],
@@ -2594,8 +2627,8 @@
       "headline": "ADDING and REPLACING Marvell Unveils Second-generation Structera X, Industry-first Six-channel CXL 3.2 Memory Expanders for AI Inference",
       "text": "ADDING and REPLACING Marvell Unveils Second-generation Structera X, Industry-first Six-channel CXL 3.2 Memory Expanders for AI Inference",
       "raw_text": "ADDING and REPLACING Marvell Unveils Second-generation Structera X, Industry-first Six-channel CXL 3.2 Memory Expanders for AI Inference",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Marvell Press Releases",
       "url": "https://investor.marvell.com/news-events/press-releases/detail/1037/adding-and-replacing-marvell-unveils-second-generation-structera-x-industry-first-six-channel-cxl-3-2-memory-expanders-for-ai-inference",
       "chain_buckets": [],
@@ -2636,8 +2669,8 @@
       "headline": "Information Request Form",
       "text": "Information Request Form",
       "raw_text": "Information Request Form",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Credo News",
       "url": "https://investors.credosemi.com/resources/information-request-form/default.aspx",
       "chain_buckets": [],
@@ -2678,8 +2711,8 @@
       "headline": "Powered By Q4 Inc. 5.137.2.3 (opens in new window)",
       "text": "Powered By Q4 Inc. 5.137.2.3 (opens in new window)",
       "raw_text": "Powered By Q4 Inc. 5.137.2.3 (opens in new window)",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Credo News",
       "url": "https://www.q4inc.com/Powered-by-Q4/",
       "chain_buckets": [
@@ -2736,8 +2769,8 @@
       "headline": "Terms of Service (opens in new window)",
       "text": "Terms of Service (opens in new window)",
       "raw_text": "Terms of Service (opens in new window)",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Credo News",
       "url": "https://credosemi.com/legal/",
       "chain_buckets": [],
@@ -2778,8 +2811,8 @@
       "headline": "Privacy Policy (opens in new window)",
       "text": "Privacy Policy (opens in new window)",
       "raw_text": "Privacy Policy (opens in new window)",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Credo News",
       "url": "https://credosemi.com/legal/",
       "chain_buckets": [],
@@ -2820,8 +2853,8 @@
       "headline": "Cookies (opens in new window)",
       "text": "Cookies (opens in new window)",
       "raw_text": "Cookies (opens in new window)",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Credo News",
       "url": "https://credosemi.com/legal/",
       "chain_buckets": [],
@@ -2862,8 +2895,8 @@
       "headline": "Legal (opens in new window)",
       "text": "Legal (opens in new window)",
       "raw_text": "Legal (opens in new window)",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Credo News",
       "url": "https://credosemi.com/legal/",
       "chain_buckets": [],
@@ -2904,8 +2937,8 @@
       "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
       "text": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
       "raw_text": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/datacenter-communications.html",
       "chain_buckets": [
@@ -2969,8 +3002,8 @@
       "headline": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
       "text": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
       "raw_text": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/datacenter-communications.html",
       "chain_buckets": [
@@ -3044,8 +3077,8 @@
       "headline": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
       "text": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
       "raw_text": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/datacenter-communications-applications.html",
       "chain_buckets": [
@@ -3109,8 +3142,8 @@
       "headline": "Engineered Materials and High-Precision Laser Solutions\u200b",
       "text": "Engineered Materials and High-Precision Laser Solutions\u200b",
       "raw_text": "Engineered Materials and High-Precision Laser Solutions\u200b",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/industrial.html",
       "chain_buckets": [],
@@ -3151,8 +3184,8 @@
       "headline": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
       "text": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
       "raw_text": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/industrial.html",
       "chain_buckets": [],
@@ -3193,8 +3226,8 @@
       "headline": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
       "text": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
       "raw_text": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/industrial-solutions.html",
       "chain_buckets": [
@@ -3251,8 +3284,8 @@
       "headline": "Coherent Service keeps your laser systems performing at their peak \u2014 safeguarding productivity, maximizing uptime, and protecting your investment.",
       "text": "Coherent Service keeps your laser systems performing at their peak \u2014 safeguarding productivity, maximizing uptime, and protecting your investment.",
       "raw_text": "Coherent Service keeps your laser systems performing at their peak \u2014 safeguarding productivity, maximizing uptime, and protecting your investment.",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/support.html",
       "chain_buckets": [],
@@ -3293,8 +3326,8 @@
       "headline": "corporate.communications@coherent.com",
       "text": "corporate.communications@coherent.com",
       "raw_text": "corporate.communications@coherent.com",
-      "published_at": "2026-10-28T19:44:08.795714+00:00",
-      "datetime": "2026-10-28T19:44:08.795714+00:00",
+      "published_at": "2026-10-28T23:36:28.642645+00:00",
+      "datetime": "2026-10-28T23:36:28.642645+00:00",
       "source": "Coherent News",
       "url": "https://www.coherent.com/news/mailto:corporate.communications@coherent.com",
       "chain_buckets": [],
@@ -3326,12 +3359,12 @@
     }
   ],
   "market": {
-    "updated_at": "2026-10-28T19:44:20.647490+00:00",
+    "updated_at": "2026-10-28T23:36:39.165663+00:00",
     "tickers": [
       {
         "ticker": "NVDA",
-        "price": 214.74,
-        "change_pct": -2.34,
+        "price": 215.39,
+        "change_pct": -2.04,
         "series": [
           219.43,
           219.55,
@@ -3407,14 +3440,17 @@
           215.11,
           214.7,
           214.57,
-          214.74
+          214.71,
+          215.19,
+          214.88,
+          215.39
         ],
         "status": "ok"
       },
       {
         "ticker": "MU",
-        "price": 984.19,
-        "change_pct": 2.29,
+        "price": 982.08,
+        "change_pct": 2.07,
         "series": [
           976.35,
           978.97,
@@ -3490,14 +3526,17 @@
           979.86,
           978.87,
           980.63,
-          984.19
+          984.36,
+          986.25,
+          987.0,
+          982.08
         ],
         "status": "ok"
       },
       {
         "ticker": "SNDK",
-        "price": 1398.5,
-        "change_pct": 3.09,
+        "price": 1404.3,
+        "change_pct": 3.52,
         "series": [
           1379.19,
           1381.01,
@@ -3573,14 +3612,17 @@
           1392.8,
           1395.19,
           1394.65,
-          1398.5
+          1398.02,
+          1398.91,
+          1397.2,
+          1404.3
         ],
         "status": "ok"
       },
       {
         "ticker": "ANET",
-        "price": 187.57,
-        "change_pct": -1.36,
+        "price": 186.85,
+        "change_pct": -1.75,
         "series": [
           190.0,
           188.32,
@@ -3655,15 +3697,18 @@
           187.31,
           187.49,
           187.57,
-          187.39,
-          187.57
+          187.41,
+          187.7,
+          187.43,
+          187.27,
+          186.85
         ],
         "status": "ok"
       },
       {
         "ticker": "VRT",
-        "price": 244.06,
-        "change_pct": 0.44,
+        "price": 243.17,
+        "change_pct": 0.07,
         "series": [
           232.51,
           236.35,
@@ -3737,16 +3782,19 @@
           245.23,
           243.12,
           243.64,
-          242.25,
-          242.24,
-          244.06
+          242.27,
+          242.13,
+          244.01,
+          243.12,
+          243.2,
+          243.17
         ],
         "status": "ok"
       },
       {
         "ticker": "TSM",
-        "price": 439.09,
-        "change_pct": 0.19,
+        "price": 439.68,
+        "change_pct": 0.33,
         "series": [
           438.97,
           439.06,
@@ -3819,17 +3867,20 @@
           438.06,
           438.43,
           437.81,
-          438.29,
+          438.28,
           438.05,
-          438.23,
-          439.09
+          438.24,
+          439.14,
+          439.85,
+          438.98,
+          439.68
         ],
         "status": "ok"
       },
       {
         "ticker": "MRVL",
-        "price": 250.63,
-        "change_pct": 1.29,
+        "price": 251.61,
+        "change_pct": 1.68,
         "series": [
           251.3,
           250.51,
@@ -3905,13 +3956,16 @@
           249.9,
           249.72,
           250.15,
-          250.63
+          250.65,
+          250.59,
+          250.72,
+          251.61
         ],
         "status": "ok"
       },
       {
         "ticker": "ALAB",
-        "price": 297.5,
+        "price": 297.52,
         "change_pct": 2.34,
         "series": [
           290.43,
@@ -3988,14 +4042,17 @@
           295.93,
           295.98,
           296.64,
-          297.5
+          297.44,
+          297.22,
+          297.12,
+          297.52
         ],
         "status": "ok"
       },
       {
         "ticker": "CRDO",
-        "price": 173.04,
-        "change_pct": 0.95,
+        "price": 173.72,
+        "change_pct": 1.35,
         "series": [
           172.7,
           171.65,
@@ -4071,14 +4128,17 @@
           172.31,
           172.21,
           172.54,
-          173.04
+          173.01,
+          172.97,
+          173.33,
+          173.72
         ],
         "status": "ok"
       },
       {
         "ticker": "LITE",
-        "price": 915.9,
-        "change_pct": 4.3,
+        "price": 913.95,
+        "change_pct": 4.08,
         "series": [
           883.0,
           884.06,
@@ -4154,14 +4214,17 @@
           916.15,
           915.84,
           914.21,
-          915.9
+          915.99,
+          913.32,
+          907.74,
+          913.95
         ],
         "status": "ok"
       },
       {
         "ticker": "COHR",
-        "price": 237.56,
-        "change_pct": -1.17,
+        "price": 239.59,
+        "change_pct": -0.32,
         "series": [
           239.22,
           237.83,
@@ -4236,8 +4299,11 @@
           236.74,
           237.01,
           236.36,
-          236.43,
-          237.56
+          236.42,
+          237.77,
+          237.61,
+          237.41,
+          239.59
         ],
         "status": "ok"
       }
