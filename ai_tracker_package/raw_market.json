@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-28T23:36:39.165663+00:00",
+  "updated_at": "2026-10-29T02:53:12.600587+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
       "price": 215.39,
-      "change_pct": -2.04,
+      "change_pct": -1.81,
       "series": [
         219.43,
         219.55,
@@ -175,8 +175,8 @@
     },
     {
       "ticker": "SNDK",
-      "price": 1404.3,
-      "change_pct": 3.52,
+      "price": 1404.01,
+      "change_pct": 3.49,
       "series": [
         1379.19,
         1381.01,
@@ -255,14 +255,14 @@
         1398.02,
         1398.91,
         1397.2,
-        1404.3
+        1404.01
       ],
       "status": "ok"
     },
     {
       "ticker": "ANET",
       "price": 186.85,
-      "change_pct": -1.75,
+      "change_pct": -2.1,
       "series": [
         190.0,
         188.32,
@@ -864,7 +864,7 @@
     {
       "ticker": "COHR",
       "price": 239.59,
-      "change_pct": -0.32,
+      "change_pct": -0.21,
       "series": [
         239.22,
         237.83,
