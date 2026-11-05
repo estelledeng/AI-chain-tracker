@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-11-05T10:54:20.341672+00:00",
+    "fetched_at": "2026-11-05T18:31:07.919453+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -22,6 +22,18 @@
       {
         "headline": "GPU TECHNOLOGY CONFERENCE",
         "url": "https://www.nvidia.com/en-us/gtc/"
+      },
+      {
+        "headline": "The Wizard of Open Weights: Chris Alexiuk Makes AI Easy With Open Models",
+        "url": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/"
+      },
+      {
+        "headline": "More Performance From Every Byte: How Full-Stack Codesign Solves AI\u2019s Memory Challenge",
+        "url": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/"
+      },
+      {
+        "headline": "\u2018Hogwarts Legacy\u2019 Gets a Magical NVIDIA DLSS 5 Upgrade on GeForce NOW",
+        "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-hogwarts-legacy-dlss-5/"
       },
       {
         "headline": "AI Is Changing How Semiconductor Fabs Work \u2014 and Engineers Are Moving Faster Because of It",
@@ -50,18 +62,6 @@
       {
         "headline": "NVIDIA and Oracle Expand NVIDIA Vera Rubin to Multi-Gigawatt Scale and Bring NVIDIA Vera CPU to Oracle Cloud Infrastructure",
         "url": "https://nvidianews.nvidia.com/news/nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-and-bring-nvidia-vera-cpu-to-oracle-cloud-infrastructure"
-      },
-      {
-        "headline": "How AI Is Changing the Pace of Discovery for Millions Living With Dementia",
-        "url": "https://blogs.nvidia.com/blog/open-source-ai-tools-cbrain-dementia/"
-      },
-      {
-        "headline": "NVIDIA and Meta to Expand Collaboration on Muse and Muse Family of Models Amid Robust Growth",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth"
-      },
-      {
-        "headline": "Kazakhstan Expands Compute for Its AI Future",
-        "url": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/"
       }
     ]
   },
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-11-05T10:54:20.341672+00:00",
+    "fetched_at": "2026-11-05T18:31:07.919453+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases/",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-11-05T10:54:20.341672+00:00",
+    "fetched_at": "2026-11-05T18:31:07.919453+00:00",
     "error": "403 Client Error: Forbidden for url: https://investor.sandisk.com/news-releases",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-11-05T10:54:20.341672+00:00",
+    "fetched_at": "2026-11-05T18:31:07.919453+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-11-05T10:54:20.341672+00:00",
+    "fetched_at": "2026-11-05T18:31:07.919453+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -183,7 +183,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "blocked",
-    "fetched_at": "2026-11-05T10:54:20.341672+00:00",
+    "fetched_at": "2026-11-05T18:31:07.919453+00:00",
     "error": "403 Client Error: Forbidden for url: https://pr.tsmc.com/english",
     "items": []
   },
@@ -193,7 +193,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-11-05T10:54:20.341672+00:00",
+    "fetched_at": "2026-11-05T18:31:07.919453+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -259,7 +259,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-11-05T10:54:20.341672+00:00",
+    "fetched_at": "2026-11-05T18:31:07.919453+00:00",
     "error": "403 Client Error: Forbidden for url: https://ir.asteralabs.com/news-events/events-presentations/",
     "items": []
   },
@@ -269,7 +269,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-11-05T10:54:20.341672+00:00",
+    "fetched_at": "2026-11-05T18:31:07.919453+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -303,7 +303,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-11-05T10:54:20.341672+00:00",
+    "fetched_at": "2026-11-05T18:31:07.919453+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -313,7 +313,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-11-05T10:54:20.341672+00:00",
+    "fetched_at": "2026-11-05T18:31:07.919453+00:00",
     "items": [
       {
         "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
@@ -379,7 +379,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-11-05T10:54:20.341672+00:00",
+    "fetched_at": "2026-11-05T18:31:07.919453+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -445,7 +445,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-11-05T10:54:20.341672+00:00",
+    "fetched_at": "2026-11-05T18:31:07.919453+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
@@ -511,7 +511,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-11-05T10:54:20.341672+00:00",
+    "fetched_at": "2026-11-05T18:31:07.919453+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
