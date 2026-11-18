@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-11-17T23:59:16.073279+00:00",
+    "fetched_at": "2026-11-18T07:06:21.910550+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-11-17T23:59:16.073279+00:00",
+    "fetched_at": "2026-11-18T07:06:21.910550+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases/",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-11-17T23:59:16.073279+00:00",
+    "fetched_at": "2026-11-18T07:06:21.910550+00:00",
     "error": "403 Client Error: Forbidden for url: https://investor.sandisk.com/news-releases",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-11-17T23:59:16.073279+00:00",
+    "fetched_at": "2026-11-18T07:06:21.910550+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-11-17T23:59:16.073279+00:00",
+    "fetched_at": "2026-11-18T07:06:21.910550+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -182,66 +182,10 @@
     "name": "TSMC Press Center",
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
-    "status": "success",
-    "fetched_at": "2026-11-17T23:59:16.073279+00:00",
-    "items": [
-      {
-        "headline": "Engineering Performance Optimization",
-        "url": "https://www.tsmc.com/english/dedicatedFoundry/manufacturing/engineering"
-      },
-      {
-        "headline": "Agile and Intelligent Operations",
-        "url": "https://www.tsmc.com/english/dedicatedFoundry/manufacturing/intelligent_operations"
-      },
-      {
-        "headline": "University FinFET Program",
-        "url": "https://www.tsmc.com/english/dedicatedFoundry/services/university_program"
-      },
-      {
-        "headline": "Corporate Governance Officer",
-        "url": "https://investor.tsmc.com/english/corporate-governance-officer"
-      },
-      {
-        "headline": "TWSE Market Observation Post System",
-        "url": "https://emops.twse.com.tw/server-java/t58query"
-      },
-      {
-        "headline": "TSMC Material Information",
-        "url": "https://emops.twse.com.tw/server-java/t05st01_e?TYPEK=sii&co_id=2330&year=2025&month=all&step=0&query=co&colorchg=1"
-      },
-      {
-        "headline": "Relocation to Headquarters",
-        "url": "https://www.tsmc.com/english/careers/relocation_HQ.htm"
-      },
-      {
-        "headline": "Values and Business Philosophy",
-        "url": "https://www.tsmc.com/english/aboutTSMC/values"
-      },
-      {
-        "headline": "TSMC Museum of Innovation",
-        "url": "https://www.tsmcmoi.com/en/"
-      },
-      {
-        "headline": "TSMC Education and Culture Foundation",
-        "url": "https://www.tsmc.com/english/aboutTSMC/tsmc_foundation"
-      },
-      {
-        "headline": "Investor Relations, Public Relations, ESG Contacts",
-        "url": "https://www.tsmc.com/english/contact-us#investor-relations"
-      },
-      {
-        "headline": "Whistleblowing Mechanism",
-        "url": "https://www.tsmc.com/english/whistleblowing-mechanism"
-      },
-      {
-        "headline": "TSMC 2026 Supply Chain Management Forum Presents Awards to Outstanding Suppliers (2026/11/17)",
-        "url": "https://pr.tsmc.com/english/news/3355"
-      },
-      {
-        "headline": "TSMC Board of Directors Meeting Resolutions (2026/11/10)",
-        "url": "https://pr.tsmc.com/english/news/3352"
-      }
-    ]
+    "status": "blocked",
+    "fetched_at": "2026-11-18T07:06:21.910550+00:00",
+    "error": "403 Client Error: Forbidden for url: https://pr.tsmc.com/english",
+    "items": []
   },
   {
     "ticker": "MRVL",
@@ -249,7 +193,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-11-17T23:59:16.073279+00:00",
+    "fetched_at": "2026-11-18T07:06:21.910550+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -315,7 +259,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-11-17T23:59:16.073279+00:00",
+    "fetched_at": "2026-11-18T07:06:21.910550+00:00",
     "error": "403 Client Error: Forbidden for url: https://ir.asteralabs.com/news-events/events-presentations/",
     "items": []
   },
@@ -325,7 +269,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-11-17T23:59:16.073279+00:00",
+    "fetched_at": "2026-11-18T07:06:21.910550+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -359,7 +303,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-11-17T23:59:16.073279+00:00",
+    "fetched_at": "2026-11-18T07:06:21.910550+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -369,63 +313,63 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-11-17T23:59:16.073279+00:00",
+    "fetched_at": "2026-11-18T07:06:21.910550+00:00",
     "items": [
       {
-        "headline": "End-to-End Optical Connectivity and Photonic Innovation\u200b",
-        "url": "https://www.coherent.com/datacenter-communications.html"
+        "headline": "TIME\u2019s America\u2019s Growth Leaders 2027",
+        "url": "https://ir.coherent.com/news-releases/news-release-details/coherent-named-one-times-americas-growth-leaders-2027"
       },
       {
-        "headline": "AI-driven infrastructure demands unprecedented speed and scale. Our advanced optical solutions power next-generation AI networks, hyperscale datacenters, and global communications.\u200b",
-        "url": "https://www.coherent.com/datacenter-communications.html"
+        "headline": "Communication Components",
+        "url": "https://www.coherent.com/datacenter-and-communications/communication-components.html"
       },
       {
-        "headline": "Learn how we are enabling the next generation of high-speed optical transmission systems, networks, and datacenter solutions.",
-        "url": "https://www.coherent.com/datacenter-communications-applications.html"
+        "headline": "Advanced Thermal Management",
+        "url": "https://www.coherent.com/datacenter-and-communications/advanced-thermal-management.html"
       },
       {
-        "headline": "Engineered Materials and High-Precision Laser Solutions\u200b",
-        "url": "https://www.coherent.com/industrial.html"
+        "headline": "Terrestrial Communications",
+        "url": "https://www.coherent.com/datacenter-communications-applications/terrestrial"
       },
       {
-        "headline": "Advancing industrial performance with engineered materials and high-precision laser technologies that drive next-generation manufacturing and research applications.",
-        "url": "https://www.coherent.com/industrial.html"
+        "headline": "Advanced Thermal Management",
+        "url": "https://www.coherent.com/datacenter-communications-applications/advanced-thermal-management-application"
       },
       {
-        "headline": "Discover how we power manufacturing and research across the world\u2019s most innovative markets \u2014 from smartphones to EVs, from semiconductor wafers to medical diagnostics.",
-        "url": "https://www.coherent.com/industrial-solutions.html"
+        "headline": "Datacom Optical Transceivers",
+        "url": "https://www.coherent.com/datacenter-and-communications/optical-transceivers/datacom-optical-transceivers.html"
       },
       {
-        "headline": "Coherent Service keeps your laser systems performing at their peak \u2014 safeguarding productivity, maximizing uptime, and protecting your investment.",
-        "url": "https://www.coherent.com/support.html"
+        "headline": "Telecom Optical Transceivers",
+        "url": "https://www.coherent.com/datacenter-and-communications/optical-transceivers/telecom-optical-transceivers.html"
       },
       {
-        "headline": "corporate.communications@coherent.com",
-        "url": "https://www.coherent.com/news/mailto:corporate.communications@coherent.com"
+        "headline": "Active Optical Cables (AOCs)",
+        "url": "https://www.coherent.com/datacenter-and-communications/interconnect-cables/active-optical-cables-aocs.html"
       },
       {
-        "headline": "Coherent PIC Magazine | PIC platforms: A question of choice November 24, 2023. An Interview With Julie Eng, Chief Technology Officer at Coherent. Learn More",
-        "url": "https://picmagazine.net/article/118133/PIC_platforms_A_question_of_choice"
+        "headline": "Direct Attach Cables (DACs)",
+        "url": "https://www.coherent.com/datacenter-and-communications/interconnect-cables/direct-attach-cables-dacs.html"
       },
       {
-        "headline": "Coherent NIKKEI Mobility | Coherent CEO: SiC Invested by DENSO and Melco November 7, 2023. DENSO and Mitsubishi Electric (Melco) have decided to invest in the silicon carbide (SiC) business of an American semiconductor w",
-        "url": "https://www.coherent.com/news/coherent-ceo-sic-invested-by-denso-and-melco"
+        "headline": "Datacom VCSEL and Photodiodes",
+        "url": "https://www.coherent.com/datacenter-and-communications/optoelectronic-devices/datacom-vcsel-and-photodiodes.html"
       },
       {
-        "headline": "Coherent WSJ | One of the World\u2019s Biggest Diamonds Could Be Key to Some of the World\u2019s Fastest Microchips November 3, 2023. To beat the heat that our devices throw off, engineers are experimenting with synthetic diamonds",
-        "url": "https://wsj-article-webview-generator-prod.sc.onservo.com/webview/WP-WSJ-0001337010?adobe_mc=TS%3D1699107841%7CMCMID%3D87479515957925441504680980178106415977%7CMCORGID%3DCB68E4BA55144CAA0A4C98A5%40AdobeOrg&wsj_native_webview=android&ace_environment=androidphone%2Cwebview&ace_config=%7B%22wsj%22%3A%7B%22djcmp%22%3A%7B%22propertyHref%22%3A%22https%3A%2F%2Fwsj.android.app%22%7D%7D%7D"
+        "headline": "High-Speed Photodetectors & Receivers",
+        "url": "https://www.coherent.com/datacenter-and-communications/communication-components/high-speed-photodetectors-receivers.html"
       },
       {
-        "headline": "Coherent NIKKEI Tech Foresight | Battle to Secure SiC Wafers for EVs October 17, 2023. Japanese companies are scrambling to secure a stable supply of silicon carbide (SiC) wafers, which are essential for manufacturing ne",
-        "url": "https://www.coherent.com/news/battle-to-secure-sic-wafers-power-semiconductors-for-evs-en"
+        "headline": "Integrated Sub-Assemblies",
+        "url": "https://www.coherent.com/datacenter-and-communications/communication-components/integrated-sub-assemblies.html"
       },
       {
-        "headline": "Coherent The Economic Times | US electronics manufacturer Coherent Corp establishes first global centre of excellence in Chennai September 05, 2023. Coherent Corp, a Pennsylvania (US) based manufacturer of electronics, a",
-        "url": "https://economictimes.indiatimes.com/wealth/real-estate/exploring-the-potential-of-commercial-real-estate-investment-insights-from-property-share-ceo/articleshow/103252860.cms"
+        "headline": "Pluggable Optical Line Systems",
+        "url": "https://www.coherent.com/datacenter-and-communications/wavelength-management/pluggable-optical-line-systems.html"
       },
       {
-        "headline": "Coherent McKinsey | Coherent\u2019s Chuck Mattera on growing a $5 billion company August 4, 2023. II-VI was founded 50 years ago as a specialized materials company. Today, as Coherent, it has technology platforms in multiple ",
-        "url": "https://www.mckinsey.com/industries/industrials-and-electronics/our-insights/coherents-chuck-mattera-on-growing-a-5-billion-dollar-company"
+        "headline": "Multi-Rail Optical Networking Platform",
+        "url": "https://www.coherent.com/datacenter-and-communications/wavelength-management/multi-rail-optical-networking-platform.html"
       }
     ]
   },
@@ -435,7 +379,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-11-17T23:59:16.073279+00:00",
+    "fetched_at": "2026-11-18T07:06:21.910550+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -490,8 +434,8 @@
         "url": "https://insights.trendforce.com/p/why-spacex-needs-cell-towers?utm_source=tf&utm_medium=affiliate&utm_campaign=spacexandqualcomm"
       },
       {
-        "headline": "[News] U.S. Judge Rejects Samsung, SK hynix, Micron\u2019s DRAM Price-Fixing Dismissal Bid, Citing Plausible Collusion",
-        "url": "https://www.trendforce.com/news/2026/11/16/news-u-s-judge-rejects-samsung-sk-hynix-microns-dram-price-fixing-dismissal-bid-citing-plausible-collusion/"
+        "headline": "[News] NAND Spot Prices Reverse Course, Sliding 20% in 2 Weeks amid Weak Consumer Demand, YMTC Competition",
+        "url": "https://www.trendforce.com/news/2026/11/17/news-nand-spot-prices-reverse-course-sliding-20-in-2-weeks-amid-weak-consumer-demand-ymtc-competition/"
       }
     ]
   },
@@ -501,7 +445,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
     "status": "success",
-    "fetched_at": "2026-11-17T23:59:16.073279+00:00",
+    "fetched_at": "2026-11-18T07:06:21.910550+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
@@ -540,7 +484,7 @@
         "url": "https://www.trendforce.com/price/battery-price/precursor_and_cathode_material"
       },
       {
-        "headline": "Early notice was announced at 17:50. (20 minutes in advance)",
+        "headline": "Early notice was announced at 14:20 (20 minutes in advance) ,next session will start at 17:50.",
         "url": "https://www.dramexchange.com/Service/Spot_Price_Notice"
       },
       {
@@ -567,7 +511,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
     "status": "success",
-    "fetched_at": "2026-11-17T23:59:16.073279+00:00",
+    "fetched_at": "2026-11-18T07:06:21.910550+00:00",
     "items": [
       {
         "headline": "Wafer Fabrication / Foundry",
