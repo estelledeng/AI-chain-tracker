@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T04:04:08.145496+00:00",
+  "updated_at": "2026-11-19T13:06:42.288884+00:00",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -955,7 +955,7 @@
       "latest_price": null,
       "weekly_growth_pct": null,
       "monthly_growth_pct": null,
-      "status": "ok_but_unparsed"
+      "status": "blocked: HTTPSConnectionPool(host='www.trendforce.com', port=443): Read timed out. (read timeout=40)"
     },
     "nand": {
       "source": "TrendForce",
@@ -963,7 +963,7 @@
       "latest_price": null,
       "weekly_growth_pct": null,
       "monthly_growth_pct": null,
-      "status": "ok_but_unparsed"
+      "status": "blocked: HTTPSConnectionPool(host='www.trendforce.com', port=443): Read timed out. (read timeout=40)"
     }
   },
   "custom_tickers": []

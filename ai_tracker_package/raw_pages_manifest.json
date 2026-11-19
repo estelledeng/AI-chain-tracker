@@ -5,7 +5,7 @@
     "group": "official",
     "source_url": "https://nvidianews.nvidia.com/news",
     "status": "success",
-    "fetched_at": "2026-11-19T04:03:54.674133+00:00",
+    "fetched_at": "2026-11-19T13:03:17.338572+00:00",
     "items": [
       {
         "headline": "Artificial Intelligence Computing Leadership from NVIDIA",
@@ -71,7 +71,7 @@
     "group": "official",
     "source_url": "https://investors.micron.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-11-19T04:03:54.674133+00:00",
+    "fetched_at": "2026-11-19T13:03:17.338572+00:00",
     "error": "404 Client Error: Not Found for url: https://investors.micron.com/news-releases/",
     "items": []
   },
@@ -81,7 +81,7 @@
     "group": "official",
     "source_url": "https://investor.sandisk.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-11-19T04:03:54.674133+00:00",
+    "fetched_at": "2026-11-19T13:03:17.338572+00:00",
     "error": "403 Client Error: Forbidden for url: https://investor.sandisk.com/news-releases",
     "items": []
   },
@@ -91,7 +91,7 @@
     "group": "official",
     "source_url": "https://investors.arista.com/Communications/Press-Releases-and-Events/default.aspx",
     "status": "success",
-    "fetched_at": "2026-11-19T04:03:54.674133+00:00",
+    "fetched_at": "2026-11-19T13:03:17.338572+00:00",
     "items": [
       {
         "headline": "Annual Reports & Proxies",
@@ -117,7 +117,7 @@
     "group": "official",
     "source_url": "https://investors.vertiv.com/news/news-details/default.aspx",
     "status": "success",
-    "fetched_at": "2026-11-19T04:03:54.674133+00:00",
+    "fetched_at": "2026-11-19T13:03:17.338572+00:00",
     "items": [
       {
         "headline": "Uninterruptible Power Supplies (UPS)",
@@ -183,7 +183,7 @@
     "group": "official",
     "source_url": "https://pr.tsmc.com/english",
     "status": "blocked",
-    "fetched_at": "2026-11-19T04:03:54.674133+00:00",
+    "fetched_at": "2026-11-19T13:03:17.338572+00:00",
     "error": "403 Client Error: Forbidden for url: https://pr.tsmc.com/english",
     "items": []
   },
@@ -193,7 +193,7 @@
     "group": "official",
     "source_url": "https://investor.marvell.com/news-events/press-releases",
     "status": "success",
-    "fetched_at": "2026-11-19T04:03:54.674133+00:00",
+    "fetched_at": "2026-11-19T13:03:17.338572+00:00",
     "items": [
       {
         "headline": "Skip to section navigation",
@@ -259,7 +259,7 @@
     "group": "official",
     "source_url": "https://ir.asteralabs.com/news-events/events-presentations/",
     "status": "blocked",
-    "fetched_at": "2026-11-19T04:03:54.674133+00:00",
+    "fetched_at": "2026-11-19T13:03:17.338572+00:00",
     "error": "403 Client Error: Forbidden for url: https://ir.asteralabs.com/news-events/events-presentations/",
     "items": []
   },
@@ -269,7 +269,7 @@
     "group": "official",
     "source_url": "https://investors.credosemi.com/news-events/news",
     "status": "success",
-    "fetched_at": "2026-11-19T04:03:54.674133+00:00",
+    "fetched_at": "2026-11-19T13:03:17.338572+00:00",
     "items": [
       {
         "headline": "Information Request Form",
@@ -303,7 +303,7 @@
     "group": "official",
     "source_url": "https://investor.lumentum.com/news-releases",
     "status": "blocked",
-    "fetched_at": "2026-11-19T04:03:54.674133+00:00",
+    "fetched_at": "2026-11-19T13:03:17.338572+00:00",
     "error": "404 Client Error: Not Found for url: https://investor.lumentum.com/news-releases/",
     "items": []
   },
@@ -313,7 +313,7 @@
     "group": "official",
     "source_url": "https://www.coherent.com/news",
     "status": "success",
-    "fetched_at": "2026-11-19T04:03:54.674133+00:00",
+    "fetched_at": "2026-11-19T13:03:17.338572+00:00",
     "items": [
       {
         "headline": "TIME's America's Top Manufacturers 2027 List",
@@ -379,7 +379,7 @@
     "group": "industry",
     "source_url": "https://www.trendforce.com/news/",
     "status": "success",
-    "fetched_at": "2026-11-19T04:03:54.674133+00:00",
+    "fetched_at": "2026-11-19T13:03:17.338572+00:00",
     "items": [
       {
         "headline": "Optoelectronics Research",
@@ -444,131 +444,19 @@
     "name": "TrendForce Prices DRAM",
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/dram",
-    "status": "success",
-    "fetched_at": "2026-11-19T04:03:54.674133+00:00",
-    "items": [
-      {
-        "headline": "Wafer Fabrication / Foundry",
-        "url": "https://www.trendforce.com/research/wafer-fabrication-foundry"
-      },
-      {
-        "headline": "ICT Applications Research",
-        "url": "https://www.trendforce.com/landingPage/semiconductor"
-      },
-      {
-        "headline": "Mobile DRAM Contract Price",
-        "url": "https://www.trendforce.com/price/dram/mobileDram_contract"
-      },
-      {
-        "headline": "NAND Flash Contract Price",
-        "url": "https://www.trendforce.com/price/flash/flash_contract"
-      },
-      {
-        "headline": "PC-Client OEM SSD Contract Price",
-        "url": "https://www.trendforce.com/price/flash/pcc_oem_ssd_contract"
-      },
-      {
-        "headline": "NAND Flash Wafer Contract Price",
-        "url": "https://www.trendforce.com/price/flash/wafer_contract"
-      },
-      {
-        "headline": "LCD Smartphone Panel Price",
-        "url": "https://www.trendforce.com/price/lcd/smartphone"
-      },
-      {
-        "headline": "Large Size Panel Shipment",
-        "url": "https://www.trendforce.com/price/lcd/shipment"
-      },
-      {
-        "headline": "Precursor & Cathode Material",
-        "url": "https://www.trendforce.com/price/battery-price/precursor_and_cathode_material"
-      },
-      {
-        "headline": "Early notice was announced at 10:50 (10 minutes in advance) ,next session will start at 14:20.",
-        "url": "https://www.dramexchange.com/Service/Spot_Price_Notice"
-      },
-      {
-        "headline": "DRAM Contract Price (2H Sep)",
-        "url": "https://www.trendforce.com/pricedetail/dram/dram_contract"
-      },
-      {
-        "headline": "Oct. DRAM contract price updated on 10/30/2026. Gold+ Members please click here to download the details.",
-        "url": "https://www.trendforce.com//www.trendforce.com/research/download/RP261030WD"
-      },
-      {
-        "headline": "Oct. Specialty DRAM price updated on 10/30/2026, click here for details.",
-        "url": "https://www.trendforce.com//www.trendforce.com/research/download/RP261030HH"
-      },
-      {
-        "headline": "Mobile DRAM Contract Price",
-        "url": "https://www.trendforce.com/pricedetail/dram/mobileDram_contract"
-      }
-    ]
+    "status": "blocked",
+    "fetched_at": "2026-11-19T13:03:17.338572+00:00",
+    "error": "HTTPSConnectionPool(host='www.trendforce.com', port=443): Read timed out. (read timeout=40)",
+    "items": []
   },
   {
     "ticker": "SECTOR",
     "name": "TrendForce Prices NAND",
     "group": "industry",
     "source_url": "https://www.trendforce.com/price/flash",
-    "status": "success",
-    "fetched_at": "2026-11-19T04:03:54.674133+00:00",
-    "items": [
-      {
-        "headline": "Wafer Fabrication / Foundry",
-        "url": "https://www.trendforce.com/research/wafer-fabrication-foundry"
-      },
-      {
-        "headline": "ICT Applications Research",
-        "url": "https://www.trendforce.com/landingPage/semiconductor"
-      },
-      {
-        "headline": "Mobile DRAM Contract Price",
-        "url": "https://www.trendforce.com/price/dram/mobileDram_contract"
-      },
-      {
-        "headline": "NAND Flash Contract Price",
-        "url": "https://www.trendforce.com/price/flash/flash_contract"
-      },
-      {
-        "headline": "PC-Client OEM SSD Contract Price",
-        "url": "https://www.trendforce.com/price/flash/pcc_oem_ssd_contract"
-      },
-      {
-        "headline": "NAND Flash Wafer Contract Price",
-        "url": "https://www.trendforce.com/price/flash/wafer_contract"
-      },
-      {
-        "headline": "LCD Smartphone Panel Price",
-        "url": "https://www.trendforce.com/price/lcd/smartphone"
-      },
-      {
-        "headline": "Large Size Panel Shipment",
-        "url": "https://www.trendforce.com/price/lcd/shipment"
-      },
-      {
-        "headline": "Precursor & Cathode Material",
-        "url": "https://www.trendforce.com/price/battery-price/precursor_and_cathode_material"
-      },
-      {
-        "headline": "NAND Flash Contract Price in Memory Card/UFD (2H Sep)",
-        "url": "https://www.trendforce.com/pricedetail/flash/flash_contract"
-      },
-      {
-        "headline": "Oct. NAND Flash contract price updated on 10/30/2026. Gold+ Members please click here to download the details.",
-        "url": "https://www.trendforce.com//www.trendforce.com/research/download/RP261030RM"
-      },
-      {
-        "headline": "PC-Client OEM SSD Contract Price (3Q'26)",
-        "url": "https://www.trendforce.com/pricedetail/flash/pcc_oem_ssd_contract"
-      },
-      {
-        "headline": "4Q26 PC-Client OEM SSD Contract Price updated on 10/29/2026, click here for details.",
-        "url": "https://www.trendforce.com//www.trendforce.com/research/download/RP261028CE"
-      },
-      {
-        "headline": "NAND Flash Wafer Contract Price",
-        "url": "https://www.trendforce.com/pricedetail/flash/wafer_contract"
-      }
-    ]
+    "status": "blocked",
+    "fetched_at": "2026-11-19T13:03:17.338572+00:00",
+    "error": "HTTPSConnectionPool(host='www.trendforce.com', port=443): Read timed out. (read timeout=40)",
+    "items": []
   }
 ]
